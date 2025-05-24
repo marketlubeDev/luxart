@@ -7,7 +7,7 @@ import Count from "./page/hero/section/count";
 import Services from "./page/hero/section/services";
 import Vector from "./page/hero/section/vector";
 import Projects from "./page/hero/section/projects";
-import Testimonials from "./page/hero/section/Testimonials";
+import Testimonials from "./page/hero/section/testimonials";
 import ChooseExpert from "./page/hero/section/ChooseExpert";
 import VideoGallery from "./page/hero/section/VideoGallery";
 import DetailSection from "./page/hero/section/DetailSection";
