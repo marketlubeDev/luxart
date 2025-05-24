@@ -1,0 +1,108 @@
+.vector {
+  margin-top: 100px;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: #000;
+
+  &__title {
+    font-size: 2rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+
+    span {
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+  }
+
+  &__slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+
+    // Fade deeper inside from left and right
+    mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 500px,
+      black calc(100% - 500px),
+      transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0px,
+      black 500px,
+      black calc(100% - 500px),
+      transparent 100%
+    );
+  }
+
+  &__slider {
+    display: flex;
+    gap: 0; // no horizontal gap between boxes
+    // width: max-content;
+    will-change: transform;
+    min-width: 200%;
+    &--line1 {
+      animation: scroll-left 80s linear infinite;
+    }
+
+    &--line2 {
+      animation: scroll-left-reverse 80s linear infinite;
+    }
+
+    &--continuous {
+      animation: scroll-left 80s linear infinite;
+    }
+  }
+
+  &__logo-box {
+    width: 150px;
+    height: 56px;
+    background-color: #111;
+    border: 1px solid #2e2e2e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    padding: 8px 16px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__logo {
+    max-width: 100%;
+    max-height: 32px;
+    object-fit: contain;
+    filter: brightness(0.9);
+  }
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-left-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}

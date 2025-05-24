@@ -1,0 +1,168 @@
+.footer {
+  background: #0a0a0a;
+  color: #fff;
+  padding: 6rem 2rem 1rem;
+
+  font-family: "Inter", sans-serif;
+
+  .contact__heading {
+    font-size: 16px; // reduced from typical 18px or 20px
+    font-weight: 300; // lighter than 400
+    text-align: center;
+    color: #fff;
+    opacity: 0.8; // optional for a softer look
+    margin-bottom: 1rem;
+    font-family: "Be Vietnam", sans-serif; // match design spec if needed
+    margin-left: -12rem;
+  }
+  .links__heading {
+    font-size: 16px; // reduced from typical 18px or 20px
+    font-weight: 300; // lighter than 400
+    text-align: center;
+    color: #fff;
+    opacity: 0.8; // optional for a softer look
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    height: 40vh;
+    margin: 0 auto;
+  }
+
+  &__social {
+    list-style: none;
+    padding: 0;
+    margin-top: 5rem;
+    margin-left: 5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      margin-left: 5rem; // ⬅️ horizontal spacing
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__section {
+    flex: 1;
+    min-width: 250px;
+    .links__heading {
+      font-family: "Be Vietnam", sans-serif;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1;
+      text-align: center;
+      color: #fff;
+      margin-bottom: 1rem;
+      margin-left: 0; // Remove this
+    }
+
+    .footer__item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      opacity: 0.6;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  .footer__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-top: -15rem; // ⬅️ Moves the section upward. Adjust as needed.
+    margin-left: 10rem;
+
+    .footer__logo {
+      width: 176px;
+      height: 110px;
+      object-fit: contain;
+    }
+
+    .enquire-button {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      .phone-icon {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        background: linear-gradient(90deg, #e6c200, #9e710b);
+      }
+    }
+  }
+
+  &__links {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    margin-left: 5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      margin-left: 0;
+      line-height: 100%; // ⬅️ horizontal spacing
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        opacity: 0.6;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .footer {
+    &__bottom {
+      border-top: 1px solid #222;
+      text-align: center;
+      padding-top: 1rem;
+      margin-top: 2rem;
+      font-size: 0.8rem; // changed from 0.85rem to match 16px
+      opacity: 0.6;
+
+      a {
+        font-family: "Be Vietnam", sans-serif;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 100%;
+        color: #ffffff;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 1px;
+        text-decoration-skip-ink: auto;
+      }
+    }
+  }
+}

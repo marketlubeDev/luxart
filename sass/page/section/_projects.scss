@@ -1,0 +1,219 @@
+.projects {
+  padding: 3rem 2rem;
+  background-color: #000;
+  color: #fff;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+    flex-wrap: wrap;
+
+    .projects__title {
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.2;
+
+      span {
+        background: linear-gradient(90deg, #f4d300, #ab7e0d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
+    }
+
+    .projects__subtitle {
+      font-size: 1rem;
+      max-width: 700px;
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+
+    .projects__button {
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      color: #000;
+      padding: 10.5px 18px;
+      border: 1px solid #ab7e0d;
+      cursor: pointer;
+      border-radius: 4px;
+      font-weight: bold;
+      gap: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+    }
+  }
+
+  &__row {
+    margin-bottom: 3rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12px; // ✅ Added border radius
+
+    &:hover {
+      cursor: none; // ✅ hide cursor on hover
+    }
+
+    .projects__image {
+      width: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 12px 12px 0 0;
+      height: auto;
+    }
+
+    .projects__hover-overlay {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      transition: transform 0.1s ease;
+      z-index: 10;
+    }
+
+    .projects__details {
+      position: absolute;
+
+      left: 0;
+      width: 100%;
+      padding: 1.8rem;
+      background: rgba(0, 0, 0);
+      color: #fff;
+      transform: translateY(100%);
+      transition: transform 0.4s ease;
+      border-radius: 0 0 12px 12px;
+      z-index: 2;
+
+      position: absolute;
+      bottom: 1rem;
+    }
+
+    &:hover .projects__details {
+      transform: translateY(0%);
+    }
+    .projects__info {
+      display: flex;
+      flex-direction: row; // Make items appear in a single line
+      justify-content: space-between; // Push items to left and right
+      align-items: center;
+      gap: 1rem; // Optional: controls space between location and area
+
+      .projects__info-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+
+        .projects__icon {
+          color: #f4d300;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .projects__name {
+      padding: 0.75rem 1rem;
+      font-weight: 500;
+      font-size: 1rem;
+
+      margin-bottom: 0.25rem;
+    }
+
+    .projects__desc {
+      font-size: 0.875rem;
+      color: #ccc;
+      margin-top: 0.25rem;
+    }
+  }
+
+  // Specific card size styles
+  &__card--azure {
+    height: 560px; // increased from 120px
+    .projects__image {
+      height: 100%; // increased image height
+      max-height: 500px; // increased max height
+      object-fit: cover;
+    }
+  }
+
+  &__card--emerald {
+    height: 360px; // increased from 120px
+    .projects__image {
+      height: 100%;
+      max-height: 300px;
+      object-fit: cover;
+    }
+  }
+
+  &__card--crystal-left {
+    height: 360px; // increased from 220px
+    .projects__image {
+      height: 100%;
+      max-height: 300px; // increased from 180px
+      object-fit: cover;
+    }
+  }
+
+  &__card--crystal-right {
+    height: 560px; // increased from 280px
+    .projects__image {
+      height: 100%;
+      max-height: 500px; // increased from 240px
+      object-fit: cover;
+    }
+  }
+
+  // Optional: tweak individual item widths/margins for layout styling
+  &__item--azure {
+    width: 120%;
+  }
+
+  &__item--emerald {
+    width: 70%;
+    margin-left: 160px;
+  }
+
+  &__item--crystal-left {
+    width: 70%;
+    margin-left: 5px;
+  }
+
+  &__item--crystal-right {
+    width: 120%;
+    margin-left: -26%;
+  }
+}

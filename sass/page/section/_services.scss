@@ -1,0 +1,97 @@
+.services {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  width: max-content; // only take as much space as needed
+  margin: 0 auto; // center if space is available
+  padding: 0;
+
+  &__card {
+    position: relative;
+    width: 270px;
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+      .services__title {
+        transform: translateY(-1.5rem); // move title up
+      }
+
+      .services__desc {
+        opacity: 1;
+        transform: translateY(-0.1rem); // bring desc into view
+        visibility: visible;
+      }
+    }
+  }
+
+  &__content {
+    width: 100%;
+    padding: 1.25rem;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+    color: white;
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: -1.9rem;
+
+    position: relative;
+    z-index: 2;
+    // transform: translateY(0);
+    // transition: transform 0.3s ease-in-out;
+  }
+
+  &__desc {
+    font-size: 0.9rem;
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    z-index: 1;
+    margin-top: 0.6rem;
+
+    white-space: normal; // allow text to wrap normally
+    overflow: hidden; // hide overflowing content (if any)
+    text-overflow: ellipsis; // optional: adds "..." if text is too long
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // show max 2 lines (change if needed)
+    -webkit-box-orient: vertical;
+
+    transition: all 0.4s ease-in-out 0.15s;
+    transform: translateY(1rem);
+  }
+}
+.services__wrapper {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  padding: 0 1rem; // adds slight left/right space to avoid cut-off
+  box-sizing: border-box;
+}

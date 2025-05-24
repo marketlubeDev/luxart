@@ -1,0 +1,142 @@
+.landing {
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  padding-top: 10px;
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    border-radius: 12px;
+  }
+
+  &__title {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 6rem;
+    font-weight: 520;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.24rem;
+
+    background: linear-gradient(
+      90deg,
+      #fffad9 0%,
+      #ffe86c 40%,
+      #ceb200 80%,
+      #fffad9 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    margin-bottom: 0.75rem;
+
+    text-edge: cap;
+    leading-trim: both;
+    font-kerning: none;
+
+    span {
+      font-weight: 520;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: #fff9d3;
+    text-align: center;
+    font-family: "David Libre";
+    font-style: normal;
+    font-weight: 300;
+    font-kerning: none;
+    line-height: normal;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-weight: 500;
+
+      &__icon {
+        width: 25px;
+        height: 25px;
+      }
+
+      &--primary {
+        background: linear-gradient(277deg, #f4d300, #ab7e0d);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+
+        padding: 0.5rem 1.125rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        font-weight: 510;
+        font-size: 1.1rem;
+        color: #000;
+        cursor: pointer;
+      }
+      &--secondary {
+        position: relative;
+        z-index: 1;
+        background-color: transparent;
+        border: none; // remove default border
+        border-radius: 0.25rem;
+        padding: 0.5rem 1.125rem;
+        height: 2.6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+
+        font-weight: 500;
+        font-size: 1rem;
+        cursor: pointer;
+
+        background: linear-gradient(90deg, #f4d300, #ab7e0d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 0.25rem;
+          padding: 1px; // controls border thickness
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          z-index: -1;
+        }
+
+        &:hover {
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.navbar {
+  top: 2%;
+  left: 5%;
+  width: 100vw; // Full viewport width
+  z-index: 999; // Ensure it's above all other content
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+  background: radial-gradient(circle, #0a0a0a, #000000);
+  box-sizing: border-box;
+
+  &__logo img {
+    height: 55px;
+    object-fit: contain;
+  }
+
+  &__links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+
+    li a {
+      color: white;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #d4af37;
+      }
+    }
+  }
+
+  &__cta {
+    .enquire-button {
+      display: flex;
+      align-items: center;
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      color: #000;
+      font-weight: 500;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+
+      .phone-icon {
+        margin-right: 8px;
+      }
+
+      &:hover {
+        background: linear-gradient(90deg, #e6c200, #9e710b);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+
+    &__links {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__cta {
+      .enquire-button {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  }
+}
