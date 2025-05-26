@@ -6,7 +6,7 @@ import img2 from "../../../assets/building1.jpg";
 import img3 from "../../../assets/building3.jpg";
 import img4 from "../../../assets/building3.jpg";
 
-const Projects = () => {
+const projects = () => {
   return (
     <section className="projects">
       <div className="projects__header">
@@ -71,4 +71,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default projects;

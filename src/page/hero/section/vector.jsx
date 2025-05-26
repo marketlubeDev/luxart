@@ -5,7 +5,7 @@ import vector3 from "../../../assets/vector3.png";
 
 const logos = [vector1, vector2, vector3];
 
-const Vector = () => {
+const vector = () => {
   // Repeat logos enough times to ensure smooth scroll
 
   const repeatedLogos = [
@@ -58,4 +58,4 @@ const Vector = () => {
   );
 };
 
-export default Vector;
+export default vector;

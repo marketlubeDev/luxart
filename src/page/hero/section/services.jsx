@@ -5,7 +5,7 @@ import image3 from "../../../assets/image3.png";
 import image4 from "../../../assets/image4.png";
 import image5 from "../../../assets/image5.png";
 
-const services = [
+const servicesData = [
   {
     title: "3D Design",
     description: "Creating visual representations of your building ideas.",
@@ -58,7 +58,7 @@ const services = [
   },
 ];
 
-const Services = () => {
+const services = () => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -86,7 +86,7 @@ const Services = () => {
   return (
     <div className="services__wrapper" ref={scrollRef}>
       <div className="services">
-        {services.map((service, index) => (
+        {servicesData.map((service, index) => (
           <div
             className="services__card"
             key={index}
@@ -103,4 +103,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default services;

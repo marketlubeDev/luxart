@@ -95,3 +95,66 @@
   padding: 0 1rem; // adds slight left/right space to avoid cut-off
   box-sizing: border-box;
 }
+
+// Tablet
+@media (max-width: 900px) {
+  .services__card {
+    width: 200px;
+    height: 300px;
+  }
+  .services__title {
+    font-size: 1.1rem;
+    margin-bottom: -1.2rem;
+  }
+  .services__desc {
+    font-size: 0.85rem;
+  }
+  .services__content {
+    padding: 1rem;
+  }
+}
+
+// Phone
+@media (max-width: 600px) {
+  .services__card {
+    width: 140px;
+    height: 200px;
+  }
+  .services__title {
+    font-size: 1rem;
+    margin-bottom: -0.8rem;
+  }
+  .services__desc {
+    font-size: 0.75rem;
+  }
+  .services__content {
+    padding: 0.7rem;
+  }
+}
+
+// Small Phone
+@media (max-width: 400px) {
+  .services__card {
+    width: 110px;
+    height: 150px;
+  }
+  .services__title {
+    font-size: 0.85rem;
+    margin-bottom: -0.5rem;
+  }
+  .services__desc {
+    font-size: 0.65rem;
+  }
+  .services__content {
+    padding: 0.4rem;
+  }
+}
+
+// Always show description on touch devices (no hover)
+@media (hover: none) and (pointer: coarse) {
+  .services__desc {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(-0.1rem) !important;
+  }
+}

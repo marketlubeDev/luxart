@@ -109,3 +109,100 @@
   opacity: 1;
   max-height: 100px; // enough to reveal the full text
 }
+
+// Tablet
+@media (max-width: 900px) {
+  .choose-expert {
+    padding: 2rem 0.5rem;
+    &__title {
+      font-size: 1.5rem;
+    }
+    &__subtitle {
+      font-size: 1rem;
+    }
+    &__cards {
+      gap: 1.5rem;
+    }
+  }
+  .expert-card {
+    width: 360px;
+    height: 520px;
+    &__image {
+      height: 72%;
+    }
+    &__name {
+      font-size: 1.15rem;
+    }
+    &__role {
+      font-size: 1rem;
+    }
+    &__detail {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+// Phone
+@media (max-width: 600px) {
+  .choose-expert {
+    padding: 1.2rem 0.25rem;
+    &__title {
+      font-size: 1.2rem;
+    }
+    &__subtitle {
+      font-size: 1rem;
+    }
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+    }
+  }
+  .expert-card {
+    width: 98vw;
+    max-width: 420px;
+    height: 420px;
+    &__image {
+      height: 68%;
+    }
+    &__name {
+      font-size: 1.05rem;
+    }
+    &__role {
+      font-size: 0.95rem;
+    }
+    &__detail {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+// Small Phone
+@media (max-width: 400px) {
+  .choose-expert {
+    padding: 0.7rem 0.1rem;
+    &__title {
+      font-size: 1rem;
+    }
+    &__subtitle {
+      font-size: 0.8rem;
+    }
+  }
+  .expert-card {
+    width: 99vw;
+    max-width: 320px;
+    height: 320px;
+    &__image {
+      height: 65%;
+    }
+    &__name {
+      font-size: 0.95rem;
+    }
+    &__role {
+      font-size: 0.8rem;
+    }
+    &__detail {
+      font-size: 0.7rem;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+@use "../../base/responsive" as responsive;
+
 .landing {
   color: #fff;
   text-align: center;
@@ -7,7 +9,6 @@
   &__content {
     max-width: 800px;
     margin: 0 auto;
-
     border-radius: 12px;
   }
 
@@ -15,8 +16,6 @@
     font-family: "Be Vietnam", sans-serif;
     font-size: 6rem;
     font-weight: 520;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: -0.24rem;
 
     background: linear-gradient(
@@ -33,33 +32,178 @@
     text-align: center;
     margin-bottom: 0.75rem;
 
-    text-edge: cap;
-    leading-trim: both;
-    font-kerning: none;
+    @include responsive.respond(bigTablets) {
+      font-size: 4.5rem;
+    }
 
-    span {
-      font-weight: 520;
+    @include responsive.respond(tablets) {
+      font-size: 3.5rem;
+    }
+
+    @include responsive.respond(phone) {
+      font-size: 2.75rem;
+      letter-spacing: -0.15rem;
+    }
+
+    @include responsive.respond(smallPhone) {
+      font-size: 2.25rem;
+      letter-spacing: -0.1rem;
     }
   }
 
   &__subtitle {
     font-size: 1.5rem;
     color: #fff9d3;
-    text-align: center;
-    font-family: "David Libre";
-    font-style: normal;
-    font-weight: 300;
-    font-kerning: none;
-    line-height: normal;
     opacity: 0.8;
     margin-bottom: 3rem;
     margin-top: 0.5rem;
+
+    @include responsive.respond(bigTablets) {
+      font-size: 1.35rem;
+    }
+
+    @include responsive.respond(tablets) {
+      font-size: 1.2rem;
+    }
+
+    @include responsive.respond(phone) {
+      font-size: 1.05rem;
+    }
+
+    @include responsive.respond(smallPhone) {
+      font-size: 0.95rem;
+    }
   }
 
   &__buttons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    flex-wrap: wrap;
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 24px;
+      font-size: 1rem;
+
+      @include responsive.respond(phone) {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+
+      @include responsive.respond(smallPhone) {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+      }
+
+      &--primary {
+        font-size: 1.1rem;
+
+        @include responsive.respond(phone) {
+          font-size: 1rem;
+        }
+
+        @include responsive.respond(smallPhone) {
+          font-size: 0.9rem;
+        }
+      }
+
+      &--secondary {
+        font-size: 1rem;
+
+        @include responsive.respond(phone) {
+          font-size: 0.95rem;
+        }
+
+        @include responsive.respond(smallPhone) {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+}
+.landing {
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+  padding-top: 10px;
+
+  &__content {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+  }
+
+  &__title {
+    font-family: "Be Vietnam", sans-serif;
+    font-size: 6rem;
+    font-weight: 520;
+    letter-spacing: -0.24rem;
+
+    background: linear-gradient(
+      90deg,
+      #fffad9 0%,
+      #ffe86c 40%,
+      #ceb200 80%,
+      #fffad9 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    text-align: center;
+    margin-bottom: 0.75rem;
+
+    @include responsive.respond(bigTablets) {
+      font-size: 4.5rem;
+    }
+
+    @include responsive.respond(tablets) {
+      font-size: 3.5rem;
+    }
+
+    @include responsive.respond(phone) {
+      font-size: 2.75rem;
+      letter-spacing: -0.15rem;
+    }
+
+    @include responsive.respond(smallPhone) {
+      font-size: 2.25rem;
+      letter-spacing: -0.1rem;
+    }
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    color: #fff9d3;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+    margin-top: 0.5rem;
+
+    @include responsive.respond(bigTablets) {
+      font-size: 1.35rem;
+    }
+
+    @include responsive.respond(tablets) {
+      font-size: 1.2rem;
+    }
+
+    @include responsive.respond(phone) {
+      font-size: 1.05rem;
+    }
+
+    @include responsive.respond(smallPhone) {
+      font-size: 0.95rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 
     .btn {
       display: flex;
@@ -73,12 +217,18 @@
       transition: all 0.3s ease;
       font-weight: 500;
 
-      &__icon {
-        width: 25px;
-        height: 25px;
+      @include responsive.respond(phone) {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+
+      @include responsive.respond(smallPhone) {
+        padding: 8px 16px;
+        font-size: 0.85rem;
       }
 
       &--primary {
+        font-size: 1.1rem;
         background: linear-gradient(277deg, #f4d300, #ab7e0d);
         border: 1px solid rgba(255, 255, 255, 0.25);
 
@@ -91,12 +241,20 @@
         font-size: 1.1rem;
         color: #000;
         cursor: pointer;
+
+        @include responsive.respond(phone) {
+          font-size: 1rem;
+        }
+
+        @include responsive.respond(smallPhone) {
+          font-size: 0.9rem;
+        }
       }
+
       &--secondary {
         position: relative;
         z-index: 1;
         background-color: transparent;
-        border: none; // remove default border
         border-radius: 0.25rem;
         padding: 0.5rem 1.125rem;
         height: 2.6rem;
@@ -110,19 +268,21 @@
         font-size: 1rem;
         cursor: pointer;
 
+        // Gradient text style
         background: linear-gradient(90deg, #f4d300, #ab7e0d);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
+        // Gradient border using ::before
         &::before {
           content: "";
           position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          border-radius: 0.25rem;
-          padding: 1px; // controls border thickness
+          top: -1px;
+          left: -1px;
+          right: -1px;
+          bottom: -1px;
+          border-radius: inherit;
+          padding: 1px;
           background: linear-gradient(90deg, #f4d300, #ab7e0d);
           -webkit-mask: linear-gradient(#fff 0 0) content-box,
             linear-gradient(#fff 0 0);
@@ -131,10 +291,12 @@
           z-index: -1;
         }
 
-        &:hover {
-          background: linear-gradient(90deg, #f4d300, #ab7e0d);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+        @include responsive.respond(phone) {
+          font-size: 0.95rem;
+        }
+
+        @include responsive.respond(smallPhone) {
+          font-size: 0.85rem;
         }
       }
     }

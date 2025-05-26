@@ -75,7 +75,7 @@ const testimonialsData = [
   },
 ];
 
-const Testimonials = () => {
+const testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -146,4 +146,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default testimonials;

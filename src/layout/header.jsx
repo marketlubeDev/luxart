@@ -1,14 +1,27 @@
-import React from "react";
-import logo from "../assets/luxartlogo.svg";
-import phoneIcon from "../assets/phone.svg";
+import React, { useState } from "react";
+import logo from "../../src/assets/luxartlogo.svg";
+import phoneIcon from "../../src/assets/phone.svg";
 
-const Header = () => {
+const header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar__logo">
         <img src={logo} alt="Luxart Logo" />
       </div>
-      <ul className="navbar__links">
+      <div
+        className={`navbar__hamburger${menuOpen ? " open" : ""}`}
+        onClick={() => setMenuOpen((prev) => !prev)}
+        aria-label="Toggle menu"
+        tabIndex={0}
+        role="button"
+      >
+        <span />
+        <span />
+        <span />
+      </div>
+      <ul className={`navbar__links${menuOpen ? " open" : ""}`}>
         <li>
           <a href="#platform">Our platform</a>
         </li>
@@ -29,4 +42,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default header;
