@@ -9,8 +9,37 @@ import img5 from "../../../assets/up1.png";
 import img6 from "../../../assets/up2.png";
 import img7 from "../../../assets/up3.png";
 import img8 from "../../../assets/up4.png";
+import img9 from "../../../assets/up1.png";
+import img10 from "../../../assets/up2.png";
+import img11 from "../../../assets/up3.png";
+import img12 from "../../../assets/up4.png";
+import img13 from "../../../assets/up1.png";
+import img14 from "../../../assets/up2.png";
+import img15 from "../../../assets/up3.png";
+import img16 from "../../../assets/up4.png";
+import img17 from "../../../assets/up1.png";
+import img18 from "../../../assets/up2.png";
 
-const floatingImages = [img1, img2, img3, img4, img5, img6, img7, img8];
+const floatingImages = [
+  img1,
+  img2,
+  img3,
+  img4,
+  img5,
+  img6,
+  img7,
+  img8,
+  img9,
+  img10,
+  img11,
+  img12,
+  img13,
+  img14,
+  img15,
+  img16,
+  img17,
+  img18,
+];
 
 const DetailSection = () => {
   return (

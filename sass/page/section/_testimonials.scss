@@ -6,12 +6,16 @@
   overflow: hidden;
 
   .testimonial-title {
-    font-size: 2.5rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
 
     .highlight {
-      color: #f7c32e;
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
   }
 
@@ -19,31 +23,35 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
+    position: relative;
+    padding: 2rem 0;
     gap: 1.5rem;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-
+    overflow: hidden;
     .testimonial-card {
+      position: relative;
+      flex-shrink: 0;
+      width: 350px;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.5s ease;
       background: #1c1c1c;
       border-radius: 1rem;
       padding: 1.5rem;
-      width: 350px;
-      opacity: 0;
-      transform: scale(0.95);
-      transition: all 0.5s ease;
       display: none;
 
       &.active {
-        opacity: 1;
-        transform: scale(1);
         display: block;
+        opacity: 1;
+        transform: scale(1.05);
+        z-index: 3;
       }
 
       &.adjacent-left,
       &.adjacent-right {
-        opacity: 0.5;
         display: block;
+        opacity: 0.5;
+        transform: scale(0.95);
+        z-index: 2;
       }
 
       &.hidden {
@@ -118,4 +126,8 @@
       }
     }
   }
+}
+.testimonial-carousel-wrapper {
+  display: flex;
+  justify-content: center;
 }

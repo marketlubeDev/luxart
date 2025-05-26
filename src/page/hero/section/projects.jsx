@@ -1,4 +1,3 @@
-// page/hero/section/projects.jsx
 import React from "react";
 import ProjectCard from "../../../Components/ProjectCard";
 

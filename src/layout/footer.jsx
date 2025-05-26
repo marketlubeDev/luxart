@@ -77,7 +77,7 @@ const footer = () => {
       <div className="footer__bottom">
         <p>
           © 2025 Luxart All rights reserved | Powered by{" "}
-          <a href="#">Markettube</a>
+          <a href="#">Marketlube</a>
         </p>
       </div>
     </footer>

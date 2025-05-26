@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { LuSquare } from "react-icons/lu";
+import areaIcon from "../assets/area.svg";
+import locationIcon from "../assets/footer1.svg";
 import PropTypes from "prop-types";
 
 const ProjectCard = ({
   image,
+  title,
   className,
   location = "Downtown metro",
   area = "15,000 sq.ft",
@@ -27,8 +28,9 @@ const ProjectCard = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={image} alt="Project" className="projects__image" />
+      <img src={image} alt={title} className="projects__image" />
 
+      {/* Hover effect */}
       {hovered && (
         <div
           className="projects__hover-overlay"
@@ -38,24 +40,40 @@ const ProjectCard = ({
         </div>
       )}
 
-      <div className="projects__details">
-        <div className="projects__info">
-          <div className="projects__info-item">
-            <FaMapMarkerAlt className="projects__icon" />
-            <span>{location}</span>
-          </div>
-          <div className="projects__info-item">
-            <LuSquare className="projects__icon" />
-            <span>{area}</span>
+      {/* Title below the image */}
+      {title && (
+        <div className="projects__name">
+          {title}
+          {hovered && (
+            <span className="projects__completed">● Completed 2024</span>
+          )}
+        </div>
+      )}
+      {hovered && (
+        <div className="projects__details">
+          <div className="projects__info">
+            <div className="projects__info-item">
+              <img
+                src={locationIcon}
+                alt="Location"
+                className="projects__icon"
+              />
+              <span>{location}</span>
+            </div>
+            <div className="projects__info-item">
+              <img src={areaIcon} alt="Area" className="projects__icon" />
+              <span>{area}</span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };
 
 ProjectCard.propTypes = {
   image: PropTypes.string.isRequired,
+  title: PropTypes.string,
   className: PropTypes.string,
   location: PropTypes.string,
   area: PropTypes.string,

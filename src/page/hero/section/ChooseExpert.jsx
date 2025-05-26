@@ -2,6 +2,8 @@ import React from "react";
 import expert1 from "../../../assets/expert1.jpg";
 import expert2 from "../../../assets/expert2.jpg";
 import expert3 from "../../../assets/expert3.jpg";
+import experienceIcon from "../../../assets/bag.svg";
+import areaIcon from "../../../assets/area.svg";
 
 const engineers = [
   {
@@ -51,11 +53,29 @@ const ChooseExpert = () => {
             />
             <div className="expert-card__info">
               <div className="expert-card__meta">
-                <span>🗓 {engineer.experience} experience</span>
-                <span>📐 {engineer.area}</span>
+                <span>
+                  <img
+                    src={experienceIcon}
+                    alt="experience icon"
+                    className="experience-icon"
+                  />
+                  {engineer.experience} experience
+                </span>
+                <span>
+                  <img
+                    src={areaIcon}
+                    alt="area icon"
+                    className="expert-card__icon"
+                  />
+                  {engineer.area}
+                </span>
               </div>
               <h3 className="expert-card__name">{engineer.name}</h3>
               <p className="expert-card__role">{engineer.title}</p>
+              <p className="expert-card__detail">
+                With over 12 years of experience in luxury housing,{" "}
+                {engineer.name} ensures your home stands strong—inside and out.
+              </p>
             </div>
           </div>
         ))}

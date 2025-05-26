@@ -3,21 +3,30 @@
   color: #fff;
   text-align: center;
   padding: 3rem 1rem;
+  height: 120vh;
 
   &__title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
 
     .highlight {
-      color: #f4c107;
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
   }
 
   &__subtitle {
-    font-size: 1rem;
-    color: #ccc;
-    margin-bottom: 2rem;
+    font-family: "David Libre", serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    color: #fff9d3;
+    opacity: 0.8;
+    margin: 1rem 0 2rem;
   }
 
   &__cards {
@@ -29,10 +38,11 @@
 }
 
 .expert-card {
-  background: #111;
+  background: black;
   border-radius: 12px;
   overflow: hidden;
-  width: 280px;
+  width: 390px;
+  height: 600px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s;
 
@@ -42,12 +52,13 @@
 
   &__image {
     width: 100%;
-    height: 320px;
+    height: 70%;
     object-fit: cover;
   }
 
   &__info {
     padding: 1rem;
+    text-align: left; // ✅ Add this to align everything inside to the left
 
     & > *:not(:last-child) {
       margin-bottom: 0.5rem;
@@ -62,12 +73,39 @@
   }
 
   &__name {
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: 1.1rem;
+    font-weight: 500;
   }
 
   &__role {
     font-size: 0.95rem;
     color: #ccc;
   }
+}
+.experience-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.expert-card__icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+.expert-card__detail {
+  font-size: 0.85rem;
+  color: #ddd;
+  line-height: 1.4;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+// Show detail on hover
+.expert-card:hover .expert-card__detail {
+  opacity: 1;
+  max-height: 100px; // enough to reveal the full text
 }
