@@ -167,23 +167,19 @@
   }
 }
 
-// Mobile and Tablet
+// Tablet
 @media (max-width: 900px) {
   .footer {
-    padding: 2rem 0.5rem 0.5rem;
+    padding: 2.5rem 0.5rem 0.5rem;
     &__content {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 1.2rem;
+      align-items: center;
+      gap: 1.5rem;
       height: auto;
-      width: 100%;
     }
     .footer__center {
       order: 1;
-      margin: 0 auto 1.2rem auto;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
+      margin: 0 auto 1.5rem auto;
       .footer__logo {
         width: 110px;
         height: 60px;
@@ -199,34 +195,68 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       margin: 0;
       padding: 0;
-      text-align: left;
+    }
+    .footer__links,
+    .footer__social {
+      margin: 0.5rem 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      width: 100%;
+      text-align: center;
     }
     .footer__links {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 0.3rem;
-      margin-top: 0.7rem;
-      text-align: left;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
     }
     .footer__social {
       flex-direction: column;
-      align-items: flex-start;
-      gap: 0.3rem;
-      margin-top: 0.7rem;
-      text-align: left;
-      font-size: 1rem;
-    }
-    .footer__social li a {
-      font-size: 1rem;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
     }
     .contact__heading,
     .links__heading {
       margin-left: 0;
       font-size: 1rem;
-      text-align: left;
+      text-align: center;
+    }
+  }
+}
+
+// Phone
+@media (max-width: 600px) {
+  .footer {
+    padding: 2rem 0.5rem 0.5rem;
+    &__content {
+      gap: 1.2rem;
+    }
+    .footer__center {
+      .footer__logo {
+        width: 90px;
+        height: 50px;
+      }
+      .enquire-button {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+      }
+    }
+    .footer__section {
+      min-width: 120px;
+    }
+    .footer__links,
+    .footer__social {
+      margin-top: 1rem;
+    }
+    .contact__heading,
+    .links__heading {
+      font-size: 0.9rem;
     }
   }
 }
@@ -236,13 +266,9 @@
   .footer {
     padding: 1rem 0.1rem 0.1rem;
     &__content {
-      gap: 0.5rem;
+      gap: 0.7rem;
     }
     .footer__center {
-      margin: 0 auto 1rem auto;
-      align-items: center;
-      display: flex;
-      flex-direction: column;
       .footer__logo {
         width: 60px;
         height: 32px;
@@ -255,72 +281,15 @@
     .footer__section {
       min-width: 0;
       width: 100%;
-      text-align: left;
-      align-items: flex-start;
     }
-    .footer__links {
-      gap: 0.2rem;
-      font-size: 0.8rem;
-      margin-top: 0.3rem;
-      align-items: flex-start;
-      text-align: left;
-    }
+    .footer__links,
     .footer__social {
-      gap: 0.2rem;
-      font-size: 0.7rem;
-      margin-top: 0.3rem;
-      align-items: flex-start;
-      text-align: left;
-    }
-    .footer__social li a {
-      font-size: 0.7rem;
+      gap: 0.3rem;
+      font-size: 0.8rem;
     }
     .contact__heading,
     .links__heading {
       font-size: 0.7rem;
-      text-align: left;
     }
-  }
-}
-
-// Tablet and up (min-width: 600px)
-@media (min-width: 600px) {
-  .footer__content {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  .footer__section {
-    min-width: 180px;
-    width: auto;
-    align-items: flex-start;
-    text-align: left;
-    margin: 0;
-    padding: 0;
-  }
-  .footer__section:nth-child(1) {
-    // Contact
-    order: 1;
-    align-items: flex-start;
-    text-align: left;
-  }
-  .footer__section:nth-child(4) {
-    // Quick Links
-    order: 2;
-    align-items: flex-start;
-    text-align: left;
-  }
-  .footer__social {
-    order: 3;
-    align-items: flex-end;
-    text-align: right;
-    margin-left: auto;
-    margin-right: 0;
-  }
-  .footer__center {
-    order: 0;
-    align-items: center;
-    margin: 0 2rem;
   }
 }
