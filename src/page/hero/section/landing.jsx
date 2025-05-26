@@ -1,5 +1,5 @@
 import React from "react";
-import phoneIcon from "../../../assets/phone.svg";
+import phoneIcon from "../../../assets/Phone.svg";
 
 const landing = () => {
   return (

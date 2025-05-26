@@ -1,5 +1,5 @@
 import React from "react";
-import phoneIcon from "../../../assets/phone.svg";
+import phoneIcon from "../../../assets/Phone.svg";
 
 import img1 from "../../../assets/up1.png";
 import img2 from "../../../assets/up2.png";

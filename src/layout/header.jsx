@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../src/assets/luxartlogo.svg";
-import phoneIcon from "../../src/assets/phone.svg";
+import phoneIcon from "../../src/assets/Phone.svg";
 
 const header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
