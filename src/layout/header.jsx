@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../src/assets/luxartlogo.svg";
-import phoneIcon from "../../src/assets/Phone.svg";
+import phoneIcon from "../../src/assets/phone.svg";
+import { Link } from "react-router-dom";
 
 const header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,13 +24,18 @@ const header = () => {
       </div>
       <ul className={`navbar__links${menuOpen ? " open" : ""}`}>
         <li>
-          <a href="#platform">Our platform</a>
+          <Link to="/">Home</Link>
+        </li>
+
+        <li>
+          <Link to="/testimonials">Testimonials</Link>
         </li>
         <li>
-          <a href="#solution">Custom Solution</a>
+          <Link to="/projects">Projects</Link>
         </li>
+
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/about">About Us</Link>
         </li>
       </ul>
       <div className="navbar__cta">

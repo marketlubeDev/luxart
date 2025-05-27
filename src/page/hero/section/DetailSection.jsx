@@ -11,14 +11,8 @@ import img7 from "../../../assets/up3.png";
 import img8 from "../../../assets/up4.png";
 import img9 from "../../../assets/up1.png";
 import img10 from "../../../assets/up2.png";
-import img11 from "../../../assets/up3.png";
-import img12 from "../../../assets/up4.png";
-import img13 from "../../../assets/up1.png";
-import img14 from "../../../assets/up2.png";
-import img15 from "../../../assets/up3.png";
-import img16 from "../../../assets/up4.png";
-import img17 from "../../../assets/up1.png";
-import img18 from "../../../assets/up2.png";
+// import img11 from "../../../assets/up3.png";
+// import img12 from "../../../assets/up4.png";
 
 const floatingImages = [
   img1,
@@ -31,14 +25,8 @@ const floatingImages = [
   img8,
   img9,
   img10,
-  img11,
-  img12,
-  img13,
-  img14,
-  img15,
-  img16,
-  img17,
-  img18,
+  // img11,
+  // img12,
 ];
 
 const DetailSection = () => {
@@ -50,7 +38,7 @@ const DetailSection = () => {
           key={index}
           src={img}
           alt={`floating-${index}`}
-          className={`floating-image floating-image-${index + 1}`}
+          className={`floating-image pos-${index + 1}`}
         />
       ))}
 

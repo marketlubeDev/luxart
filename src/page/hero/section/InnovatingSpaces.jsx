@@ -1,6 +1,4 @@
-// InnovatingSpaces.jsx
 import React, { useState } from "react";
-
 
 const InnovatingSpaces = () => {
   const [sliderPosition, setSliderPosition] = useState(65);
@@ -23,40 +21,56 @@ const InnovatingSpaces = () => {
   };
 
   return (
-    <div
-      className="innovating"
-      onMouseMove={(e) => {
-        handleSliderMove(e);
-        handlePointerMove(e);
-      }}
-      onTouchMove={(e) => {
-        handleSliderMove({
-          clientX: e.touches[0].clientX,
-          currentTarget: e.currentTarget,
-        });
-        handlePointerMove({
-          clientY: e.touches[0].clientY,
-          currentTarget: e.currentTarget,
-        });
-      }}
-    >
-      <div
-        className="innovating__image innovating__image--first"
-        style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)` }}
-      ></div>
+    <div>
+      <h2 className="innovating__heading">
+        Our Vision in <span>Design</span>
+      </h2>
 
       <div
-        className="innovating__image innovating__image--second"
-        style={{ clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)` }}
-      ></div>
+        className="innovating"
+        onMouseMove={(e) => {
+          handleSliderMove(e);
+          handlePointerMove(e);
+        }}
+        onTouchMove={(e) => {
+          handleSliderMove({
+            clientX: e.touches[0].clientX,
+            currentTarget: e.currentTarget,
+          });
+          handlePointerMove({
+            clientY: e.touches[0].clientY,
+            currentTarget: e.currentTarget,
+          });
+        }}
+      >
+        <div
+          className="innovating__image innovating__image--first"
+          style={{
+            clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
+          }}
+        ></div>
 
-      <div className="innovating__text">
-        <h1>INNOVATING SPACES</h1>
-      </div>
+        <div
+          className="innovating__image innovating__image--second"
+          style={{
+            clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
+          }}
+        ></div>
 
-      <div className="innovating__slider">
-        <div className="innovating__line" style={{ left: `${sliderPosition}%` }}>
-          <div className="innovating__pointer" style={{ top: `${pointerPosition}%` }}></div>
+        <div className="innovating__text">
+          <h1>The Art of Space</h1>
+        </div>
+
+        <div className="innovating__slider">
+          <div
+            className="innovating__line"
+            style={{ left: `${sliderPosition}%` }}
+          >
+            <div
+              className="innovating__pointer"
+              style={{ top: `${pointerPosition}%` }}
+            ></div>
+          </div>
         </div>
       </div>
     </div>

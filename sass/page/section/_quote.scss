@@ -1,0 +1,53 @@
+.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1rem;
+  background-color: #000; // background to enhance contrast
+
+  text-align: center;
+
+  &__text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 120px;
+    line-height: 1.6;
+    color: white;
+    position: relative;
+    animation: fadeSlideUp 1s ease-in-out;
+
+    span {
+      background: linear-gradient(90deg, #f4d300, #ab7e0d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-weight: 600;
+    }
+
+    strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+// Fade and slide effect
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

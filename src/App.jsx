@@ -7,16 +7,20 @@ import Count from "./page/hero/section/count";
 import Services from "./page/hero/section/services";
 import Vector from "./page/hero/section/vector";
 import Projects from "./page/hero/section/projects";
-import Testimonials from "./page/hero/section/testimonials";
+import Testimonials from "./page/hero/section/Testimonials";
 import ChooseExpert from "./page/hero/section/ChooseExpert";
 import VideoGallery from "./page/hero/section/VideoGallery";
 import DetailSection from "./page/hero/section/DetailSection";
 import InnovatingSpaces from "./page/hero/section/InnovatingSpaces";
 import Footer from "./layout/footer";
-function App() {
+import Quote from "./page/hero/section/Quote";
+import { Routes, Route } from "react-router-dom";
+import About from "./page/About/About";
+
+// Home component containing all the main landing page sections
+const Home = () => {
   return (
     <>
-      <Header />
       <Landing />
       <Count />
       <Services />
@@ -25,8 +29,23 @@ function App() {
       <Testimonials />
       <DetailSection />
       <ChooseExpert />
+      <Quote />
       <InnovatingSpaces />
       <VideoGallery />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
       <Footer />
     </>
   );

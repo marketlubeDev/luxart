@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import avatar1 from "../../../assets/avatar1.png";
 import starPng from "../../../assets/star.png";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const testimonialsData = [
   {
@@ -75,7 +76,7 @@ const testimonialsData = [
   },
 ];
 
-const testimonials = () => {
+const Testimonials = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -84,9 +85,19 @@ const testimonials = () => {
         prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1
       );
     }, 4000);
-
     return () => clearInterval(interval);
   }, []);
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === 0 ? testimonialsData.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
   return (
     <section className="testimonial-section">
@@ -95,20 +106,22 @@ const testimonials = () => {
       </h2>
 
       <div className="testimonial-carousel-wrapper">
+        <button className="arrow left-arrow" onClick={handlePrev}>
+          <FaArrowLeft />
+        </button>
+
         <div className="testimonial-carousel">
           {testimonialsData.map((item, index) => {
             let className = "hidden";
-            if (index === activeIndex) {
-              className = "active";
-            } else if (
+            if (index === activeIndex) className = "active";
+            else if (
               index ===
               (activeIndex - 1 + testimonialsData.length) %
                 testimonialsData.length
-            ) {
+            )
               className = "adjacent-left";
-            } else if (index === (activeIndex + 1) % testimonialsData.length) {
+            else if (index === (activeIndex + 1) % testimonialsData.length)
               className = "adjacent-right";
-            }
 
             return (
               <div key={index} className={`testimonial-card ${className}`}>
@@ -131,6 +144,10 @@ const testimonials = () => {
             );
           })}
         </div>
+
+        <button className="arrow right-arrow" onClick={handleNext}>
+          <FaArrowRight />
+        </button>
       </div>
 
       <div className="testimonial-dots">
@@ -146,4 +163,4 @@ const testimonials = () => {
   );
 };
 
-export default testimonials;
+export default Testimonials;

@@ -73,30 +73,122 @@
   border-radius: 12px;
   object-fit: cover;
   animation: floatUp 20s linear infinite;
-  opacity: 0.7;
+  opacity: 0.1;
   z-index: 1;
+  pointer-events: none;
 }
 
 // Position and delay per image
-@for $i from 1 through 8 {
-  .floating-image-#{$i} {
-    left: #{random(90)}vw;
-    top: #{random(100) + 100}px;
-    animation-delay: #{random(15)}s;
-  }
+// @for $i from 1 through 8 {
+//   .floating-image-#{$i} {
+//     left: #{random(90)}vw;
+//     top: #{random(100) + 100}px;
+//     animation-delay: #{random(15)}s;
+//   }
+// }
+
+.pos-1 {
+  left: 5vw;
+  top: 100px;
+  animation-delay: 0s;
 }
+.pos-2 {
+  left: 15vw;
+  top: 150px;
+  animation-delay: 2s;
+}
+.pos-3 {
+  left: 25vw;
+  top: 200px;
+  animation-delay: 4s;
+}
+.pos-4 {
+  left: 35vw;
+  top: 120px;
+  animation-delay: 1s;
+}
+.pos-5 {
+  left: 45vw;
+  top: 180px;
+  animation-delay: 3s;
+}
+.pos-6 {
+  left: 55vw;
+  top: 210px;
+  animation-delay: 5s;
+}
+.pos-7 {
+  left: 65vw;
+  top: 130px;
+  animation-delay: 1.5s;
+}
+.pos-8 {
+  left: 75vw;
+  top: 160px;
+  animation-delay: 2.5s;
+}
+.pos-9 {
+  left: 10vw;
+  top: 190px;
+  animation-delay: 3.5s;
+}
+.pos-10 {
+  left: 20vw;
+  top: 110px;
+  animation-delay: 0.5s;
+}
+// .pos-11 {
+//   left: 30vw;
+//   top: 170px;
+//   animation-delay: 2.2s;
+// }
+// .pos-12 {
+//   left: 40vw;
+//   top: 100px;
+//   animation-delay: 1.2s;
+// }
+// .pos-13 {
+//   left: 50vw;
+//   top: 190px;
+//   animation-delay: 3.2s;
+// }
+// .pos-14 {
+//   left: 60vw;
+//   top: 140px;
+//   animation-delay: 1.8s;
+// }
+// .pos-15 {
+//   left: 70vw;
+//   top: 210px;
+//   animation-delay: 4.2s;
+// }
+// .pos-16 {
+//   left: 80vw;
+//   top: 150px;
+//   animation-delay: 2.8s;
+// }
+// .pos-17 {
+//   left: 85vw;
+//   top: 170px;
+//   animation-delay: 5.5s;
+// }
+// .pos-18 {
+//   left: 90vw;
+//   top: 120px;
+//   animation-delay: 3.9s;
+// }
 
 // Floating animation
 @keyframes floatUp {
   0% {
-    transform: translateY(100vh);
+    transform: translateY(80vh);
     opacity: 0;
   }
   20% {
-    opacity: 0.7;
+    opacity: 0.6;
   }
   100% {
-    transform: translateY(-200px);
+    transform: translateY(-100vh);
     opacity: 0;
   }
 }
