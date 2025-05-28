@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../../layout/header";
 import Footer from "../../layout/footer";
 import Chairman from "../../assets/Chairman.jpg";
+import about1 from "../../assets/about1.jpg";
 
 export default function About() {
   useEffect(() => {

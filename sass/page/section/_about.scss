@@ -17,7 +17,8 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    background-image: url("https://res.cloudinary.com/dzuqczvb7/image/upload/v1742567741/f18c0ad07e943f489670f49596339b80_ilocti.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../../src/assets/about1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
