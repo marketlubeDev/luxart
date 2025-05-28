@@ -23,7 +23,7 @@ const testimonialsData = [
     role: "Real Estate Agent",
     avatar: avatar1,
     rating: 5,
-    text: "Working with the team was a pleasure. Their professionalism and efficiency ensured my client’s home was delivered on time and beautifully done.",
+    text: "Working with the team was a pleasure. Their professionalism and efficiency ensured my client's home was delivered on time and beautifully done.",
   },
   {
     name: "Olivia James",
@@ -51,14 +51,14 @@ const testimonialsData = [
     role: "Financial Analyst",
     avatar: avatar1,
     rating: 5,
-    text: "Our new home was delivered ahead of schedule with the finest finishes. I’m incredibly impressed by the team’s efficiency.",
+    text: "Our new home was delivered ahead of schedule with the finest finishes. I'm incredibly impressed by the team's efficiency.",
   },
   {
     name: "Ava Thompson",
     role: "Content Creator",
     avatar: avatar1,
     rating: 5,
-    text: "Every inch of my home reflects thoughtful design and craftsmanship. I couldn’t have asked for a better experience!",
+    text: "Every inch of my home reflects thoughtful design and craftsmanship. I couldn't have asked for a better experience!",
   },
   {
     name: "William Johnson",
@@ -76,7 +76,7 @@ const testimonialsData = [
   },
 ];
 
-const Testimonials = () => {
+function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   useEffect(() => {
@@ -139,7 +139,7 @@ const Testimonials = () => {
                     ))}
                   </div>
                 </div>
-                <p className="testimonial-text">“ {item.text} ”</p>
+                <p className="testimonial-text">" {item.text} "</p>
               </div>
             );
           })}
@@ -161,6 +161,6 @@ const Testimonials = () => {
       </div>
     </section>
   );
-};
+}
 
 export default Testimonials;
