@@ -7,7 +7,7 @@ import Count from "./page/hero/section/count";
 import Services from "./page/hero/section/services";
 import Vector from "./page/hero/section/vector";
 import Projects from "./page/hero/section/projects";
-import Testimonials from "./page/hero/section/Testimonials";
+import Test from "./page/hero/section/Test";
 import ChooseExpert from "./page/hero/section/ChooseExpert";
 import VideoGallery from "./page/hero/section/VideoGallery";
 import DetailSection from "./page/hero/section/DetailSection";
@@ -26,7 +26,7 @@ const Home = () => {
       <Services />
       <Vector />
       <Projects />
-      <Testimonials />
+      <Test />
       <DetailSection />
       <ChooseExpert />
       <Quote />
@@ -42,7 +42,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/testimonials" element={<Test />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:projectId" element={<ProjectDetail />} />
         <Route path="/about" element={<About />} />
