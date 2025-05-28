@@ -65,6 +65,11 @@
   &__item {
     display: flex;
     flex-direction: column;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
   }
 
   &__card {
@@ -175,6 +180,22 @@
       font-size: 0.875rem;
       color: #ccc;
       margin-top: 0.25rem;
+    }
+
+    &__title {
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    &--azure,
+    &--emerald,
+    &--crystal-left,
+    &--crystal-right {
+      .projects__card__title {
+        color: #fff;
+      }
     }
   }
 

@@ -9,7 +9,9 @@ const header = () => {
   return (
     <nav className="navbar">
       <div className="navbar__logo">
-        <img src={logo} alt="Luxart Logo" />
+        <Link to="/">
+          <img src={logo} alt="Luxart Logo" />
+        </Link>
       </div>
       <div
         className={`navbar__hamburger${menuOpen ? " open" : ""}`}

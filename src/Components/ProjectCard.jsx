@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import areaIcon from "../assets/area.svg";
 import locationIcon from "../assets/footer1.svg";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({
   image,
@@ -9,6 +10,7 @@ const ProjectCard = ({
   className,
   location = "Downtown metro",
   area = "15,000 sq.ft",
+  projectId,
 }) => {
   const [position, setPosition] = useState({ x: "50%", y: "50%" });
   const [hovered, setHovered] = useState(false);
@@ -36,7 +38,12 @@ const ProjectCard = ({
           className="projects__hover-overlay"
           style={{ left: position.x, top: position.y }}
         >
-          View
+          <Link
+            to={`/projects/${projectId}`}
+            className="project-card__view-circle"
+          >
+            <span>View</span>
+          </Link>
         </div>
       )}
 
@@ -77,6 +84,7 @@ ProjectCard.propTypes = {
   className: PropTypes.string,
   location: PropTypes.string,
   area: PropTypes.string,
+  projectId: PropTypes.string,
 };
 
 export default ProjectCard;

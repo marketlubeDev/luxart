@@ -16,7 +16,7 @@ import Footer from "./layout/footer";
 import Quote from "./page/hero/section/Quote";
 import { Routes, Route } from "react-router-dom";
 import About from "./page/About/About";
-
+import ProjectDetail from "./page/hero/section/ProjectDetail";
 // Home component containing all the main landing page sections
 const Home = () => {
   return (
@@ -44,6 +44,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/testimonials" element={<Testimonials />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:projectId" element={<ProjectDetail />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />

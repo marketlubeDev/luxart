@@ -1,10 +1,7 @@
 import React from "react";
 import ProjectCard from "../../../Components/ProjectCard";
-
-import img1 from "../../../assets/building1.jpg";
-import img2 from "../../../assets/building1.jpg";
-import img3 from "../../../assets/building3.jpg";
-import img4 from "../../../assets/building3.jpg";
+import { Link } from "react-router-dom";
+import projectData from "./ProjectData";
 
 const projects = () => {
   return (
@@ -25,22 +22,26 @@ const projects = () => {
       <div className="projects__row projects__row--top">
         <div className="projects__grid">
           <div className="projects__item projects__item--azure">
-            <ProjectCard
-              className="projects__card--azure"
-              image={img1}
-              location="Downtown metro"
-              area="15,000 sq.ft"
-              title="Azure Heights"
-            />
+            <Link to={`/projects/${projectData[0].id}`}>
+              <ProjectCard
+                className="projects__card--azure"
+                image={projectData[0].image}
+                location={projectData[0].location}
+                area={projectData[0].area}
+                title={projectData[0].title}
+              />
+            </Link>
           </div>
           <div className="projects__item projects__item--emerald">
-            <ProjectCard
-              className="projects__card--emerald"
-              image={img2}
-              location="Downtown metro"
-              area="15,000 sq.ft"
-              title="Emerald Heights"
-            />
+            <Link to={`/projects/${projectData[1].id}`}>
+              <ProjectCard
+                className="projects__card--emerald"
+                image={projectData[1].image}
+                location={projectData[1].location}
+                area={projectData[1].area}
+                title={projectData[1].title}
+              />
+            </Link>
           </div>
         </div>
       </div>
@@ -48,22 +49,26 @@ const projects = () => {
       <div className="projects__row projects__row--bottom">
         <div className="projects__grid">
           <div className="projects__item projects__item--crystal-left">
-            <ProjectCard
-              className="projects__card--crystal-left"
-              image={img3}
-              location="Downtown metro"
-              area="15,000 sq.ft"
-              title="Crystal Heights"
-            />
+            <Link to={`/projects/${projectData[2].id}`}>
+              <ProjectCard
+                className="projects__card--crystal-left"
+                image={projectData[2].image}
+                location={projectData[2].location}
+                area={projectData[2].area}
+                title={projectData[2].title}
+              />
+            </Link>
           </div>
           <div className="projects__item projects__item--crystal-right">
-            <ProjectCard
-              className="projects__card--crystal-right"
-              image={img4}
-              location="Downtown metro"
-              area="15,000 sq.ft"
-              title="Crystal Heights"
-            />
+            <Link to={`/projects/${projectData[3].id}`}>
+              <ProjectCard
+                className="projects__card--crystal-right"
+                image={projectData[3].image}
+                location={projectData[3].location}
+                area={projectData[3].area}
+                title={projectData[3].title}
+              />
+            </Link>
           </div>
         </div>
       </div>
