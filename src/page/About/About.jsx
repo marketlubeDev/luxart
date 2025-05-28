@@ -89,11 +89,13 @@ export default function About() {
         </div>
         <div className="aboutPage-container__Mission">
           <div className="aboutPage-container__Mission__top">
-            <h2>Our Mission</h2>
+            <h2>
+              Our <span>Mission</span>
+            </h2>
             <p>
-              Our mission is to deliver exceptional results, promote
-              sustainability, prioritize safety, and build long-lasting
-              relationships with our clients based on trust and transparency.
+              To design and build exceptional spaces that blend innovation,
+              functionality, and elegance , turning visions into{" "}
+              <span>lasting architectural realities</span>.
             </p>
           </div>
         </div>
@@ -102,27 +104,32 @@ export default function About() {
           <div className="aboutPage-container__VisionGoal__Container">
             <div className="aboutPage-container__VisionGoal__Container__Left">
               <div className="aboutPage-container__VisionGoal__Container__Left__ExpandingGoal">
-                <h2>Expanding Goal</h2>
+                <h2>
+                  Expanding <span>Goal</span>
+                </h2>
                 <p>
-                  As a premier construction company in Kerala, South India, we
-                  consistently deliver quality products and projects in a timely
-                  fashion without question. As a construction company, we are
-                  the builders of bridges, buildings, roads, ats, schools,
-                  homes, and many more. But mostly, we are the crafters of
-                  dreams. Our clients have always been an integral part of our
-                  success. With their vision and our skill, we have accomplished
-                  award-winning constructions that will stand for decades to
-                  come.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                  provident alias delectus, architecto earum quidem pariatur
+                  atque, adipisci iusto quam perspiciatis quibusdam amet et.
+                  Soluta rem doloribus modi. Accusantium hic modi nulla quia
+                  error debitis fuga iusto quibusdam eos ipsam aperiam, magnam
+                  totam excepturi quod libero, itaque maxime assumenda at
+                  provident tempora ipsum nihil dolorem perspiciatis sit. Dolor,
+                  temporibus. Est amet velit, accusantium nobis reprehenderit
+                  illo iure perspiciatis error odio quam, ducimus quos
+                  distinctio quas minus obcaecati laborum quisquam deleniti.
                 </p>
               </div>
 
               <div className="aboutPage-container__VisionGoal__Container__Left__CompanyVision">
-                <h2>Company Vision</h2>
+                <h2>
+                  Company <span>Vision</span>
+                </h2>
                 <p>
-                  Our vision is to be recognized as a leader in the industry,
-                  known for our commitment to excellence, innovation, and
-                  sustainable practices, and valued for our strong client
-                  relationships.
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                  vero accusantium delectus expedita. Cum vel explicabo, libero
+                  maiores tempora perferendis consectetur a, doloribus
+                  blanditiis hic nostrum quisquam, voluptates nemo! Repellendus?
                 </p>
               </div>
             </div>
@@ -136,19 +143,20 @@ export default function About() {
         </div>
 
         <div className="aboutPage-container__Story">
-          <h2>The Brand Story</h2>
+          <h2>
+            The <span>Brand</span> Story
+          </h2>
           <p>
-            Since 2012, we have successfully delivered over 100 projects
-            spanning 1.5 million sq. ft., redefining construction with a blend
-            of quality, innovation, and sustainability. From Talen Vista's
-            modern luxury and Ecomount Green City's eco-friendly living, to
-            renowned institutions like Hillsinai Knowledge Centre and Markaz Law
-            College, and iconic spaces such as Jami ul Futuh Mosque, Tigris
-            Valley Retreat, and Fezinn Hotel, every project reflects our passion
-            for excellence. Guided by a vision to lead the industry, a mission
-            to prioritize safety and transparency, and a goal to craft timeless,
-            community-driven developments, we are committed to building a better
-            tomorrow.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
+            facere sequi optio odio, ullam doloribus expedita rem, nam veritatis
+            ipsa quibusdam voluptatibus aliquam repudiandae alias in ex? Eos
+            consectetur recusandae aliquid maxime eligendi odit esse deleniti,
+            corporis dolor, error laborum laudantium incidunt quia voluptates
+            aperiam? Sint animi repellat, expedita id nobis laudantium laborum
+            nisi corporis maiores officiis voluptatem alias facilis labore quo
+            eum repudiandae eos ab soluta qui repellendus aperiam
+            necessitatibus! Cupiditate est magnam harum velit, corrupti quaerat
+            pariatur sint.
           </p>
         </div>
       </div>

@@ -117,23 +117,29 @@
         @include responsive.respond(smallPhone) {
           font-size: 2.5rem;
           text-align: center;
+          margin-top: -2rem;
         }
         @include responsive.respond(phone) {
           font-size: 3rem;
           text-align: center;
+          margin-top: -2rem;
         }
         @include responsive.respond(tablets) {
           font-size: 4rem;
           text-align: center;
+          margin-top: -2rem;
         }
         @include responsive.respond(bigTablets) {
           font-size: 4rem;
+          margin-top: -2rem;
         }
         @include responsive.respond(desktop) {
           font-size: 4rem;
+          margin-top: -2rem;
         }
         @include responsive.respond(bigDesktop) {
           font-size: 3.7rem;
+          margin-top: -2rem;
         }
       }
       p {
@@ -148,23 +154,29 @@
         @include responsive.respond(smallPhone) {
           font-size: 0.8rem;
           width: 100%;
+          margin-top: -2rem;
         }
         @include responsive.respond(phone) {
           font-size: 1rem;
           width: 100%;
+          margin-top: -2rem;
         }
         @include responsive.respond(tablets) {
           font-size: 1.05rem;
           width: 100%;
+          margin-top: -2rem;
         }
         @include responsive.respond(bigTablets) {
           font-size: 1.05rem;
+          margin-top: -2rem;
         }
         @include responsive.respond(desktop) {
           font-size: 1rem;
+          margin-top: -2rem;
         }
         @include responsive.respond(bigDesktop) {
           font-size: 1rem;
+          margin-top: -2rem;
         }
       }
     }
@@ -185,20 +197,24 @@
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-top: -2rem;
       }
       @include responsive.respond(phone) {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-top: -2rem;
       }
       @include responsive.respond(tablets) {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column;
+        margin-top: -2rem;
       }
       @include responsive.respond(bigTablets) {
+        margin-top: -2rem;
       }
 
       &__left {
@@ -345,17 +361,25 @@
 
           @include responsive.respond(smallPhone) {
             margin-left: 0;
-            padding: 0 1.5rem;
+            padding: 0 1rem;
           }
           @include responsive.respond(phone) {
             margin-left: 0;
-            padding: 0 1.5rem;
+            padding: 0 1rem;
           }
           @include responsive.respond(tablets) {
             margin-left: 0;
-            padding: 0 2rem;
+            padding: 0 1rem;
           }
           @include responsive.respond(bigTablets) {
+            margin-left: 0;
+            padding: 0 1rem;
+          }
+          @include responsive.respond(desktop) {
+            margin-left: 0;
+            padding: 0 2rem;
+          }
+          @include responsive.respond(bigDesktop) {
             margin-left: 0;
             padding: 0 2rem;
           }
@@ -378,23 +402,29 @@
             @include responsive.respond(smallPhone) {
               font-size: 1.8rem;
               text-align: center;
+              margin-left: -2rem;
             }
             @include responsive.respond(phone) {
               font-size: 2rem;
               text-align: center;
+              margin-left: -2rem;
             }
             @include responsive.respond(tablets) {
               font-size: 2.1875rem;
               text-align: center;
+              margin-left: -2rem;
             }
             @include responsive.respond(bigTablets) {
               font-size: 2.1875rem;
+              margin-left: -2rem;
             }
             @include responsive.respond(desktop) {
               font-size: 2.1875rem;
+              margin-left: -2rem;
             }
             @include responsive.respond(bigDesktop) {
               font-size: 2.1875rem;
+              margin-left: -2rem;
             }
           }
           p {
@@ -408,21 +438,33 @@
             opacity: 0.8;
             @include responsive.respond(smallPhone) {
               font-size: 0.8rem;
+              margin-left: -2rem;
+              margin-top: 1rem;
             }
             @include responsive.respond(phone) {
               font-size: 1rem;
+              margin-left: -2rem;
+              margin-top: 1rem;
             }
             @include responsive.respond(tablets) {
               font-size: 1.05rem;
+              margin-left: -2rem;
+              margin-top: 1rem;
             }
             @include responsive.respond(bigTablets) {
               font-size: 1.05rem;
+              margin-left: -2rem;
+              margin-top: 1rem;
             }
             @include responsive.respond(desktop) {
               font-size: 1rem;
+              margin-left: -2rem;
+              margin-top: 1rem;
             }
             @include responsive.respond(bigDesktop) {
               font-size: 1rem;
+              margin-left: -2rem;
+              margin-top: 1rem;
             }
           }
         }
@@ -432,87 +474,95 @@
         flex-direction: column;
         text-align: end;
         justify-content: end;
-        padding: 0 15rem;
+        padding: 3rem 2rem;
 
         @include responsive.respond(smallPhone) {
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 0 7rem;
+          padding: 3rem 10rem;
         }
         @include responsive.respond(phone) {
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 0 7rem;
+          padding: 3rem 10rem;
         }
         @include responsive.respond(tablets) {
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 0 10rem;
+          padding: 3rem 10rem;
         }
         @include responsive.respond(bigTablets) {
-          padding: 0 12rem;
+          padding: 3rem 10rem;
         }
         @include responsive.respond(desktop) {
-          padding: 0 15rem;
+          padding: 3rem 10rem;
         }
         @include responsive.respond(bigDesktop) {
-          padding: 0 15rem;
+          padding: 3rem 10rem;
         }
 
         img {
-          width: 394px;
-          height: 334px;
+          width: 300px;
+          height: 260px;
           object-fit: cover;
           object-position: top;
           margin-bottom: 1rem;
           @include responsive.respond(smallPhone) {
-            width: 200px;
-            height: 180px;
+            width: 180px;
+            height: 160px;
           }
           @include responsive.respond(phone) {
-            width: 250px;
-            height: 220px;
+            width: 220px;
+            height: 200px;
           }
           @include responsive.respond(tablets) {
-            width: 300px;
-            height: 260px;
+            width: 260px;
+            height: 220px;
           }
           @include responsive.respond(bigTablets) {
-            width: 300px;
-            height: 260px;
+            width: 260px;
+            height: 220px;
           }
           @include responsive.respond(desktop) {
-            width: 300px;
-            height: 260px;
+            width: 260px;
+            height: 220px;
           }
           @include responsive.respond(bigDesktop) {
-            width: 350px;
-            height: 300px;
+            width: 300px;
+            height: 260px;
           }
         }
         h2 {
           color: #fff;
           text-align: right;
           font-family: Inter;
-          font-size: 1.375rem;
+          font-size: 3.375rem;
           font-weight: 500;
-          letter-spacing: 0.4px;
           margin-bottom: 0.5rem;
 
           @include responsive.respond(smallPhone) {
-            font-size: 1.375rem;
+            font-size: 2.5rem;
             text-align: center;
           }
           @include responsive.respond(phone) {
-            font-size: 1.375rem;
+            font-size: 2.5rem;
             text-align: center;
           }
           @include responsive.respond(tablets) {
-            font-size: 1.375rem;
+            font-size: 2.75rem;
             text-align: center;
+          }
+          @include responsive.respond(bigTablets) {
+            font-size: 3rem;
+          }
+          @include responsive.respond(desktop) {
+            font-size: 3.375rem;
+          }
+          @include responsive.respond(bigDesktop) {
+            font-size: 3.375rem;
           }
         }
         p {
@@ -558,7 +608,7 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 8rem 20rem;
+    padding: 8rem 0rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
       url("https://res.cloudinary.com/dznxxalrb/image/upload/v1742621727/1613f948ad7962bc99bfea7e47c8b897_xfvh1s.jpg");
     background-size: cover;
@@ -574,13 +624,13 @@
       padding: 4rem;
     }
     @include responsive.respond(bigTablets) {
-      padding: 6rem 8rem;
+      padding: 6rem 0rem;
     }
     @include responsive.respond(desktop) {
-      padding: 6rem 8rem;
+      padding: 6rem 0rem;
     }
     @include responsive.respond(bigDesktop) {
-      padding: 6rem 8rem;
+      padding: 6rem 0rem;
     }
 
     &__top {
@@ -600,11 +650,16 @@
       gap: 1rem;
       h2 {
         color: #fff;
-        font-size: 1.25rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: -0.32px;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.2;
+        span {
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+        }
         @include responsive.respond(smallPhone) {
           font-size: 0.7rem;
         }
@@ -632,6 +687,13 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: -0.64px;
+        span {
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          color: transparent;
+        }
         @include responsive.respond(smallPhone) {
           font-size: 1rem;
         }
@@ -678,9 +740,8 @@
     &__Container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+
       align-items: center;
-      gap: 2rem;
 
       @include responsive.respond(smallPhone) {
         flex-direction: column;
@@ -721,7 +782,6 @@
           flex-direction: column;
           justify-content: start;
           align-items: start;
-          gap: 1rem;
 
           @include responsive.respond(smallPhone) {
             align-items: center;
@@ -734,12 +794,19 @@
           }
 
           h2 {
+            margin-bottom: 0.2rem;
             color: #fff;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-            letter-spacing: -0.64px;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+
+            span {
+              background: linear-gradient(90deg, #f4d300, #ab7e0d);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              color: transparent;
+            }
 
             @include responsive.respond(smallPhone) {
               font-size: 1.5rem;
@@ -763,12 +830,15 @@
 
             @include responsive.respond(smallPhone) {
               font-size: 0.813rem;
+              margin-top: -3rem;
             }
             @include responsive.respond(phone) {
               font-size: 0.813rem;
+              margin-top: -3rem;
             }
             @include responsive.respond(tablets) {
               font-size: 1.0625rem;
+              margin-top: -3rem;
             }
           }
         }
@@ -777,7 +847,6 @@
           flex-direction: column;
           justify-content: end;
           align-items: start;
-          gap: 1rem;
 
           @include responsive.respond(smallPhone) {
             align-items: center;
@@ -791,10 +860,16 @@
 
           h2 {
             color: #fff;
-            font-size: 32px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 1.2;
+            span {
+              background: linear-gradient(90deg, #f4d300, #ab7e0d);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              color: transparent;
+            }
 
             @include responsive.respond(smallPhone) {
               font-size: 1.5rem;
@@ -813,24 +888,28 @@
             font-weight: 500;
             line-height: 22px;
             opacity: 0.8;
+            margin-top: -10px;
 
             @include responsive.respond(smallPhone) {
               font-size: 0.813rem;
+              margin-top: -3rem;
             }
             @include responsive.respond(phone) {
               font-size: 0.813rem;
+              margin-top: -3rem;
             }
             @include responsive.respond(tablets) {
               font-size: 1.0625rem;
+              margin-top: -3rem;
             }
           }
         }
       }
       &__Right {
         img {
-          width: 452px;
+          width: 352px;
           height: 346px;
-          flex-shrink: 0;
+          margin-top: -10px;
 
           @include responsive.respond(smallPhone) {
             width: 100%;
@@ -840,11 +919,29 @@
             width: 100%;
             height: 100%;
           }
-
+          @include responsive.respond(tablets) {
+            width: 300px;
+            height: 280px;
+            margin-top: 50px;
+            margin-left: 20px;
+          }
           @include responsive.respond(bigTablets) {
-            // width: 80%;
-            // height: 100%;
-            height: 446px;
+            width: 352px;
+            height: 306px;
+            margin-top: 50px;
+            margin-left: 20px;
+          }
+          @include responsive.respond(desktop) {
+            width: 352px;
+            height: 306px;
+            margin-top: 50px;
+            margin-left: 20px;
+          }
+          @include responsive.respond(bigDesktop) {
+            width: 352px;
+            height: 306px;
+            margin-top: 50px;
+            margin-left: 20px;
           }
         }
       }
@@ -863,7 +960,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 1rem;
+
     padding-left: 40%;
     @include responsive.respond(smallPhone) {
       padding: 2rem;
@@ -880,11 +977,16 @@
 
     h2 {
       color: #fff;
-      font-size: 2.25rem;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      letter-spacing: -0.64px;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: 1.2;
+      span {
+        background: linear-gradient(90deg, #f4d300, #ab7e0d);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
       @include responsive.respond(smallPhone) {
         font-size: 1.5rem;
         text-align: center;
