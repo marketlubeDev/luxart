@@ -30,6 +30,15 @@ const floatingImages = [
 ];
 
 const DetailSection = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+916238285878"; // Replace with your WhatsApp number
+    const message = "Hello, I'm interested in your premium housing projects.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <section className="detail-section">
       {/* Floating background images */}
@@ -49,9 +58,9 @@ const DetailSection = () => {
         </h2>
         <p>
           From start to finish, we handle everything—so you can enjoy moving
-          into the home you’ve dreamed of
+          into the home you've dreamed of
         </p>
-        <button className="enquire-btn">
+        <button className="enquire-btn" onClick={handleWhatsAppClick}>
           <img src={phoneIcon} alt="Phone" className="phone-icon" />
           Enquire now
         </button>

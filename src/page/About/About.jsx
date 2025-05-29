@@ -1,8 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "../../layout/header";
-import Footer from "../../layout/footer";
 import Chairman from "../../assets/Chairman.jpg";
-import about1 from "../../assets/about1.jpg";
 
 export default function About() {
   useEffect(() => {
@@ -32,7 +29,7 @@ export default function About() {
             <h1>
               About <span>Us</span>
             </h1>
-            <p>
+            <p className="para1">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
               magnam nisi illum? Nam atque, velit voluptatum adipisci optio at
               placeat asperiores aliquam iusto in sapiente magni eaque, commodi
@@ -135,10 +132,7 @@ export default function About() {
               </div>
             </div>
             <div className="aboutPage-container__VisionGoal__Container__Right">
-              <img
-                src="https://res.cloudinary.com/dihhxzfq3/image/upload/v1742894978/eaf2c5d9c0e39fc3811f18dde164f2ad_1_vti1qe.jpg"
-                alt="vision"
-              />
+              <img src="../../src/assets/about3.jpg" alt="vision" />
             </div>
           </div>
         </div>

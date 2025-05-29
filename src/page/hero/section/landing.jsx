@@ -13,6 +13,15 @@ const landing = () => {
     setMousePos({ x, y });
   };
 
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "+916238285878"; // Replace with your WhatsApp number
+    const message = "Hello, I'm interested in your premium housing projects.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <section className="landing">
       <div className="landing__content">
@@ -30,7 +39,7 @@ const landing = () => {
         </div>
         <p className="landing__subtitle">at not so premium pricing</p>
         <div className="landing__buttons">
-          <button className="btn btn--primary">
+          <button className="btn btn--primary" onClick={handleWhatsAppClick}>
             <img src={phoneIcon} alt="Phone Icon" className="btn__icon" />
             Enquire Now
           </button>

@@ -100,7 +100,7 @@ function Testimonials() {
   };
 
   return (
-    <section className="testimonial-section">
+    <section id="testimonials" className="testimonial-section">
       <h2 className="testimonial-title">
         What our <span className="highlight">Client</span> Says
       </h2>

@@ -19,6 +19,11 @@
   @media (min-width: 1280px) {
     height: 20rem;
   }
+
+  @media (max-width: 600px) {
+    width: 90%;
+  }
+
   &__heading {
     text-align: center;
     font-size: 2rem;

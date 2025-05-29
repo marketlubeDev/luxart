@@ -1,9 +1,17 @@
 import React from "react";
 import ProjectCard from "../../../Components/ProjectCard";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import projectData from "./ProjectData";
 
 const projects = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isProjectsPage = location.pathname.replace(/\/$/, "") === "/projects";
+
+  const handleShowAll = () => {
+    navigate("/projects");
+  };
+
   return (
     <section className="projects">
       <div className="projects__header">
@@ -16,7 +24,11 @@ const projects = () => {
             space at a time
           </p>
         </div>
-        <button className="projects__button">Show all</button>
+        {!isProjectsPage && (
+          <button className="projects__button" onClick={handleShowAll}>
+            Show all
+          </button>
+        )}
       </div>
 
       <div className="projects__row projects__row--top">

@@ -39,21 +39,27 @@
 
       @include responsive.respond(smallPhone) {
         font-size: 2.8rem;
+        letter-spacing: 0.1rem;
       }
       @include responsive.respond(phone) {
         font-size: 3rem;
+        letter-spacing: 0.1rem;
       }
       @include responsive.respond(tablets) {
         font-size: 5rem;
+        letter-spacing: 0.1rem;
       }
       @include responsive.respond(bigTablets) {
         font-size: 5rem;
+        letter-spacing: 0.1rem;
       }
       @include responsive.respond(desktop) {
         font-size: 7rem;
+        letter-spacing: 0.1rem;
       }
       @include responsive.respond(bigDesktop) {
         font-size: 7rem;
+        letter-spacing: 0.1rem;
       }
     }
   }
@@ -116,23 +122,23 @@
           color: transparent;
         }
         @include responsive.respond(smallPhone) {
-          font-size: 2.5rem;
+          font-size: 4rem;
           text-align: center;
-          margin-top: -2rem;
+          margin-top: 1rem;
         }
         @include responsive.respond(phone) {
-          font-size: 3rem;
+          font-size: 4rem;
           text-align: center;
-          margin-top: -2rem;
+          margin-top: 1rem;
         }
         @include responsive.respond(tablets) {
           font-size: 4rem;
           text-align: center;
-          margin-top: -2rem;
+          margin-top: 1rem;
         }
         @include responsive.respond(bigTablets) {
           font-size: 4rem;
-          margin-top: -2rem;
+          margin-top: 1rem;
         }
         @include responsive.respond(desktop) {
           font-size: 4rem;
@@ -439,8 +445,9 @@
             opacity: 0.8;
             @include responsive.respond(smallPhone) {
               font-size: 0.8rem;
-              margin-left: -2rem;
+              margin-left: -1rem;
               margin-top: 1rem;
+              width: 100%;
             }
             @include responsive.respond(phone) {
               font-size: 1rem;
@@ -547,6 +554,8 @@
           @include responsive.respond(smallPhone) {
             font-size: 2.5rem;
             text-align: center;
+            margin-left: -2rem;
+            margin-top: -0.5rem;
           }
           @include responsive.respond(phone) {
             font-size: 2.5rem;
@@ -578,6 +587,8 @@
           @include responsive.respond(smallPhone) {
             font-size: 1.125rem;
             text-align: center;
+            margin-left: -2rem;
+            margin-top: -0.5rem;
           }
           @include responsive.respond(phone) {
             font-size: 1.125rem;
@@ -610,8 +621,8 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 8rem 0rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-      url("https://res.cloudinary.com/dznxxalrb/image/upload/v1742621727/1613f948ad7962bc99bfea7e47c8b897_xfvh1s.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url("../../src/assets/about2.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -668,7 +679,7 @@
           font-size: 0.7rem;
         }
         @include responsive.respond(tablets) {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
         @include responsive.respond(bigTablets) {
           font-size: 1.25rem;
@@ -811,6 +822,7 @@
 
             @include responsive.respond(smallPhone) {
               font-size: 1.5rem;
+              margin-top: 1rem;
             }
             @include responsive.respond(phone) {
               font-size: 1.5rem;
@@ -831,15 +843,17 @@
 
             @include responsive.respond(smallPhone) {
               font-size: 0.813rem;
-              margin-top: -3rem;
+              margin-top: 1rem;
+              width: 100%;
             }
             @include responsive.respond(phone) {
               font-size: 0.813rem;
               margin-top: -3rem;
+              margin-left: -1rem;
             }
             @include responsive.respond(tablets) {
               font-size: 1.0625rem;
-              margin-top: -3rem;
+              margin-top: 2rem;
             }
           }
         }
@@ -874,6 +888,7 @@
 
             @include responsive.respond(smallPhone) {
               font-size: 1.5rem;
+              // margin-top: 1rem;
             }
             @include responsive.respond(phone) {
               font-size: 1.5rem;
@@ -893,7 +908,7 @@
 
             @include responsive.respond(smallPhone) {
               font-size: 0.813rem;
-              margin-top: -3rem;
+              margin-top: 0.5rem;
             }
             @include responsive.respond(phone) {
               font-size: 0.813rem;
@@ -901,7 +916,7 @@
             }
             @include responsive.respond(tablets) {
               font-size: 1.0625rem;
-              margin-top: -3rem;
+              margin-top: 0.5rem;
             }
           }
         }
@@ -913,8 +928,8 @@
           margin-top: -10px;
 
           @include responsive.respond(smallPhone) {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 90%;
           }
           @include responsive.respond(phone) {
             width: 100%;
@@ -1025,10 +1040,12 @@
         font-size: 1rem;
       }
       @include responsive.respond(tablets) {
-        font-size: 1.05rem;
+        font-size: 1.0625rem;
+        margin-left: 1.5rem;
       }
       @include responsive.respond(bigTablets) {
-        font-size: 1.05rem;
+        font-size: 1.0625rem;
+        margin-left: 1.5rem;
       }
       @include responsive.respond(desktop) {
         font-size: 1rem;
@@ -1037,5 +1054,175 @@
         font-size: 1rem;
       }
     }
+  }
+}
+
+.para1 {
+  width: fit-content;
+  max-width: 100%;
+}
+
+// Tablet (max-width: 900px)
+@media (max-width: 900px) {
+  .aboutPage-container {
+    &__Banner h1 {
+      font-size: 5rem;
+    }
+    &__Content {
+      padding: 4rem;
+    }
+    &__Content__top h1 {
+      font-size: 3rem;
+    }
+    &__Content__bottom {
+      flex-direction: column;
+      gap: 2rem;
+    }
+    &__Content__bottom__left__top {
+      max-width: 90%;
+    }
+    &__Content__bottom__right {
+      padding: 2rem 0;
+      align-items: center;
+      text-align: center;
+    }
+    &__Content__bottom__right img {
+      width: 220px;
+      height: 180px;
+    }
+    &__Mission {
+      padding: 4rem 0;
+    }
+    &__Mission__top p {
+      font-size: 1.5rem;
+    }
+    &__VisionGoal {
+      padding: 4rem 2rem 0 2rem;
+    }
+    &__VisionGoal__Container {
+      flex-direction: column;
+    }
+    &__VisionGoal__Container__Left {
+      width: 100%;
+    }
+    &__VisionGoal__Container__Right img {
+      width: 260px;
+      height: 200px;
+    }
+    &__Story {
+      padding: 4rem 2rem;
+      padding-left: 0;
+    }
+    &__Story h2 {
+      font-size: 1.5rem;
+    }
+  }
+  .aboutPage-container__Content__bottom__left__bottom p {
+    font-size: 1rem;
+    margin-left: 0;
+    margin-top: 1rem;
+    width: 100%;
+  }
+}
+
+// Phone (max-width: 600px)
+@media (max-width: 600px) {
+  .aboutPage-container {
+    &__Banner h1 {
+      font-size: 2.8rem;
+    }
+    &__Content {
+      padding: 2rem;
+      gap: 2rem;
+    }
+    &__Content__top h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
+    &__Content__top p {
+      // font-size: 0.9rem;
+      width: 95%;
+    }
+    &__Content__bottom {
+      gap: 1.5rem;
+    }
+    &__Content__bottom__left__top__countup h2 {
+      font-size: 1.2rem;
+    }
+    &__Content__bottom__left__top__countup p {
+      font-size: 0.8rem;
+    }
+    &__Content__bottom__right img {
+      width: 140px;
+      height: 120px;
+    }
+    &__Mission {
+      padding: 2rem 0;
+    }
+    &__Mission__top h2 {
+      font-size: 1rem;
+    }
+    &__Mission__top p {
+      font-size: 1rem;
+    }
+    &__VisionGoal {
+      padding: 2rem 1rem 0 1rem;
+    }
+    &__VisionGoal__Container__Right img {
+      width: 90%;
+      height: 90%;
+      margin-top: 1rem;
+    }
+    &__Story {
+      padding: 2rem;
+    }
+    &__Story h2 {
+      font-size: 1.5rem;
+    }
+    &__Story p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+// Small phone (max-width: 400px)
+@media (max-width: 400px) {
+  .aboutPage-container {
+    &__Banner h1 {
+      font-size: 2rem;
+    }
+    &__Content {
+      padding: 1rem;
+    }
+    &__Content__top h1 {
+      font-size: 2.2rem;
+    }
+    &__Content__bottom__right img {
+      width: 200px;
+      height: 180px;
+      margin-right: 40px;
+    }
+    &__Mission__top p {
+      font-size: 0.8rem;
+      padding: 5px;
+      margin-top: -1rem;
+    }
+    &__Story h2 {
+      font-size: 1.5rem;
+    }
+    &__Story p {
+      font-size: 0.813rem;
+      margin-left: -1rem;
+      width: 120%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutPage-container__Content__bottom__left__bottom p {
+    font-size: 1.05rem;
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
   }
 }

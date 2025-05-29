@@ -1,20 +1,57 @@
 @use "../base/responsive" as responsive;
-.navbar {
-  top: 2%;
-  left: 5%;
-  width: 100vw; // Full viewport width
-  z-index: 999; // Ensure it's above all other content
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
 
+.navbar {
+  width: 90%;
+  margin: 2% auto;
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 100px;
+  padding: 1.5rem 2rem;
   background: radial-gradient(circle, #0a0a0a, #000000);
   box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 
-  &__logo img {
-    height: 55px;
-    object-fit: contain;
+  @include responsive.respond(bigDesktop) {
+    width: 85%;
+    padding: 1.5rem 3rem;
+  }
+
+  @include responsive.respond(desktop) {
+    width: 90%;
+    padding: 1.5rem 2.5rem;
+  }
+
+  &__logo {
+    img {
+      height: 55px;
+      object-fit: contain;
+      transition: height 0.3s ease;
+
+      @include responsive.respond(bigDesktop) {
+        height: 60px;
+      }
+
+      @include responsive.respond(desktop) {
+        height: 55px;
+      }
+
+      @include responsive.respond(tablets) {
+        height: 45px;
+      }
+
+      @include responsive.respond(phone) {
+        height: 40px;
+      }
+
+      @include responsive.respond(smallPhone) {
+        height: 35px;
+      }
+    }
   }
 
   &__links {
@@ -23,16 +60,87 @@
     gap: 50px;
     margin: 0;
     padding: 0;
+    transition: all 0.3s ease;
 
-    li a {
-      color: white;
+    @include responsive.respond(bigDesktop) {
+      gap: 60px;
+    }
+
+    @include responsive.respond(desktop) {
+      gap: 50px;
+    }
+
+    @include responsive.respond(tablets) {
+      gap: 30px;
+    }
+
+    li a,
+    li button.navbar__link-button {
+      position: relative;
       font-size: 16px;
-      text-decoration: none;
       font-weight: 400;
-      transition: color 0.3s ease;
+      opacity: 0.8;
+      text-decoration: none;
+      background-image: linear-gradient(
+        to right,
+        #d4af37,
+        #d4af37 50%,
+        #fff 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      padding: 0;
+
+      @include responsive.respond(bigDesktop) {
+        font-size: 17px;
+      }
+
+      @include responsive.respond(desktop) {
+        font-size: 16px;
+      }
+
+      @include responsive.respond(tablets) {
+        font-size: 15px;
+      }
+
+      @include responsive.respond(phone) {
+        font-size: 14px;
+      }
+
+      @include responsive.respond(smallPhone) {
+        font-size: 13px;
+      }
+
+      &.active {
+        background-position: 0%;
+        opacity: 1;
+        &::before {
+          width: 100%;
+        }
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background-color: #d4af37;
+        transition: width 0.3s ease-in-out;
+      }
 
       &:hover {
-        color: #d4af37;
+        background-position: 0%;
+        &::before {
+          width: 100%;
+        }
       }
     }
   }
@@ -49,14 +157,67 @@
       font-weight: 500;
       font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+
+      @include responsive.respond(bigDesktop) {
+        padding: 12px 24px;
+        font-size: 1.1rem;
+      }
+
+      @include responsive.respond(desktop) {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+
+      @include responsive.respond(tablets) {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+      }
+
+      @include responsive.respond(phone) {
+        padding: 7px 14px;
+        font-size: 0.85rem;
+      }
+
+      @include responsive.respond(smallPhone) {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+      }
 
       .phone-icon {
         margin-right: 8px;
+        width: 16px;
+        height: 16px;
+        transition: all 0.3s ease;
+
+        @include responsive.respond(bigDesktop) {
+          width: 23px;
+          height: 23px;
+          margin-right: 10px;
+        }
+
+        @include responsive.respond(desktop) {
+          width: 23px;
+          height: 23px;
+          margin-right: 8px;
+        }
+
+        @include responsive.respond(phone) {
+          width: 24px;
+          height: 24px;
+          margin-right: 6px;
+        }
+
+        @include responsive.respond(smallPhone) {
+          width: 12px;
+          height: 12px;
+          margin-right: 5px;
+        }
       }
 
       &:hover {
         background: linear-gradient(90deg, #e6c200, #9e710b);
+        transform: translateY(-1px);
       }
     }
   }
@@ -69,6 +230,11 @@
     width: 32px;
     height: 32px;
     z-index: 1001;
+    transition: all 0.3s ease;
+
+    @include responsive.respond(tablets) {
+      display: flex;
+    }
 
     span {
       height: 3px;
@@ -76,7 +242,7 @@
       background: #d4af37;
       margin: 5px 0;
       border-radius: 2px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
       display: block;
     }
 
@@ -91,19 +257,141 @@
     }
   }
 
-  @media (max-width: 900px) {
-    padding: 20px 20px;
+  @include responsive.respond(tablets) {
+    padding: 0.8rem 1rem;
+    width: 95%;
+    margin: 1% auto;
+
+    &__links {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 60px;
+      padding: 0 0.5rem;
+      gap: 0;
+      transition: all 0.3s ease;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+      &.open {
+        transform: translateY(0);
+      }
+
+      li {
+        flex: 1;
+        text-align: center;
+
+        a,
+        button.navbar__link-button {
+          font-size: 0.8rem;
+          padding: 0.3rem 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 2px;
+
+          &::before {
+            display: none;
+          }
+
+          &::after {
+            content: "";
+            width: 3px;
+            height: 3px;
+            background: #d4af37;
+            border-radius: 50%;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+
+          &.active::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    &__cta {
+      display: none;
+    }
+  }
+
+  @include responsive.respond(phone) {
+    padding: 0.6rem 1rem;
+    margin: 1% auto;
+
+    &__links {
+      height: 55px;
+
+      li a,
+      li button.navbar__link-button {
+        font-size: 0.75rem;
+        padding: 0.25rem 0;
+      }
+    }
+
+    .enquire-button {
+      .phone-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  @include responsive.respond(smallPhone) {
+    padding: 0.5rem 0.8rem;
+    margin: 0.5% auto;
+
+    &__hamburger {
+      width: 26px;
+      height: 26px;
+
+      span {
+        height: 2px;
+        margin: 3px 0;
+      }
+    }
+
+    &__links {
+      height: 50px;
+
+      li a,
+      li button.navbar__link-button {
+        font-size: 0.7rem;
+        padding: 0.2rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px;
+    background: black;
+    width: 95%;
+    margin: 1% auto;
+
+    &__logo img {
+      height: 40px;
+    }
 
     &__links {
       position: absolute;
       top: 70px;
       right: 0;
-      background: #111;
+      background: black;
       flex-direction: column;
       align-items: flex-end;
       width: 200px;
-      padding: 1rem 2rem;
-      gap: 1.5rem;
+      padding: 1rem 1.5rem;
+      gap: 1rem;
       border-radius: 0 0 0 12px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
       display: none;
@@ -111,6 +399,35 @@
 
       &.open {
         display: flex;
+      }
+
+      li {
+        text-align: right;
+        width: 100%;
+
+        &:last-child {
+          margin-left: auto;
+          text-align: right;
+        }
+
+        a,
+        button.navbar__link-button {
+          font-size: 0.9rem;
+          padding: 0.5rem 0;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          gap: 0.5rem;
+          width: 100%;
+
+          &::before {
+            display: none;
+          }
+
+          &::after {
+            display: none;
+          }
+        }
       }
     }
 
@@ -120,18 +437,86 @@
 
     &__hamburger {
       display: flex;
+      background: black;
+      padding: 5px;
+      border-radius: 4px;
+      width: 30px;
+      height: 30px;
     }
   }
+}
 
-  @media (max-width: 571px) {
-    padding: 12px 8px;
+@media (max-width: 571px) {
+  .navbar {
+    padding: 10px;
+    width: 98%;
+    margin: 0.5% auto;
+
     &__logo img {
-      height: 40px;
+      height: 35px;
     }
+
     &__links {
       width: 100vw;
       right: 0;
-      padding: 1rem 1rem;
+      padding: 1rem;
+      border-radius: 0;
+      top: 60px;
+
+      li {
+        a,
+        button.navbar__link-button {
+          font-size: 0.85rem;
+          padding: 0.4rem 0;
+        }
+      }
+    }
+
+    &__hamburger {
+      width: 28px;
+      height: 28px;
+      padding: 4px;
+
+      span {
+        height: 2px;
+        margin: 4px 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .navbar {
+    padding: 8px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+
+    &__logo img {
+      height: 30px;
+    }
+
+    &__links {
+      top: 55px;
+
+      li {
+        a,
+        button.navbar__link-button {
+          font-size: 0.8rem;
+          padding: 0.3rem 0;
+        }
+      }
+    }
+
+    &__hamburger {
+      width: 26px;
+      height: 26px;
+      padding: 3px;
+
+      span {
+        height: 2px;
+        margin: 3px 0;
+      }
     }
   }
 }

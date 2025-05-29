@@ -30,13 +30,20 @@ const videos = [
 const VideoGallery = () => {
   const [hoveredVideo, setHoveredVideo] = useState(null);
   const [playingVideo, setPlayingVideo] = useState(null);
+  const swiperRef = useRef(null);
 
   const handleVideoHover = (videoId) => {
     setHoveredVideo(videoId);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.autoplay.stop();
+    }
   };
 
   const handleVideoLeave = () => {
     setHoveredVideo(null);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.autoplay.start();
+    }
   };
 
   const handlePlayClick = (videoId) => {
@@ -50,6 +57,7 @@ const VideoGallery = () => {
       </h2>
 
       <Swiper
+        ref={swiperRef}
         modules={[Autoplay, Navigation, Pagination]}
         spaceBetween={20}
         slidesPerView={1}
