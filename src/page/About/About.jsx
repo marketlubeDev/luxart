@@ -132,7 +132,10 @@ export default function About() {
               </div>
             </div>
             <div className="aboutPage-container__VisionGoal__Container__Right">
-              <img src="../../src/assets/about3.jpg" alt="vision" />
+              <img
+                src="https://res.cloudinary.com/dzuqczvb7/image/upload/v1748521313/WhatsApp_Image_2025-05-29_at_17.48.39_2_xqlzxd.jpg"
+                alt="vision"
+              />
             </div>
           </div>
         </div>
