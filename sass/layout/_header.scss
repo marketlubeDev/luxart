@@ -399,6 +399,7 @@
 
       &.open {
         display: flex;
+        margin-right: 10rem;
       }
 
       li {
@@ -457,7 +458,8 @@
     }
 
     &__links {
-      width: 100vw;
+      width: 30vw;
+      height: 20vh;
       right: 0;
       padding: 1rem;
       border-radius: 0;
