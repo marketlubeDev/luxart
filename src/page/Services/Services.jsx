@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from "react";
-import image1 from "../../../assets/image1.png";
-import image2 from "../../../assets/image2.png";
-import image3 from "../../../assets/image3.png";
-import image4 from "../../../assets/image4.png";
-import image5 from "../../../assets/image5.png";
+import React from "react";
+import image1 from "../../assets/image1.png";
+import image2 from "../../assets/image2.png";
+import image3 from "../../assets/image3.png";
+import image4 from "../../assets/image4.png";
+import image5 from "../../assets/image5.png";
 
 const servicesData = [
   {
@@ -58,43 +58,25 @@ const servicesData = [
   },
 ];
 
-const services = () => {
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scrollContainer = scrollRef.current;
-    let scrollAmount = 0;
-
-    const scrollInterval = setInterval(() => {
-      if (scrollContainer) {
-        scrollAmount += 1;
-        scrollContainer.scrollLeft = scrollAmount;
-
-        // Reset scroll when reached end
-        if (
-          scrollAmount >=
-          scrollContainer.scrollWidth - scrollContainer.clientWidth
-        ) {
-          scrollAmount = 0;
-        }
-      }
-    }, 30); // controls speed
-
-    return () => clearInterval(scrollInterval);
-  }, []);
-
+const Services = () => {
   return (
-    <div id="services" className="services__wrapper" ref={scrollRef}>
-      <div className="services">
+    <div className="services-page">
+      <div className="services-page__header">
+        <h1>Our Services</h1>
+        <p>
+          Discover our comprehensive range of architectural and design services
+        </p>
+      </div>
+      <div className="services-page__grid">
         {servicesData.map((service, index) => (
-          <div
-            className="services__card"
-            key={index}
-            style={{ backgroundImage: `url(${service.image})` }}
-          >
-            <div className="services__content">
-              <h3 className="services__title">{service.title}</h3>
-              <p className="services__desc">{service.description}</p>
+          <div className="services-page__card" key={index}>
+            <div
+              className="services-page__image"
+              style={{ backgroundImage: `url(${service.image})` }}
+            />
+            <div className="services-page__content">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
             </div>
           </div>
         ))}
@@ -103,4 +85,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;

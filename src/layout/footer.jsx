@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import phone from "../assets/Phone.svg";
 import logo from "../assets/luxartlogo.svg";
 import phoneIcon from "../assets/footer2.svg";
@@ -6,6 +7,23 @@ import mailIcon from "../assets/footer3.svg";
 import mapIcon from "../assets/footer1.svg";
 
 const footer = () => {
+  const scrollToServices = (e) => {
+    e.preventDefault();
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+  const handleEnquireClick = () => {
+    const phoneNumber = "+916238285878"; // Replace with your actual WhatsApp number
+    const message = "Hello, I would like to enquire about your services."; // Customize your message
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <footer className="footer">
       <div className="footer__content">
@@ -36,7 +54,7 @@ const footer = () => {
         {/* Logo and CTA */}
         <div className="footer__center">
           <img src={logo} alt="Luxart Logo" className="footer__logo" />
-          <button className="enquire-button">
+          <button className="enquire-button" onClick={handleEnquireClick}>
             <img src={phone} alt="Phone" className="phone-icon" />
             Enquire now
           </button>
@@ -45,13 +63,13 @@ const footer = () => {
         <div className="footer__section">
           <ul className="footer__social">
             <li>
-              <a href="#">Facebook</a>
+              <a href="https://www.facebook.com">Facebook</a>
             </li>
             <li>
-              <a href="#">Instagram</a>
+              <a href="https://www.instagram.com">Instagram</a>
             </li>
             <li>
-              <a href="#">Twitter</a>
+              <a href="https://www.twitter.com">Twitter</a>
             </li>
           </ul>
         </div>
@@ -60,16 +78,15 @@ const footer = () => {
           <h4 className="links__heading">Quick Links</h4>
           <ul className="footer__links">
             <li>
-              <a href="#">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="#">Our platform</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#">Custom Solution</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
+              <a href="#services" onClick={scrollToServices}>
+                Services
+              </a>
             </li>
           </ul>
         </div>
