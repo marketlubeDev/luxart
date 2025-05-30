@@ -399,7 +399,7 @@
 
       &.open {
         display: flex;
-        margin-right: 10rem;
+        // margin-right: 10rem;
       }
 
       li {
@@ -413,11 +413,11 @@
 
         a,
         button.navbar__link-button {
-          font-size: 0.9rem;
+          // font-size: rem;
           padding: 0.5rem 0;
           display: flex;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: center;
           gap: 0.5rem;
           width: 100%;
 
@@ -458,8 +458,8 @@
     }
 
     &__links {
-      width: 30vw;
-      height: 20vh;
+      width: 100vw;
+      height: 100vh;
       right: 0;
       padding: 1rem;
       border-radius: 0;
@@ -504,8 +504,9 @@
       li {
         a,
         button.navbar__link-button {
-          font-size: 0.8rem;
+          font-size: 1.5rem;
           padding: 0.3rem 0;
+          margin-top: 2rem;
         }
       }
     }
