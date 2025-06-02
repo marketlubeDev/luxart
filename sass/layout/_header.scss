@@ -244,6 +244,7 @@
       border-radius: 2px;
       transition: all 0.3s ease;
       display: block;
+      box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
     }
 
     &.open span:nth-child(1) {
@@ -443,6 +444,24 @@
       border-radius: 4px;
       width: 30px;
       height: 30px;
+
+      span {
+        height: 3px;
+        width: 100%;
+        background: #d4af37;
+        margin: 5px 0;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        display: block;
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+      }
+
+      &.open {
+        span {
+          background: #d4af37;
+          box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        }
+      }
     }
   }
 }
@@ -468,8 +487,8 @@
       li {
         a,
         button.navbar__link-button {
-          font-size: 0.85rem;
-          padding: 0.4rem 0;
+          font-size: 2rem;
+          padding: 1.5rem 0;
         }
       }
     }
