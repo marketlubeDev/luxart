@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "../sass/main.scss";
 import Header from "./layout/header";
 import "./App.css";
@@ -14,13 +14,24 @@ import DetailSection from "./page/hero/section/DetailSection";
 import InnovatingSpaces from "./page/hero/section/InnovatingSpaces";
 import Footer from "./layout/footer";
 import Quote from "./page/hero/section/Quote";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import About from "./page/About/About";
 import ProjectDetail from "./page/hero/section/ProjectDetail";
 import ServicesPage from "./page/Services/Services";
 
 // Home component containing all the main landing page sections
 const Home = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state && location.state.scrollTo === "testimonials") {
+      const testimonialsSection = document.getElementById("testimonials");
+      if (testimonialsSection) {
+        testimonialsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
   return (
     <>
       <Landing />

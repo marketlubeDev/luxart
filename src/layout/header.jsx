@@ -22,23 +22,7 @@ const header = () => {
   };
 
   const scrollToTestimonials = () => {
-    if (location.pathname !== "/") {
-      // If not on home page, navigate to home first
-      navigate("/");
-      // Wait for navigation to complete before scrolling
-      setTimeout(() => {
-        const testimonialsSection = document.getElementById("testimonials");
-        if (testimonialsSection) {
-          testimonialsSection.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100);
-    } else {
-      // If already on home page, just scroll
-      const testimonialsSection = document.getElementById("testimonials");
-      if (testimonialsSection) {
-        testimonialsSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
+    navigate("/", { state: { scrollTo: "testimonials" } });
     setMenuOpen(false); // Close mobile menu after clicking
   };
 

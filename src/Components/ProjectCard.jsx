@@ -30,48 +30,44 @@ const ProjectCard = ({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={image} alt={title} className="projects__image" />
-
-      {/* Hover effect */}
-      {hovered && (
-        <div
-          className="projects__hover-overlay"
-          style={{ left: position.x, top: position.y }}
-        >
-          <Link
-            to={`/projects/${projectId}`}
-            className="project-card__view-circle"
+      <div
+        className="projects__image-container"
+        style={{ position: "relative" }}
+      >
+        <img src={image} alt={title} className="projects__image" />
+        {hovered && (
+          <div
+            className="projects__hover-overlay"
+            style={{ left: position.x, top: position.y }}
           >
             <span>View</span>
-          </Link>
-        </div>
-      )}
-
-      {/* Title below the image */}
+          </div>
+        )}
+        {hovered && (
+          <div className="projects__details">
+            <div className="projects__info">
+              <div className="projects__info-item">
+                <img
+                  src={locationIcon}
+                  alt="Location"
+                  className="projects__icon"
+                />
+                <span>{location}</span>
+              </div>
+              <div className="projects__info-item">
+                <img src={areaIcon} alt="Area" className="projects__icon" />
+                <span>{area}</span>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       {title && (
         <div className="projects__name">
           {title}
           {hovered && (
             <span className="projects__completed">● Completed 2024</span>
           )}
-        </div>
-      )}
-      {hovered && (
-        <div className="projects__details">
-          <div className="projects__info">
-            <div className="projects__info-item">
-              <img
-                src={locationIcon}
-                alt="Location"
-                className="projects__icon"
-              />
-              <span>{location}</span>
-            </div>
-            <div className="projects__info-item">
-              <img src={areaIcon} alt="Area" className="projects__icon" />
-              <span>{area}</span>
-            </div>
-          </div>
         </div>
       )}
     </div>

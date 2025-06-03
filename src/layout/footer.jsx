@@ -78,7 +78,14 @@ const footer = () => {
           <h4 className="links__heading">Quick Links</h4>
           <ul className="footer__links">
             <li>
-              <Link to="/">Home</Link>
+              <Link
+                to="/"
+                onClick={() => {
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              >
+                Home
+              </Link>
             </li>
             <li>
               <Link to="/about">About Us</Link>
@@ -94,7 +101,7 @@ const footer = () => {
       <div className="footer__bottom">
         <p>
           © 2025 Luxart All rights reserved | Powered by{" "}
-          <a href="#">Marketlube</a>
+          <a href="https://marketlube.in">Marketlube</a>
         </p>
       </div>
     </footer>

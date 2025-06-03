@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import phoneIcon from "../../../assets/Phone.svg";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const landing = () => {
   const [mousePos, setMousePos] = useState({ x: 50, y: 50 });
@@ -11,6 +11,10 @@ const landing = () => {
     const x = ((e.clientX - bounds.left) / bounds.width) * 100;
     const y = ((e.clientY - bounds.top) / bounds.height) * 100;
     setMousePos({ x, y });
+  };
+
+  const handleShowAll = () => {
+    navigate("/projects");
   };
 
   const handleWhatsAppClick = () => {
@@ -43,12 +47,9 @@ const landing = () => {
             <img src={phoneIcon} alt="Phone Icon" className="btn__icon" />
             Enquire Now
           </button>
-          <button
-            className="btn btn--secondary"
-            onClick={() => navigate("/projects")}
-          >
-            Explore Projects
-          </button>
+          <Link to="/projects">
+            <button className="btn btn--secondary">Explore Projects</button>
+          </Link>
         </div>
       </div>
     </section>

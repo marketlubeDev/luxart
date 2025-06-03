@@ -81,7 +81,19 @@
     border-radius: 12px; // ✅ Added border radius
 
     &:hover {
-      cursor: none; // ✅ hide cursor on hover
+      cursor: none;
+
+      .projects__hover-overlay {
+        opacity: 1;
+      }
+
+      .projects__details {
+        transform: translateY(0);
+      }
+    }
+
+    .projects__image-container {
+      position: relative;
     }
 
     .projects__image {
@@ -106,73 +118,76 @@
       align-items: center;
       justify-content: center;
       pointer-events: none;
-      transition: transform 0.6s ease;
-      z-index: -1;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+      z-index: 2;
     }
 
     .projects__details {
       position: absolute;
-      bottom: 60px; // ⬆ move 20px above the bottom of the image
       left: 0;
       right: 0;
-
-      padding: 0.6rem 1rem;
-      background-color: black;
+      bottom: 0;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      background: black;
       color: #fff;
-      transform: translateY(0);
-      transition: bottom 0.1s ease, opacity 0.6s ease;
-
-      z-index: -1;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      z-index: 2;
+      width: 100%;
+      // border-radius: 0 0 12px 12px;
     }
 
     &:hover .projects__details {
-      transform: translateY(0%);
+      transform: translateY(0);
     }
 
-    .projects__info-item span,
-    .projects__info-item img {
-      opacity: 0.6; // or whatever level you prefer (e.g., 0.5, 0.7)
-    }
     .projects__info {
       display: flex;
-      flex-direction: row; // Make items appear in a single line
-      justify-content: space-between; // Push items to left and right
-      align-items: center;
-      gap: 1rem; // Optional: controls space between location and area
+      flex-direction: row;
+      gap: 0.5rem;
+      // margin-top: -1rem;
 
       .projects__info-item {
         display: flex;
         align-items: center;
-        gap: 0;
+        gap: 0.5rem;
         font-size: 0.9rem;
 
         .projects__icon {
           width: 1rem;
           height: 1rem;
-          margin-right: 0.5rem;
           object-fit: contain;
+        }
+
+        span {
+          color: #fff;
+          opacity: 0.8;
         }
       }
     }
 
     .projects__name {
-      padding: 0.75rem 1rem;
-      font-weight: 500;
-      font-size: 1rem;
-      margin-bottom: 0.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 0.75rem 0;
+      font-weight: 500;
+      font-size: 1rem;
+      margin-top: -0.5rem;
       gap: 0.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-bottom: 1rem;
 
       .projects__completed {
-        background: linear-gradient(90deg, #f4d300, #ab7e0d);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-        color: transparent;
+        color: #f4d300;
         font-size: 0.85rem;
         font-weight: 400;
+        margin-left: 3rem;
       }
     }
 
