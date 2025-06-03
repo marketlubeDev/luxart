@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import phone from "../assets/Phone.svg";
 import logo from "../assets/luxartlogo.svg";
 import phoneIcon from "../assets/footer2.svg";
@@ -7,6 +7,9 @@ import mailIcon from "../assets/footer3.svg";
 import mapIcon from "../assets/footer1.svg";
 
 const footer = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
   const scrollToServices = (e) => {
     e.preventDefault();
     const servicesSection = document.getElementById("services");
@@ -23,6 +26,29 @@ const footer = () => {
     )}`;
     window.open(whatsappUrl, "_blank");
   };
+
+  const handleFooterServicesClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === "/") {
+      // Already on home, just scroll
+      const servicesSection = document.getElementById("services");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to home and scroll after navigation
+      navigate("/", { state: { scrollTo: "services" } });
+    }
+  };
+
+  useEffect(() => {
+    if (location.state && location.state.scrollTo === "services") {
+      const servicesSection = document.getElementById("services");
+      if (servicesSection) {
+        servicesSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
 
   return (
     <footer className="footer">
@@ -91,7 +117,7 @@ const footer = () => {
               <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="#services" onClick={scrollToServices}>
+              <a href="#services" onClick={handleFooterServicesClick}>
                 Services
               </a>
             </li>
