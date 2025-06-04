@@ -19,7 +19,7 @@ const footer = () => {
   };
 
   const handleEnquireClick = () => {
-    const phoneNumber = "+916238285878"; // Replace with your actual WhatsApp number
+    const phoneNumber = "+918075521186"; // Replace with your actual WhatsApp number
     const message = "Hello, I would like to enquire about your services."; // Customize your message
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message

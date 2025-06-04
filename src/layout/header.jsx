@@ -13,7 +13,7 @@ const header = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+916238285878"; // Your WhatsApp number
+    const phoneNumber = "+918075521186"; // Your WhatsApp number
     const message = "Hello, I'm interested in your premium housing projects.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
