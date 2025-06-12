@@ -1,14 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectCard from "../../../Components/ProjectCard";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import projectData from "./ProjectData";
 
-const projects = () => {
+const Projects = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isProjectsPage = location.pathname.replace(/\/$/, "") === "/projects";
 
   const handleShowAll = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
     navigate("/projects");
   };
 
@@ -99,4 +100,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

@@ -67,8 +67,6 @@ const vector = () => {
             </div>
           ))}
         </div>
-
-        {/* Seamless Line 2 (reverse scroll) */}
         <div className="vector__slider vector__slider--line2">
           {[...repeatedLogos, ...repeatedLogos].map((logo, index) => (
             <div className="vector__logo-box" key={`line2-${index}`}>
@@ -80,6 +78,19 @@ const vector = () => {
             </div>
           ))}
         </div>
+
+        {/* Seamless Line 2 (reverse scroll) */}
+        {/* <div className="vector__slider vector__slider--line2">
+          {[...repeatedLogos, ...repeatedLogos].map((logo, index) => (
+            <div className="vector__logo-box" key={`line2-${index}`}>
+              <img
+                src={logo}
+                alt={`Logo ${index + 1}`}
+                className="vector__logo vector__logo--grayscale"
+              />
+            </div>
+          ))}
+        </div> */}
       </div>
     </section>
   );

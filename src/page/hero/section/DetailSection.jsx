@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import phoneIcon from "../../../assets/Phone.svg";
 
 import img1 from "../../../assets/cheek1.jpg";
@@ -25,6 +25,7 @@ const floatingImages = [
   img8,
   img9,
   img10,
+
   // img11,
   // img12,
 ];
@@ -38,6 +39,9 @@ const DetailSection = () => {
     )}`;
     window.open(whatsappUrl, "_blank");
   };
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   return (
     <section className="detail-section">

@@ -26,7 +26,7 @@
 
   &__content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: wrap;
     gap: 2rem;
     max-width: 1200px;
@@ -92,7 +92,7 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    margin-top: -15rem; // ⬅️ Moves the section upward. Adjust as needed.
+    margin-top: -10rem; // ⬅️ Moves the section upward. Adjust as needed.
     margin-left: 0;
 
     .footer__logo {
@@ -151,7 +151,7 @@
       border-top: 1px solid #222;
       text-align: center;
       padding-top: 1rem;
-      margin-top: 2rem;
+      // margin-top: 2rem;
       font-size: 0.8rem; // changed from 0.85rem to match 16px
       opacity: 0.6;
 

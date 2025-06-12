@@ -78,15 +78,6 @@
   pointer-events: none;
 }
 
-// Position and delay per image
-// @for $i from 1 through 8 {
-//   .floating-image-#{$i} {
-//     left: #{random(90)}vw;
-//     top: #{random(100) + 100}px;
-//     animation-delay: #{random(15)}s;
-//   }
-// }
-
 .pos-1 {
   left: 5vw;
   top: 100px;
@@ -137,46 +128,6 @@
   top: 110px;
   animation-delay: 0.5s;
 }
-// .pos-11 {
-//   left: 30vw;
-//   top: 170px;
-//   animation-delay: 2.2s;
-// }
-// .pos-12 {
-//   left: 40vw;
-//   top: 100px;
-//   animation-delay: 1.2s;
-// }
-// .pos-13 {
-//   left: 50vw;
-//   top: 190px;
-//   animation-delay: 3.2s;
-// }
-// .pos-14 {
-//   left: 60vw;
-//   top: 140px;
-//   animation-delay: 1.8s;
-// }
-// .pos-15 {
-//   left: 70vw;
-//   top: 210px;
-//   animation-delay: 4.2s;
-// }
-// .pos-16 {
-//   left: 80vw;
-//   top: 150px;
-//   animation-delay: 2.8s;
-// }
-// .pos-17 {
-//   left: 85vw;
-//   top: 170px;
-//   animation-delay: 5.5s;
-// }
-// .pos-18 {
-//   left: 90vw;
-//   top: 120px;
-//   animation-delay: 3.9s;
-// }
 
 // Floating animation
 @keyframes floatUp {
