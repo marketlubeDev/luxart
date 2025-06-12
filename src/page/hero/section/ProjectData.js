@@ -2,6 +2,7 @@ import img1 from "../../../assets/building1.jpg";
 import img2 from "../../../assets/pattambi.jpg";
 import img3 from "../../../assets/kondotty.jpg";
 import img4 from "../../../assets/kalamassery.jpg";
+import kalamassery from "../../../assets/kalamassery.pdf";
 
 const projectData = [
   {
@@ -10,6 +11,7 @@ const projectData = [
     location: "Cheekkilode, Kozhikode",
     area: "3060 sq.ft",
     image: img1,
+    pdfLink: "/pdfs/cheekkilode.pdf",
     summary:
       "A contemporary residential complex in the heart of Cheekkilode, offering modern amenities and spacious living areas. Perfect for families seeking a comfortable lifestyle in a well-connected neighborhood.",
     description: `Located in the serene neighborhood of Cheekkilode, this residential complex offers a perfect blend of modern living and traditional charm. The property features spacious apartments with well-planned layouts, ensuring maximum comfort and functionality.
@@ -24,6 +26,7 @@ Residents can enjoy the convenience of nearby schools, hospitals, and shopping c
     location: "Pattambi, Malappuram",
     area: "2500 sq.ft",
     image: img2,
+    pdfLink: null,
     summary:
       "A spacious commercial property in Pattambi's prime location, ideal for businesses and retail establishments. Strategic location with excellent connectivity and modern infrastructure.",
     description: `This commercial property in Pattambi offers an excellent opportunity for businesses looking to establish their presence in this growing area. The property features a modern design with flexible spaces that can be customized according to business needs.
@@ -38,6 +41,7 @@ The property is well-connected to major roads and public transportation, making 
     location: "Kondotty, Malappuram",
     area: "2500  sq.ft",
     image: img3,
+    pdfLink: null,
     summary:
       "A prime commercial space in Kondotty's business district, offering modern facilities and excellent connectivity. Perfect for retail, offices, or mixed-use development.",
     description: `Situated in Kondotty's bustling commercial area, this property offers an ideal location for businesses looking to expand their operations. The building features contemporary architecture with practical design elements that cater to various business needs.
@@ -47,11 +51,12 @@ The property includes modern amenities such as dedicated parking, security syste
 The location provides excellent connectivity to nearby towns and cities, making it a strategic choice for businesses targeting the wider Malappuram region. The area is well-developed with essential infrastructure and is surrounded by residential neighborhoods, ensuring a steady flow of potential customers.`,
   },
   {
-    id: "residencekalamassery",
+    id: "kalamassery",
     title: "Residence at Kalamassery",
     location: "Kalamassery, Ernakulam",
     area: "4500 sq.ft",
     image: img4,
+    pdfLink: kalamassery,
     summary:
       "A premium residential property in Kalamassery, offering modern living spaces with excellent connectivity to Kochi city. Perfect for families seeking a balanced urban lifestyle.",
     description: `This residential property in Kalamassery offers a perfect blend of comfort and convenience, situated in one of Ernakulam's most sought-after locations. The property features well-designed living spaces with modern amenities and high-quality finishes.
@@ -66,6 +71,7 @@ The location provides excellent connectivity to schools, hospitals, shopping cen
     location: "Kalamassery, Ernakulam",
     area: "4500 sq.ft",
     image: img4,
+    pdfLink: null,
     summary:
       "A premium residential property in Kalamassery, offering modern living spaces with excellent connectivity to Kochi city. Perfect for families seeking a balanced urban lifestyle.",
     description: `This residential property in Kalamassery offers a perfect blend of comfort and convenience, situated in one of Ernakulam's most sought-after locations. The property features well-designed living spaces with modern amenities and high-quality finishes.

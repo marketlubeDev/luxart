@@ -75,6 +75,22 @@
       }
     }
   }
+
+  &__download-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    background: linear-gradient(277deg, #f4d300 28.54%, #ab7e0d 83.04%);
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-top: 2rem;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(277deg, #f4d300 28.54%, #ab7e0d 83.04%);
+    }
+  }
 }
 
 // Responsive styles

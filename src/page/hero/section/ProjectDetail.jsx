@@ -1,13 +1,17 @@
 // src/pages/ProjectDetail.jsx
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import projectData from "./ProjectData";
 import areaIcon from "../../../assets/area.svg";
 import locationIcon from "../../../assets/footer1.svg";
+import { FaDownload } from "react-icons/fa";
 
 const ProjectDetail = () => {
   const { projectId } = useParams();
   const project = projectData.find((p) => p.id === projectId);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -37,6 +41,18 @@ const ProjectDetail = () => {
         </div>
 
         <p className="project-detail__description">{project.description}</p>
+
+        {project.id === "kalamassery" && (
+          <a
+            href={project.pdfLink}
+            className="project-detail__download-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaDownload className="download-icon" />
+            &nbsp;Download
+          </a>
+        )}
       </div>
     </section>
   );

@@ -75,7 +75,7 @@
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 5rem 10rem;
+    padding: 5rem 0rem;
     gap: 4rem;
 
     @include responsive.respond(smallPhone) {
@@ -93,10 +93,10 @@
       padding: 4rem 6rem;
     }
     @include responsive.respond(desktop) {
-      padding: 5rem 8rem;
+      padding: 5rem 5%;
     }
     @include responsive.respond(bigDesktop) {
-      padding: 5rem 8.5rem;
+      padding: 5rem 0rem;
     }
 
     &__top {
@@ -922,6 +922,7 @@
         }
       }
       &__Right {
+        width: 40%;
         img {
           width: 352px;
           height: 346px;
@@ -1079,7 +1080,7 @@
       gap: 2rem;
     }
     &__Content__bottom__left__top {
-      max-width: 90%;
+      // max-width: 90%;
     }
     &__Content__bottom__right {
       padding: 2rem 0;
