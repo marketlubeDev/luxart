@@ -1,16 +1,16 @@
 import React from "react";
 import phoneIcon from "../../../assets/Phone.svg";
 
-import img1 from "../../../assets/up1.png";
-import img2 from "../../../assets/up2.png";
-import img3 from "../../../assets/up3.png";
-import img4 from "../../../assets/up4.png";
-import img5 from "../../../assets/up1.png";
-import img6 from "../../../assets/up2.png";
-import img7 from "../../../assets/up3.png";
-import img8 from "../../../assets/up4.png";
-import img9 from "../../../assets/up1.png";
-import img10 from "../../../assets/up2.png";
+import img1 from "../../../assets/cheek1.jpg";
+import img2 from "../../../assets/cheek2.jpg";
+import img3 from "../../../assets/kalama1.jpg";
+import img4 from "../../../assets/kalama2.jpg";
+import img5 from "../../../assets/kalama3.jpg";
+import img6 from "../../../assets/kalama4.jpg";
+import img7 from "../../../assets/kalama5.jpg";
+import img8 from "../../../assets/kalama6.jpg";
+import img9 from "../../../assets/kondoti1.jpg";
+import img10 from "../../../assets/pattambi1.jpg";
 // import img11 from "../../../assets/up3.png";
 // import img12 from "../../../assets/up4.png";
 
