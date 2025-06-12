@@ -38,7 +38,7 @@ const Projects = () => {
             <Link to={`/projects/${projectData[0].id}`}>
               <ProjectCard
                 className="projects__card--azure"
-                image={projectData[0].image}
+                image={projectData[0].images[0]}
                 location={projectData[0].location}
                 area={projectData[0].area}
                 title={projectData[0].title}
@@ -49,7 +49,7 @@ const Projects = () => {
             <Link to={`/projects/${projectData[1].id}`}>
               <ProjectCard
                 className="projects__card--emerald"
-                image={projectData[1].image}
+                image={projectData[1].images[0]}
                 location={projectData[1].location}
                 area={projectData[1].area}
                 title={projectData[1].title}
@@ -65,7 +65,7 @@ const Projects = () => {
             <Link to={`/projects/${projectData[2].id}`}>
               <ProjectCard
                 className="projects__card--crystal-left"
-                image={projectData[2].image}
+                image={projectData[2].images[0]}
                 location={projectData[2].location}
                 area={projectData[2].area}
                 title={projectData[2].title}
@@ -76,7 +76,7 @@ const Projects = () => {
             <Link to={`/projects/${projectData[3].id}`}>
               <ProjectCard
                 className="projects__card--crystal-right"
-                image={projectData[3].image}
+                image={projectData[3].images[0]}
                 location={projectData[3].location}
                 area={projectData[3].area}
                 title={projectData[3].title}
