@@ -21,6 +21,10 @@
     border-radius: 8px;
     margin-bottom: 2rem;
 
+    @media (max-width: 768px) {
+      height: 300px;
+    }
+
     .image-slider {
       position: relative;
       width: 100%;
