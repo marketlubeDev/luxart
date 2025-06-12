@@ -58,7 +58,7 @@ const footer = () => {
           <h4 className="contact__heading">Contact</h4>
           <div className="footer__item">
             <img src={mailIcon} alt="Mail" className="footer__icon" />
-            <span>Sample@gmail.com</span>
+            <span>luxartindia@gmail.com</span>
           </div>
           <div className="footer__item">
             <img src={phoneIcon} alt="Phone" className="footer__icon" />

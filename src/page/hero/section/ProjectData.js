@@ -1,64 +1,78 @@
 import img1 from "../../../assets/building1.jpg";
-import img2 from "../../../assets/building1.jpg";
-import img3 from "../../../assets/building3.jpg";
-import img4 from "../../../assets/building3.jpg";
+import img2 from "../../../assets/pattambi.jpg";
+import img3 from "../../../assets/kondotty.jpg";
+import img4 from "../../../assets/kalamassery.jpg";
 
 const projectData = [
   {
-    id: "azure-heights",
-    title: "Azure Heights",
-    location: "Downtown metro",
-    area: "15,000 sq.ft",
+    id: "cheekkilode",
+    title: "Cheekkilode",
+    location: "Cheekkilode, Kozhikode",
+    area: "3060 sq.ft",
     image: img1,
     summary:
-      "A premium residential complex featuring smart homes, rooftop gardens, and skyline views. Designed for urban dwellers who seek luxury, technology, and city-centered convenience. Azure Heights redefines elegant metropolitan living.",
-    description: `Azure Heights is a modern luxury complex designed with elegance and urban functionality in mind. Located in the heart of the downtown metro, this architectural masterpiece redefines contemporary city living. Its sleek exterior and glass-panel façade give the building a futuristic touch, while the interiors are crafted with high-end materials and thoughtful design.
+      "A contemporary residential complex in the heart of Cheekkilode, offering modern amenities and spacious living areas. Perfect for families seeking a comfortable lifestyle in a well-connected neighborhood.",
+    description: `Located in the serene neighborhood of Cheekkilode, this residential complex offers a perfect blend of modern living and traditional charm. The property features spacious apartments with well-planned layouts, ensuring maximum comfort and functionality.
 
-The property offers panoramic views of the city skyline, rooftop gardens perfect for leisure and community events, and a state-of-the-art fitness center to promote health and well-being. Each unit is equipped with smart-home features, including automated lighting, climate control, and security systems. 
+Each unit is designed with attention to detail, featuring high-quality finishes, modern fixtures, and ample natural lighting. The complex includes dedicated parking spaces, 24/7 security, and well-maintained common areas.
 
-Beyond functionality, Azure Heights focuses on community and lifestyle. Residents benefit from coworking lounges, event spaces, and children's play zones. It also ensures 24/7 security, underground parking, and energy-efficient infrastructure. Azure Heights is ideal for urban professionals and families who value both convenience and luxury, creating a vibrant yet peaceful living environment.`,
+Residents can enjoy the convenience of nearby schools, hospitals, and shopping centers, while still maintaining a peaceful living environment. The property's strategic location provides easy access to major roads and public transportation, making daily commutes hassle-free.`,
   },
   {
-    id: "emerald-heights",
-    title: "Emerald Heights",
-    location: "Downtown metro",
-    area: "15,000 sq.ft",
+    id: "pattambi-heights",
+    title: "Pattambi",
+    location: "Pattambi, Malappuram",
+    area: "2500 sq.ft",
     image: img2,
     summary:
-      "Sustainable urban living with solar panels, water recycling, and lush green zones. Crafted for eco-conscious families who prioritize nature and harmony. A green retreat in the heart of the city.",
-    description: `Emerald Heights is a beacon of sustainable living in the heart of the city. With its unique blend of eco-friendly design and urban sophistication, this development is tailored for environmentally conscious residents. The building is equipped with solar panels, energy-efficient systems, and a water recycling facility that significantly reduces its ecological footprint.
+      "A spacious commercial property in Pattambi's prime location, ideal for businesses and retail establishments. Strategic location with excellent connectivity and modern infrastructure.",
+    description: `This commercial property in Pattambi offers an excellent opportunity for businesses looking to establish their presence in this growing area. The property features a modern design with flexible spaces that can be customized according to business needs.
 
-Beyond its sustainability efforts, Emerald Heights offers a serene escape from the urban rush. The landscaped green spaces, vertical gardens, and natural ventilation systems promote a healthy indoor-outdoor lifestyle. Inside, each apartment is designed with open-plan layouts, natural light optimization, and locally sourced materials, creating an atmosphere of warmth and responsibility.
+The building is equipped with essential amenities including power backup, water supply, and high-speed internet connectivity. Its strategic location ensures high visibility and easy accessibility for customers and clients.
 
-Residents can enjoy jogging tracks, yoga decks, and meditation pods surrounded by nature. A community farming area, EV charging stations, and an organic grocery store are also part of the complex, supporting a clean and conscious way of life.`,
+The property is well-connected to major roads and public transportation, making it convenient for both employees and visitors. The surrounding area includes various retail establishments, restaurants, and other commercial spaces, creating a vibrant business environment.`,
   },
   {
-    id: "crystal-heights-1",
-    title: "Crystal Heights",
-    location: "Downtown metro",
-    area: "15,000 sq.ft",
+    id: "kondotty",
+    title: "Kondotty",
+    location: "Kondotty, Malappuram",
+    area: "2500  sq.ft",
     image: img3,
     summary:
-      "Classic architecture meets modern tech with smart homes, soundproof interiors, and a private library. Designed for those who cherish timeless beauty and quiet sophistication. Crystal Heights blends heritage with innovation.",
-    description: `Crystal Heights fuses timeless classical architecture with modern engineering excellence. From the moment you step into the grand marble-finished lobby, you're welcomed into a space where tradition meets sophistication. The ornate detailing on the exterior and handcrafted finishes throughout the interior reflect a commitment to artistry and design integrity.
+      "A prime commercial space in Kondotty's business district, offering modern facilities and excellent connectivity. Perfect for retail, offices, or mixed-use development.",
+    description: `Situated in Kondotty's bustling commercial area, this property offers an ideal location for businesses looking to expand their operations. The building features contemporary architecture with practical design elements that cater to various business needs.
 
-Inside, residents enjoy a blend of comfort and innovation. Apartments are equipped with smart-home automation, premium fixtures, and soundproofed walls for peace and privacy. Amenities include a private library, indoor pool, and a rooftop dining area with panoramic city views.
+The property includes modern amenities such as dedicated parking, security systems, and backup power supply. Its spacious layout allows for flexible usage, whether for retail, office space, or mixed-use purposes.
 
-This development caters to those who seek elegance and tranquility. With personalized concierge services, a private wine cellar, and quiet study lounges, Crystal Heights creates an ambiance of elevated living, ideal for intellectuals, artists, and discerning families alike.`,
+The location provides excellent connectivity to nearby towns and cities, making it a strategic choice for businesses targeting the wider Malappuram region. The area is well-developed with essential infrastructure and is surrounded by residential neighborhoods, ensuring a steady flow of potential customers.`,
   },
   {
-    id: "crystal-heights-2",
-    title: "Crystal Heights",
-    location: "Downtown metro",
-    area: "15,000 sq.ft",
+    id: "residencekalamassery",
+    title: "Residence at Kalamassery",
+    location: "Kalamassery, Ernakulam",
+    area: "4500 sq.ft",
     image: img4,
     summary:
-      "Wing II offers expanded luxury with coworking lounges, wellness spa, and personalized concierge services. Perfect for refined lifestyles blending work, wellness, and exclusivity. A sanctuary of comfort and privacy.",
-    description: `Crystal Heights - Wing II is a sophisticated extension of the original structure, offering an even more luxurious residential experience. This new wing introduces an elevated standard of living with expanded suites, high ceilings, and stunning private balconies that overlook lush green spaces and the metropolitan skyline.
+      "A premium residential property in Kalamassery, offering modern living spaces with excellent connectivity to Kochi city. Perfect for families seeking a balanced urban lifestyle.",
+    description: `This residential property in Kalamassery offers a perfect blend of comfort and convenience, situated in one of Ernakulam's most sought-after locations. The property features well-designed living spaces with modern amenities and high-quality finishes.
 
-The development includes coworking lounges designed for remote professionals, an in-house wellness spa, and luxury concierge services to cater to every resident’s need. Every detail, from the imported marble floors to the ambient lighting, has been carefully curated.
+Residents can enjoy the benefits of a peaceful neighborhood while having easy access to Kochi city's major attractions and business districts. The property includes essential amenities such as 24/7 security, dedicated parking, and well-maintained common areas.
 
-Wing II also features a multi-cuisine restaurant, a cinema lounge, and a skybridge connecting both towers. Smart elevators, biometric access control, and seamless automation systems enhance the experience. It continues the legacy of Crystal Heights by offering the perfect harmony of comfort, privacy, and elegance while meeting the evolving needs of modern urban living.`,
+The location provides excellent connectivity to schools, hospitals, shopping centers, and public transportation. Its proximity to major roads and highways makes commuting to different parts of Kochi convenient. The property is ideal for families looking for a comfortable living space in a well-established neighborhood.`,
+  },
+  {
+    id: "residencekalamassery",
+    title: "Residence at Kalamassery",
+    location: "Kalamassery, Ernakulam",
+    area: "4500 sq.ft",
+    image: img4,
+    summary:
+      "A premium residential property in Kalamassery, offering modern living spaces with excellent connectivity to Kochi city. Perfect for families seeking a balanced urban lifestyle.",
+    description: `This residential property in Kalamassery offers a perfect blend of comfort and convenience, situated in one of Ernakulam's most sought-after locations. The property features well-designed living spaces with modern amenities and high-quality finishes.
+
+Residents can enjoy the benefits of a peaceful neighborhood while having easy access to Kochi city's major attractions and business districts. The property includes essential amenities such as 24/7 security, dedicated parking, and well-maintained common areas.
+
+The location provides excellent connectivity to schools, hospitals, shopping centers, and public transportation. Its proximity to major roads and highways makes commuting to different parts of Kochi convenient. The property is ideal for families looking for a comfortable living space in a well-established neighborhood.`,
   },
 ];
 

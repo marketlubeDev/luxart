@@ -82,6 +82,17 @@ const projects = () => {
               />
             </Link>
           </div>
+          {/* <div className="projects__item projects__item--azure">
+            <Link to={`/projects/${projectData[4].id}`}>
+              <ProjectCard
+                className="projects__card--azure"
+                image={projectData[4].image}
+                location={projectData[4].location}
+                area={projectData[4].area}
+                title={projectData[4].title}
+              />
+            </Link>
+          </div> */}
         </div>
       </div>
     </section>
