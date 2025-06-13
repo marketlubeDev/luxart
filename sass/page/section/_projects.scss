@@ -343,7 +343,7 @@
     &__card--emerald,
     &__card--crystal-left,
     &__card--crystal-right {
-      height: 320px;
+      height: auto !important;
 
       .projects__image {
         max-height: 260px;
