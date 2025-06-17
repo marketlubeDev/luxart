@@ -4,21 +4,16 @@ import vidTwo from "../../../assets/two.mp4";
 import vidThree from "../../../assets/three.mp4";
 import vidFour from "../../../assets/four.mp4";
 
-// // Mock video files - replace with your actual video imports
-// const vidOne =
-//   "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4";
-// const vidTwo =
-//   "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4";
-// const vidThree =
-//   "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4";
-// const vidFour =
-//   "https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_2mb.mp4";
+import thumb1 from "../../../assets/oneImg.jpeg";
+import thumb2 from "../../../assets/fourImg.jpeg";
+import thumb3 from "../../../assets/threeImg.jpeg";
+import thumb4 from "../../../assets/twoImg.jpeg";
 
-// Mock thumbnail images
-const thumb1 = "https://picsum.photos/400/400?random=1";
-const thumb2 = "https://picsum.photos/400/400?random=2";
-const thumb3 = "https://picsum.photos/400/400?random=3";
-const thumb4 = "https://picsum.photos/400/400?random=4";
+// // Mock thumbnail images
+// const thumb1 = "https://picsum.photos/400/400?random=1";
+// const thumb2 = "https://picsum.photos/400/400?random=2";
+// const thumb3 = "https://picsum.photos/400/400?random=3";
+// const thumb4 = "https://picsum.photos/400/400?random=4";
 
 const videos = [
   {
