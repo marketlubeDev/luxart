@@ -3,7 +3,8 @@
   color: #fff;
   text-align: center;
   padding: 3rem 1rem;
-  min-height: 100vh;
+  max-height: 100vh;
+  min-height: fit-content;
 
   &__title {
     font-size: 2rem;

@@ -3,76 +3,83 @@ import avatar1 from "../../../assets/avatar1.png";
 import starPng from "../../../assets/star.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
+const arjun =
+  "https://media.licdn.com/dms/image/v2/D5603AQHWol-iqlbsIA/profile-displayphoto-shrink_200_200/B56ZSnc9AsHsAY-/0/1737976173063?e=2147483647&v=beta&t=KBYX8Pzs6CFHD4BuqPC1_AqxVpmQ-hdHBV2JNN8kxLQ";
+
+const fidal =
+  "https://media.licdn.com/dms/image/v2/D4D03AQFkeoNQYmxGTw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715778936338?e=2147483647&v=beta&t=dh0phFbddwbV1Eu58tQUT3KkJ69OBKyr_yezPaVID9E";
+
+const althameem =
+  "https://media.licdn.com/dms/image/v2/D4D03AQFkeoNQYmxGTw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1715778936338?e=2147483647&v=beta&t=dh0phFbddwbV1Eu58tQUT3KkJ69OBKyr_yezPaVID9E";
+
+const ubaid =
+  "https://marhaba.qa/wp-content/uploads/2023/06/HE-Sheikh-Khalifa-bin-Hamad-bin-Khalifa-Al-Thani.jpg";
+
+const rajesh =
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhY_grr8X8rQsBtDtU2H8KB8Xhl7rez2jMhg&s";
+
+const avatar =
+  "https://plus.unsplash.com/premium_photo-1682089787056-9ac0c78a2ac2?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aW5kaWFuJTIwcGVvcGxlfGVufDB8fDB8fHww";
+
+const raneesh =
+  "https://media.licdn.com/dms/image/v2/D5603AQGzP0QmWSCAsw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1716273291195?e=2147483647&v=beta&t=Ho4pTMtvz7Q1XDifN2uRNHGZ562hZkHkWiheSmH66I4";
+
 const testimonialsData = [
   {
-    name: "Marques Marq",
+    name: "Fidal P",
     role: "Property Developer",
-    avatar: avatar1,
+    avatar: fidal,
     rating: 5,
     text: "From the first walkthrough to the final handover, every detail was impeccable. The craftsmanship, the finishes, and the professionalism of the team truly exceeded our expectations. Our home is everything we dreamed of and more.",
   },
   {
-    name: "Sophia Turner",
+    name: "Al Thameem Ali",
     role: "Interior Designer",
-    avatar: avatar1,
+    avatar: althameem,
     rating: 5,
     text: "The attention to detail and design made the entire process smooth and exciting. I absolutely love how my space turned out!",
   },
   {
-    name: "Liam Bennett",
+    name: "Arjun Liljo",
     role: "Real Estate Agent",
-    avatar: avatar1,
+    avatar: arjun,
     rating: 5,
     text: "Working with the team was a pleasure. Their professionalism and efficiency ensured my client's home was delivered on time and beautifully done.",
   },
   {
-    name: "Olivia James",
+    name: "Rajesh Kumar",
     role: "Architect",
-    avatar: avatar1,
+    avatar: rajesh,
     rating: 5,
     text: "An outstanding experience from concept to completion. Their team brings visions to life with unmatched dedication.",
   },
   {
-    name: "Noah Patel",
+    name: "Ubaid Abdusallam",
     role: "Tech Entrepreneur",
-    avatar: avatar1,
+    avatar: ubaid,
     rating: 5,
     text: "The quality of construction and the level of service I received were truly world-class. Highly recommended!",
   },
   {
-    name: "Emma Rodriguez",
+    name: "Akhil",
     role: "Marketing Manager",
-    avatar: avatar1,
+    avatar: avatar,
     rating: 5,
     text: "They delivered beyond what we imagined. Their communication and professionalism stood out throughout the project.",
   },
   {
-    name: "Ethan Chen",
+    name: "Mansoor",
     role: "Financial Analyst",
-    avatar: avatar1,
+    avatar: ubaid,
     rating: 5,
     text: "Our new home was delivered ahead of schedule with the finest finishes. I'm incredibly impressed by the team's efficiency.",
   },
   {
-    name: "Ava Thompson",
+    name: "Raneesh Cherukad",
     role: "Content Creator",
-    avatar: avatar1,
+    avatar: raneesh,
     rating: 5,
     text: "Every inch of my home reflects thoughtful design and craftsmanship. I couldn't have asked for a better experience!",
-  },
-  {
-    name: "William Johnson",
-    role: "Civil Engineer",
-    avatar: avatar1,
-    rating: 5,
-    text: "The construction quality and project management were top-notch. The team stayed on track and on budget, which is rare!",
-  },
-  {
-    name: "Isabella Martinez",
-    role: "Photographer",
-    avatar: avatar1,
-    rating: 5,
-    text: "Absolutely stunning work. The home not only looks amazing but feels comfortable and well thought out.",
   },
 ];
 

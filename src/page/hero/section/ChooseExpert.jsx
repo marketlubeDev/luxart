@@ -1,26 +1,28 @@
 import React from "react";
-import expert1 from "../../../assets/expert1.jpg";
-import expert2 from "../../../assets/expert2.jpg";
+
 import expert3 from "../../../assets/expert3.jpg";
+import shabeer from "../../../assets/shabeer.jpeg";
+import shiju from "../../../assets/shiju.jpeg";
+
 import experienceIcon from "../../../assets/bag.svg";
 import areaIcon from "../../../assets/area.svg";
 
 const engineers = [
   {
     id: 1,
-    name: "Engineer 1",
-    title: "Structural Specialist",
+    name: "Shabeer",
+    title: "Founder of shabeer saleel Associates",
     experience: "12 years",
     area: "4,00,000 sq.ft",
-    image: expert1,
+    image: shabeer,
   },
   {
     id: 2,
-    name: "Engineer 2",
-    title: "Project Manager & Civil Engineer",
+    name: "Shiju Pareed",
+    title: "Principal Architect",
     experience: "08 years",
     area: "2,60,000 sq.ft",
-    image: expert2,
+    image: shiju,
   },
   {
     id: 3,

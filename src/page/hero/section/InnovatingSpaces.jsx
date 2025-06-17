@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import image1 from "../../../assets/villaOne.jpg";
+import image2 from "../../../assets/villaTwo.jpg";
 
 const InnovatingSpaces = () => {
   const [sliderPosition, setSliderPosition] = useState(65);
@@ -47,6 +49,7 @@ const InnovatingSpaces = () => {
           className="innovating__image innovating__image--first"
           style={{
             clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0% 100%)`,
+            backgroundImage: `url(${image1})`,
           }}
         ></div>
 
@@ -54,11 +57,12 @@ const InnovatingSpaces = () => {
           className="innovating__image innovating__image--second"
           style={{
             clipPath: `polygon(${sliderPosition}% 0, 100% 0, 100% 100%, ${sliderPosition}% 100%)`,
+            backgroundImage: `url(${image2})`,
           }}
         ></div>
 
         <div className="innovating__text">
-          <h1>The Art of Space</h1>
+          {/* <h1>The Art of Space</h1> */}
         </div>
 
         <div className="innovating__slider">

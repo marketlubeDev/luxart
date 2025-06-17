@@ -58,7 +58,7 @@ const servicesData = [
   },
 ];
 
-const services = () => {
+const Services = () => {
   const scrollRef = useRef(null);
 
   useEffect(() => {
@@ -94,7 +94,9 @@ const services = () => {
           >
             <div className="services__content">
               <h3 className="services__title">{service.title}</h3>
-              <p className="services__desc">{service.description}</p>
+              <p className="services__desc" style={{ minHeight: "3rem" }}>
+                {service.description}
+              </p>
             </div>
           </div>
         ))}
@@ -103,4 +105,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;
