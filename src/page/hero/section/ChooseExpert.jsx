@@ -48,7 +48,7 @@ const ChooseExpert = () => {
   return (
     <section className="choose-expert">
       <h2 className="choose-expert__title">
-        Choose Your <span className="highlight">Expert</span>
+        Our empanel <span className="highlight">Architects</span>
       </h2>
       <p className="choose-expert__subtitle">
         Our engineers are here to design, secure, and support—every step of the
