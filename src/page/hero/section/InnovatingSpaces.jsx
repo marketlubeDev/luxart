@@ -22,6 +22,8 @@ const InnovatingSpaces = () => {
     setPointerPosition(Math.min(100, Math.max(0, newPointerPosition)));
   };
 
+  //hello
+
   return (
     <div>
       <h2 className="innovating__heading">
