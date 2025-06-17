@@ -39,7 +39,7 @@ const engineers = [
     name: "Imthiyaz Ahmmed",
     title: "Founder of Ingrid Architects",
     experience: "16 years",
-    area: "8,90,000 sq.ft",
+    area: "5,90,000 sq.ft",
     image: imtiaz,
   },
 ];
@@ -84,10 +84,10 @@ const ChooseExpert = () => {
               </div>
               <h3 className="expert-card__name">{engineer.name}</h3>
               <p className="expert-card__role">{engineer.title}</p>
-              <p className="expert-card__detail">
+              {/* <p className="expert-card__detail">
                 With over 12 years of experience in luxury housing,{" "}
                 {engineer.name} ensures your home stands strong—inside and out.
-              </p>
+              </p> */}
             </div>
           </div>
         ))}
