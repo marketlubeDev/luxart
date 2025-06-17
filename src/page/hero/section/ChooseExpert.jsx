@@ -14,32 +14,32 @@ const engineers = [
     id: 1,
     name: "Shabeer",
     title: "Founder of shabeer saleel Associates",
-    experience: "12 years",
-    area: "4,00,000 sq.ft",
+    // experience: "12 years",
+    // area: "4,00,000 sq.ft",
     image: shabeer,
   },
   {
     id: 2,
     name: "Shiju Pareed",
     title: "Principal Architect",
-    experience: "08 years",
-    area: "2,60,000 sq.ft",
+    // experience: "08 years",
+    // area: "2,60,000 sq.ft",
     image: shiju,
   },
   {
     id: 3,
     name: "Pc rasheed",
     title: "founder of PCRasheed and Associates, TSSA Luxart Builders",
-    experience: "16 years",
-    area: "8,90,000 sq.ft",
+    // experience: "16 years",
+    // area: "8,90,000 sq.ft",
     image: rasheed,
   },
   {
     id: 4,
     name: "Imthiyaz Ahmmed",
     title: "Founder of Ingrid Architects",
-    experience: "16 years",
-    area: "5,90,000 sq.ft",
+    // experience: "16 years",
+    // area: "5,90,000 sq.ft",
     image: imtiaz,
   },
 ];
@@ -65,22 +65,22 @@ const ChooseExpert = () => {
             />
             <div className="expert-card__info">
               <div className="expert-card__meta">
-                <span>
+                {/* <span>
                   <img
                     src={experienceIcon}
                     alt="experience icon"
                     className="experience-icon"
                   />
                   {engineer.experience} experience
-                </span>
-                <span>
+                </span> */}
+                {/* <span>
                   <img
                     src={areaIcon}
                     alt="area icon"
                     className="expert-card__icon"
                   />
                   {engineer.area}
-                </span>
+                </span> */}
               </div>
               <h3 className="expert-card__name">{engineer.name}</h3>
               <p className="expert-card__role">{engineer.title}</p>

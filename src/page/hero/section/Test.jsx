@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import avatar1 from "../../../assets/avatar1.png";
 import starPng from "../../../assets/star.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
@@ -24,6 +23,12 @@ const avatar =
 const raneesh =
   "https://media.licdn.com/dms/image/v2/D5603AQGzP0QmWSCAsw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1716273291195?e=2147483647&v=beta&t=Ho4pTMtvz7Q1XDifN2uRNHGZ562hZkHkWiheSmH66I4";
 
+const aswin =
+  "https://media.licdn.com/dms/image/v2/D5603AQHIKeMEYTF0bA/profile-displayphoto-shrink_200_200/B56ZShaeSbGsAY-/0/1737874859785?e=2147483647&v=beta&t=DNjCduVu--RCVehaQ_Q4yS2Up1T4ra3xf_tIBEQZHII";
+
+const thameemG =
+  "https://t4.ftcdn.net/jpg/03/96/16/79/360_F_396167959_aAhZiGlJoeXOBHivMvaO0Aloxvhg3eVT.jpg";
+
 const testimonialsData = [
   {
     name: "Fidal P",
@@ -35,12 +40,12 @@ const testimonialsData = [
   {
     name: "Al Thameem Ali",
     role: "Interior Designer",
-    avatar: althameem,
+    avatar: thameemG,
     rating: 5,
     text: "The attention to detail and design made the entire process smooth and exciting. I absolutely love how my space turned out!",
   },
   {
-    name: "Arjun Liljo",
+    name: "Arjun Cv",
     role: "Real Estate Agent",
     avatar: arjun,
     rating: 5,
@@ -70,7 +75,7 @@ const testimonialsData = [
   {
     name: "Mansoor",
     role: "Financial Analyst",
-    avatar: ubaid,
+    avatar: aswin,
     rating: 5,
     text: "Our new home was delivered ahead of schedule with the finest finishes. I'm incredibly impressed by the team's efficiency.",
   },
