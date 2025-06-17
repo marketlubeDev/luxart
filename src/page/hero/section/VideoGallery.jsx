@@ -9,12 +9,6 @@ import thumb2 from "../../../assets/fourImg.jpeg";
 import thumb3 from "../../../assets/threeImg.jpeg";
 import thumb4 from "../../../assets/twoImg.jpeg";
 
-// // Mock thumbnail images
-// const thumb1 = "https://picsum.photos/400/400?random=1";
-// const thumb2 = "https://picsum.photos/400/400?random=2";
-// const thumb3 = "https://picsum.photos/400/400?random=3";
-// const thumb4 = "https://picsum.photos/400/400?random=4";
-
 const videos = [
   {
     id: 1,
