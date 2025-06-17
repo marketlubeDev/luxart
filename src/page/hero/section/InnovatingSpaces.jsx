@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import image1 from "../../../assets/villaOne.jpg";
-import image2 from "../../../assets/villaTwo.jpg";
+import image1 from "../../../assets/imageOne.png";
+import image2 from "../../../assets/imageTwo.png";
 
 const InnovatingSpaces = () => {
   const [sliderPosition, setSliderPosition] = useState(65);
