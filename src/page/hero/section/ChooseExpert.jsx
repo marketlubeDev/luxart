@@ -84,10 +84,6 @@ const ChooseExpert = () => {
               </div>
               <h3 className="expert-card__name">{engineer.name}</h3>
               <p className="expert-card__role">{engineer.title}</p>
-              {/* <p className="expert-card__detail">
-                With over 12 years of experience in luxury housing,{" "}
-                {engineer.name} ensures your home stands strong—inside and out.
-              </p> */}
             </div>
           </div>
         ))}

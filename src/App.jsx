@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import "../sass/main.scss";
 import Header from "./layout/header";
 import "./App.css";

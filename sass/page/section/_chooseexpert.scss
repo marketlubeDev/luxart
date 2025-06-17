@@ -34,9 +34,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; // Reduced gap to fit 4 cards
-    max-width: 1200px; // Add max-width to contain the cards
-    margin: 0 auto; // Center the container
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
@@ -44,12 +44,13 @@
   background: black;
   border-radius: 12px;
   overflow: hidden;
-  width: calc(25% - 0.75rem); // 25% width minus gap for 4 cards per row
-  min-width: 280px; // Minimum width to maintain readability
-  max-width: 300px; // Maximum width to prevent cards from being too wide
+  width: calc(25% - 0.75rem);
+  min-width: 280px;
+  max-width: 300px;
   height: 600px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
+  position: relative;
 
   &:hover {
     transform: translateY(-5px);
@@ -59,6 +60,10 @@
     width: 100%;
     height: 70%;
     object-fit: cover;
+    object-position: top center; // Keep top of image (faces) visible, crop from bottom
+    // Optimize image rendering
+    image-rendering: optimizeQuality;
+    backface-visibility: hidden;
   }
 
   &__info {
@@ -73,52 +78,49 @@
   &__meta {
     display: flex;
     justify-content: space-between;
-    font-size: 0.75rem; // Slightly smaller to fit better
+    align-items: center;
+    font-size: 0.75rem;
     color: #bbb;
   }
 
   &__name {
-    font-size: 1rem; // Slightly smaller
+    font-size: 1rem;
     font-weight: 500;
+    color: #fff;
   }
 
   &__role {
-    font-size: 0.85rem; // Slightly smaller
+    font-size: 0.85rem;
     color: #ccc;
+  }
+
+  &__detail {
+    font-size: 0.75rem;
+    color: #ddd;
+    line-height: 1.3;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+  }
+
+  // Show detail on hover (desktop only)
+  &:hover &__detail {
+    opacity: 1;
+    max-height: 80px;
   }
 }
 
-.experience-icon {
-  width: 14px; // Slightly smaller
-  height: 14px;
-  margin-right: 4px;
-  vertical-align: middle;
-}
-
+.experience-icon,
 .expert-card__icon {
-  width: 14px; // Slightly smaller
+  width: 14px;
   height: 14px;
   margin-right: 4px;
   vertical-align: middle;
+  flex-shrink: 0;
 }
 
-.expert-card__detail {
-  font-size: 0.75rem; // Smaller to fit better
-  color: #ddd;
-  line-height: 1.3;
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: opacity 0.4s ease, max-height 0.4s ease;
-}
-
-// Show detail on hover
-.expert-card:hover .expert-card__detail {
-  opacity: 1;
-  max-height: 80px; // Adjusted for smaller text
-}
-
-// Large Desktop - ensure 4 cards fit comfortably
+// Large Desktop - 4 cards per row
 @media (min-width: 1200px) {
   .expert-card {
     width: calc(25% - 0.75rem);
@@ -126,101 +128,219 @@
   }
 }
 
-// Tablet - 2 cards per row
-@media (max-width: 1199px) and (min-width: 768px) {
+// Medium Desktop/Tablet - 3 cards per row
+@media (max-width: 1199px) and (min-width: 900px) {
+  .choose-expert__cards {
+    gap: 1.2rem;
+  }
+
+  .expert-card {
+    width: calc(33.333% - 0.8rem);
+    min-width: 260px;
+    max-width: 300px;
+    height: 580px;
+  }
+}
+
+// Small Tablet - 2 cards per row
+@media (max-width: 899px) and (min-width: 600px) {
   .choose-expert {
-    padding: 2rem 0.5rem;
+    padding: 2rem 1rem;
+
     &__title {
       font-size: 1.8rem;
     }
+
     &__subtitle {
-      font-size: 1rem;
+      font-size: 16px;
+      margin: 0.8rem 0 1.5rem;
     }
+
     &__cards {
       gap: 1.5rem;
     }
   }
+
   .expert-card {
     width: calc(50% - 0.75rem);
-    min-width: 300px;
-    max-width: 350px;
-    height: 550px;
-    &__image {
-      height: 72%;
-    }
-    &__name {
-      font-size: 1.1rem;
-    }
-    &__role {
-      font-size: 0.95rem;
-    }
-    &__detail {
-      font-size: 0.8rem;
-    }
-  }
-}
+    min-width: 280px;
+    max-width: 320px;
+    height: 520px;
 
-// Phone - 1 card per row
-@media (max-width: 767px) {
-  .choose-expert {
-    padding: 1.2rem 0.25rem;
-    &__title {
-      font-size: 1.4rem;
-    }
-    &__subtitle {
-      font-size: 1rem;
-    }
-    &__cards {
-      flex-direction: column;
-      align-items: center;
-      gap: 1.2rem;
-    }
-  }
-  .expert-card {
-    width: 95vw;
-    max-width: 400px;
-    height: 450px;
     &__image {
       height: 68%;
     }
+
+    &__info {
+      padding: 0.8rem;
+    }
+
     &__name {
-      font-size: 1.05rem;
+      font-size: 1rem;
     }
+
     &__role {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
+
     &__detail {
       font-size: 0.8rem;
+      max-height: 60px;
     }
   }
 }
 
-// Small Phone
-@media (max-width: 400px) {
+// Mobile - 1 card per row with touch optimizations
+@media (max-width: 599px) {
   .choose-expert {
-    padding: 0.7rem 0.1rem;
+    padding: 1.5rem 0.5rem;
+
     &__title {
-      font-size: 1.2rem;
+      font-size: 1.5rem;
+      line-height: 1.3;
     }
+
     &__subtitle {
-      font-size: 0.85rem;
+      font-size: 14px;
+      margin: 0.8rem 0 1.2rem;
+      line-height: 1.2;
+    }
+
+    &__cards {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
     }
   }
+
   .expert-card {
-    width: 98vw;
-    max-width: 320px;
-    height: 380px;
-    &__image {
-      height: 65%;
+    width: calc(100vw - 2rem);
+    max-width: 360px;
+    min-width: unset;
+    height: 450px; // Increased height for mobile
+    // Better touch interaction
+    touch-action: manipulation;
+
+    // Mobile hover replacement - always show details
+    &__detail {
+      opacity: 1;
+      max-height: 50px;
     }
+
+    &__image {
+      height: 75%; // Increased from 65% to 75% to show more of the image
+    }
+
+    &__info {
+      padding: 0.8rem;
+    }
+
+    &__meta {
+      font-size: 0.7rem;
+      flex-wrap: wrap;
+      gap: 0.2rem;
+    }
+
     &__name {
       font-size: 0.95rem;
+      line-height: 1.2;
     }
+
     &__role {
       font-size: 0.85rem;
+      line-height: 1.2;
     }
+
     &__detail {
-      font-size: 0.75rem;
+      font-size: 0.7rem;
+      line-height: 1.2;
     }
+
+    // Remove hover effects on mobile
+    &:hover {
+      transform: none;
+    }
+  }
+
+  .experience-icon,
+  .expert-card__icon {
+    width: 12px;
+    height: 12px;
+    margin-right: 3px;
+  }
+}
+
+// Very Small Mobile - compact layout
+@media (max-width: 360px) {
+  .choose-expert {
+    padding: 1rem 0.3rem;
+
+    &__title {
+      font-size: 1.3rem;
+    }
+
+    &__subtitle {
+      font-size: 13px;
+      margin: 0.6rem 0 1rem;
+    }
+
+    &__cards {
+      gap: 0.8rem;
+    }
+  }
+
+  .expert-card {
+    width: calc(100vw - 1.5rem);
+    max-width: 340px;
+    height: 420px; // Increased height for very small screens too
+    border-radius: 8px;
+
+    &__image {
+      height: 72%; // Increased from 62% to 72%
+    }
+
+    &__info {
+      padding: 0.6rem;
+    }
+
+    &__name {
+      font-size: 0.9rem;
+    }
+
+    &__role {
+      font-size: 0.8rem;
+    }
+
+    &__detail {
+      font-size: 0.65rem;
+      max-height: 40px;
+    }
+
+    &__meta {
+      font-size: 0.65rem;
+    }
+  }
+}
+
+// Performance optimizations
+@media (prefers-reduced-motion: reduce) {
+  .expert-card {
+    transition: none;
+
+    &:hover {
+      transform: none;
+    }
+
+    &__detail {
+      transition: none;
+    }
+  }
+}
+
+// High DPI displays
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .expert-card__image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
 }
