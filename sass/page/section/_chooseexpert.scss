@@ -34,7 +34,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem; // Reduced gap to fit 4 cards
+    max-width: 1200px; // Add max-width to contain the cards
+    margin: 0 auto; // Center the container
   }
 }
 
@@ -42,7 +44,9 @@
   background: black;
   border-radius: 12px;
   overflow: hidden;
-  width: 390px;
+  width: calc(25% - 0.75rem); // 25% width minus gap for 4 cards per row
+  min-width: 280px; // Minimum width to maintain readability
+  max-width: 300px; // Maximum width to prevent cards from being too wide
   height: 600px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s;
@@ -59,7 +63,7 @@
 
   &__info {
     padding: 1rem;
-    text-align: left; // ✅ Add this to align everything inside to the left
+    text-align: left;
 
     & > *:not(:last-child) {
       margin-bottom: 0.5rem;
@@ -69,36 +73,39 @@
   &__meta {
     display: flex;
     justify-content: space-between;
-    font-size: 0.85rem;
+    font-size: 0.75rem; // Slightly smaller to fit better
     color: #bbb;
   }
 
   &__name {
-    font-size: 1.1rem;
+    font-size: 1rem; // Slightly smaller
     font-weight: 500;
   }
 
   &__role {
-    font-size: 0.95rem;
+    font-size: 0.85rem; // Slightly smaller
     color: #ccc;
   }
 }
+
 .experience-icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
+  width: 14px; // Slightly smaller
+  height: 14px;
+  margin-right: 4px;
   vertical-align: middle;
 }
+
 .expert-card__icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 6px;
+  width: 14px; // Slightly smaller
+  height: 14px;
+  margin-right: 4px;
   vertical-align: middle;
 }
+
 .expert-card__detail {
-  font-size: 0.85rem;
+  font-size: 0.75rem; // Smaller to fit better
   color: #ddd;
-  line-height: 1.4;
+  line-height: 1.3;
   opacity: 0;
   max-height: 0;
   overflow: hidden;
@@ -108,15 +115,23 @@
 // Show detail on hover
 .expert-card:hover .expert-card__detail {
   opacity: 1;
-  max-height: 100px; // enough to reveal the full text
+  max-height: 80px; // Adjusted for smaller text
 }
 
-// Tablet
-@media (max-width: 900px) {
+// Large Desktop - ensure 4 cards fit comfortably
+@media (min-width: 1200px) {
+  .expert-card {
+    width: calc(25% - 0.75rem);
+    max-width: 280px;
+  }
+}
+
+// Tablet - 2 cards per row
+@media (max-width: 1199px) and (min-width: 768px) {
   .choose-expert {
     padding: 2rem 0.5rem;
     &__title {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
     }
     &__subtitle {
       font-size: 1rem;
@@ -126,29 +141,31 @@
     }
   }
   .expert-card {
-    width: 360px;
-    height: 520px;
+    width: calc(50% - 0.75rem);
+    min-width: 300px;
+    max-width: 350px;
+    height: 550px;
     &__image {
       height: 72%;
     }
     &__name {
-      font-size: 1.15rem;
+      font-size: 1.1rem;
     }
     &__role {
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
     &__detail {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
   }
 }
 
-// Phone
-@media (max-width: 600px) {
+// Phone - 1 card per row
+@media (max-width: 767px) {
   .choose-expert {
     padding: 1.2rem 0.25rem;
     &__title {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
     }
     &__subtitle {
       font-size: 1rem;
@@ -160,9 +177,9 @@
     }
   }
   .expert-card {
-    width: 98vw;
-    max-width: 420px;
-    height: 420px;
+    width: 95vw;
+    max-width: 400px;
+    height: 450px;
     &__image {
       height: 68%;
     }
@@ -173,7 +190,7 @@
       font-size: 0.95rem;
     }
     &__detail {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
     }
   }
 }
@@ -183,16 +200,16 @@
   .choose-expert {
     padding: 0.7rem 0.1rem;
     &__title {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     &__subtitle {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
   }
   .expert-card {
-    width: 99vw;
+    width: 98vw;
     max-width: 320px;
-    height: 320px;
+    height: 380px;
     &__image {
       height: 65%;
     }
@@ -200,10 +217,10 @@
       font-size: 0.95rem;
     }
     &__role {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
     &__detail {
-      font-size: 0.7rem;
+      font-size: 0.75rem;
     }
   }
 }

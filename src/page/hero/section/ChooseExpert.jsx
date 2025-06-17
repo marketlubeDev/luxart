@@ -3,6 +3,8 @@ import React from "react";
 import expert3 from "../../../assets/expert3.jpg";
 import shabeer from "../../../assets/shabeer.jpeg";
 import shiju from "../../../assets/shiju.jpeg";
+import rasheed from "../../../assets/pmrasheed.jpg";
+import imtiaz from "../../../assets/imtiaz.jpg";
 
 import experienceIcon from "../../../assets/bag.svg";
 import areaIcon from "../../../assets/area.svg";
@@ -26,11 +28,19 @@ const engineers = [
   },
   {
     id: 3,
-    name: "Engineer 3",
-    title: "Design-Focused Engineer",
+    name: "Pc rasheed",
+    title: "founder of PCRasheed and Associates, TSSA Luxart Builders",
     experience: "16 years",
     area: "8,90,000 sq.ft",
-    image: expert3,
+    image: rasheed,
+  },
+  {
+    id: 4,
+    name: "Imthiyaz Ahmmed",
+    title: "Founder of Ingrid Architects",
+    experience: "16 years",
+    area: "8,90,000 sq.ft",
+    image: imtiaz,
   },
 ];
 
