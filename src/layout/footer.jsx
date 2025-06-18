@@ -58,21 +58,23 @@ const footer = () => {
           <h4 className="contact__heading">Contact</h4>
           <div className="footer__item">
             <img src={mailIcon} alt="Mail" className="footer__icon" />
-            <span>luxartindia@gmail.com</span>
+            <span>md@luxartbuilders.com</span>
           </div>
           <div className="footer__item">
             <img src={phoneIcon} alt="Phone" className="footer__icon" />
-            <span>9999 222 111</span>
+            <span>8075521186</span>
           </div>
           <div className="footer__item">
             <img src={mapIcon} alt="Map" className="footer__icon" />
             <span>
-              Luxart Interiors Pvt. Ltd. <br />
-              Level 2, Hilite Park Hilite City,
+              Luxart builders pvt Ltd <br />
+              Hi lite business park
               <br />
-              Thondayad Bypass, Kozhikode, Kerala,
+              Phase 2
               <br />
-              India – 673014
+              7th Floor
+              <br />
+              Calicut
             </span>
           </div>
         </div>
@@ -88,15 +90,17 @@ const footer = () => {
         {/* Quick Links */}
         <div className="footer__section">
           <ul className="footer__social">
-            <li>
+            {/* <li>
               <a href="https://www.facebook.com">Facebook</a>
-            </li>
+            </li> */}
             <li>
-              <a href="https://www.instagram.com">Instagram</a>
+              <a href="https://www.instagram.com/luxart.in" target="_blank">
+                Instagram
+              </a>
             </li>
-            <li>
+            {/* <li>
               <a href="https://www.twitter.com">Twitter</a>
-            </li>
+            </li> */}
           </ul>
         </div>
 

@@ -1,60 +1,65 @@
 import React, { useEffect, useRef } from "react";
-import image1 from "../../../assets/image1.png";
-import image2 from "../../../assets/image2.png";
-import image3 from "../../../assets/image3.png";
-import image4 from "../../../assets/image4.png";
-import image5 from "../../../assets/image5.png";
 
 const servicesData = [
   {
     title: "3D Design",
     description: "Creating visual representations of your building ideas.",
-    image: image1,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image1_nsppay.png",
   },
   {
     title: "Modeling",
     description: "Detailed and realistic modeling for visualization.",
-    image: image2,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254111/image2_drbwz5.png",
   },
   {
     title: "Construction",
     description: "Reliable and structured execution of architectural plans.",
-    image: image3,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image3_kbldzd.png",
   },
   {
     title: "Interior Design",
     description: "Elegant and functional interior space planning.",
-    image: image4,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image4_pojwyd.png",
   },
   {
     title: "Planning",
     description: "Strategic development and regulation of your project.",
-    image: image5,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254114/image5_vmjdzs.png",
   },
   {
     title: "Exterior Design",
     description: "Appealing and weather-resistant outer aesthetics.",
-    image: image1,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image1_nsppay.png",
   },
   {
     title: "Renovation",
     description: "Upgrading old spaces with modern solutions.",
-    image: image2,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254111/image2_drbwz5.png",
   },
   {
     title: "Landscape Design",
     description: "Organizing outdoor areas creatively.",
-    image: image3,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image3_kbldzd.png",
   },
   {
     title: "Consultation",
     description: "Expert advice for design and execution.",
-    image: image4,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254112/image4_pojwyd.png",
   },
   {
     title: "Budget Planning",
     description: "Estimate and manage costs efficiently.",
-    image: image5,
+    image:
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750254114/image5_vmjdzs.png",
   },
 ];
 
