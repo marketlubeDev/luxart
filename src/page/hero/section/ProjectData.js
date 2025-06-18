@@ -1,29 +1,5 @@
 import img1 from "../../../assets/building1.jpg";
-import img4 from "../../../assets/kalamassery.jpg";
 import kalamassery from "../../../assets/kalamassery.pdf";
-
-import image1 from "../../../assets/projects/cheek1.jpg";
-import image2 from "../../../assets/projects/cheek2.jpg";
-import image3 from "../../../assets/projects/cheek3.jpg";
-import image4 from "../../../assets/projects/pattambi1.jpg";
-import image5 from "../../../assets/projects/kondotty1.jpg";
-import image6 from "../../../assets/projects/kalamassery2.jpg";
-import image7 from "../../../assets/projects/kalamassery3.jpg";
-import image8 from "../../../assets/projects/kalamassery4.jpg";
-import image9 from "../../../assets/projects/kalamassery5.jpg";
-import image10 from "../../../assets/projects/kalamassery6.jpg";
-import image11 from "../../../assets/projects/kalamassery7.jpg";
-import image14 from "../../../assets/projects/kalamassery10.jpg";
-import image15 from "../../../assets/projects/kalamassery11.jpg";
-import image16 from "../../../assets/projects/kalamassery12.jpg";
-import image17 from "../../../assets/projects/kalamassery13.jpg";
-import image18 from "../../../assets/projects/kalamassery14.jpg";
-import image19 from "../../../assets/projects/kalamassery15.jpg";
-import image20 from "../../../assets/projects/kalamassery16.jpg";
-import image21 from "../../../assets/projects/kalamassery17.jpg";
-import image22 from "../../../assets/projects/kalamassery18.jpg";
-import image23 from "../../../assets/projects/kalamassery19.jpg";
-import image24 from "../../../assets/projects/kalamassery20.jpg";
 
 const projectData = [
   {
@@ -32,7 +8,11 @@ const projectData = [
     location: "Cheekkilode, Kozhikode",
     area: "3060 sq.ft",
     image: img1,
-    images: [image1, image2, image3],
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek1_yizqrn.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek2_aubvsf.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek3_egidpo.jpg",
+    ],
     pdfLink: "/pdfs/cheekkilode.pdf",
     summary:
       "A contemporary residential complex in the heart of Cheekkilode, offering modern amenities and spacious living areas. Perfect for families seeking a comfortable lifestyle in a well-connected neighborhood.",
@@ -47,7 +27,9 @@ Residents can enjoy the convenience of nearby schools, hospitals, and shopping c
     title: "Pattambi",
     location: "Pattambi, Malappuram",
     area: "2500 sq.ft",
-    images: [image4],
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/pattambi1_pvnsek.jpg",
+    ],
     pdfLink: null,
     summary:
       "A spacious commercial property in Pattambi's prime location, ideal for businesses and retail establishments. Strategic location with excellent connectivity and modern infrastructure.",
@@ -62,7 +44,9 @@ The property is well-connected to major roads and public transportation, making 
     title: "Kondotty",
     location: "Kondotty, Malappuram",
     area: "2500  sq.ft",
-    images: [image5],
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/kondotty1_edylsw.jpg",
+    ],
     pdfLink: null,
     summary:
       "A prime commercial space in Kondotty's business district, offering modern facilities and excellent connectivity. Perfect for retail, offices, or mixed-use development.",
@@ -78,23 +62,20 @@ The location provides excellent connectivity to nearby towns and cities, making 
     location: "Kalamassery, Ernakulam",
     area: "4500 sq.ft",
     images: [
-      image6,
-      image7,
-      image8,
-      image9,
-      image10,
-      image11,
-      image14,
-      image15,
-      image16,
-      image17,
-      image18,
-      image19,
-      image20,
-      image21,
-      image22,
-      image23,
-      image24,
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery2_icwwzj.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery3_oshtbw.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery4_twdt0z.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery10_pqgf7o.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery11_vcjhhm.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery12_vby2lj.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery13_sor7ru.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery18_ysmsse.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery15_nwtbmi.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery16_gsbz0t.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery17_uvdhgl.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery14_onysop.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery19_aaq3nb.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery20_qzzkfm.jpg",
     ],
     pdfLink: kalamassery,
     summary:
