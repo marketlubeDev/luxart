@@ -16,7 +16,8 @@ const engineers = [
     title: "Founder of shabeer saleel Associates",
     // experience: "12 years",
     // area: "4,00,000 sq.ft",
-    image: shabeer,
+    image:
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shabeer_etu53m.jpg",
   },
   {
     id: 2,
@@ -24,7 +25,8 @@ const engineers = [
     title: "Principal Architect",
     // experience: "08 years",
     // area: "2,60,000 sq.ft",
-    image: shiju,
+    image:
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shiju_apq2br.jpg",
   },
   {
     id: 3,
@@ -32,7 +34,8 @@ const engineers = [
     title: "founder of PCRasheed and Associates, TSSA Luxart Builders",
     // experience: "16 years",
     // area: "8,90,000 sq.ft",
-    image: rasheed,
+    image:
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/pmrasheed_h6mmkw.jpg",
   },
   {
     id: 4,
@@ -40,7 +43,8 @@ const engineers = [
     title: "Founder of Ingrid Architects",
     // experience: "16 years",
     // area: "5,90,000 sq.ft",
-    image: imtiaz,
+    image:
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/imtiaz_qllbze.jpg",
   },
 ];
 

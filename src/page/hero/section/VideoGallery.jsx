@@ -1,8 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import vidOne from "../../../assets/one.mp4";
-import vidTwo from "../../../assets/two.mp4";
-import vidThree from "../../../assets/three.mp4";
-import vidFour from "../../../assets/four.mp4";
 
 import thumb1 from "../../../assets/oneImg.jpeg";
 import thumb2 from "../../../assets/fourImg.jpeg";
@@ -13,22 +9,22 @@ const videos = [
   {
     id: 1,
     thumbnail: thumb1,
-    src: vidOne,
+    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338883/one_nlz3ds.mp4",
   },
   {
     id: 2,
     thumbnail: thumb2,
-    src: vidTwo,
+    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338884/two_w4zgwv.mp4",
   },
   {
     id: 3,
     thumbnail: thumb3,
-    src: vidThree,
+    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338898/three_jpcqut.mp4",
   },
   {
     id: 4,
     thumbnail: thumb4,
-    src: vidFour,
+    src: "https://res.cloudinary.com/dznxxalrb/video/upload/v1750338884/four_exrcg9.mp4",
   },
 ];
 
@@ -82,7 +78,7 @@ const VideoGallery = () => {
     }
   };
 
-  const handleVideoEnded = (videoId) => {
+  const handleVideoEnded = () => {
     setPlayingVideo(null);
     setIsAutoPlaying(true);
   };
@@ -192,7 +188,8 @@ const VideoGallery = () => {
                         className="video-player"
                         controls
                         autoPlay
-                        onEnded={() => handleVideoEnded(video.id)}
+                        loop
+                        onEnded={() => handleVideoEnded()}
                         onPause={() => {
                           if (playingVideo === video.id) {
                             setPlayingVideo(null);
