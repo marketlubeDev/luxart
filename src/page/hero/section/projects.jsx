@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import ProjectCard from "../../../Components/ProjectCard";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import projectData from "./ProjectData";
@@ -7,6 +7,7 @@ const Projects = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const isProjectsPage = location.pathname.replace(/\/$/, "") === "/projects";
+  const isHomePage = location.pathname === "/";
 
   const handleShowAll = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -95,6 +96,23 @@ const Projects = () => {
             </Link>
           </div> */}
         </div>
+        {!isHomePage && (
+          <div className="projects__row projects__row--top">
+            <div className="projects__grid">
+              <div className="projects__item projects__item--azure">
+                <Link to={`/projects/${projectData[4].id}`}>
+                  <ProjectCard
+                    className="projects__card--azure"
+                    image={projectData[4].images[0]}
+                    location={projectData[4].location}
+                    area={projectData[4].area}
+                    title={projectData[4].title}
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

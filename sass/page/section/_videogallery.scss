@@ -386,13 +386,15 @@
     }
 
     &__container {
-      gap: 0;
-      flex-direction: column;
+      gap: 1rem;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
     }
 
     &__swiper {
-      width: 100%;
-      margin: 0 1rem;
+      flex: 1;
+      max-width: calc(100% - 120px); // Account for navigation buttons
     }
   }
 
@@ -409,8 +411,15 @@
     aspect-ratio: 9/14; // Slightly less tall on mobile
   }
 
-  .nav-button {
-    display: none; // Hide navigation buttons on mobile, use swipe instead
+  // Show navigation buttons on left and right sides
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    position: static !important;
+    width: 45px !important;
+    height: 45px !important;
+    margin: 0 !important;
+    transform: none !important;
+    flex-shrink: 0;
   }
 }
 

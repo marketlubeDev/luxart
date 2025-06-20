@@ -86,6 +86,26 @@ Residents can enjoy the benefits of a peaceful neighborhood while having easy ac
 
 The location provides excellent connectivity to schools, hospitals, shopping centers, and public transportation. Its proximity to major roads and highways makes commuting to different parts of Kochi convenient. The property is ideal for families looking for a comfortable living space in a well-established neighborhood.`,
   },
+  {
+    id: "pavangad",
+    title: "Pavangad",
+    location: "Pavangad, Kozhikode",
+    area: "3500 sq.ft",
+    images: [
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.32_y5tt0h.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.33_nyvw1i.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418159/WhatsApp_Image_2025-06-20_at_09.55.32_1_m08ed8.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.31_ha9d3b.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "A contemporary residential project in Pavangad, Kozhikode, featuring modern design elements and spacious living areas. Perfect for families seeking comfort and style in a prime location.",
+    description: `Located in the vibrant neighborhood of Pavangad, Kozhikode, this residential property showcases contemporary architectural design with a focus on modern living standards. The project features thoughtfully planned spaces that maximize comfort and functionality for families.
+
+The property includes essential amenities such as secure parking facilities, 24/7 security systems, and well-maintained common areas. The spacious layout offers flexible living arrangements suitable for different family sizes and lifestyles.
+
+The location provides excellent connectivity to Kozhikode's major attractions, educational institutions, healthcare facilities, and shopping centers. The area is well-connected through major roads and public transportation, making daily commuting convenient. The neighborhood offers a perfect balance of tranquility and accessibility, making it an ideal choice for families seeking a comfortable and connected lifestyle in Kozhikode.`,
+  },
 ];
 
 export default projectData;

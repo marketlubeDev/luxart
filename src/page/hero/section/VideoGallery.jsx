@@ -78,6 +78,7 @@ const videos = [
 const VideoGallery = () => {
   const [playingVideo, setPlayingVideo] = useState(null);
   const videoRefs = useRef({});
+  const swiperRef = useRef(null);
 
   const handlePlayClick = (videoId) => {
     const videoElement = videoRefs.current[videoId];
@@ -88,6 +89,10 @@ const VideoGallery = () => {
         videoElement.pause();
       }
       setPlayingVideo(null);
+      // Re-enable autoplay when video is paused
+      if (swiperRef.current && swiperRef.current.autoplay) {
+        swiperRef.current.autoplay.start();
+      }
     } else {
       // Stop any currently playing video
       if (playingVideo && videoRefs.current[playingVideo]) {
@@ -97,6 +102,11 @@ const VideoGallery = () => {
       // Play the new video
       setPlayingVideo(videoId);
 
+      // Disable autoplay when video starts playing
+      if (swiperRef.current && swiperRef.current.autoplay) {
+        swiperRef.current.autoplay.stop();
+      }
+
       if (videoElement) {
         videoElement.play().catch(console.error);
       }
@@ -105,6 +115,10 @@ const VideoGallery = () => {
 
   const handleVideoEnded = () => {
     setPlayingVideo(null);
+    // Re-enable autoplay when video ends
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      swiperRef.current.autoplay.start();
+    }
   };
 
   return (
@@ -117,8 +131,8 @@ const VideoGallery = () => {
         <div
           className="swiper-button-prev-custom"
           style={{
-            width: "60px",
-            height: "60px",
+            width: "40px",
+            height: "40px",
             border: "none",
             borderRadius: "50%",
             background: "rgba(244, 211, 0, 0.1)",
@@ -137,6 +151,9 @@ const VideoGallery = () => {
           </svg>
         </div>
         <Swiper
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={15}
           slidesPerView={1}
@@ -218,8 +235,8 @@ const VideoGallery = () => {
         <div
           className="swiper-button-next-custom"
           style={{
-            width: "60px",
-            height: "60px",
+            width: "40px",
+            height: "40px",
             border: "none",
             borderRadius: "50%",
             background: "rgba(244, 211, 0, 0.1)",
