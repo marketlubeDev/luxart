@@ -10,11 +10,11 @@
   &__text {
     font-size: 1.5rem;
     font-weight: 400;
-    // margin-bottom: 120px;
     line-height: 1.6;
     color: white;
     position: relative;
     animation: fadeSlideUp 1s ease-in-out;
+    margin-top: 0;
 
     span {
       background: linear-gradient(90deg, #f4d300, #ab7e0d);

@@ -98,9 +98,9 @@ const footer = () => {
                 Instagram
               </a>
             </li>
-            {/* <li>
-              <a href="https://www.twitter.com">Twitter</a>
-            </li> */}
+            <li>
+              <a href="https://www.youtube.com/@Luxartbuilders">YouTube</a>
+            </li>
           </ul>
         </div>
 

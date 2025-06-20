@@ -1,52 +1,33 @@
 import React from "react";
-import vector1 from "../../../assets/logo1.png";
-import vector2 from "../../../assets/logo2.png";
-import vector3 from "../../../assets/logo3.png";
-import vector4 from "../../../assets/logo4.png";
-import vector5 from "../../../assets/logo5.png";
-import vector6 from "../../../assets/logo6.png";
-import vector7 from "../../../assets/logo7.png";
-import vector8 from "../../../assets/logo8.png";
-// import vector9 from "../../../assets/logo9.png";
-// import vector10 from "../../../assets/logo10.png";
-import vector11 from "../../../assets/logo11.png";
-import vector12 from "../../../assets/logo12.png";
-import vector13 from "../../../assets/logo13.png";
-import vector14 from "../../../assets/logo14.png";
-import vector15 from "../../../assets/logo15.png";
-import vector16 from "../../../assets/logo16.png";
-import vector17 from "../../../assets/logo17.png";
-import vector18 from "../../../assets/logo18.png";
-// import vector19 from "../../../assets/logo19.png";
-import vector20 from "../../../assets/logo20.png";
 
 const logos = [
-  vector1,
-  vector2,
-  vector3,
-  vector4,
-  vector5,
-  vector6,
-  vector7,
-  vector8,
-  // vector9,
-  // vector10,
-  vector11,
-  vector12,
-  vector13,
-  vector14,
-  vector15,
-  vector16,
-  vector17,
-  vector18,
-  // vector19,
-  vector20,
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419817/honeywell_logo.svg_yp4jtg.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419817/ultratech_cement_ltd_logo.svg_voocgg.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419817/hikvision_logo.svg_scc2sy.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419806/philips_logo.svg_yahqfq.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419806/tata_steel_logo.svg_dtcimq.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750423052/hettich_group_logo.svg_1_fll88i.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419805/legrand_logo.svg_rappv2.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750423051/toto_usa_logo.svg_1_mea7z3.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419804/siemens_logo.svg_cjnw9i.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750423052/Kohler_1_wuuif3.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419783/grohe_logo.svg_oxm7xa.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750423052/jaquar_logo.svg_1_dohuiz.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750423052/mitsubishi_electric_logo.svg_1_nqgbgo.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419767/asian_paints_logo.svg_ir4epr.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419727/Logo_Alternative.svg_mzgd9f.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419727/kajaria_ceramics_logo.png_qcsk1r.png",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419727/Logo.svg_1_nhu7je.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/fbcab77d7cecbafac645ae5f4bb4eff33ff452c6_psp9ui.png",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/simpolo_tiles_and_bathware_logo.png_ywbtl8.png",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/image_3352_l8j2iw.png",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/image_3350_xe7zja.png",
 ];
 
 const vector = () => {
   // Repeat logos enough times to ensure smooth scroll
 
-  const repeatedLogos = [...logos, ...logos]; // At least 10x total
+  const repeatedLogos = [...logos, ...logos];
 
   return (
     <section className="vector">

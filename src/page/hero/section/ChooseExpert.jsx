@@ -12,7 +12,7 @@ import areaIcon from "../../../assets/area.svg";
 const engineers = [
   {
     id: 1,
-    name: "Shabeer",
+    name: "Shabeer A.M",
     title: "Founder of shabeer saleel Associates",
     // experience: "12 years",
     // area: "4,00,000 sq.ft",

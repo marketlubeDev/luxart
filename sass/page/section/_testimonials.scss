@@ -140,9 +140,12 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: 20rem;
+  // height: 20rem;
 
   .arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
