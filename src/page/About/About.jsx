@@ -51,7 +51,7 @@ export default function About() {
                 </div>
                 <div className="aboutPage-container__Content__bottom__left__top__countup">
                   <h2>25+</h2>
-                  <p>Engineers</p>
+                  <p>Architect</p>
                 </div>
                 <div className="aboutPage-container__Content__bottom__left__top__countup">
                   <h2>100K+</h2>

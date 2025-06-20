@@ -2,7 +2,7 @@ import React from "react";
 
 const stats = [
   { value: "100+", label: "Happy Clients" },
-  { value: "25+", label: "Engineers" },
+  { value: "25+", label: "Architect" },
   { value: "100K+", label: "Sq. ft" },
 ];
 
