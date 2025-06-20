@@ -1,7 +1,64 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Chairman from "../../assets/Chairman.jpg";
 
+// Custom hook for counting animation
+const useCountAnimation = (target, duration = 2000) => {
+  const [count, setCount] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+  const elementRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && !isVisible) {
+          setIsVisible(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (elementRef.current) {
+      observer.observe(elementRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, [isVisible]);
+
+  useEffect(() => {
+    if (!isVisible) return;
+
+    const startTime = Date.now();
+    const startValue = 0;
+
+    const animate = () => {
+      const currentTime = Date.now();
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+
+      // Easing function for smooth animation
+      const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+      const currentCount = Math.floor(
+        startValue + (target - startValue) * easeOutQuart
+      );
+
+      setCount(currentCount);
+
+      if (progress < 1) {
+        requestAnimationFrame(animate);
+      }
+    };
+
+    animate();
+  }, [isVisible, target, duration]);
+
+  return [count, elementRef];
+};
+
 export default function About() {
+  const [happyClientsCount, happyClientsRef] = useCountAnimation(100, 2000);
+  const [architectCount, architectRef] = useCountAnimation(25, 2000);
+  const [sqftCount, sqftRef] = useCountAnimation(100, 2000);
+
   useEffect(() => {
     const smoothScrollToTop = () => {
       const scrollStep = -window.scrollY / (500 / 15);
@@ -45,16 +102,25 @@ export default function About() {
           <div className="aboutPage-container__Content__bottom">
             <div className="aboutPage-container__Content__bottom__left">
               <div className="aboutPage-container__Content__bottom__left__top">
-                <div className="aboutPage-container__Content__bottom__left__top__countup">
-                  <h2>100+</h2>
+                <div
+                  className="aboutPage-container__Content__bottom__left__top__countup"
+                  ref={happyClientsRef}
+                >
+                  <h2>{happyClientsCount}+</h2>
                   <p>Happy Clients</p>
                 </div>
-                <div className="aboutPage-container__Content__bottom__left__top__countup">
-                  <h2>25+</h2>
+                <div
+                  className="aboutPage-container__Content__bottom__left__top__countup"
+                  ref={architectRef}
+                >
+                  <h2>{architectCount}+</h2>
                   <p>Architect</p>
                 </div>
-                <div className="aboutPage-container__Content__bottom__left__top__countup">
-                  <h2>100K+</h2>
+                <div
+                  className="aboutPage-container__Content__bottom__left__top__countup"
+                  ref={sqftRef}
+                >
+                  <h2>{sqftCount}K+</h2>
                   <p>Sq. ft</p>
                 </div>
               </div>
@@ -79,7 +145,12 @@ export default function About() {
             </div>
 
             <div className="aboutPage-container__Content__bottom__right">
-              <img src={Chairman} alt="Chairman" />
+              <img
+                src={
+                  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750425947/dp_3_lctcqt.jpg"
+                }
+                alt="Chairman"
+              />
               <h2>John Doe</h2>
               <p>Chairman of Luxart</p>
             </div>
