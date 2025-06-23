@@ -93,6 +93,7 @@
     max-width: 100%;
   }
 }
+
 .services__wrapper {
   overflow-x: auto;
   white-space: nowrap;
@@ -103,8 +104,7 @@
   &::-webkit-scrollbar {
     display: none;
   }
-
-  padding: 0 1rem; // adds slight left/right space to avoid cut-off
+  padding: 0 1rem;
   box-sizing: border-box;
 }
 
