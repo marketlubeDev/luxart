@@ -87,16 +87,13 @@ export default function About() {
               About <span>Us</span>
             </h1>
             <p className="para1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-              magnam nisi illum? Nam atque, velit voluptatum adipisci optio at
-              placeat asperiores aliquam iusto in sapiente magni eaque, commodi
-              esse repellendus explicabo ipsum ullam eligendi minus illum, odio
-              excepturi. Incidunt recusandae iusto provident voluptatum tempore,
-              amet, nemo quod, eum possimus hic laudantium eius! Repudiandae
-              reiciendis fugiat molestias suscipit? Asperiores fugit commodi
-              dolorem hic atque, deleniti laboriosam aperiam. Omnis, nisi rem!
-              Odit quidem earum officia officiis consequatur qui optio similique
-              praesentium placeat!
+              At Luxart Homes, we redefine modern luxury by crafting bespoke
+              residences that blend timeless elegance, advanced innovation, and
+              master craftsmanship. Our mission is to be a trusted name in the
+              luxury home market — delivering personalized designs, exceptional
+              quality, and lasting value. With a commitment to excellence and
+              meticulous attention to detail, we create living spaces that
+              inspire, elevate lifestyles, and stand the test of time.
             </p>
           </div>
           <div className="aboutPage-container__Content__bottom">
@@ -129,17 +126,22 @@ export default function About() {
                   The <span>Man</span> Behind
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Tempora magnam nisi illum? Nam atque, velit voluptatum
-                  adipisci optio at placeat asperiores aliquam iusto in sapiente
-                  magni eaque, commodi esse repellendus explicabo ipsum ullam
-                  eligendi minus illum, odio excepturi. Incidunt recusandae
-                  iusto provident voluptatum tempore, amet, nemo quod, eum
-                  possimus hic laudantium eius! Repudiandae reiciendis fugiat
-                  molestias suscipit? Asperiores fugit commodi dolorem hic
-                  atque, deleniti laboriosam aperiam. Omnis, nisi rem! Odit
-                  quidem earum officia officiis consequatur qui optio similique
-                  praesentium placeat!
+                  Farzin Ahamed, the visionary Managing Director of LUXART,
+                  brings over a decade of leadership across sales, education,
+                  automotive, and luxury lifestyle sectors. With a passion for
+                  empowering others, he has personally mentored over 50 young
+                  entrepreneurs through dedicated business coaching and
+                  training. Farzin's approach to leadership is shaped by global
+                  mentors like John C. Maxwell, Tony Robbins, and Dr. PP
+                  Vijayan. His inspiration, however, comes from Andrew
+                  Carnegie—the American steel magnate who built his empire by
+                  helping others become millionaires. Likewise, Farzin believes
+                  true success is built by creating wealth and fulfillment for
+                  those around you. Currently authoring a book for aspiring
+                  entrepreneurs, his mission is simple yet powerful: "Luxury is
+                  not a privilege for a few. Everyone deserves to experience
+                  it—affordably." At LUXART, this philosophy fuels everything we
+                  do.
                 </p>
               </div>
             </div>
@@ -151,7 +153,7 @@ export default function About() {
                 }
                 alt="Chairman"
               />
-              <h2>John Doe</h2>
+              <h2>Farzin Ahamed</h2>
               <p>Chairman of Luxart</p>
             </div>
           </div>
@@ -162,9 +164,10 @@ export default function About() {
               Our <span>Mission</span>
             </h2>
             <p>
-              To design and build exceptional spaces that blend innovation,
-              functionality, and elegance , turning visions into{" "}
-              <span>lasting architectural realities</span>.
+              Our mission is to create luxury living experiences for 50,000
+              people over the next 25 years — delivering bespoke homes that
+              blend design, comfort, and enduring value.
+              {/* <span>lasting architectural realities</span>. */}
             </p>
           </div>
         </div>
@@ -177,16 +180,15 @@ export default function About() {
                   Expanding <span>Goal</span>
                 </h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                  provident alias delectus, architecto earum quidem pariatur
-                  atque, adipisci iusto quam perspiciatis quibusdam amet et.
-                  Soluta rem doloribus modi. Accusantium hic modi nulla quia
-                  error debitis fuga iusto quibusdam eos ipsam aperiam, magnam
-                  totam excepturi quod libero, itaque maxime assumenda at
-                  provident tempora ipsum nihil dolorem perspiciatis sit. Dolor,
-                  temporibus. Est amet velit, accusantium nobis reprehenderit
-                  illo iure perspiciatis error odio quam, ducimus quos
-                  distinctio quas minus obcaecati laborum quisquam deleniti.
+                  At Luxart Builders, our mission is to bring luxury living to
+                  50,000 individuals over the next 25 years. We aim to achieve
+                  this by crafting bespoke homes that combine timeless design,
+                  architectural excellence, and personalized comfort. Every home
+                  we build is a reflection of our commitment to quality,
+                  innovation, and lifestyle enhancement. By integrating smart
+                  technologies, sustainable practices, and refined aesthetics,
+                  we ensure that each residence adds enduring value to our
+                  clients' lives.
                 </p>
               </div>
 
@@ -195,10 +197,17 @@ export default function About() {
                   Company <span>Vision</span>
                 </h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
-                  vero accusantium delectus expedita. Cum vel explicabo, libero
-                  maiores tempora perferendis consectetur a, doloribus
-                  blanditiis hic nostrum quisquam, voluptates nemo! Repellendus?
+                  To be a leading force in luxury home construction,
+                  transforming the lives of 50,000 people over the next 25 years
+                  through iconic, personalized living spaces. We envision a
+                  future where modern design, architectural excellence, and
+                  refined comfort come together to define how luxury is lived.
+                  By consistently delivering enduring quality and innovation, we
+                  aim to set new benchmarks in the premium housing industry. Our
+                  vision is rooted in trust, craftsmanship, and a deep
+                  understanding of lifestyle aspirations. Through every home we
+                  create, we seek to inspire, uplift, and redefine what it means
+                  to live luxuriously.us?
                 </p>
               </div>
             </div>
@@ -216,16 +225,31 @@ export default function About() {
             The <span>Brand</span> Story
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore,
-            facere sequi optio odio, ullam doloribus expedita rem, nam veritatis
-            ipsa quibusdam voluptatibus aliquam repudiandae alias in ex? Eos
-            consectetur recusandae aliquid maxime eligendi odit esse deleniti,
-            corporis dolor, error laborum laudantium incidunt quia voluptates
-            aperiam? Sint animi repellat, expedita id nobis laudantium laborum
-            nisi corporis maiores officiis voluptatem alias facilis labore quo
-            eum repudiandae eos ab soluta qui repellendus aperiam
-            necessitatibus! Cupiditate est magnam harum velit, corrupti quaerat
-            pariatur sint.
+            "From the street to the skyline — we build homes with a story
+            inside." From resilience to refinement — the story of Luxart
+            Builders is built on bold beginnings, tireless passion, and a vision
+            to redefine luxury living. At the heart of this journey is Farzin
+            Ahmed — a business coach, author, trainer, and visionary
+            entrepreneur. His life is a testament to grit: from cleaning hotel
+            restrooms and driving local taxis to working in street sales and
+            consulting, Farzin experienced life at every level. Each role, each
+            hardship, became a stepping stone — not just for survival, but for
+            mastery. Backed by the legacy of his father — a respected contractor
+            with his own quarry and heavy machinery operations — Farzin merged
+            hands-on construction insight with strategic leadership. His deep
+            drive to build something meaningful led to the birth of Luxart
+            Builders. Luxart began as a premium division under the wings of
+            “Designer,” a respected name in architecture and interiors. With the
+            creative support of Designer’s expert team, Luxart grew with a
+            strong foundation in luxury design and execution. Today, Luxart
+            Builders is powered by a team of leading architects, engineers, and
+            construction experts. From concept to completion, we offer
+            custom-built luxury homes that reflect innovation, elegance, and
+            engineering precision. We don’t just construct buildings — We craft
+            experiences. We build stories that last. With a bold mission to
+            create luxury living for 50,000 people in the next 25 years, Luxart
+            stands as a trusted name for those who seek more than just a home —
+            they seek a lifestyle.
           </p>
         </div>
       </div>

@@ -64,7 +64,7 @@
     }
   }
   &__Content {
-    width: 100%;
+    // width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -502,14 +502,11 @@
           align-items: center;
           padding: 3rem 10rem;
         }
-        @include responsive.respond(bigTablets) {
-          padding: 3rem 10rem;
-        }
         @include responsive.respond(desktop) {
-          padding: 3rem 10rem;
+          padding: 3rem;
         }
         @include responsive.respond(bigDesktop) {
-          padding: 3rem 10rem;
+          padding: 3rem;
         }
 
         img {
@@ -728,7 +725,7 @@
     }
   }
   &__VisionGoal {
-    width: 100%;
+    // width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
