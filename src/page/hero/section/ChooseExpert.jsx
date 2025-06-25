@@ -68,24 +68,7 @@ const ChooseExpert = () => {
               className="expert-card__image"
             />
             <div className="expert-card__info">
-              <div className="expert-card__meta">
-                {/* <span>
-                  <img
-                    src={experienceIcon}
-                    alt="experience icon"
-                    className="experience-icon"
-                  />
-                  {engineer.experience} experience
-                </span> */}
-                {/* <span>
-                  <img
-                    src={areaIcon}
-                    alt="area icon"
-                    className="expert-card__icon"
-                  />
-                  {engineer.area}
-                </span> */}
-              </div>
+              <div className="expert-card__meta"></div>
               <h3 className="expert-card__name">{engineer.name}</h3>
               <p className="expert-card__role">{engineer.title}</p>
             </div>
