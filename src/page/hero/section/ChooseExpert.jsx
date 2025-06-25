@@ -35,7 +35,7 @@ const engineers = [
     // experience: "16 years",
     // area: "8,90,000 sq.ft",
     image:
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/pmrasheed_h6mmkw.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750836806/32456_aytsev.jpg",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ const engineers = [
     // experience: "16 years",
     // area: "5,90,000 sq.ft",
     image:
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/imtiaz_qllbze.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750835956/IMG_8524_3_gsktvp.jpg",
   },
 ];
 

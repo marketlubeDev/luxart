@@ -167,11 +167,11 @@ The property includes essential amenities such as secure parking facilities, 24/
 
 The location provides excellent connectivity to Kozhikode's major attractions, educational institutions, healthcare facilities, and shopping centers. The area is well-connected through major roads and public transportation, making daily commuting convenient. The neighborhood offers a perfect balance of tranquility and accessibility, making it an ideal choice for families seeking a comfortable and connected lifestyle in Kozhikode.`,
     client: "Private Client",
-    architect: "P.C. Rasheed",
+    architect: "P.C. Rasheed and Associates",
     projectType: "Luxury Villa",
-    designTeam: "P.C. Rasheed",
+    designTeam: "P.C. Rasheed and Associates",
     contractor: "P.A. Shukoor",
-    consultant: "P.C. Rasheed",
+    consultant: "P.C. Rasheed and Associates",
   },
   {
     id: "kozhikode-divisional-office",
@@ -253,12 +253,113 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
 The project features state-of-the-art training facilities including modern classrooms, practical demonstration areas, conference rooms, and multimedia-equipped learning spaces. The dormitory section provides comfortable accommodation for trainees and visiting agricultural professionals, with well-planned living quarters, dining facilities, and recreational areas. The design incorporates sustainable building practices and energy-efficient systems suitable for educational institutions.
 
 Located in Neriamangalam, the facility benefits from excellent connectivity to major agricultural centers, research institutions, and transportation networks in Ernakulam district. The location provides easy access to agricultural fields, research facilities, and other government agricultural institutions. The project demonstrates the government's commitment to strengthening agricultural education and training infrastructure, supporting the development of skilled agricultural professionals and promoting sustainable farming practices in the region.`,
-    client: "Kerala Land Development Corporation Ltd., Trivandrum",
+    client: "Kerala Land Development Cor.",
     architect: "P.C. Rasheed and Associates",
     projectType: "Training Center and Dormitory",
     designTeam: "P.C. Rasheed and Associates",
     contractor: "P.C. Rasheed and Associates",
     consultant: "P.C. Rasheed and Associates",
+  },
+
+  {
+    id: "baith-Imthiyas",
+    title: "Baith",
+    experience: "5 years experience",
+    location: "Neriamangalam, Ernakulam",
+    area: "2500 sq.ft",
+    images: [
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/2_3_hh1pjo.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/2_t7s0s1.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "A modern residential house project in Neriamangalam, Ernakulam, featuring contemporary architectural design and comfortable living spaces. This residential project showcases thoughtful design with attention to detail and quality construction standards.",
+    description: `The Baith residential house project in Neriamangalam represents a modern residential development designed to meet contemporary living standards. Located in the well-connected area of Neriamangalam, Ernakulam, this project showcases thoughtful architectural planning with a focus on functionality, comfort, and aesthetic appeal.
+
+The house design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for the residents.
+
+The location in Neriamangalam provides excellent connectivity to Ernakulam's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
+    client: "Private Client",
+    architect: "Imthiyas",
+    projectType: "Residential House",
+    designTeam: "Imthiyas",
+    contractor: "K.A. Shukoor",
+    consultant: "K.A. Shukoor",
+  },
+  {
+    id: "tropical-chalet-imthiyas",
+    title: "Tropical Chalet",
+    experience: "5 years experience",
+    location: "Kozhikode, Kozhikode",
+    area: "8000 sq.ft",
+    images: [
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/3_j4oosi.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/3_5_nxeukw.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "A luxurious tropical resort and residential chalet project in Kozhikode, featuring contemporary architectural design that seamlessly blends residential comfort with resort amenities. This innovative project showcases tropical-inspired design with attention to detail and premium construction standards.",
+    description: `The Tropical Chalet project in Kozhikode represents a unique fusion of residential architecture and resort design, creating a luxurious tropical living experience. Located in the scenic area of Kozhikode, this project showcases innovative architectural planning that combines the comfort of residential living with the amenities and ambiance of a premium resort.
+
+The design incorporates tropical architectural elements including open-air living spaces, natural ventilation systems, and sustainable building materials that complement the coastal climate. The project features modern resort amenities such as swimming pools, landscaped gardens, recreational areas, and wellness facilities, while maintaining the privacy and comfort expected in residential spaces. The architectural approach emphasizes seamless indoor-outdoor living with large windows, verandas, and natural light integration.
+
+The location in Kozhikode provides excellent connectivity to the city's major attractions, beaches, cultural centers, and commercial areas. The area is well-served by transportation networks, making it convenient for both residents and potential resort guests. The project demonstrates commitment to creating premium tropical living spaces that offer the best of both residential comfort and resort luxury, while maintaining architectural excellence and sustainable design principles.`,
+    client: "Private Client",
+    architect: "Imthiyas",
+    projectType: "Residential House & Resort Design",
+    designTeam: "Imthiyas",
+    contractor: "K.A. Shukoor",
+    consultant: "K.A. Shukoor",
+  },
+  {
+    id: "eccentric-box-imthiyas",
+    title: "Eccentric Box",
+    experience: "5 years experience",
+    location: "Mukkam, Kozhikode",
+    area: "2000 sq.ft",
+    images: [
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/4_hcdcrv.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/4_5_zr42vm.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "A modern residential house project in Mukkam, Kozhikode, featuring contemporary architectural design and comfortable living spaces. This residential project showcases thoughtful design with attention to detail and quality construction standards.",
+    description: `The Eccentric Box residential house project in Mukkam represents a modern residential development designed to meet contemporary living standards. Located in the well-connected area of Mukkam, Kozhikode, this project showcases thoughtful architectural planning with a focus on functionality, comfort, and aesthetic appeal.
+
+The design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for the residents.
+
+The location in Mukkam provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
+    client: "Private Client",
+    architect: "Imthiyas",
+    projectType: "Residential House",
+    designTeam: "Imthiyas",
+    contractor: "K.A. Shukoor",
+    consultant: "K.A. Shukoor",
+  },
+  {
+    id: "tranquility-house-imthiyas",
+    title: "Tranquility House",
+    experience: "5 years experience",
+    location: "Thamarassery, Kozhikode",
+    area: "3000 sq.ft",
+    images: [
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/5_oq1mcr.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/5_5_immizp.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "A luxurious tropical resort and residential chalet project in Kozhikode, featuring contemporary architectural design that seamlessly blends residential comfort with resort amenities. This innovative project showcases tropical-inspired design with attention to detail and premium construction standards.",
+    description: `The Tropical Chalet project in Kozhikode represents a unique fusion of residential architecture and resort design, creating a luxurious tropical living experience. Located in the scenic area of Kozhikode, this project showcases innovative architectural planning that combines the comfort of residential living with the amenities and ambiance of a premium resort.
+
+The design incorporates tropical architectural elements including open-air living spaces, natural ventilation systems, and sustainable building materials that complement the coastal climate. The project features modern resort amenities such as swimming pools, landscaped gardens, recreational areas, and wellness facilities, while maintaining the privacy and comfort expected in residential spaces. The architectural approach emphasizes seamless indoor-outdoor living with large windows, verandas, and natural light integration.
+
+The location in Kozhikode provides excellent connectivity to the city's major attractions, beaches, cultural centers, and commercial areas. The area is well-served by transportation networks, making it convenient for both residents and potential resort guests. The project demonstrates commitment to creating premium tropical living spaces that offer the best of both residential comfort and resort luxury, while maintaining architectural excellence and sustainable design principles.`,
+    client: "Private Client",
+    architect: "Imthiyas",
+    projectType: "Residential House & Resort Design",
+    designTeam: "Imthiyas",
+    contractor: "K.A. Shukoor",
+    consultant: "K.A. Shukoor",
   },
 ];
 

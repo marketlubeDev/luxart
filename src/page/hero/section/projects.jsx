@@ -153,6 +153,58 @@ const Projects = () => {
                   />
                 </Link>
               </div>
+              <div className="projects__item projects__item--emerald">
+                <Link to={`/projects/${projectData[9]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--emerald"
+                    image={projectData[9].images[0]}
+                    location={projectData[9].location}
+                    area={projectData[9].area}
+                    title={projectData[9].title}
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="projects__row projects__row--bottom">
+            <div className="projects__grid">
+              <div className="projects__item projects__item--crystal-left">
+                <Link to={`/projects/${projectData[10]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--crystal-left"
+                    image={projectData[10].images[0]}
+                    location={projectData[10].location}
+                    area={projectData[10].area}
+                    title={projectData[10].title}
+                  />
+                </Link>
+              </div>
+              <div className="projects__item projects__item--crystal-right">
+                <Link to={`/projects/${projectData[11]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--crystal-right"
+                    image={projectData[11].images[0]}
+                    location={projectData[11].location}
+                    area={projectData[11].area}
+                    title={projectData[11].title}
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="projects__row projects__row--top">
+            <div className="projects__grid">
+              <div className="projects__item projects__item--azure">
+                <Link to={`/projects/${projectData[12]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--azure"
+                    image={projectData[12].images[0]}
+                    location={projectData[12].location}
+                    area={projectData[12].area}
+                    title={projectData[12].title}
+                  />
+                </Link>
+              </div>
               {/* <div className="projects__item projects__item--emerald">
                 <Link to={`/projects/${projectData[9]?.id}`}>
                   <ProjectCard
