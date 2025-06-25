@@ -36,7 +36,7 @@ const Projects = () => {
       <div className="projects__row projects__row--top">
         <div className="projects__grid">
           <div className="projects__item projects__item--azure">
-            <Link to={`/projects/${projectData[0].id}`}>
+            <Link to={`/projects/${projectData[0]?.id}`}>
               <ProjectCard
                 className="projects__card--azure"
                 image={projectData[0].images[0]}
@@ -47,7 +47,7 @@ const Projects = () => {
             </Link>
           </div>
           <div className="projects__item projects__item--emerald">
-            <Link to={`/projects/${projectData[1].id}`}>
+            <Link to={`/projects/${projectData[1]?.id}`}>
               <ProjectCard
                 className="projects__card--emerald"
                 image={projectData[1].images[0]}
@@ -63,7 +63,7 @@ const Projects = () => {
       <div className="projects__row projects__row--bottom">
         <div className="projects__grid">
           <div className="projects__item projects__item--crystal-left">
-            <Link to={`/projects/${projectData[2].id}`}>
+            <Link to={`/projects/${projectData[2]?.id}`}>
               <ProjectCard
                 className="projects__card--crystal-left"
                 image={projectData[2].images[0]}
@@ -74,7 +74,7 @@ const Projects = () => {
             </Link>
           </div>
           <div className="projects__item projects__item--crystal-right">
-            <Link to={`/projects/${projectData[3].id}`}>
+            <Link to={`/projects/${projectData[3]?.id}`}>
               <ProjectCard
                 className="projects__card--crystal-right"
                 image={projectData[3].images[0]}
@@ -84,23 +84,14 @@ const Projects = () => {
               />
             </Link>
           </div>
-          {/* <div className="projects__item projects__item--azure">
-            <Link to={`/projects/${projectData[4].id}`}>
-              <ProjectCard
-                className="projects__card--azure"
-                image={projectData[4].image}
-                location={projectData[4].location}
-                area={projectData[4].area}
-                title={projectData[4].title}
-              />
-            </Link>
-          </div> */}
         </div>
-        {!isHomePage && (
+      </div>
+      {!isHomePage && (
+        <>
           <div className="projects__row projects__row--top">
             <div className="projects__grid">
               <div className="projects__item projects__item--azure">
-                <Link to={`/projects/${projectData[4].id}`}>
+                <Link to={`/projects/${projectData[4]?.id}`}>
                   <ProjectCard
                     className="projects__card--azure"
                     image={projectData[4].images[0]}
@@ -110,10 +101,73 @@ const Projects = () => {
                   />
                 </Link>
               </div>
+              <div className="projects__item projects__item--emerald">
+                <Link to={`/projects/${projectData[5]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--emerald"
+                    image={projectData[5].images[0]}
+                    location={projectData[5].location}
+                    area={projectData[5].area}
+                    title={projectData[5].title}
+                  />
+                </Link>
+              </div>
             </div>
           </div>
-        )}
-      </div>
+          <div className="projects__row projects__row--bottom">
+            <div className="projects__grid">
+              <div className="projects__item projects__item--crystal-left">
+                <Link to={`/projects/${projectData[6]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--crystal-left"
+                    image={projectData[6].images[0]}
+                    location={projectData[6].location}
+                    area={projectData[6].area}
+                    title={projectData[6].title}
+                  />
+                </Link>
+              </div>
+              <div className="projects__item projects__item--crystal-right">
+                <Link to={`/projects/${projectData[7]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--crystal-right"
+                    image={projectData[7].images[0]}
+                    location={projectData[7].location}
+                    area={projectData[7].area}
+                    title={projectData[7].title}
+                  />
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="projects__row projects__row--top">
+            <div className="projects__grid">
+              <div className="projects__item projects__item--azure">
+                <Link to={`/projects/${projectData[8]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--azure"
+                    image={projectData[8].images[0]}
+                    location={projectData[8].location}
+                    area={projectData[8].area}
+                    title={projectData[8].title}
+                  />
+                </Link>
+              </div>
+              {/* <div className="projects__item projects__item--emerald">
+                <Link to={`/projects/${projectData[9]?.id}`}>
+                  <ProjectCard
+                    className="projects__card--emerald"
+                    image={projectData[9].images[0]}
+                    location={projectData[9].location}
+                    area={projectData[9].area}
+                    title={projectData[9].title}
+                  />
+                </Link>
+              </div> */}
+            </div>
+          </div>
+        </>
+      )}
     </section>
   );
 };

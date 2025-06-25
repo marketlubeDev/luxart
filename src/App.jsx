@@ -18,6 +18,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import About from "./page/About/About";
 import ProjectDetail from "./page/hero/section/ProjectDetail";
 import ServicesPage from "./page/Services/Services";
+import NewProjectDetail from "./page/hero/section/newprojectDetail";
 
 // Home component containing all the main landing page sections
 const Home = () => {
@@ -56,7 +57,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:projectId" element={<ProjectDetail />} />
+        <Route path="/projects/:projectId" element={<NewProjectDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<ServicesPage />} />
       </Routes>
