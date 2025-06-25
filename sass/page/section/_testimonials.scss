@@ -1,3 +1,5 @@
+@use "../../base/responsive" as *;
+
 .testimonial-section {
   background-color: black;
   padding: 2rem 1rem;
@@ -9,6 +11,12 @@
     font-size: 2rem;
     font-weight: 400;
     line-height: 1.2;
+    @include respond(smallPhone) {
+      font-size: 1.5rem;
+    }
+    @include respond(phone) {
+      font-size: 1.5rem;
+    }
 
     .highlight {
       background: linear-gradient(90deg, #f4d300, #ab7e0d);
@@ -35,6 +43,14 @@
     padding: 2rem 0;
     gap: 1.5rem;
     overflow: hidden;
+
+    @include respond(smallPhone) {
+      padding: 0.5rem 0rem;
+    }
+    @include respond(phone) {
+      padding: 0.5rem 0rem;
+    }
+
     .testimonial-card {
       position: relative;
       flex-shrink: 0;
@@ -46,6 +62,13 @@
       border-radius: 1rem;
       padding: 1.5rem;
       display: none;
+
+      @include respond(smallPhone) {
+        width: 300px;
+      }
+      @include respond(phone) {
+        width: 300px;
+      }
 
       &.active {
         display: block;
@@ -120,6 +143,13 @@
     justify-content: center;
     gap: 10px;
 
+    @include respond(smallPhone) {
+      margin-top: 1rem;
+    }
+    @include respond(phone) {
+      margin-top: 1rem;
+    }
+
     .dot {
       width: 20px;
       height: 2px;
@@ -165,10 +195,22 @@
 
     &.left-arrow {
       left: 0;
+      @include respond(smallPhone) {
+        display: none;
+      }
+      @include respond(phone) {
+        display: none;
+      }
     }
 
     &.right-arrow {
       right: 0;
+      @include respond(smallPhone) {
+        display: none;
+      }
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 }

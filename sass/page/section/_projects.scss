@@ -1,3 +1,5 @@
+@use "../../base/responsive" as *;
+
 .projects {
   padding: 3rem 2rem;
   background-color: #000;
@@ -49,6 +51,13 @@
 
   &__row {
     margin-bottom: 3rem;
+
+    @include respond(smallPhone) {
+      margin-bottom: 1rem;
+    }
+    @include respond(phone) {
+      margin-bottom: 1rem;
+    }
   }
 
   &__grid {

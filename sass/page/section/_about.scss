@@ -544,32 +544,31 @@
           color: #fff;
           text-align: right;
           font-family: Inter;
-          font-size: 3.375rem;
+          font-size: 2rem;
           font-weight: 500;
-          margin-bottom: 0.5rem;
+          // margin-bottom: 0.5rem;
 
           @include responsive.respond(smallPhone) {
-            font-size: 2.5rem;
+            font-size: 1rem;
             text-align: center;
             margin-left: -2rem;
             margin-top: -0.5rem;
           }
           @include responsive.respond(phone) {
-            font-size: 2.5rem;
+            font-size: 1rem;
             text-align: center;
           }
           @include responsive.respond(tablets) {
-            font-size: 2.75rem;
+            font-size: 1.2rem;
             text-align: center;
           }
           @include responsive.respond(bigTablets) {
-            font-size: 3rem;
+            font-size: 1.2rem;
           }
           @include responsive.respond(desktop) {
-            font-size: 3.375rem;
           }
           @include responsive.respond(bigDesktop) {
-            font-size: 3.375rem;
+            // font-size: 3.375rem;
           }
         }
         p {
