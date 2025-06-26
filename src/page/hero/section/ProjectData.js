@@ -14,7 +14,7 @@ const projectData = [
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek2_aubvsf.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek3_egidpo.jpg",
     ],
-    pdfLink: "/pdfs/cheekkilode.pdf",
+    pdfLink: null,
     summary:
       "A contemporary residential complex in the heart of Cheekkilode, offering modern amenities and spacious living areas. Perfect for families seeking a comfortable lifestyle in a well-connected neighborhood.",
     description: `Located in the serene neighborhood of Cheekkilode, this residential complex offers a perfect blend of modern living and traditional charm. The property features spacious apartments with well-planned layouts, ensuring maximum comfort and functionality.
