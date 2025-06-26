@@ -124,12 +124,13 @@
 
     @include respond(phone) {
       gap: 1.2rem;
+      align-items: start;
     }
 
     @include respond(smallPhone) {
       flex-direction: column;
       gap: 0.8rem;
-      align-items: center;
+      align-items: start;
     }
 
     .metadata-item {
@@ -339,10 +340,12 @@
 
       @include respond(phone) {
         gap: 1.5rem;
+        flex-direction: column;
       }
 
       @include respond(smallPhone) {
         gap: 1rem;
+        flex-direction: column;
       }
     }
 
@@ -585,11 +588,13 @@
       @include respond(phone) {
         width: 35px;
         height: 35px;
+        display: none;
       }
 
       @include respond(smallPhone) {
         width: 30px;
         height: 30px;
+        display: none;
       }
 
       svg {
