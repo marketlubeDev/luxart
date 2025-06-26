@@ -840,7 +840,7 @@
     }
 
     @include respond(tablets) {
-      flex-direction: column;
+      flex-direction: row;
       gap: 1.5rem;
       margin-top: 1.5rem;
     }
