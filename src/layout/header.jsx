@@ -25,7 +25,6 @@ const Header = () => {
     };
   }, [menuOpen]);
 
-  // Close menu when route changes
   React.useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
@@ -35,7 +34,7 @@ const Header = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+918075521186"; // Your WhatsApp number
+    const phoneNumber = "+918075521186";
     const message = "Hello, I'm interested in your premium housing projects.";
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
@@ -45,7 +44,11 @@ const Header = () => {
 
   const scrollToTestimonials = () => {
     navigate("/", { state: { scrollTo: "testimonials" } });
-    setMenuOpen(false); // Close mobile menu after clicking
+    setMenuOpen(false);
+  };
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -68,7 +71,11 @@ const Header = () => {
       </div>
       <ul className={`navbar__links${menuOpen ? " open" : ""}`}>
         <li>
-          <Link to="/" className={isActive("/") ? "active" : ""}>
+          <Link
+            to="/"
+            className={isActive("/") ? "active" : ""}
+            onClick={handleLinkClick}
+          >
             Home
           </Link>
         </li>
@@ -84,12 +91,17 @@ const Header = () => {
           <Link
             to="/projects"
             className={isActive("/projects") ? "active" : ""}
+            onClick={handleLinkClick}
           >
             Projects
           </Link>
         </li>
         <li>
-          <Link to="/about" className={isActive("/about") ? "active" : ""}>
+          <Link
+            to="/about"
+            className={isActive("/about") ? "active" : ""}
+            onClick={handleLinkClick}
+          >
             About Us
           </Link>
         </li>

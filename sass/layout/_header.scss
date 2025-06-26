@@ -525,7 +525,7 @@
     &__links {
       width: 100vw;
       height: 100vh;
-      right: -4px;
+      right: 0px;
       padding: 0rem;
       border-radius: 0;
       top: 60px;
@@ -568,6 +568,7 @@
 
     &__links {
       top: 75px;
+      right: 0;
 
       li {
         a,
