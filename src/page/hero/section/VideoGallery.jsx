@@ -84,38 +84,41 @@ const VideoGallery = () => {
     const videoElement = videoRefs.current[videoId];
 
     if (playingVideo === videoId) {
-      // Pause the current video
       if (videoElement) {
         videoElement.pause();
       }
       setPlayingVideo(null);
-      // Re-enable autoplay when video is paused
-      if (swiperRef.current && swiperRef.current.autoplay) {
-        swiperRef.current.autoplay.start();
-      }
     } else {
-      // Stop any currently playing video
       if (playingVideo && videoRefs.current[playingVideo]) {
         videoRefs.current[playingVideo].pause();
       }
 
-      // Play the new video
       setPlayingVideo(videoId);
 
-      // Disable autoplay when video starts playing
-      if (swiperRef.current && swiperRef.current.autoplay) {
-        swiperRef.current.autoplay.stop();
-      }
-
       if (videoElement) {
+        const dataSrc = videoElement.getAttribute("data-src");
+        if (dataSrc && !videoElement.src) {
+          videoElement.src = dataSrc;
+        }
         videoElement.play().catch(console.error);
       }
     }
   };
 
+  const handleVideoPlay = () => {
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      swiperRef.current.autoplay.stop();
+    }
+  };
+
+  const handleVideoPause = () => {
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      swiperRef.current.autoplay.start();
+    }
+  };
+
   const handleVideoEnded = () => {
     setPlayingVideo(null);
-    // Re-enable autoplay when video ends
     if (swiperRef.current && swiperRef.current.autoplay) {
       swiperRef.current.autoplay.start();
     }
@@ -170,6 +173,17 @@ const VideoGallery = () => {
             disableOnInteraction: false,
           }}
           loop={true}
+          lazy={{
+            loadPrevNext: true,
+            loadPrevNextAmount: 2,
+            loadOnTransitionStart: false,
+            elementClass: "swiper-lazy",
+            loadingClass: "swiper-lazy-loading",
+            loadedClass: "swiper-lazy-loaded",
+            preloaderClass: "swiper-lazy-preloader",
+          }}
+          watchSlides={true}
+          watchSlidesProgress={true}
           breakpoints={{
             640: {
               slidesPerView: 2,
@@ -191,22 +205,21 @@ const VideoGallery = () => {
               <div className="video-card">
                 <div className="video-wrapper">
                   <div className="thumbnail-container">
-                    {playingVideo === video.id ? (
-                      <video
-                        ref={(el) => (videoRefs.current[video.id] = el)}
-                        className="video-card__video"
-                        src={video.src}
-                        controls
-                        onEnded={handleVideoEnded}
-                        autoPlay
-                      />
-                    ) : (
+                    <video
+                      ref={(el) => (videoRefs.current[video.id] = el)}
+                      className="video-card__video swiper-lazy"
+                      src={playingVideo === video.id ? video.src : undefined}
+                      data-src={video.src}
+                      poster={video.thumbnail}
+                      controls={playingVideo === video.id}
+                      preload="none"
+                      onEnded={handleVideoEnded}
+                      onPlay={handleVideoPlay}
+                      onPause={handleVideoPause}
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                    {playingVideo !== video.id && (
                       <>
-                        <img
-                          src={video.thumbnail}
-                          alt={`Video ${video.id}`}
-                          className="video-thumbnail"
-                        />
                         <div className="instagram-overlay">
                           <div className="instagram-gradient"></div>
                         </div>
