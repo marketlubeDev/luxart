@@ -212,7 +212,7 @@ const VideoGallery = () => {
                       data-src={video.src}
                       poster={video.thumbnail}
                       controls={playingVideo === video.id}
-                      preload="none"
+                      preload="auto"
                       onEnded={handleVideoEnded}
                       onPlay={handleVideoPlay}
                       onPause={handleVideoPause}
