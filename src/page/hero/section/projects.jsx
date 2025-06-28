@@ -13,12 +13,12 @@ const Projects = () => {
   const [filteredProjects, setFilteredProjects] = useState(projectData);
   const [selectedArchitect, setSelectedArchitect] = useState(null);
 
-  // Effect to handle filtering based on localStorage
+  // Effect to handle filtering based on localStorage and route changes
   useEffect(() => {
     const architectFromStorage = localStorage.getItem("selectedArchitect");
 
     if (architectFromStorage && isProjectsPage) {
-      // Filter projects based on selected architect
+      // Filter projects based on selected architect when on projects page
       const filtered = projectData.filter(
         (project) => project.projectBy === architectFromStorage
       );
@@ -30,15 +30,18 @@ const Projects = () => {
         // If no projects found for the architect, show all projects but clear the selection
         setSelectedArchitect(null);
         setFilteredProjects(projectData);
-        // Clear localStorage since no projects exist for this architect
         localStorage.removeItem("selectedArchitect");
       }
     } else {
-      // Show all projects if no architect selected or not on projects page
-      setFilteredProjects(projectData);
+      // Clear the filter when not on projects page or no architect selected
       setSelectedArchitect(null);
+      setFilteredProjects(projectData);
+      if (!isProjectsPage) {
+        // Only clear localStorage when leaving projects page
+        localStorage.removeItem("selectedArchitect");
+      }
     }
-  }, [isProjectsPage]);
+  }, [location.pathname, isProjectsPage]);
 
   // Clear filter function
   const clearFilter = () => {
@@ -89,7 +92,7 @@ const Projects = () => {
             {selectedArchitect && (
               <span className="projects__filter-info">
                 {" "}
-                - by {selectedArchitect}
+                {/* - by {selectedArchitect} */}
               </span>
             )}
           </h2>
@@ -99,7 +102,7 @@ const Projects = () => {
             {selectedArchitect && (
               <span className="projects__filter-subtitle">
                 {" "}
-                Showing projects by {selectedArchitect}
+                {/* Showing projects by {selectedArchitect} */}
               </span>
             )}
           </p>
