@@ -126,22 +126,21 @@ export default function About() {
                   The <span>Man</span> Behind
                 </h1>
                 <p>
-                  Farzin Ahamed, the visionary Managing Director of LUXART,
-                  brings over a decade of leadership across sales, education,
-                  automotive, and luxury lifestyle sectors. With a passion for
-                  empowering others, he has personally mentored over 50 young
-                  entrepreneurs through dedicated business coaching and
-                  training. Farzin's approach to leadership is shaped by global
-                  mentors like John C. Maxwell, Tony Robbins, and Dr. PP
-                  Vijayan. His inspiration, however, comes from Andrew
-                  Carnegie—the American steel magnate who built his empire by
-                  helping others become millionaires. Likewise, Farzin believes
-                  true success is built by creating wealth and fulfillment for
-                  those around you. Currently authoring a book for aspiring
-                  entrepreneurs, his mission is simple yet powerful: "Luxury is
-                  not a privilege for a few. Everyone deserves to experience
-                  it—affordably." At LUXART, this philosophy fuels everything we
-                  do.
+                  Farzin Ahamed, the visionary CMD of Luxart, brings over a
+                  decade of leadership across sales, education, automotive, and
+                  luxury lifestyle sectors. With a passion for empowering
+                  others, he has personally mentored over 50 young entrepreneurs
+                  through dedicated business coaching and training. Farzin's
+                  approach to leadership is shaped by global mentors like John
+                  C. Maxwell, Tony Robbins, and Dr. PP Vijayan. His inspiration,
+                  however, comes from Andrew Carnegie—the American steel magnate
+                  who built his empire by helping others become millionaires.
+                  Likewise, Farzin believes true success is built by creating
+                  wealth and fulfillment for those around you. Currently
+                  authoring a book for aspiring entrepreneurs, his mission is
+                  simple yet powerful: "Luxury is not a privilege for a few.
+                  Everyone deserves to experience it—affordably." At LUXART,
+                  this philosophy fuels everything we do.
                 </p>
               </div>
             </div>
@@ -154,7 +153,7 @@ export default function About() {
                 alt="Chairman"
               />
               <h2>Farzin Ahamed</h2>
-              <p>Chairman of Luxart</p>
+              <p>CMD of Luxart</p>
             </div>
           </div>
         </div>

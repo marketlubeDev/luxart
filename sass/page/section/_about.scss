@@ -482,7 +482,7 @@
         flex-direction: column;
         text-align: end;
         justify-content: end;
-        padding: 3rem 2rem;
+        padding: 0rem 2rem;
 
         @include responsive.respond(smallPhone) {
           text-align: center;
@@ -494,50 +494,50 @@
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 3rem 10rem;
+          padding: 0 10rem;
         }
         @include responsive.respond(tablets) {
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 3rem 10rem;
+          padding: 0 10rem;
         }
         @include responsive.respond(desktop) {
-          padding: 3rem;
+          padding: 0 3rem;
         }
         @include responsive.respond(bigDesktop) {
-          padding: 3rem;
+          padding: 0 3rem;
         }
 
         img {
           width: 300px;
-          height: 260px;
+          height: auto;
           object-fit: cover;
           object-position: top;
           margin-bottom: 1rem;
           @include responsive.respond(smallPhone) {
             width: 180px;
-            height: 160px;
+            height: auto;
           }
           @include responsive.respond(phone) {
             width: 220px;
-            height: 200px;
+            height: auto;
           }
           @include responsive.respond(tablets) {
             width: 260px;
-            height: 220px;
+            height: auto;
           }
           @include responsive.respond(bigTablets) {
             width: 260px;
-            height: 220px;
+            height: auto;
           }
           @include responsive.respond(desktop) {
             width: 260px;
-            height: 220px;
+            height: auto;
           }
           @include responsive.respond(bigDesktop) {
             width: 300px;
-            height: 260px;
+            height: auto;
           }
         }
         h2 {
@@ -546,6 +546,7 @@
           font-family: Inter;
           font-size: 2rem;
           font-weight: 500;
+          margin: 0.5rem 0 !important;
           // margin-bottom: 0.5rem;
 
           @include responsive.respond(smallPhone) {
@@ -576,9 +577,10 @@
           font-family: Inter;
           font-size: 1.125rem;
           font-weight: 500;
-          line-height: 135%;
+          // line-height: 135%;
           letter-spacing: 0.32px;
           text-align: right;
+          margin: 0.5rem 0 !important;
 
           @include responsive.respond(smallPhone) {
             font-size: 1.125rem;
@@ -934,25 +936,25 @@
           }
           @include responsive.respond(tablets) {
             width: 300px;
-            height: 280px;
+            height: auto;
             margin-top: 50px;
             margin-left: 20px;
           }
           @include responsive.respond(bigTablets) {
             width: 352px;
-            height: 306px;
+            height: auto;
             margin-top: 50px;
             margin-left: 20px;
           }
           @include responsive.respond(desktop) {
             width: 352px;
-            height: 306px;
+            height: auto;
             margin-top: 50px;
             margin-left: 20px;
           }
           @include responsive.respond(bigDesktop) {
             width: 352px;
-            height: 306px;
+            height: auto;
             margin-top: 50px;
             margin-left: 20px;
           }
@@ -1085,7 +1087,7 @@
     }
     &__Content__bottom__right img {
       width: 220px;
-      height: 180px;
+      height: auto;
     }
     &__Mission {
       padding: 4rem 0;
@@ -1151,7 +1153,7 @@
     }
     &__Content__bottom__right img {
       width: 140px;
-      height: 120px;
+      height: auto;
     }
     &__Mission {
       padding: 2rem 0;
@@ -1196,7 +1198,7 @@
     }
     &__Content__bottom__right img {
       width: 200px;
-      height: 180px;
+      height: auto;
       margin-right: 40px;
     }
     &__Mission__top p {

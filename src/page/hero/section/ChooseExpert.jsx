@@ -1,13 +1,5 @@
 import React from "react";
-
-import expert3 from "../../../assets/expert3.jpg";
-import shabeer from "../../../assets/shabeer.jpeg";
-import shiju from "../../../assets/shiju.jpeg";
-import rasheed from "../../../assets/pmrasheed.jpg";
-import imtiaz from "../../../assets/imtiaz.jpg";
-
-import experienceIcon from "../../../assets/bag.svg";
-import areaIcon from "../../../assets/area.svg";
+import { useNavigate } from "react-router-dom";
 
 const engineers = [
   {
@@ -18,6 +10,7 @@ const engineers = [
     // area: "4,00,000 sq.ft",
     image:
       "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shabeer_etu53m.jpg",
+    projectBy: "shabeer",
   },
   {
     id: 2,
@@ -27,6 +20,7 @@ const engineers = [
     // area: "2,60,000 sq.ft",
     image:
       "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shiju_apq2br.jpg",
+    projectBy: "shiju",
   },
   {
     id: 3,
@@ -36,6 +30,7 @@ const engineers = [
     // area: "8,90,000 sq.ft",
     image:
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750836806/32456_aytsev.jpg",
+    projectBy: "rasheed",
   },
   {
     id: 4,
@@ -45,10 +40,19 @@ const engineers = [
     // area: "5,90,000 sq.ft",
     image:
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750835956/IMG_8524_3_gsktvp.jpg",
+    projectBy: "imthiyas",
   },
 ];
 
 const ChooseExpert = () => {
+  const navigate = useNavigate();
+
+  const handleCardClick = (projectBy) => {
+    localStorage.setItem("selectedArchitect", projectBy);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    navigate(`/projects`);
+  };
+
   return (
     <section className="choose-expert">
       <h2 className="choose-expert__title">
@@ -61,7 +65,12 @@ const ChooseExpert = () => {
 
       <div className="choose-expert__cards">
         {engineers.map((engineer) => (
-          <div key={engineer.id} className="expert-card">
+          <div
+            key={engineer.id}
+            className="expert-card"
+            onClick={() => handleCardClick(engineer.projectBy)}
+            style={{ cursor: "pointer" }}
+          >
             <img
               src={engineer.image}
               alt={engineer.name}

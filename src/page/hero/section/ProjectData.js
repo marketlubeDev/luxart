@@ -4,6 +4,7 @@ import kalamassery from "../../../assets/kalamassery.pdf";
 const projectData = [
   {
     id: "cheekkilode",
+    projectBy: "luxart",
     title: "Cheekkilode",
     experience: "15 years experience",
     location: "Cheekkilode, Kozhikode",
@@ -24,14 +25,15 @@ Each unit is designed with attention to detail, featuring high-quality finishes,
 Residents can enjoy the convenience of nearby schools, hospitals, and shopping centers, while still maintaining a peaceful living environment. The property's strategic location provides easy access to major roads and public transportation, making daily commutes hassle-free.`,
 
     client: null,
-    architect: null,
+    architect: "P C Rasheed",
     projectType: "Residential Project",
-    designTeam: null,
-    contractor: null,
-    consultant: null,
+    designTeam: "R.C. Rasheed and Associates",
+    contractor: "R.C. Rasheed and Associates",
+    consultant: "R.C. Rasheed and Associates",
   },
   {
     id: "pattambi-heights",
+    projectBy: "luxart",
     title: "Pattambi",
     experience: "12 years experience",
     location: "Pattambi, Malappuram",
@@ -56,6 +58,7 @@ The property is well-connected to major roads and public transportation, making 
   },
   {
     id: "kondotty",
+    projectBy: "luxart",
     title: "Kondotty",
     experience: "12 years experience",
     location: "Kondotty, Malappuram",
@@ -80,6 +83,7 @@ The location provides excellent connectivity to nearby towns and cities, making 
   },
   {
     id: "kalamassery",
+    projectBy: "luxart",
     title: "Residence at Kalamassery",
     experience: "16 years experience",
     location: "Kalamassery, Ernakulam",
@@ -109,14 +113,15 @@ Residents can enjoy the benefits of a peaceful neighborhood while having easy ac
 
 The location provides excellent connectivity to schools, hospitals, shopping centers, and public transportation. Its proximity to major roads and highways makes commuting to different parts of Kochi convenient. The property is ideal for families looking for a comfortable living space in a well-established neighborhood.`,
     client: "Kerala State WAKF Board",
-    architect: "P.C. Rasheed and Associates",
+    architect: null,
     projectType: "Residential Project",
-    designTeam: "P. C RASHEED AND ASSOCIATES",
+    designTeam: null,
     contractor: null,
-    consultant: "P. C RASHEED AND ASSOCIATES",
+    consultant: null,
   },
   {
     id: "pavangad",
+    projectBy: "luxart",
     title: "Pavangad",
     location: "Pavangad, Kozhikode",
     experience: "12 years experience",
@@ -144,6 +149,7 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
   },
   {
     id: "wayanad",
+    projectBy: "rasheed",
     title: "Wayanad",
     experience: "20 years experience",
     location: "Wayanad, Wayanad",
@@ -167,14 +173,15 @@ The property includes essential amenities such as secure parking facilities, 24/
 
 The location provides excellent connectivity to Kozhikode's major attractions, educational institutions, healthcare facilities, and shopping centers. The area is well-connected through major roads and public transportation, making daily commuting convenient. The neighborhood offers a perfect balance of tranquility and accessibility, making it an ideal choice for families seeking a comfortable and connected lifestyle in Kozhikode.`,
     client: "Private Client",
-    architect: "P.C. Rasheed and Associates",
+    architect: "P C Rasheed",
     projectType: "Luxury Villa",
-    designTeam: "P.C. Rasheed and Associates",
+    designTeam: "P C Rasheed",
     contractor: null,
-    consultant: "P.C. Rasheed and Associates",
+    consultant: "P C Rasheed",
   },
   {
     id: "kozhikode-divisional-office",
+    projectBy: "rasheed",
     title: "Kozhikode Divisional Office Building",
     experience: "15 years experience",
     location: "Kozhikode, Kerala",
@@ -195,14 +202,15 @@ The building features thoughtfully planned administrative spaces including execu
 
 The location in Kozhikode provides excellent connectivity to major government institutions, transportation hubs, and commercial centers. The building design reflects the importance of the Waqf Board's role in managing religious endowments and properties, while incorporating contemporary architectural elements that symbolize progress and administrative excellence. The project demonstrates commitment to creating a functional, accessible, and dignified workspace for government operations.`,
     client: "Kerala State Waqf Board",
-    architect: "P.C. Rasheed and Associates",
+    architect: "P C Rasheed",
     projectType: "Government Office Building",
-    designTeam: "P.C. Rasheed and Associates",
+    designTeam: "P C Rasheed",
     contractor: null,
-    consultant: "P.C. Rasheed and Associates",
+    consultant: "P C Rasheed",
   },
   {
     id: "pathimangalam-residential",
+    projectBy: "rasheed",
     title: "Residential Building at Pathimangalam",
     experience: "15 years experience",
     location: "Pathimangalam, Kozhikode",
@@ -225,14 +233,15 @@ The building design incorporates modern residential features including well-plan
 
 The location in Pathimangalam provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
     client: "Shafi Majeed",
-    architect: "P.C. Rasheed and Associates",
+    architect: "P C Rasheed",
     projectType: "Residential Project",
-    designTeam: "P.C. Rasheed and Associates",
-    contractor: "P.C. Rasheed and Associates",
-    consultant: "P.C. Rasheed and Associates",
+    designTeam: "P C Rasheed",
+    contractor: "P C Rasheed",
+    consultant: "P C Rasheed",
   },
   {
     id: "neriamangalam-training-center",
+    projectBy: "rasheed",
     title:
       "Training Center Cum Dormitory Building for District Agricultural Farm (DAF)",
     experience: "15 years experience",
@@ -254,15 +263,16 @@ The project features state-of-the-art training facilities including modern class
 
 Located in Neriamangalam, the facility benefits from excellent connectivity to major agricultural centers, research institutions, and transportation networks in Ernakulam district. The location provides easy access to agricultural fields, research facilities, and other government agricultural institutions. The project demonstrates the government's commitment to strengthening agricultural education and training infrastructure, supporting the development of skilled agricultural professionals and promoting sustainable farming practices in the region.`,
     client: "Kerala Land Development Cor.",
-    architect: "P.C. Rasheed and Associates",
+    architect: "P C Rasheed",
     projectType: "Training Center and Dormitory",
-    designTeam: "P.C. Rasheed and Associates",
-    contractor: "P.C. Rasheed and Associates",
-    consultant: "P.C. Rasheed and Associates",
+    designTeam: "P C Rasheed",
+    contractor: "P C Rasheed",
+    consultant: "P C Rasheed",
   },
 
   {
     id: "baith-Imthiyas",
+    projectBy: "imthiyas",
     title: "Baith",
     experience: "5 years experience",
     location: "Meppayur, Kozhikode",
@@ -288,10 +298,11 @@ The location in Neriamangalam provides excellent connectivity to Ernakulam's maj
   },
   {
     id: "tropical-chalet-imthiyas",
+    projectBy: "imthiyas",
     title: "Tropical Chalet",
     experience: "5 years experience",
-    location: "Kozhikode, Kozhikode",
-    area: "8000 sq.ft",
+    location: "Kondotty, Malappuram",
+    area: "5000 sq.ft",
     images: [
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/3_j4oosi.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/3_5_nxeukw.jpg",
@@ -304,7 +315,7 @@ The location in Neriamangalam provides excellent connectivity to Ernakulam's maj
 The design incorporates tropical architectural elements including open-air living spaces, natural ventilation systems, and sustainable building materials that complement the coastal climate. The project features modern resort amenities such as swimming pools, landscaped gardens, recreational areas, and wellness facilities, while maintaining the privacy and comfort expected in residential spaces. The architectural approach emphasizes seamless indoor-outdoor living with large windows, verandas, and natural light integration.
 
 The location in Kozhikode provides excellent connectivity to the city's major attractions, beaches, cultural centers, and commercial areas. The area is well-served by transportation networks, making it convenient for both residents and potential resort guests. The project demonstrates commitment to creating premium tropical living spaces that offer the best of both residential comfort and resort luxury, while maintaining architectural excellence and sustainable design principles.`,
-    client: "Private Client",
+    client: "Shabeeb",
     architect: "Imthiyas",
     projectType: "Residential Project",
     designTeam: "Imthiyas",
@@ -313,10 +324,11 @@ The location in Kozhikode provides excellent connectivity to the city's major at
   },
   {
     id: "eccentric-box-imthiyas",
+    projectBy: "imthiyas",
     title: "Eccentric Box",
     experience: "5 years experience",
-    location: "Mukkam, Kozhikode",
-    area: "2000 sq.ft",
+    location: "Pantheeramkavu, Kozhikode",
+    area: "4600 sq.ft",
     images: [
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/4_hcdcrv.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/4_5_zr42vm.jpg",
@@ -329,7 +341,7 @@ The location in Kozhikode provides excellent connectivity to the city's major at
 The design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for the residents.
 
 The location in Mukkam provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
-    client: "Private Client",
+    client: "Ashish",
     architect: "Imthiyas",
     projectType: "Residential Project",
     designTeam: "Imthiyas",
@@ -338,9 +350,10 @@ The location in Mukkam provides excellent connectivity to Kozhikode's major faci
   },
   {
     id: "tranquility-house-imthiyas",
+    projectBy: "imthiyas",
     title: "Tranquility House",
     experience: "5 years experience",
-    location: "Thamarassery, Kozhikode",
+    location: "Naduvannur, Kozhikode",
     area: "3000 sq.ft",
     images: [
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/5_oq1mcr.jpg",
@@ -354,7 +367,7 @@ The location in Mukkam provides excellent connectivity to Kozhikode's major faci
 The design incorporates tropical architectural elements including open-air living spaces, natural ventilation systems, and sustainable building materials that complement the coastal climate. The project features modern resort amenities such as swimming pools, landscaped gardens, recreational areas, and wellness facilities, while maintaining the privacy and comfort expected in residential spaces. The architectural approach emphasizes seamless indoor-outdoor living with large windows, verandas, and natural light integration.
 
 The location in Kozhikode provides excellent connectivity to the city's major attractions, beaches, cultural centers, and commercial areas. The area is well-served by transportation networks, making it convenient for both residents and potential resort guests. The project demonstrates commitment to creating premium tropical living spaces that offer the best of both residential comfort and resort luxury, while maintaining architectural excellence and sustainable design principles.`,
-    client: "Private Client",
+    client: "Salu Doctor",
     architect: "Imthiyas",
     projectType: "Residential Project",
     designTeam: "Imthiyas",

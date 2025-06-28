@@ -422,3 +422,53 @@
     display: flex !important;
   }
 }
+
+// Styles for filter functionality
+.projects {
+  &__filter-info {
+    color: #f4d300;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  &__filter-subtitle {
+    color: #f4d300;
+    font-size: 0.9rem;
+    font-style: italic;
+  }
+
+  &__clear-filter {
+    background: linear-gradient(90deg, #dc3545, #b02a37);
+    color: #fff;
+    padding: 10.5px 18px;
+    border: 1px solid #b02a37;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    gap: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: linear-gradient(90deg, #b02a37, #8e2129);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      padding: 6px 10px;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 400px) {
+      padding: 4px 6px;
+      font-size: 0.7rem;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProjectCard from "../../../Components/ProjectCard";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import projectData from "./ProjectData";
@@ -9,10 +9,76 @@ const Projects = () => {
   const isProjectsPage = location.pathname.replace(/\/$/, "") === "/projects";
   const isHomePage = location.pathname === "/";
 
+  // State for filtered projects
+  const [filteredProjects, setFilteredProjects] = useState(projectData);
+  const [selectedArchitect, setSelectedArchitect] = useState(null);
+
+  // Effect to handle filtering based on localStorage
+  useEffect(() => {
+    const architectFromStorage = localStorage.getItem("selectedArchitect");
+
+    if (architectFromStorage && isProjectsPage) {
+      // Filter projects based on selected architect
+      const filtered = projectData.filter(
+        (project) => project.projectBy === architectFromStorage
+      );
+
+      if (filtered.length > 0) {
+        setSelectedArchitect(architectFromStorage);
+        setFilteredProjects(filtered);
+      } else {
+        // If no projects found for the architect, show all projects but clear the selection
+        setSelectedArchitect(null);
+        setFilteredProjects(projectData);
+        // Clear localStorage since no projects exist for this architect
+        localStorage.removeItem("selectedArchitect");
+      }
+    } else {
+      // Show all projects if no architect selected or not on projects page
+      setFilteredProjects(projectData);
+      setSelectedArchitect(null);
+    }
+  }, [isProjectsPage]);
+
+  // Clear filter function
+  const clearFilter = () => {
+    localStorage.removeItem("selectedArchitect");
+    setSelectedArchitect(null);
+    setFilteredProjects(projectData);
+  };
+
   const handleShowAll = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
     navigate("/projects");
   };
+
+  // Use filtered projects instead of original projectData
+  const projectsToShow = isHomePage ? 4 : filteredProjects.length;
+  const displayProjects = (isHomePage ? projectData : filteredProjects).slice(
+    0,
+    projectsToShow
+  );
+
+  // Helper function to get card class based on index
+  const getCardClass = (index) => {
+    const patterns = ["azure", "emerald", "crystal-left", "crystal-right"];
+    return `projects__card--${patterns[index % 4]}`;
+  };
+
+  const getItemClass = (index) => {
+    const patterns = ["azure", "emerald", "crystal-left", "crystal-right"];
+    return `projects__item--${patterns[index % 4]}`;
+  };
+
+  const getRowClass = (index) => {
+    return index % 4 < 2 ? "projects__row--top" : "projects__row--bottom";
+  };
+
+  // Group projects into rows of 2
+  const groupedProjects = [];
+  for (let i = 0; i < displayProjects.length; i += 2) {
+    groupedProjects.push(displayProjects.slice(i, i + 2));
+  }
 
   return (
     <section className="projects">
@@ -20,12 +86,29 @@ const Projects = () => {
         <div>
           <h2 className="projects__title">
             Our <span>Signature</span> Projects
+            {selectedArchitect && (
+              <span className="projects__filter-info">
+                {" "}
+                - by {selectedArchitect}
+              </span>
+            )}
           </h2>
           <p className="projects__subtitle">
             Transforming dreams into architectural masterpieces, one exceptional
             space at a time
+            {selectedArchitect && (
+              <span className="projects__filter-subtitle">
+                {" "}
+                Showing projects by {selectedArchitect}
+              </span>
+            )}
           </p>
         </div>
+        {selectedArchitect && isProjectsPage && (
+          <button className="projects__button" onClick={clearFilter}>
+            Show All Projects
+          </button>
+        )}
         {!isProjectsPage && (
           <button className="projects__button" onClick={handleShowAll}>
             Show all
@@ -33,206 +116,35 @@ const Projects = () => {
         )}
       </div>
 
-      <div className="projects__row projects__row--top">
-        <div className="projects__grid">
-          <div className="projects__item projects__item--azure">
-            <Link to={`/projects/${projectData[0]?.id}`}>
-              <ProjectCard
-                className="projects__card--azure"
-                image={projectData[0].images[0]}
-                location={projectData[0].location}
-                area={projectData[0].area}
-                title={projectData[0].title}
-                architect={projectData[0].architect}
-              />
-            </Link>
-          </div>
-          <div className="projects__item projects__item--emerald">
-            <Link to={`/projects/${projectData[1]?.id}`}>
-              <ProjectCard
-                className="projects__card--emerald"
-                image={projectData[1].images[0]}
-                location={projectData[1].location}
-                area={projectData[1].area}
-                title={projectData[1].title}
-                architect={projectData[1].architect}
-              />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="projects__row projects__row--bottom">
-        <div className="projects__grid">
-          <div className="projects__item projects__item--crystal-left">
-            <Link to={`/projects/${projectData[2]?.id}`}>
-              <ProjectCard
-                className="projects__card--crystal-left"
-                image={projectData[2].images[0]}
-                location={projectData[2].location}
-                area={projectData[2].area}
-                title={projectData[2].title}
-                architect={projectData[2].architect}
-              />
-            </Link>
-          </div>
-          <div className="projects__item projects__item--crystal-right">
-            <Link to={`/projects/${projectData[3]?.id}`}>
-              <ProjectCard
-                className="projects__card--crystal-right"
-                image={projectData[3].images[0]}
-                location={projectData[3].location}
-                area={projectData[3].area}
-                title={projectData[3].title}
-                architect={projectData[3].architect}
-              />
-            </Link>
+      {groupedProjects.map((projectGroup, groupIndex) => (
+        <div
+          key={groupIndex}
+          className={`projects__row ${getRowClass(groupIndex * 2)}`}
+        >
+          <div className="projects__grid">
+            {projectGroup.map((project, projectIndex) => {
+              const overallIndex = groupIndex * 2 + projectIndex;
+              return (
+                <div
+                  key={project.id}
+                  className={`projects__item ${getItemClass(overallIndex)}`}
+                >
+                  <Link to={`/projects/${project.id}`}>
+                    <ProjectCard
+                      className={getCardClass(overallIndex)}
+                      image={project.images[0]}
+                      location={project.location}
+                      area={project.area}
+                      title={project.title}
+                      architect={project.architect}
+                    />
+                  </Link>
+                </div>
+              );
+            })}
           </div>
         </div>
-      </div>
-      {!isHomePage && (
-        <>
-          <div className="projects__row projects__row--top">
-            <div className="projects__grid">
-              <div className="projects__item projects__item--azure">
-                <Link to={`/projects/${projectData[4]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--azure"
-                    image={projectData[4].images[0]}
-                    location={projectData[4].location}
-                    area={projectData[4].area}
-                    title={projectData[4].title}
-                    architect={projectData[4].architect}
-                  />
-                </Link>
-              </div>
-              <div className="projects__item projects__item--emerald">
-                <Link to={`/projects/${projectData[5]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--emerald"
-                    image={projectData[5].images[0]}
-                    location={projectData[5].location}
-                    area={projectData[5].area}
-                    title={projectData[5].title}
-                    architect={projectData[5].architect}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="projects__row projects__row--bottom">
-            <div className="projects__grid">
-              <div className="projects__item projects__item--crystal-left">
-                <Link to={`/projects/${projectData[6]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--crystal-left"
-                    image={projectData[6].images[0]}
-                    location={projectData[6].location}
-                    area={projectData[6].area}
-                    title={projectData[6].title}
-                    architect={projectData[6].architect}
-                  />
-                </Link>
-              </div>
-              <div className="projects__item projects__item--crystal-right">
-                <Link to={`/projects/${projectData[7]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--crystal-right"
-                    image={projectData[7].images[0]}
-                    location={projectData[7].location}
-                    area={projectData[7].area}
-                    title={projectData[7].title}
-                    architect={projectData[7].architect}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="projects__row projects__row--top">
-            <div className="projects__grid">
-              <div className="projects__item projects__item--azure">
-                <Link to={`/projects/${projectData[8]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--azure"
-                    image={projectData[8].images[0]}
-                    location={projectData[8].location}
-                    area={projectData[8].area}
-                    title={projectData[8].title}
-                    architect={projectData[8].architect}
-                  />
-                </Link>
-              </div>
-              <div className="projects__item projects__item--emerald">
-                <Link to={`/projects/${projectData[9]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--emerald"
-                    image={projectData[9].images[0]}
-                    location={projectData[9].location}
-                    area={projectData[9].area}
-                    title={projectData[9].title}
-                    architect={projectData[9].architect}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="projects__row projects__row--bottom">
-            <div className="projects__grid">
-              <div className="projects__item projects__item--crystal-left">
-                <Link to={`/projects/${projectData[10]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--crystal-left"
-                    image={projectData[10].images[0]}
-                    location={projectData[10].location}
-                    area={projectData[10].area}
-                    title={projectData[10].title}
-                    architect={projectData[10].architect}
-                  />
-                </Link>
-              </div>
-              <div className="projects__item projects__item--crystal-right">
-                <Link to={`/projects/${projectData[11]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--crystal-right"
-                    image={projectData[11].images[0]}
-                    location={projectData[11].location}
-                    area={projectData[11].area}
-                    title={projectData[11].title}
-                    architect={projectData[11].architect}
-                  />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="projects__row projects__row--top">
-            <div className="projects__grid">
-              <div className="projects__item projects__item--azure">
-                <Link to={`/projects/${projectData[12]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--azure"
-                    image={projectData[12].images[0]}
-                    location={projectData[12].location}
-                    area={projectData[12].area}
-                    title={projectData[12].title}
-                    architect={projectData[12].architect}
-                  />
-                </Link>
-              </div>
-              {/* <div className="projects__item projects__item--emerald">
-                <Link to={`/projects/${projectData[9]?.id}`}>
-                  <ProjectCard
-                    className="projects__card--emerald"
-                    image={projectData[9].images[0]}
-                    location={projectData[9].location}
-                    area={projectData[9].area}
-                    title={projectData[9].title}
-                  />
-                </Link>
-              </div> */}
-            </div>
-          </div>
-        </>
-      )}
+      ))}
     </section>
   );
 };
