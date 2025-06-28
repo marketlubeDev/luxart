@@ -175,7 +175,7 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
   },
   {
     id: "kozhikode-divisional-office",
-    title: "Proposed Kozhikode Divisional Office Building",
+    title: "Kozhikode Divisional Office Building",
     experience: "15 years experience",
     location: "Kozhikode, Kerala",
     area: "2500  sq.ft",
@@ -189,7 +189,7 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     pdfLink: null,
     summary:
       "A prestigious government office building project for the Kerala State Waqf Board, featuring modern administrative facilities and contemporary architectural design. This divisional office building showcases professional workspace planning and efficient functionality for government operations.",
-    description: `The Proposed Kozhikode Divisional Office Building for the Kerala State Waqf Board represents a significant government infrastructure project designed to serve the administrative needs of the Waqf Board in the Kozhikode region. This contemporary office building showcases modern architectural design with a focus on functionality, accessibility, and professional workspace standards.
+    description: `The Kozhikode Divisional Office Building for the Kerala State Waqf Board represents a significant government infrastructure project designed to serve the administrative needs of the Waqf Board in the Kozhikode region. This contemporary office building showcases modern architectural design with a focus on functionality, accessibility, and professional workspace standards.
 
 The building features thoughtfully planned administrative spaces including executive offices, conference rooms, public service areas, and support facilities. The design incorporates modern office amenities such as efficient lighting systems, climate control, secure access controls, and well-organized work environments. The layout prioritizes workflow efficiency while maintaining a professional and welcoming atmosphere for both staff and visitors.
 
@@ -203,7 +203,7 @@ The location in Kozhikode provides excellent connectivity to major government in
   },
   {
     id: "pathimangalam-residential",
-    title: "Proposed Residential Building at Pathimangalam",
+    title: "Residential Building at Pathimangalam",
     experience: "15 years experience",
     location: "Pathimangalam, Kozhikode",
     area: "2500 sq.ft",
@@ -218,8 +218,8 @@ The location in Kozhikode provides excellent connectivity to major government in
     ],
     pdfLink: null,
     summary:
-      "A proposed residential building project in Pathimangalam, Kozhikode, featuring modern architectural design and contemporary living spaces. This project showcases professional residential development with attention to detail and quality construction standards.",
-    description: `The Proposed Residential Building at Pathimangalam represents a modern residential development project designed to meet contemporary living standards. Located in the well-connected area of Pathimangalam, Kozhikode, this project showcases thoughtful architectural planning with a focus on functionality, comfort, and aesthetic appeal.
+      "A residential building project in Pathimangalam, Kozhikode, featuring modern architectural design and contemporary living spaces. This project showcases professional residential development with attention to detail and quality construction standards.",
+    description: `The Residential Building at Pathimangalam represents a modern residential development project designed to meet contemporary living standards. Located in the well-connected area of Pathimangalam, Kozhikode, this project showcases thoughtful architectural planning with a focus on functionality, comfort, and aesthetic appeal.
 
 The building design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for residents.
 
@@ -234,7 +234,7 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
   {
     id: "neriamangalam-training-center",
     title:
-      "Proposed Training Center Cum Dormitory Building for District Agricultural Farm (DAF)",
+      "Training Center Cum Dormitory Building for District Agricultural Farm (DAF)",
     experience: "15 years experience",
     location: "Neriamangalam, Ernakulam",
     area: "5000 sq.ft",
@@ -248,7 +248,7 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
     pdfLink: null,
     summary:
       "A comprehensive training center and dormitory facility for the District Agricultural Farm (DAF) at Neriamangalam, Ernakulam. This government project features modern educational infrastructure with accommodation facilities for agricultural training programs.",
-    description: `The Proposed Training Center Cum Dormitory Building for District Agricultural Farm (DAF) at Neriamangalam represents a significant government infrastructure project designed to enhance agricultural education and training capabilities in Ernakulam district. This comprehensive facility combines modern training infrastructure with comfortable accommodation facilities to support agricultural development programs.
+    description: `The Training Center Cum Dormitory Building for District Agricultural Farm (DAF) at Neriamangalam represents a significant government infrastructure project designed to enhance agricultural education and training capabilities in Ernakulam district. This comprehensive facility combines modern training infrastructure with comfortable accommodation facilities to support agricultural development programs.
 
 The project features state-of-the-art training facilities including modern classrooms, practical demonstration areas, conference rooms, and multimedia-equipped learning spaces. The dormitory section provides comfortable accommodation for trainees and visiting agricultural professionals, with well-planned living quarters, dining facilities, and recreational areas. The design incorporates sustainable building practices and energy-efficient systems suitable for educational institutions.
 
