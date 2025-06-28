@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import areaIcon from "../assets/area.svg";
 import locationIcon from "../assets/footer1.svg";
+import architectIcon from "../assets/architect.svg";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -10,6 +11,7 @@ const ProjectCard = ({
   className,
   location = "Downtown metro",
   area = "15,000 sq.ft",
+  architect,
   projectId,
 }) => {
   const [position, setPosition] = useState({ x: "50%", y: "50%" });
@@ -58,6 +60,16 @@ const ProjectCard = ({
                 <img src={areaIcon} alt="Area" className="projects__icon" />
                 <span>{area}</span>
               </div>
+              {architect && (
+                <div className="projects__info-item">
+                  <img
+                    src={architectIcon}
+                    alt="Architect"
+                    className="projects__icon"
+                  />
+                  <span>{architect}</span>
+                </div>
+              )}
             </div>
           </div>
         )}

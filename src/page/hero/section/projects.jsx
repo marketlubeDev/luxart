@@ -43,6 +43,7 @@ const Projects = () => {
                 location={projectData[0].location}
                 area={projectData[0].area}
                 title={projectData[0].title}
+                architect={projectData[0].architect}
               />
             </Link>
           </div>
@@ -54,6 +55,7 @@ const Projects = () => {
                 location={projectData[1].location}
                 area={projectData[1].area}
                 title={projectData[1].title}
+                architect={projectData[1].architect}
               />
             </Link>
           </div>
@@ -70,6 +72,7 @@ const Projects = () => {
                 location={projectData[2].location}
                 area={projectData[2].area}
                 title={projectData[2].title}
+                architect={projectData[2].architect}
               />
             </Link>
           </div>
@@ -81,6 +84,7 @@ const Projects = () => {
                 location={projectData[3].location}
                 area={projectData[3].area}
                 title={projectData[3].title}
+                architect={projectData[3].architect}
               />
             </Link>
           </div>
@@ -98,6 +102,7 @@ const Projects = () => {
                     location={projectData[4].location}
                     area={projectData[4].area}
                     title={projectData[4].title}
+                    architect={projectData[4].architect}
                   />
                 </Link>
               </div>
@@ -109,6 +114,7 @@ const Projects = () => {
                     location={projectData[5].location}
                     area={projectData[5].area}
                     title={projectData[5].title}
+                    architect={projectData[5].architect}
                   />
                 </Link>
               </div>
@@ -124,6 +130,7 @@ const Projects = () => {
                     location={projectData[6].location}
                     area={projectData[6].area}
                     title={projectData[6].title}
+                    architect={projectData[6].architect}
                   />
                 </Link>
               </div>
@@ -135,6 +142,7 @@ const Projects = () => {
                     location={projectData[7].location}
                     area={projectData[7].area}
                     title={projectData[7].title}
+                    architect={projectData[7].architect}
                   />
                 </Link>
               </div>
@@ -150,6 +158,7 @@ const Projects = () => {
                     location={projectData[8].location}
                     area={projectData[8].area}
                     title={projectData[8].title}
+                    architect={projectData[8].architect}
                   />
                 </Link>
               </div>
@@ -161,6 +170,7 @@ const Projects = () => {
                     location={projectData[9].location}
                     area={projectData[9].area}
                     title={projectData[9].title}
+                    architect={projectData[9].architect}
                   />
                 </Link>
               </div>
@@ -176,6 +186,7 @@ const Projects = () => {
                     location={projectData[10].location}
                     area={projectData[10].area}
                     title={projectData[10].title}
+                    architect={projectData[10].architect}
                   />
                 </Link>
               </div>
@@ -187,6 +198,7 @@ const Projects = () => {
                     location={projectData[11].location}
                     area={projectData[11].area}
                     title={projectData[11].title}
+                    architect={projectData[11].architect}
                   />
                 </Link>
               </div>
@@ -202,6 +214,7 @@ const Projects = () => {
                     location={projectData[12].location}
                     area={projectData[12].area}
                     title={projectData[12].title}
+                    architect={projectData[12].architect}
                   />
                 </Link>
               </div>

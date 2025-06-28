@@ -23,12 +23,12 @@ Each unit is designed with attention to detail, featuring high-quality finishes,
 
 Residents can enjoy the convenience of nearby schools, hospitals, and shopping centers, while still maintaining a peaceful living environment. The property's strategic location provides easy access to major roads and public transportation, making daily commutes hassle-free.`,
 
-    client: "Private Client",
-    architect: "Luxart Architecture",
+    client: null,
+    architect: null,
     projectType: "Residential Complex",
-    designTeam: "Luxart Design Team",
-    contractor: "Luxart Constructions",
-    consultant: "Luxart Consultants",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
   },
   {
     id: "pattambi-heights",
@@ -47,12 +47,12 @@ Residents can enjoy the convenience of nearby schools, hospitals, and shopping c
 The building is equipped with essential amenities including power backup, water supply, and high-speed internet connectivity. Its strategic location ensures high visibility and easy accessibility for customers and clients.
 
 The property is well-connected to major roads and public transportation, making it convenient for both employees and visitors. The surrounding area includes various retail establishments, restaurants, and other commercial spaces, creating a vibrant business environment.`,
-    client: "Private Client",
-    architect: "Luxart Architecture",
+    client: "Pattambi",
+    architect: null,
     projectType: "Residential Complex",
-    designTeam: "Luxart Design Team",
-    contractor: "Luxart Constructions",
-    consultant: "Luxart Consultants",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
   },
   {
     id: "kondotty",
@@ -71,12 +71,12 @@ The property is well-connected to major roads and public transportation, making 
 The property includes modern amenities such as dedicated parking, security systems, and backup power supply. Its spacious layout allows for flexible usage, whether for retail, office space, or mixed-use purposes.
 
 The location provides excellent connectivity to nearby towns and cities, making it a strategic choice for businesses targeting the wider Malappuram region. The area is well-developed with essential infrastructure and is surrounded by residential neighborhoods, ensuring a steady flow of potential customers.`,
-    client: "Private Client",
-    architect: "Luxart Architecture",
+    client: "Kondotty",
+    architect: null,
     projectType: "Residential Complex",
-    designTeam: "Luxart Design Team",
-    contractor: "Luxart Constructions",
-    consultant: "Luxart Consultants",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
   },
   {
     id: "kalamassery",
@@ -85,6 +85,7 @@ The location provides excellent connectivity to nearby towns and cities, making 
     location: "Kalamassery, Ernakulam",
     area: "4500 sq.ft",
     images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery15_nwtbmi.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery2_icwwzj.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery3_oshtbw.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery4_twdt0z.jpg",
@@ -93,7 +94,6 @@ The location provides excellent connectivity to nearby towns and cities, making 
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery12_vby2lj.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery13_sor7ru.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery18_ysmsse.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery15_nwtbmi.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery16_gsbz0t.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery17_uvdhgl.jpg",
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery14_onysop.jpg",
@@ -109,11 +109,11 @@ Residents can enjoy the benefits of a peaceful neighborhood while having easy ac
 
 The location provides excellent connectivity to schools, hospitals, shopping centers, and public transportation. Its proximity to major roads and highways makes commuting to different parts of Kochi convenient. The property is ideal for families looking for a comfortable living space in a well-established neighborhood.`,
     client: "Kerala State WAKF Board",
-    architect: "P C Rasheed",
+    architect: "P.C. Rasheed and Associates",
     projectType: "Residential Complex",
     designTeam: "P. C RASHEED AND ASSOCIATES",
-    contractor: "P. A SHUKOOR",
-    consultant: "P. ZONAL CONSULTANT P. C RASHEED AND ASSOCIATES",
+    contractor: null,
+    consultant: "P. C RASHEED AND ASSOCIATES",
   },
   {
     id: "pavangad",
@@ -135,12 +135,12 @@ The location provides excellent connectivity to schools, hospitals, shopping cen
 The property includes essential amenities such as secure parking facilities, 24/7 security systems, and well-maintained common areas. The spacious layout offers flexible living arrangements suitable for different family sizes and lifestyles.
 
 The location provides excellent connectivity to Kozhikode's major attractions, educational institutions, healthcare facilities, and shopping centers. The area is well-connected through major roads and public transportation, making daily commuting convenient. The neighborhood offers a perfect balance of tranquility and accessibility, making it an ideal choice for families seeking a comfortable and connected lifestyle in Kozhikode.`,
-    client: "Private Client",
-    architect: "Luxart Architecture",
+    client: "Pavangad",
+    architect: null,
     projectType: "Residential Complex",
-    designTeam: "Luxart Design Team",
-    contractor: "Luxart Constructions",
-    consultant: "Luxart Consultants",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
   },
   {
     id: "wayanad",
@@ -170,7 +170,7 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     architect: "P.C. Rasheed and Associates",
     projectType: "Luxury Villa",
     designTeam: "P.C. Rasheed and Associates",
-    contractor: "P.A. Shukoor",
+    contractor: null,
     consultant: "P.C. Rasheed and Associates",
   },
   {
@@ -195,10 +195,10 @@ The building features thoughtfully planned administrative spaces including execu
 
 The location in Kozhikode provides excellent connectivity to major government institutions, transportation hubs, and commercial centers. The building design reflects the importance of the Waqf Board's role in managing religious endowments and properties, while incorporating contemporary architectural elements that symbolize progress and administrative excellence. The project demonstrates commitment to creating a functional, accessible, and dignified workspace for government operations.`,
     client: "Kerala State Waqf Board",
-    architect: "P.C. Rasheed",
+    architect: "P.C. Rasheed and Associates",
     projectType: "Government Office Building",
-    designTeam: "P.C. Rasheed",
-    contractor: "P.A. Shukoor",
+    designTeam: "P.C. Rasheed and Associates",
+    contractor: null,
     consultant: "P.C. Rasheed and Associates",
   },
   {
@@ -265,8 +265,8 @@ Located in Neriamangalam, the facility benefits from excellent connectivity to m
     id: "baith-Imthiyas",
     title: "Baith",
     experience: "5 years experience",
-    location: "Neriamangalam, Ernakulam",
-    area: "2500 sq.ft",
+    location: "Meppayur, Kozhikode",
+    area: "4500 sq.ft",
     images: [
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/2_3_hh1pjo.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/2_t7s0s1.jpg",
@@ -279,12 +279,12 @@ Located in Neriamangalam, the facility benefits from excellent connectivity to m
 The house design incorporates modern residential features including well-planned living spaces, efficient room layouts, and contemporary amenities. The project emphasizes quality construction standards and attention to detail, ensuring a comfortable and sustainable living environment for the residents.
 
 The location in Neriamangalam provides excellent connectivity to Ernakulam's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
-    client: "Private Client",
+    client: "Arshad",
     architect: "Imthiyas",
     projectType: "Residential House",
     designTeam: "Imthiyas",
-    contractor: "K.A. Shukoor",
-    consultant: "K.A. Shukoor",
+    contractor: null,
+    consultant: null,
   },
   {
     id: "tropical-chalet-imthiyas",
@@ -308,8 +308,8 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     architect: "Imthiyas",
     projectType: "Residential House & Resort Design",
     designTeam: "Imthiyas",
-    contractor: "K.A. Shukoor",
-    consultant: "K.A. Shukoor",
+    contractor: null,
+    consultant: null,
   },
   {
     id: "eccentric-box-imthiyas",
@@ -333,8 +333,8 @@ The location in Mukkam provides excellent connectivity to Kozhikode's major faci
     architect: "Imthiyas",
     projectType: "Residential House",
     designTeam: "Imthiyas",
-    contractor: "K.A. Shukoor",
-    consultant: "K.A. Shukoor",
+    contractor: null,
+    consultant: null,
   },
   {
     id: "tranquility-house-imthiyas",
@@ -358,8 +358,8 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     architect: "Imthiyas",
     projectType: "Residential House & Resort Design",
     designTeam: "Imthiyas",
-    contractor: "K.A. Shukoor",
-    consultant: "K.A. Shukoor",
+    contractor: null,
+    consultant: null,
   },
 ];
 

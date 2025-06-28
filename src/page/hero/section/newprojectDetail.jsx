@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import {
   FaDownload,
-  FaHome,
   FaRuler,
   FaChevronLeft,
   FaChevronRight,
@@ -10,11 +9,13 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import projectData from "./ProjectData";
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import locationIcon from "../../../assets/footer1.svg";
+import architectIcon from "../../../assets/architect.svg";
+import areaIcon from "../../../assets/area.svg";
 
 export default function NewProjectDetail() {
   const { projectId } = useParams();
@@ -71,13 +72,27 @@ export default function NewProjectDetail() {
             <h1 className="new-project-detail__title">{project.title}</h1>
             <div className="new-project-detail__metadata">
               <div className="metadata-item">
-                <FaHome className="metadata-icon" />
-                <span>{project.experience}</span>
+                <img
+                  src={locationIcon}
+                  alt="location"
+                  className="location-icon"
+                />
+                <span>{project.location}</span>
               </div>
               <div className="metadata-item">
-                <FaRuler className="metadata-icon" />
+                <img src={areaIcon} alt="Area" className="metadata-icon" />
                 <span>{project.area}</span>
               </div>
+              {project?.architect && (
+                <div className="metadata-item">
+                  <img
+                    src={architectIcon}
+                    alt="Architect"
+                    className="metadata-icon"
+                  />
+                  <span>{project?.architect}</span>
+                </div>
+              )}
             </div>
           </div>
 
@@ -108,16 +123,19 @@ export default function NewProjectDetail() {
               <p>{project.description}</p>
             </div>
 
-            {/* Project Credits */}
             <div className="new-project-detail__credits">
-              <div className="credits-column">
-                <span className="credits-label">Client Name</span>
-                <span className="credits-value">{project.client}</span>
-              </div>
-              <div className="credits-column">
-                <span className="credits-label">Architect</span>
-                <span className="credits-value">{project.architect}</span>
-              </div>
+              {project?.client && (
+                <div className="credits-column">
+                  <span className="credits-label">Client Name</span>
+                  <span className="credits-value">{project?.client}</span>
+                </div>
+              )}
+              {project?.architect && (
+                <div className="credits-column">
+                  <span className="credits-label">Architect</span>
+                  <span className="credits-value">{project?.architect}</span>
+                </div>
+              )}
             </div>
           </div>
         </div>
@@ -155,30 +173,38 @@ export default function NewProjectDetail() {
 
                   {/* Project Details Overlay */}
                   <div className="new-project-detail__project-details">
-                    <div className="project-details__left">
-                      <div className="detail-item">
-                        <span className="detail-label">PROJECT TYPE</span>
-                        <span className="detail-value">
-                          {project.projectType}
-                        </span>
+                    {project?.projectType && (
+                      <div className="project-details__left">
+                        <div className="detail-item">
+                          <span className="detail-label">PROJECT TYPE</span>
+                          <span className="detail-value">
+                            {project.projectType}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="project-details__center">
-                      <div className="detail-item">
-                        <span className="detail-label">CLIENT</span>
-                        <span className="detail-value">
-                          {project.contractor}
-                        </span>
+                    )}
+                    {project?.contractor && (
+                      <div className="project-details__center">
+                        <div className="detail-item">
+                          <span className="detail-label">CLIENT</span>
+                          <span className="detail-value">
+                            {project.contractor}
+                          </span>
+                        </div>
                       </div>
-                    </div>
-                    <div className="project-details__right">
-                      <div className="detail-item">
-                        <span className="detail-label">PROJECT CONSULTANT</span>
-                        <span className="detail-value">
-                          {project.consultant}
-                        </span>
+                    )}
+                    {project?.consultant && (
+                      <div className="project-details__right">
+                        <div className="detail-item">
+                          <span className="detail-label">
+                            PROJECT CONSULTANT
+                          </span>
+                          <span className="detail-value">
+                            {project.consultant}
+                          </span>
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
                 </div>
               </SwiperSlide>
