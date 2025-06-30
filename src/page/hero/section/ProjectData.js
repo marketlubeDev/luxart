@@ -27,9 +27,9 @@ Residents can enjoy the convenience of nearby schools, hospitals, and shopping c
     client: null,
     architect: "P C Rasheed",
     projectType: "Residential Project",
-    designTeam: "R.C. Rasheed and Associates",
-    contractor: "R.C. Rasheed and Associates",
-    consultant: "R.C. Rasheed and Associates",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
   },
   {
     id: "pattambi-heights",
@@ -239,36 +239,36 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
     contractor: "P C Rasheed",
     consultant: "P C Rasheed",
   },
-  {
-    id: "neriamangalam-training-center",
-    projectBy: "rasheed",
-    title:
-      "Training Center Cum Dormitory Building for District Agricultural Farm (DAF)",
-    experience: "15 years experience",
-    location: "Neriamangalam, Ernakulam",
-    area: "5000 sq.ft",
-    images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/7_bgw3ex.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829253/6_jmrnoa.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/1_yrapq8.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/5_djzke8.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829256/4_orayu5.jpg",
-    ],
-    pdfLink: null,
-    summary:
-      "A comprehensive training center and dormitory facility for the District Agricultural Farm (DAF) at Neriamangalam, Ernakulam. This government project features modern educational infrastructure with accommodation facilities for agricultural training programs.",
-    description: `The Training Center Cum Dormitory Building for District Agricultural Farm (DAF) at Neriamangalam represents a significant government infrastructure project designed to enhance agricultural education and training capabilities in Ernakulam district. This comprehensive facility combines modern training infrastructure with comfortable accommodation facilities to support agricultural development programs.
+  //   {
+  //     id: "neriamangalam-training-center",
+  //     projectBy: "rasheed",
+  //     title:
+  //       "Training Center Cum Dormitory Building for District Agricultural Farm (DAF)",
+  //     experience: "15 years experience",
+  //     location: "Neriamangalam, Ernakulam",
+  //     area: "5000 sq.ft",
+  //     images: [
+  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/7_bgw3ex.jpg",
+  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829253/6_jmrnoa.jpg",
+  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/1_yrapq8.jpg",
+  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/5_djzke8.jpg",
+  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829256/4_orayu5.jpg",
+  //     ],
+  //     pdfLink: null,
+  //     summary:
+  //       "A comprehensive training center and dormitory facility for the District Agricultural Farm (DAF) at Neriamangalam, Ernakulam. This government project features modern educational infrastructure with accommodation facilities for agricultural training programs.",
+  //     description: `The Training Center Cum Dormitory Building for District Agricultural Farm (DAF) at Neriamangalam represents a significant government infrastructure project designed to enhance agricultural education and training capabilities in Ernakulam district. This comprehensive facility combines modern training infrastructure with comfortable accommodation facilities to support agricultural development programs.
 
-The project features state-of-the-art training facilities including modern classrooms, practical demonstration areas, conference rooms, and multimedia-equipped learning spaces. The dormitory section provides comfortable accommodation for trainees and visiting agricultural professionals, with well-planned living quarters, dining facilities, and recreational areas. The design incorporates sustainable building practices and energy-efficient systems suitable for educational institutions.
+  // The project features state-of-the-art training facilities including modern classrooms, practical demonstration areas, conference rooms, and multimedia-equipped learning spaces. The dormitory section provides comfortable accommodation for trainees and visiting agricultural professionals, with well-planned living quarters, dining facilities, and recreational areas. The design incorporates sustainable building practices and energy-efficient systems suitable for educational institutions.
 
-Located in Neriamangalam, the facility benefits from excellent connectivity to major agricultural centers, research institutions, and transportation networks in Ernakulam district. The location provides easy access to agricultural fields, research facilities, and other government agricultural institutions. The project demonstrates the government's commitment to strengthening agricultural education and training infrastructure, supporting the development of skilled agricultural professionals and promoting sustainable farming practices in the region.`,
-    client: "Kerala Land Development Cor.",
-    architect: "P C Rasheed",
-    projectType: "Training Center and Dormitory",
-    designTeam: "P C Rasheed",
-    contractor: "P C Rasheed",
-    consultant: "P C Rasheed",
-  },
+  // Located in Neriamangalam, the facility benefits from excellent connectivity to major agricultural centers, research institutions, and transportation networks in Ernakulam district. The location provides easy access to agricultural fields, research facilities, and other government agricultural institutions. The project demonstrates the government's commitment to strengthening agricultural education and training infrastructure, supporting the development of skilled agricultural professionals and promoting sustainable farming practices in the region.`,
+  //     client: "Kerala Land Development Cor.",
+  //     architect: "P C Rasheed",
+  //     projectType: "Training Center and Dormitory",
+  //     designTeam: "P C Rasheed",
+  //     contractor: "P C Rasheed",
+  //     consultant: "P C Rasheed",
+  //   },
 
   {
     id: "baith-Imthiyas",
@@ -290,9 +290,9 @@ The house design incorporates modern residential features including well-planned
 
 The location in Neriamangalam provides excellent connectivity to Ernakulam's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
     client: "Arshad",
-    architect: "Imthiyas",
+    architect: "Imthiyas Ahamed",
     projectType: "Residential Project",
-    designTeam: "Imthiyas",
+    designTeam: "Imthiyas Ahamed",
     contractor: null,
     consultant: null,
   },
@@ -316,9 +316,9 @@ The design incorporates tropical architectural elements including open-air livin
 
 The location in Kozhikode provides excellent connectivity to the city's major attractions, beaches, cultural centers, and commercial areas. The area is well-served by transportation networks, making it convenient for both residents and potential resort guests. The project demonstrates commitment to creating premium tropical living spaces that offer the best of both residential comfort and resort luxury, while maintaining architectural excellence and sustainable design principles.`,
     client: "Shabeeb",
-    architect: "Imthiyas",
+    architect: "Imthiyas Ahamed",
     projectType: "Residential Project",
-    designTeam: "Imthiyas",
+    designTeam: "Imthiyas Ahamed",
     contractor: null,
     consultant: null,
   },
@@ -342,9 +342,9 @@ The design incorporates modern residential features including well-planned livin
 
 The location in Mukkam provides excellent connectivity to Kozhikode's major facilities, educational institutions, healthcare centers, and commercial areas. The area is well-served by public transportation and major road networks, making it convenient for daily commuting and access to essential services. The project demonstrates commitment to creating quality residential spaces that meet modern lifestyle requirements while maintaining architectural excellence.`,
     client: "Ashish",
-    architect: "Imthiyas",
+    architect: "Imthiyas Ahamed",
     projectType: "Residential Project",
-    designTeam: "Imthiyas",
+    designTeam: "Imthiyas Ahamed",
     contractor: null,
     consultant: null,
   },
@@ -368,9 +368,9 @@ The design incorporates tropical architectural elements including open-air livin
 
 The location in Kozhikode provides excellent connectivity to the city's major attractions, beaches, cultural centers, and commercial areas. The area is well-served by transportation networks, making it convenient for both residents and potential resort guests. The project demonstrates commitment to creating premium tropical living spaces that offer the best of both residential comfort and resort luxury, while maintaining architectural excellence and sustainable design principles.`,
     client: "Salu Doctor",
-    architect: "Imthiyas",
+    architect: "Imthiyas Ahamed",
     projectType: "Residential Project",
-    designTeam: "Imthiyas",
+    designTeam: "Imthiyas Ahamed",
     contractor: null,
     consultant: null,
   },

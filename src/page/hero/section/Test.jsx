@@ -114,7 +114,7 @@ function Testimonials() {
   return (
     <section id="testimonials" className="testimonial-section">
       <h2 className="testimonial-title">
-        What our <span className="highlight">Client</span> Says
+        What our <span className="highlight">client</span> says
       </h2>
 
       <div className="testimonial-carousel-wrapper">

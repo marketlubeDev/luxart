@@ -5,7 +5,7 @@ const engineers = [
   {
     id: 1,
     name: "Shabeer A.M",
-    title: "Founder of shabeer saleel Associates",
+    title: "Founder of Shabeer Saleel Associates",
     // experience: "12 years",
     // area: "4,00,000 sq.ft",
     image:
@@ -24,8 +24,8 @@ const engineers = [
   },
   {
     id: 3,
-    name: "Pc rasheed",
-    title: "founder of PCRasheed and Associates, TSSA Luxart Builders",
+    name: "P C Rasheed",
+    title: "Founder of P C Rasheed and Associates, TSSA Luxart Builders",
     // experience: "16 years",
     // area: "8,90,000 sq.ft",
     image:
@@ -34,7 +34,7 @@ const engineers = [
   },
   {
     id: 4,
-    name: "Imthiyaz Ahmmed",
+    name: "Imthiyas Ahamed",
     title: "Founder of Ingrid Architects",
     // experience: "16 years",
     // area: "5,90,000 sq.ft",
@@ -56,7 +56,7 @@ const ChooseExpert = () => {
   return (
     <section className="choose-expert">
       <h2 className="choose-expert__title">
-        Our empanel <span className="highlight">Architects</span>
+        Our empanelled <span className="highlight">Architects</span>
       </h2>
       <p className="choose-expert__subtitle">
         Our engineers are here to design, secure, and support—every step of the
