@@ -34,7 +34,7 @@ const engineers = [
   },
   {
     id: 4,
-    name: "Imthiyas Ahamed",
+    name: "Imthiyaz Ahammed",
     title: "Founder of Ingrid Architects",
     // experience: "16 years",
     // area: "5,90,000 sq.ft",

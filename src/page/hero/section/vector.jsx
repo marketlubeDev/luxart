@@ -17,7 +17,7 @@ const logos = [
   "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419767/asian_paints_logo.svg_ir4epr.svg",
   "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419727/Logo_Alternative.svg_mzgd9f.svg",
   "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419727/kajaria_ceramics_logo.png_qcsk1r.png",
-  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419727/Logo.svg_1_nhu7je.svg",
+  "https://res.cloudinary.com/dzuqczvb7/image/upload/v1751282894/Schneider_cu4bjc.svg",
   "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/fbcab77d7cecbafac645ae5f4bb4eff33ff452c6_psp9ui.png",
   "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/simpolo_tiles_and_bathware_logo.png_ywbtl8.png",
   "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750419726/image_3352_l8j2iw.png",
