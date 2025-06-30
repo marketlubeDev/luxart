@@ -1,19 +1,6 @@
 import React, { useEffect } from "react";
 import phoneIcon from "../../../assets/Phone.svg";
 
-import img1 from "../../../assets/cheek1.jpg";
-import img2 from "../../../assets/cheek2.jpg";
-import img3 from "../../../assets/kalama1.jpg";
-import img4 from "../../../assets/kalama2.jpg";
-import img5 from "../../../assets/kalama3.jpg";
-import img6 from "../../../assets/kalama4.jpg";
-import img7 from "../../../assets/kalama5.jpg";
-import img8 from "../../../assets/kalama6.jpg";
-import img9 from "../../../assets/kondoti1.jpg";
-import img10 from "../../../assets/pattambi1.jpg";
-// import img11 from "../../../assets/up3.png";
-// import img12 from "../../../assets/up4.png";
-
 const floatingImages = [
   "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery2_icwwzj.jpg",
   "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery3_oshtbw.jpg",
