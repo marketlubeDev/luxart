@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import Chairman from "../../assets/Chairman.jpg";
+// import Chairman from "../../assets/Chairman.jpg";
 
 // Custom hook for counting animation
 const useCountAnimation = (target, duration = 2000) => {

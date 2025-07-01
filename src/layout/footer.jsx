@@ -6,17 +6,9 @@ import phoneIcon from "../assets/footer2.svg";
 import mailIcon from "../assets/footer3.svg";
 import mapIcon from "../assets/footer1.svg";
 
-const footer = () => {
+const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
-  const scrollToServices = (e) => {
-    e.preventDefault();
-    const servicesSection = document.getElementById("services");
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: "smooth" });
-    }
-  };
 
   const handleEnquireClick = () => {
     const phoneNumber = "+918075521186"; // Replace with your actual WhatsApp number
@@ -137,4 +129,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;

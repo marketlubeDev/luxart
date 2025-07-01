@@ -2,17 +2,16 @@
   background: #0a0a0a;
   color: #fff;
   padding: 6rem 2rem 1rem;
-
   font-family: "Inter", sans-serif;
 
   .contact__heading {
-    font-size: 16px; // reduced from typical 18px or 20px
-    font-weight: 300; // lighter than 400
+    font-size: 16px;
+    font-weight: 300;
     text-align: center;
     color: #fff;
-    opacity: 0.8; // optional for a softer look
+    opacity: 0.8;
     margin-bottom: 1rem;
-    font-family: "Be Vietnam", sans-serif; // match design spec if needed
+    font-family: "Be Vietnam", sans-serif;
     margin-left: -12rem;
   }
   .links__heading {
@@ -26,12 +25,12 @@
 
   &__content {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
-    height: 40vh;
-    margin: 0 auto;
+    // gap: 10rem;
+    // max-width: 1200px;
+    // height: 40vh;
+    // margin: 0 auto;
   }
 
   &__social {
@@ -42,8 +41,8 @@
 
     li {
       margin-bottom: 0.5rem;
-      margin-left: 5rem; // ⬅️ horizontal spacing
-      line-height: 1.1; // reduced for compactness
+      margin-left: 5rem;
+      line-height: 1.1;
 
       a {
         color: #fff;
@@ -58,17 +57,17 @@
 
   &__section {
     flex: 0 0 auto;
-    min-width: 250px;
-    margin-right: auto;
+    // min-width: 250px;
+    // margin-right: auto;
     .links__heading {
       font-family: "Be Vietnam", sans-serif;
       font-weight: 400;
       font-size: 18px;
-      line-height: 1.1; // reduced from 1
+      line-height: 1.1;
       text-align: center;
       color: #fff;
       margin-bottom: 1rem;
-      margin-left: 0; // Remove this
+      margin-left: 0;
     }
 
     .footer__item {
@@ -77,7 +76,7 @@
       gap: 0.75rem;
       margin-bottom: 1rem;
       font-size: 0.9rem;
-      line-height: 1.2; // reduced from 1.4
+      line-height: 1.2;
       opacity: 0.6;
       &:hover {
         opacity: 1;
@@ -92,7 +91,7 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    margin-top: -10rem; // ⬅️ Moves the section upward. Adjust as needed.
+    margin-top: -10rem;
     margin-left: 0;
 
     .footer__logo {
