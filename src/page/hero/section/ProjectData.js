@@ -155,8 +155,8 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     location: "Wayanad, Wayanad",
     area: "15650  sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/1_qzj6eh.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/3_lpzyd6.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Chain_Mist_xjzlsg.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Chain_Mist_b_ent079.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/4_mnlmba.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/5_wa7yti.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/6_koqbba.jpg",
@@ -278,8 +278,8 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
     location: "Meppayur, Kozhikode",
     area: "4500 sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/2_3_hh1pjo.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/2_t7s0s1.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Baith_B_wz6ilq.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Baith_hymakh.jpg",
     ],
     pdfLink: null,
     summary:
@@ -330,8 +330,8 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     location: "Pantheeramkavu, Kozhikode",
     area: "4600 sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/4_hcdcrv.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/4_5_zr42vm.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363563/ExcentricBoxB_qtnotn.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/ExcentricBoxA_otyomj.jpg",
     ],
     pdfLink: null,
     summary:

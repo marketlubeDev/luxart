@@ -1,18 +1,18 @@
 .footer {
   background: #0a0a0a;
   color: #fff;
-  padding: 6rem 2rem 1rem;
+  padding: 4rem 2rem 1rem;
   font-family: "Inter", sans-serif;
 
   .contact__heading {
     font-size: 16px;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
     color: #fff;
     opacity: 0.8;
     margin-bottom: 1rem;
     font-family: "Be Vietnam", sans-serif;
-    margin-left: -12rem;
+    // margin-left: -4rem;
   }
   .links__heading {
     font-size: 16px;
@@ -28,7 +28,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     // gap: 10rem;
-    max-width: 1500px;
+    max-width: 1400px;
     // height: 40vh;
     margin: 0 auto;
   }
@@ -91,7 +91,7 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    margin-top: -10rem;
+    // margin-top: -10rem;
     margin-left: 0;
 
     .footer__logo {
@@ -550,7 +550,7 @@
   .footer {
     .links__heading {
       font-size: 18px;
-      margin-left: -10rem;
+      // margin-left: -10rem;
     }
   }
 }
