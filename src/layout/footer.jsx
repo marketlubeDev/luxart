@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
         {/* Quick Links */}
         <div
-          className="footer__section footer__mobileSection"
+          className="footer__section "
           style={{
             display: "flex",
             flexDirection: "row",
@@ -88,7 +88,7 @@ const Footer = () => {
           }}
         >
           <div>
-            <ul className="footer__social">
+            <ul className="footer__social footer__mobileSection">
               {/* <li>
               <a href="https://www.facebook.com">Facebook</a>
             </li> */}
