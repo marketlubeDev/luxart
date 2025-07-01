@@ -48,7 +48,7 @@
       }
 
       @include responsive.respond(tablets) {
-        height: 45px;
+        height: 70px;
       }
 
       @include responsive.respond(phone) {
