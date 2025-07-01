@@ -308,16 +308,37 @@
       }
     }
     &__grid {
-      gap: 1rem;
+      grid-template-columns: 1fr !important;
+      gap: 0.75rem;
     }
-    &__card--azure,
+    &__card--azure {
+      height: 320px;
+      .projects__image {
+        max-height: 260px;
+      }
+    }
     &__card--emerald,
     &__card--crystal-left,
     &__card--crystal-right {
-      height: 320px;
+      height: auto !important;
       .projects__image {
-        max-height: 220px;
+        max-height: 260px;
       }
+    }
+    &__item--azure,
+    &__item--emerald,
+    &__item--crystal-left,
+    &__item--crystal-right {
+      width: 100%;
+      margin-left: 0;
+    }
+    &__name {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.7rem;
+    }
+    &__details {
+      padding: 0.4rem 0.7rem;
+      font-size: 0.8rem;
     }
   }
 }
