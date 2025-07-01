@@ -80,7 +80,7 @@ const Footer = () => {
         </div>
         {/* Quick Links */}
         <div
-          className="footer__section"
+          className="footer__section footer__mobileSection"
           style={{
             display: "flex",
             flexDirection: "row",
