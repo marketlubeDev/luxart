@@ -52,11 +52,12 @@
       }
 
       @include responsive.respond(phone) {
-        height: 40px;
+        height: 60px;
       }
 
       @include responsive.respond(smallPhone) {
-        height: 35px;
+        height: 60px;
+        padding-left: 10px;
       }
     }
   }
@@ -422,9 +423,9 @@
     width: 95%;
     margin: 1% auto;
 
-    &__logo img {
-      height: 40px;
-    }
+    // &__logo img {
+    //   height: 40px;
+    // }
 
     &__links {
       position: absolute;
@@ -518,9 +519,9 @@
     margin: 0.5% auto;
     border-radius: 0;
 
-    &__logo img {
-      height: 35px;
-    }
+    // &__logo img {
+    //   height: 35px;
+    // }
 
     &__links {
       width: 100vw;
@@ -561,10 +562,10 @@
     margin: 0;
     border-radius: 0;
 
-    &__logo img {
-      height: 45px;
-      padding: 0.5rem;
-    }
+    // &__logo img {
+    //   height: 45px;
+    //   padding: 0.5rem;
+    // }
 
     &__links {
       top: 75px;
