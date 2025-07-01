@@ -79,44 +79,53 @@ const Footer = () => {
           </button>
         </div>
         {/* Quick Links */}
-        <div className="footer__section">
-          <ul className="footer__social">
-            {/* <li>
+        <div
+          className="footer__section"
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "space-between",
+          }}
+        >
+          <div>
+            <ul className="footer__social">
+              {/* <li>
               <a href="https://www.facebook.com">Facebook</a>
             </li> */}
-            <li>
-              <a href="https://www.instagram.com/luxart.in" target="_blank">
-                Instagram
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/@Luxartbuilders">YouTube</a>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <a href="https://www.instagram.com/luxart.in" target="_blank">
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@Luxartbuilders">YouTube</a>
+              </li>
+            </ul>
+          </div>
 
-        <div className="footer__section">
-          <h4 className="links__heading">Quick Links</h4>
-          <ul className="footer__links">
-            <li>
-              <Link
-                to="/"
-                onClick={() => {
-                  window.scrollTo({ top: 0, behavior: "smooth" });
-                }}
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <a href="#services" onClick={handleFooterServicesClick}>
-                Services
-              </a>
-            </li>
-          </ul>
+          <div>
+            <h4 className="links__heading">Quick Links</h4>
+            <ul className="footer__links">
+              <li>
+                <Link
+                  to="/"
+                  onClick={() => {
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                >
+                  Home
+                </Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <a href="#services" onClick={handleFooterServicesClick}>
+                  Services
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className="footer__bottom">
