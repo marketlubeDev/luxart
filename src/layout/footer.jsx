@@ -67,14 +67,13 @@ const footer = () => {
           <div className="footer__item">
             <img src={mapIcon} alt="Map" className="footer__icon" />
             <span>
-              Luxart builders pvt Ltd <br />
-              Hi lite business park
+              Luxart Builders Pvt. Ltd
               <br />
-              Phase 2
+              HiLITE Business Park, Phase 2
               <br />
               7th Floor
               <br />
-              Calicut
+              Calicut, Kerala, India
             </span>
           </div>
         </div>
