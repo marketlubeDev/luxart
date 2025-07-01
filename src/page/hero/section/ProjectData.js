@@ -158,10 +158,10 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
       "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Chain_Mist_xjzlsg.jpg",
       "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363562/Chain_Mist_b_ent079.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/4_mnlmba.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/5_wa7yti.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/Chain_Mist_C_mq7uxs.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826615/6_koqbba.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826616/2_juvkdt.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826616/7_scmpcn.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/Chain_Mist_D_doicvs.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750826617/8_vnxm6a.jpg",
     ],
     pdfLink: null,
@@ -187,11 +187,11 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     location: "Kozhikode, Kerala",
     area: "13000  sq.ft",
     images: [
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363590/WaqfBoardC_mi32vd.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827726/3_drwdms.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827726/3_drwdms.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827726/5_efwqlg.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363589/WaqfBoardB_v6liag.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827727/1_i1dt5u.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750827727/4_muxa2p.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363589/WaqfBoardA_afk9ip.jpg",
     ],
     pdfLink: null,
     summary:
@@ -216,13 +216,12 @@ The location in Kozhikode provides excellent connectivity to major government in
     location: "Pathimangalam, Kozhikode",
     area: "4275 sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/1_ckskrg.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363563/PathimangalamcltA_awfvht.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/5_jprbld.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/8_wc5y9m.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/PathimangalamcltC_qxnhgk.jpg",
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/6_qb5itu.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/3_colape.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/2_fseoyu.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750828831/4_q5oid2.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/PathimangalamcltD_vnkokr.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363564/PathimangalamcltB_dzomyg.jpg",
     ],
     pdfLink: null,
     summary:
@@ -304,8 +303,8 @@ The location in Neriamangalam provides excellent connectivity to Ernakulam's maj
     location: "Kondotty, Malappuram",
     area: "5000 sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/3_j4oosi.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833924/3_5_nxeukw.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363593/TropicalB_iup5o2.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363592/TropicalA_dunhlu.jpg",
     ],
     pdfLink: null,
     summary:
@@ -356,8 +355,8 @@ The location in Mukkam provides excellent connectivity to Kozhikode's major faci
     location: "Naduvannur, Kozhikode",
     area: "3000 sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/5_oq1mcr.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750833925/5_5_immizp.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363565/TraquilityHa_zas3wg.jpg",
+      "https://res.cloudinary.com/dznxxalrb/image/upload/v1751363588/TraquilityHB_msbq6l.jpg",
     ],
     pdfLink: null,
     summary:
