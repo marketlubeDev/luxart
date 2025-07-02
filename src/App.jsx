@@ -26,18 +26,24 @@ const NewProjectDetail = lazy(() =>
   import("./page/hero/section/newprojectDetail")
 );
 
-// Loading component
-const LoadingSpinner = () => (
+// Main Loading component
+const MainLoader = () => (
   <div
     style={{
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      minHeight: "200px",
-      color: "#f4d300",
+      minHeight: "100vh",
+      position: "fixed",
+      top: 0,
+      left: 0,
+      right: 0,
+      bottom: 0,
+      backgroundColor: "#000",
+      zIndex: 9999,
     }}
   >
-    <div>Loading...</div>
+    <div className="loaderComponent"></div>
   </div>
 );
 
@@ -56,90 +62,34 @@ const Home = () => {
 
   return (
     <>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Landing />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Count />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Services />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Vector />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Projects />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Test />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <DetailSection />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <ChooseExpert />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Quote />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <InnovatingSpaces />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <VideoGallery />
-      </Suspense>
+      <Landing />
+      <Count />
+      <Services />
+      <Vector />
+      <Projects />
+      <Test />
+      <DetailSection />
+      <ChooseExpert />
+      <Quote />
+      <InnovatingSpaces />
+      <VideoGallery />
     </>
   );
 };
 
 function App() {
   return (
-    <>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Header />
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route
-            path="/projects"
-            element={
-              <Suspense fallback={<LoadingSpinner />}>
-                <Projects />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/projects/:projectId"
-            element={
-              <Suspense fallback={<LoadingSpinner />}>
-                <NewProjectDetail />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/about"
-            element={
-              <Suspense fallback={<LoadingSpinner />}>
-                <About />
-              </Suspense>
-            }
-          />
-          <Route
-            path="/services"
-            element={
-              <Suspense fallback={<LoadingSpinner />}>
-                <ServicesPage />
-              </Suspense>
-            }
-          />
-        </Routes>
-      </Suspense>
-      <Suspense fallback={<LoadingSpinner />}>
-        <Footer />
-      </Suspense>
-    </>
+    <Suspense fallback={<MainLoader />}>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/projects/:projectId" element={<NewProjectDetail />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<ServicesPage />} />
+      </Routes>
+      <Footer />
+    </Suspense>
   );
 }
 
