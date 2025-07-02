@@ -6,28 +6,22 @@ const engineers = [
     id: 1,
     name: "Shabeer A.M",
     title: "Founder of Shabeer Saleel Associates",
-    // experience: "12 years",
-    // area: "4,00,000 sq.ft",
     image:
       "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shabeer_etu53m.jpg",
     projectBy: "shabeer",
   },
   {
     id: 2,
-    name: "Shiju Pareed",
-    title: "Principal Architect",
-    // experience: "08 years",
-    // area: "2,60,000 sq.ft",
+    name: "Barun Patro, Sekar Dhandapani, Shiju Pareed",
+    title: "Amar Architecture and Designs Pvt Ltd",
     image:
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shiju_apq2br.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751447351/S24_0602_1_jiiq4h.jpg",
     projectBy: "shiju",
   },
   {
     id: 3,
     name: "P C Rasheed",
     title: "Founder of P C Rasheed and Associates, TSSA Luxart Builders",
-    // experience: "16 years",
-    // area: "8,90,000 sq.ft",
     image:
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750836806/32456_aytsev.jpg",
     projectBy: "rasheed",
@@ -36,8 +30,6 @@ const engineers = [
     id: 4,
     name: "Imthiyaz Ahammed",
     title: "Founder of Ingrid Architects",
-    // experience: "16 years",
-    // area: "5,90,000 sq.ft",
     image:
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750835956/IMG_8524_3_gsktvp.jpg",
     projectBy: "imthiyas",

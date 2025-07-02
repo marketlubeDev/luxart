@@ -841,7 +841,7 @@
             line-height: 22px;
             letter-spacing: 0.16px;
             opacity: 0.8;
-
+            text-align: start;
             @include responsive.respond(smallPhone) {
               font-size: 0.813rem;
               margin-top: 1rem;
@@ -863,6 +863,7 @@
           flex-direction: column;
           justify-content: end;
           align-items: start;
+          text-align: start;
 
           @include responsive.respond(smallPhone) {
             align-items: center;
@@ -889,7 +890,6 @@
 
             @include responsive.respond(smallPhone) {
               font-size: 1.5rem;
-              // margin-top: 1rem;
             }
             @include responsive.respond(phone) {
               font-size: 1.5rem;
