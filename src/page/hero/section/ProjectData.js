@@ -57,6 +57,36 @@ The property is well-connected to major roads and public transportation, making 
     consultant: null,
   },
   {
+    id: "thangal-residence",
+    projectBy: "shiju",
+    title: "Thangal Residence",
+    experience: "12 years experience",
+    location: "Koduvally, Kozhikode",
+    area: "7320 sq.ft",
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446602/1-11-10_gmixql.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446602/1-31-1_ajqegt.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446606/1-19-1_yuyvre.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "Interior and exterior spaces are intertwined in this lovely multi-generational home. Spaces encompass existing trees on site and openings frame magnificent views across the evergreen landscape. A modest white exterior protects the interior saturated with traditional patterns, motifs, and textures, created by artisans and manufactured with modern techniques. This is an outstanding example of combining vernacular spaces with modern home technologies and sustainable building methods.",
+    description: `The Thangal Residence in Koduvally, Kozhikode stands as a remarkable example of contemporary multi-generational living that seamlessly blends traditional Kerala architecture with modern design sensibilities. This exceptional home creates a harmonious relationship between interior and exterior spaces, allowing the natural beauty of the site to become an integral part of the living experience.
+
+The design philosophy embraces the existing landscape, carefully incorporating mature trees and natural features into the architectural composition. Large openings and strategically placed windows frame breathtaking views of the surrounding evergreen landscape, bringing the outdoors inside and creating a constant connection with nature.
+
+The exterior presents a modest white facade that serves as a canvas for the rich interior experiences within. Inside, the spaces are enriched with traditional patterns, motifs, and textures that celebrate Kerala's architectural heritage. These elements are crafted by skilled artisans using both time-honored techniques and modern manufacturing methods, creating a unique fusion of old and new.
+
+The residence demonstrates how vernacular architectural principles can be successfully integrated with contemporary home technologies and sustainable building practices. The result is a living space that honors traditional design while meeting the comfort and functionality requirements of modern family life. This project serves as an outstanding model for how heritage architecture can evolve to meet contemporary needs without losing its essential character and connection to place.`,
+    client: "Thangal",
+    architect: null,
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+    completed: "2018",
+  },
+  {
     id: "kondotty",
     projectBy: "luxart",
     title: "Kondotty",
@@ -209,6 +239,30 @@ The location in Kozhikode provides excellent connectivity to major government in
     consultant: "P C Rasheed",
   },
   {
+    id: "hayath-residence",
+    projectBy: "shiju",
+    title: "Hayath Residence",
+    experience: "12 years experience",
+    location: "Poonoor, Kozhikode",
+    area: "5600 sq.ft",
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446692/1-25-scaled_oolwpg.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446688/1-31-scaled_nsicpi.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446688/1-14-1-scaled_ewe4og.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "The central concept of the project was to create a house with modern outlook while celebrating traditional architecture features.The massing had a parts-to-whole approach. Clusters of varying volumes arranged carefully to create a harmonious layout. The design further introduces voids that brings a piece of nature into the domestic realm. The building sits heavily on the site with the external wall creating a fort-like structure enclosing an eclectic world inside.The building is two-storey high with a centralized plan, being the dining area that merges the public spaces in the front and private rooms at the rear. While the design aid in smooth circulation, there are hidden intertwined paths connecting the spaces giving the residents privacy progressing through the house. The material palette includes American Walnut Veneer and Burberry Beige Italian Marble completed with brass accessories. Floor to ceiling windows enriches the soft tone of the interiors, featuring the view to lush green surroundings. Skylight channels the natural light highlighting the natural warmth of wood in the interior. The overall design is a manifestation of elegant spaces and sophisticated use of materials.",
+    description: `The central concept of the project was to create a house with modern outlook while celebrating traditional architecture features.The massing had a parts-to-whole approach. Clusters of varying volumes arranged carefully to create a harmonious layout. The design further introduces voids that brings a piece of nature into the domestic realm. The building sits heavily on the site with the external wall creating a fort-like structure enclosing an eclectic world inside.The building is two-storey high with a centralized plan, being the dining area that merges the public spaces in the front and private rooms at the rear. While the design aid in smooth circulation, there are hidden intertwined paths connecting the spaces giving the residents privacy progressing through the house. The material palette includes American Walnut Veneer and Burberry Beige Italian Marble completed with brass accessories. Floor to ceiling windows enriches the soft tone of the interiors, featuring the view to lush green surroundings. Skylight channels the natural light highlighting the natural warmth of wood in the interior. The overall design is a manifestation of elegant spaces and sophisticated use of materials.`,
+    client: "Hayath",
+    architect: null,
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+    completed: "2019",
+  },
+  {
     id: "pathimangalam-residential",
     projectBy: "rasheed",
     title: "Residential Building at Pathimangalam",
@@ -238,37 +292,6 @@ The location in Pathimangalam provides excellent connectivity to Kozhikode's maj
     contractor: "P C Rasheed",
     consultant: "P C Rasheed",
   },
-  //   {
-  //     id: "neriamangalam-training-center",
-  //     projectBy: "rasheed",
-  //     title:
-  //       "Training Center Cum Dormitory Building for District Agricultural Farm (DAF)",
-  //     experience: "15 years experience",
-  //     location: "Neriamangalam, Ernakulam",
-  //     area: "5000 sq.ft",
-  //     images: [
-  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/7_bgw3ex.jpg",
-  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829253/6_jmrnoa.jpg",
-  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/1_yrapq8.jpg",
-  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829254/5_djzke8.jpg",
-  //       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750829256/4_orayu5.jpg",
-  //     ],
-  //     pdfLink: null,
-  //     summary:
-  //       "A comprehensive training center and dormitory facility for the District Agricultural Farm (DAF) at Neriamangalam, Ernakulam. This government project features modern educational infrastructure with accommodation facilities for agricultural training programs.",
-  //     description: `The Training Center Cum Dormitory Building for District Agricultural Farm (DAF) at Neriamangalam represents a significant government infrastructure project designed to enhance agricultural education and training capabilities in Ernakulam district. This comprehensive facility combines modern training infrastructure with comfortable accommodation facilities to support agricultural development programs.
-
-  // The project features state-of-the-art training facilities including modern classrooms, practical demonstration areas, conference rooms, and multimedia-equipped learning spaces. The dormitory section provides comfortable accommodation for trainees and visiting agricultural professionals, with well-planned living quarters, dining facilities, and recreational areas. The design incorporates sustainable building practices and energy-efficient systems suitable for educational institutions.
-
-  // Located in Neriamangalam, the facility benefits from excellent connectivity to major agricultural centers, research institutions, and transportation networks in Ernakulam district. The location provides easy access to agricultural fields, research facilities, and other government agricultural institutions. The project demonstrates the government's commitment to strengthening agricultural education and training infrastructure, supporting the development of skilled agricultural professionals and promoting sustainable farming practices in the region.`,
-  //     client: "Kerala Land Development Cor.",
-  //     architect: "P C Rasheed",
-  //     projectType: "Training Center and Dormitory",
-  //     designTeam: "P C Rasheed",
-  //     contractor: "P C Rasheed",
-  //     consultant: "P C Rasheed",
-  //   },
-
   {
     id: "baith-Imthiyas",
     projectBy: "imthiyas",
@@ -322,6 +345,30 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     consultant: null,
   },
   {
+    id: "inaayath-residence",
+    projectBy: "shiju",
+    title: "Inaayath Residence",
+    experience: "12 years experience",
+    location: "Poonoor, Kozhikode",
+    area: "6950  sq.ft",
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446058/1-9_iijvin.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446061/12-1_yes6uf.png",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446068/22_bvqzev.png",
+    ],
+    pdfLink: null,
+    summary:
+      "This Architectural Masterpiece Composing 5-bedroom seamlessly blends traditional and contemporary design elements. Situated among coconut plantations, the home uses vernacular spaces to regulate temperature and features a mix of wooden and stone flooring. The pitched roofs not only allow for rainwater harvesting, but also provide stunning views. This 6950 sq. ft. luxury house offers a unique combination of comfort, practicality, and glamour, with careful planning maximizing views and privacy. The indoor-outdoor connection is emphasized through the use of a long veranda and patio openings. Careful interventions in terms of planning generate spatial experiences which maximise the views and usability of the garden. Keeping the privacy intact the spatial programming of this luxury abode encourages interaction between the family members. The bedrooms are placed for privacy and feature wooden ceilings and large windows. The material palette includes American Walnut Veneer, Burberry Beige Italian Marble, and brass accents, complemented by potted plants, soft furnishings, and concrete textures against white walls. This luxurious abode is a beautiful example of traditional and contemporary architecture.",
+    description: `This Architectural Masterpiece Composing 5-bedroom seamlessly blends traditional and contemporary design elements. Situated among coconut plantations, the home uses vernacular spaces to regulate temperature and features a mix of wooden and stone flooring. The pitched roofs not only allow for rainwater harvesting, but also provide stunning views. This 6950 sq. ft. luxury house offers a unique combination of comfort, practicality, and glamour, with careful planning maximizing views and privacy. The indoor-outdoor connection is emphasized through the use of a long veranda and patio openings. Careful interventions in terms of planning generate spatial experiences which maximise the views and usability of the garden. Keeping the privacy intact the spatial programming of this luxury abode encourages interaction between the family members. The bedrooms are placed for privacy and feature wooden ceilings and large windows. The material palette includes American Walnut Veneer, Burberry Beige Italian Marble, and brass accents, complemented by potted plants, soft furnishings, and concrete textures against white walls. This luxurious abode is a beautiful example of traditional and contemporary architecture.`,
+    client: "Hayath",
+    architect: null,
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+    completed: "2021",
+  },
+  {
     id: "eccentric-box-imthiyas",
     projectBy: "imthiyas",
     title: "Eccentric Box",
@@ -372,6 +419,54 @@ The location in Kozhikode provides excellent connectivity to the city's major at
     designTeam: "Imthiyaz Ahmmed",
     contractor: null,
     consultant: null,
+  },
+  {
+    id: "tacito-residence",
+    projectBy: "shiju",
+    title: "Tacito Residence",
+    experience: "12 years experience",
+    location: "Poonoor, Kozhikode",
+    area: "4900 sq.ft",
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751442115/1-59-1_dmf8cx.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751442114/1-5-31_rudjpe.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751442114/1-53-1_truv5w.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "“Tacito” residence is set in a beautiful green neighbourhood sprawled with lush vegetation and it is a modern, essential residence architecture designed for a family of four. The use of traditional materials like broken white stone and brick cladding in the exterior sought to harmonize with the surroundings. The architectural program was to have the public and family communal space articulated by the double-height dining room. All five bedrooms have large openable doors that open to the beautiful private gardens on the ground floor while achieving an excellent view of the landscape on level one. In contrast to the rest of the design, the staircase has CNC cut filling finished in black with a teak wood handrail. Large doors and windows are the major sources of natural light and ventilation while the mellow choice of materials creates relaxing and cosy interiors.",
+    description: `“Tacito” residence is set in a beautiful green neighbourhood sprawled with lush vegetation and it is a modern, essential residence architecture designed for a family of four. The use of traditional materials like broken white stone and brick cladding in the exterior sought to harmonize with the surroundings. The architectural program was to have the public and family communal space articulated by the double-height dining room. All five bedrooms have large openable doors that open to the beautiful private gardens on the ground floor while achieving an excellent view of the landscape on level one. In contrast to the rest of the design, the staircase has CNC cut filling finished in black with a teak wood handrail. Large doors and windows are the major sources of natural light and ventilation while the mellow choice of materials creates relaxing and cosy interiors.`,
+    client: "Hayath",
+    architect: null,
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+    completed: "2019",
+  },
+  {
+    id: "qasr-residence",
+    projectBy: "shiju",
+    title: "QASR Residence",
+    experience: "12 years experience",
+    location: "Poonoor, Kozhikode",
+    area: "4875 sq.ft",
+    images: [
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751441868/1-11-1_wvz3ap.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751441865/1-45-3-scaled_tmiwzm.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751441865/1-9-2_abtjlj.jpg",
+    ],
+    pdfLink: null,
+    summary:
+      "This tranquil home for a close-knit family is centered around the ritualistic dining table. Spaces flow into each other creating a series of public, semi-private, and private areas, cleverly segregating guests from their inhabitants. The minimalist interior is dotted with experimented materials here and there: a cement textured wall with brass fillers, 3d printed brass partitions, copper mirrors, custom-made teak wood carved panels, soft leather upholstery, and handmade lighting features This pitched roof dwelling has a modest facade with white and grey paint complementing the wooden cladding. The first entry point is the double-height living space with large windows framing the surrounding views. Located at the centre of the house is the spacious dining room that connects the kitchen, family living, and the staircase. The residence has a total of five bedrooms, two of them on the ground floor, and three on the first, each designed and placed as per the client's request. The highlight of the project is materiality. Cement texture walls with brass fillers and 3D printed brass partition walls inject surprise to otherwise minimalistic interiors. On the other hand, the bedrooms are more luxurious in terms of design with wooden wall panelling, copper mirrors, and leather furniture. As a result, the design created a robust yet tranquil living environment.",
+    description: `This tranquil home for a close-knit family is centered around the ritualistic dining table. Spaces flow into each other creating a series of public, semi-private, and private areas, cleverly segregating guests from their inhabitants. The minimalist interior is dotted with experimented materials here and there: a cement textured wall with brass fillers, 3d printed brass partitions, copper mirrors, custom-made teak wood carved panels, soft leather upholstery, and handmade lighting features This pitched roof dwelling has a modest facade with white and grey paint complementing the wooden cladding. The first entry point is the double-height living space with large windows framing the surrounding views. Located at the centre of the house is the spacious dining room that connects the kitchen, family living, and the staircase. The residence has a total of five bedrooms, two of them on the ground floor, and three on the first, each designed and placed as per the client's request. The highlight of the project is materiality. Cement texture walls with brass fillers and 3D printed brass partition walls inject surprise to otherwise minimalistic interiors. On the other hand, the bedrooms are more luxurious in terms of design with wooden wall panelling, copper mirrors, and leather furniture. As a result, the design created a robust yet tranquil living environment.`,
+    client: "Hayath",
+    architect: null,
+    projectType: "Residential Project",
+    designTeam: null,
+    contractor: null,
+    consultant: null,
+    completed: "2019",
   },
 ];
 

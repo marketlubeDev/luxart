@@ -8,7 +8,6 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Handle body scroll lock when menu is open
   React.useEffect(() => {
     if (menuOpen) {
       document.body.style.overflow = "hidden";
@@ -18,7 +17,6 @@ const Header = () => {
       document.body.style.height = "auto";
     }
 
-    // Cleanup on unmount
     return () => {
       document.body.style.overflow = "unset";
       document.body.style.height = "auto";
