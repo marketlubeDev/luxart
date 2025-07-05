@@ -86,6 +86,9 @@ const VideoGallery = () => {
     if (playingVideo === videoId) {
       if (videoElement) {
         videoElement.pause();
+        if (swiperRef.current && swiperRef.current.autoplay) {
+          swiperRef.current.autoplay.start();
+        }
       }
       setPlayingVideo(null);
     } else {
@@ -99,6 +102,9 @@ const VideoGallery = () => {
         const dataSrc = videoElement.getAttribute("data-src");
         if (dataSrc && !videoElement.src) {
           videoElement.src = dataSrc;
+        }
+        if (swiperRef.current && swiperRef.current.autoplay) {
+          swiperRef.current.autoplay.stop();
         }
         videoElement.play().catch(console.error);
       }
@@ -171,6 +177,7 @@ const VideoGallery = () => {
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           loop={true}
           lazy={{

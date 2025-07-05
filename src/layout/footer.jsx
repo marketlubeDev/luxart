@@ -10,6 +10,21 @@ const Footer = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
+  const scrollToServices = () => {
+    const servicesSection = document.getElementById("services");
+    if (servicesSection) {
+      const windowHeight = window.innerHeight;
+      const sectionHeight = servicesSection.offsetHeight;
+      const offset = (windowHeight - sectionHeight) / 2;
+      const sectionTop = servicesSection.offsetTop;
+
+      window.scrollTo({
+        top: Math.max(0, sectionTop - offset),
+        behavior: "smooth",
+      });
+    }
+  };
+
   const handleEnquireClick = () => {
     const phoneNumber = "+918075521186"; // Replace with your actual WhatsApp number
     const message = "Hello, I would like to enquire about your services."; // Customize your message
@@ -23,10 +38,7 @@ const Footer = () => {
     e.preventDefault();
     if (location.pathname === "/") {
       // Already on home, just scroll
-      const servicesSection = document.getElementById("services");
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: "smooth" });
-      }
+      scrollToServices();
     } else {
       // Navigate to home and scroll after navigation
       navigate("/", { state: { scrollTo: "services" } });
@@ -35,10 +47,7 @@ const Footer = () => {
 
   useEffect(() => {
     if (location.state && location.state.scrollTo === "services") {
-      const servicesSection = document.getElementById("services");
-      if (servicesSection) {
-        servicesSection.scrollIntoView({ behavior: "smooth" });
-      }
+      scrollToServices();
     }
   }, [location]);
 

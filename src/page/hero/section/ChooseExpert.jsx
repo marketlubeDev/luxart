@@ -7,7 +7,7 @@ const engineers = [
     name: "Shabeer A.M",
     title: "Founder of Shabeer Saleel Associates",
     image:
-      "https://res.cloudinary.com/dznxxalrb/image/upload/v1750339104/shabeer_etu53m.jpg",
+      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751708084/DSC03534_1_ylb1eb.jpg",
     projectBy: "shabeer",
   },
   {
