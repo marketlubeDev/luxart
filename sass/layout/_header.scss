@@ -87,13 +87,13 @@
       position: relative;
       font-size: 16px;
       font-weight: 400;
-      opacity: 0.8;
+      opacity: 1; // Increased from 0.8 for better visibility
       text-decoration: none;
       background-image: linear-gradient(
         to right,
         #d4af37,
         #d4af37 50%,
-        #fff 50%
+        #ffffff 50% // Changed from #fff to #ffffff for consistency
       );
       background-size: 200% 100%;
       background-position: -100%;
