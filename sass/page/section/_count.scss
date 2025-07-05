@@ -32,17 +32,17 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    margin-bottom: 0.5rem;
+    margin-bottom: -1.3rem;
   }
 
   &__label {
     color: #fff9d3;
     font-family: "Be Vietnam", sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
     line-height: normal;
-    letter-spacing: -0.01rem;
+    // letter-spacing: -0.01rem;
     text-edge: cap;
     leading-trim: both;
     font-kerning: none;
