@@ -49,17 +49,6 @@ const MainLoader = () => (
 
 // Home component containing all the main landing page sections
 const Home = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    if (location.state && location.state.scrollTo === "testimonials") {
-      const testimonialsSection = document.getElementById("testimonials");
-      if (testimonialsSection) {
-        testimonialsSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
   return (
     <>
       <Landing />

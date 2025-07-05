@@ -25,8 +25,7 @@ const logos = [
 ];
 
 const vector = () => {
-  // Repeat logos enough times to ensure smooth scroll
-
+  // Create two sets of logos for seamless animation
   const repeatedLogos = [...logos, ...logos];
 
   return (
@@ -36,7 +35,7 @@ const vector = () => {
       </h2>
 
       <div className="vector__slider-wrapper">
-        {/* Seamless Line 1 */}
+        {/* First line - scrolls left */}
         <div className="vector__slider vector__slider--line1">
           {[...repeatedLogos, ...repeatedLogos].map((logo, index) => (
             <div className="vector__logo-box" key={`line1-${index}`}>
@@ -48,6 +47,8 @@ const vector = () => {
             </div>
           ))}
         </div>
+
+        {/* Second line - scrolls right */}
         <div className="vector__slider vector__slider--line2">
           {[...repeatedLogos, ...repeatedLogos].map((logo, index) => (
             <div className="vector__logo-box" key={`line2-${index}`}>
@@ -59,19 +60,6 @@ const vector = () => {
             </div>
           ))}
         </div>
-
-        {/* Seamless Line 2 (reverse scroll) */}
-        {/* <div className="vector__slider vector__slider--line2">
-          {[...repeatedLogos, ...repeatedLogos].map((logo, index) => (
-            <div className="vector__logo-box" key={`line2-${index}`}>
-              <img
-                src={logo}
-                alt={`Logo ${index + 1}`}
-                className="vector__logo vector__logo--grayscale"
-              />
-            </div>
-          ))}
-        </div> */}
       </div>
     </section>
   );
