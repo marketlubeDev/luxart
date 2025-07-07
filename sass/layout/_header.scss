@@ -65,7 +65,10 @@
     margin: 0;
     padding: 0;
     transition: all 0.3s ease;
-    margin-right: 10rem;
+
+    @include respond(desktop) {
+      margin-right: 10rem;
+    }
 
     @include respond(bigDesktop) {
       gap: 60px;
