@@ -84,6 +84,7 @@
     font-weight: 400;
     margin: 0 0 1rem 0;
     line-height: 1.2;
+    font-family: "Be Vietnam", sans-serif;
 
     @include respond(desktop) {
       font-size: 3.2rem;
@@ -103,7 +104,7 @@
     }
 
     @include respond(smallPhone) {
-      font-size: 1.8rem;
+      font-size: 1.3rem;
       margin-bottom: 0.6rem;
     }
   }
@@ -129,7 +130,7 @@
 
     @include respond(smallPhone) {
       flex-direction: column;
-      gap: 0.8rem;
+      gap: 0.5rem;
       align-items: start;
     }
 
@@ -138,6 +139,7 @@
       align-items: center;
       gap: 0.5rem;
       font-size: 1rem;
+      font-family: "Be Vietnam", sans-serif;
 
       @include respond(phone) {
         font-size: 0.9rem;
@@ -165,6 +167,16 @@
       .location-icon {
         width: 24px;
         height: 24px;
+
+        @include respond(phone) {
+          width: 14px;
+          height: 24px;
+        }
+
+        @include respond(smallPhone) {
+          width: 14px;
+          height: 24px;
+        }
       }
     }
   }
@@ -366,6 +378,7 @@
         line-height: 1.8;
         color: rgba(255, 255, 255, 0.9);
         margin: 0;
+        font-family: "Be Vietnam", sans-serif;
 
         @include respond(bigTablets) {
           font-size: 1.05rem;
@@ -434,6 +447,7 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        font-family: "Be Vietnam", sans-serif;
 
         @include respond(phone) {
           font-size: 0.85rem;
@@ -449,6 +463,7 @@
         color: white;
         font-weight: 600;
         line-height: 1.2;
+        font-family: "Be Vietnam", sans-serif;
 
         @include respond(bigTablets) {
           font-size: 1.05rem;
@@ -971,6 +986,7 @@
           opacity: 0.7;
           text-transform: uppercase;
           letter-spacing: 0.5px;
+          font-family: "Be Vietnam", sans-serif;
 
           @include respond(bigTablets) {
             font-size: 0.75rem;
@@ -993,6 +1009,7 @@
           font-size: 1rem;
           font-weight: 500;
           line-height: 1.2;
+          font-family: "Be Vietnam", sans-serif;
 
           @include respond(bigTablets) {
             font-size: 0.95rem;

@@ -27,6 +27,16 @@ const Header = () => {
     setMenuOpen(false);
   }, [location.pathname]);
 
+  React.useEffect(() => {
+    if (location.state?.scrollTo === "testimonials") {
+      const testimonialsSection = document.getElementById("testimonials");
+      if (testimonialsSection) {
+        testimonialsSection.scrollIntoView({ behavior: "smooth" });
+        window.history.replaceState({}, document.title);
+      }
+    }
+  }, [location.state]);
+
   const isActive = (path) => {
     return location.pathname === path;
   };
@@ -41,7 +51,14 @@ const Header = () => {
   };
 
   const scrollToTestimonials = () => {
-    navigate("/", { state: { scrollTo: "testimonials" } });
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "testimonials" } });
+    } else {
+      const testimonialsSection = document.getElementById("testimonials");
+      if (testimonialsSection) {
+        testimonialsSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
     setMenuOpen(false);
   };
 
