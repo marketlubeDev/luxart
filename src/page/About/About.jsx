@@ -111,7 +111,7 @@ export default function About() {
                   ref={architectRef}
                 >
                   <h2>{architectCount}+</h2>
-                  <p>Architect</p>
+                  <p>Architects</p>
                 </div>
                 <div
                   className="aboutPage-container__Content__bottom__left__top__countup"

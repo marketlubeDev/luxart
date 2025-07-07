@@ -51,7 +51,7 @@ const Header = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar__logo">
+      <div className={`navbar__logo${menuOpen ? " hide" : ""}`}>
         <Link to="/">
           <img src={logo} alt="Luxart Logo" />
         </Link>

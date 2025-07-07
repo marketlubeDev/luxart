@@ -22,7 +22,6 @@
     opacity: 0.8;
   }
 
-
   &__content {
     display: flex;
     justify-content: space-between;
@@ -109,8 +108,8 @@
 
     .links__heading {
       font-family: "Be Vietnam", sans-serif;
-      font-weight: 400;
-      font-size: 18px;
+      font-weight: 300;
+      font-size: 16px;
       line-height: 1.1;
       text-align: center;
       color: #fff;
@@ -124,7 +123,7 @@
       gap: 0.75rem;
       margin-bottom: 1rem;
       font-size: 0.9rem;
-      line-height: 1.2;
+      line-height: 1.8;
       opacity: 0.6;
       &:hover {
         opacity: 1;
