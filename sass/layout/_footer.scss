@@ -11,7 +11,7 @@
     font-weight: 300;
     text-align: left;
     color: #fff;
-    opacity: 0.8;
+
     font-family: "Be Vietnam", sans-serif;
   }
   .links__heading {
@@ -19,7 +19,7 @@
     font-weight: 300;
     text-align: center;
     color: #fff;
-    opacity: 0.8;
+    font-family: "Be Vietnam", sans-serif;
   }
 
   &__content {
@@ -47,7 +47,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 0rem;
 
         @media (max-width: 500px) {
           flex-direction: column;
@@ -82,6 +82,14 @@
         color: #fff;
         text-decoration: none;
         opacity: 0.6;
+
+        @include responsive.respond(phone) {
+          font-size: 15px;
+        }
+
+        @include responsive.respond(smallPhone) {
+          font-size: 15px;
+        }
         &:hover {
           opacity: 1;
         }
@@ -125,6 +133,15 @@
       font-size: 0.9rem;
       line-height: 1.8;
       opacity: 0.6;
+
+      @include responsive.respond(phone) {
+        margin-bottom: 0.5rem;
+      }
+
+      @include responsive.respond(smallPhone) {
+        margin-bottom: 0.5rem;
+      }
+
       &:hover {
         opacity: 1;
       }
@@ -144,6 +161,16 @@
       width: 176px;
       height: 110px;
       object-fit: contain;
+
+      @include responsive.respond(phone) {
+        width: 150px;
+        height: 100px;
+      }
+
+      @include responsive.respond(smallPhone) {
+        width: 150px;
+        height: 100px;
+      }
     }
 
     .enquire-button {
@@ -161,6 +188,32 @@
 
       .phone-icon {
         margin-right: 8px;
+        width: auto;
+        height: auto;
+
+        @include responsive.respond(phone) {
+          width: 16px;
+          height: 16px;
+          margin-right: 6px;
+        }
+
+        @include responsive.respond(smallPhone) {
+          width: 16px;
+          height: 16px;
+          margin-right: 5px;
+        }
+      }
+
+      @include responsive.respond(phone) {
+        padding: 10px 18px;
+        font-size: 0.9rem;
+        border-radius: 4px;
+      }
+
+      @include responsive.respond(smallPhone) {
+        padding: 10px 18px;
+        font-size: 0.8rem;
+        border-radius: 3px;
       }
 
       &:hover {
@@ -175,6 +228,14 @@
     margin-top: 2rem;
     margin-left: 0;
 
+    @include responsive.respond(phone) {
+      margin-top: 1.5rem;
+    }
+
+    @include responsive.respond(smallPhone) {
+      margin-top: 1.5rem;
+    }
+
     li {
       margin-bottom: 0.5rem;
       margin-left: 0;
@@ -184,6 +245,15 @@
         color: #fff;
         text-decoration: none;
         opacity: 0.6;
+
+        @include responsive.respond(phone) {
+          font-size: 15px;
+        }
+
+        @include responsive.respond(smallPhone) {
+          font-size: 15px;
+        }
+
         &:hover {
           opacity: 1;
         }
@@ -198,6 +268,14 @@
       padding-top: 1rem;
       font-size: 0.8rem;
       opacity: 0.6;
+
+      @include responsive.respond(phone) {
+        font-size: 11.5px;
+      }
+
+      @include responsive.respond(smallPhone) {
+        font-size: 11.5px;
+      }
 
       a {
         font-family: "Be Vietnam", sans-serif;

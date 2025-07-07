@@ -12,6 +12,16 @@
     margin-bottom: 2.5rem;
     flex-wrap: wrap;
 
+    @include respond(phone) {
+      text-align: center;
+      justify-content: center;
+    }
+
+    @include respond(smallPhone) {
+      text-align: center;
+      justify-content: center;
+    }
+
     .projects__title {
       font-size: 2rem;
       font-weight: 400;
@@ -164,6 +174,12 @@
         align-items: center;
         gap: 0.5rem;
         font-size: 0.9rem;
+        @include respond(phone) {
+          font-size: 0.75rem;
+        }
+        @include respond(smallPhone) {
+          font-size: 0.75rem;
+        }
 
         .projects__icon {
           width: 1rem;
@@ -189,12 +205,33 @@
       gap: 0.5rem;
       border-top: 1px solid rgba(255, 255, 255, 0.1);
       margin-bottom: 1rem;
+      font-family: "Be Vietnam", sans-serif;
+
+      @include respond(phone) {
+        font-size: 0.85rem;
+        margin-top: 0;
+      }
+
+      @include respond(smallPhone) {
+        font-size: 0.85rem;
+        margin-top: 0;
+      }
 
       .projects__completed {
         color: #f4d300;
         font-size: 0.85rem;
         font-weight: 400;
         margin-left: 3rem;
+
+        @include respond(phone) {
+          font-size: 0.85rem;
+          margin-left: 0;
+        }
+
+        @include respond(smallPhone) {
+          font-size: 0.85rem;
+          margin-left: 0;
+        }
       }
     }
 
@@ -386,7 +423,7 @@
     &__card--emerald,
     &__card--crystal-left,
     &__card--crystal-right {
-      height: 420px !important; // increased and made consistent
+      height: 272px !important; // increased and made consistent
       .projects__image {
         max-height: 360px; // increased from 260px
       }
@@ -415,14 +452,16 @@
     padding: 0.5rem 0.1rem;
     &__header {
       .projects__title {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
       }
       .projects__subtitle {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
       }
       .projects__button {
-        padding: 4px 6px;
+        padding: 8px 10px;
         font-size: 0.7rem;
+        margin: 0 auto;
+        display: block;
       }
     }
     &__card--azure {

@@ -1,4 +1,4 @@
-@use "../base/responsive" as responsive;
+@use "../base/responsive" as *;
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:700");
 
 .navbar {
@@ -18,17 +18,17 @@
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 
-  @include responsive.respond(bigDesktop) {
+  @include respond(bigDesktop) {
     width: 85%;
     padding: 1.5rem 3rem;
   }
 
-  @include responsive.respond(desktop) {
+  @include respond(desktop) {
     width: 90%;
     padding: 1.5rem 2.5rem;
   }
 
-  @include responsive.respond(smallPhone) {
+  @include respond(smallPhone) {
     top: 0;
     background-color: #e6c200;
   }
@@ -39,23 +39,19 @@
       object-fit: contain;
       transition: height 0.3s ease;
 
-      @include responsive.respond(bigDesktop) {
+      @include respond(bigDesktop) {
         height: 60px;
       }
 
-      @include responsive.respond(desktop) {
-        height: 55px;
-      }
-
-      @include responsive.respond(tablets) {
+      @include respond(tablets) {
         height: 70px;
       }
 
-      @include responsive.respond(phone) {
+      @include respond(phone) {
         height: 60px;
       }
 
-      @include responsive.respond(smallPhone) {
+      @include respond(smallPhone) {
         height: 60px;
         padding-left: 10px;
       }
@@ -69,16 +65,13 @@
     margin: 0;
     padding: 0;
     transition: all 0.3s ease;
+    margin-right: 10rem;
 
-    @include responsive.respond(bigDesktop) {
+    @include respond(bigDesktop) {
       gap: 60px;
     }
 
-    @include responsive.respond(desktop) {
-      gap: 50px;
-    }
-
-    @include responsive.respond(tablets) {
+    @include respond(tablets) {
       gap: 30px;
     }
 
@@ -87,13 +80,13 @@
       position: relative;
       font-size: 16px;
       font-weight: 400;
-      opacity: 1; // Increased from 0.8 for better visibility
+      opacity: 1;
       text-decoration: none;
       background-image: linear-gradient(
         to right,
         #d4af37,
         #d4af37 50%,
-        #ffffff 50% // Changed from #fff to #ffffff for consistency
+        #ffffff 50%
       );
       background-size: 200% 100%;
       background-position: -100%;
@@ -105,24 +98,24 @@
       cursor: pointer;
       padding: 0;
 
-      @include responsive.respond(bigDesktop) {
+      @include respond(bigDesktop) {
         font-size: 17px;
       }
 
-      @include responsive.respond(desktop) {
+      @include respond(desktop) {
         font-size: 16px;
       }
 
-      @include responsive.respond(tablets) {
+      @include respond(tablets) {
         font-size: 2rem;
         padding: 0.5rem 0;
       }
 
-      @include responsive.respond(phone) {
+      @include respond(phone) {
         font-size: 14px;
       }
 
-      @include responsive.respond(smallPhone) {
+      @include respond(smallPhone) {
         font-size: 13px;
       }
 
@@ -155,6 +148,16 @@
   }
 
   &__cta {
+    @include respond(tablets) {
+      display: none;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+    @include respond(smallPhone) {
+      display: none;
+    }
+
     .enquire-button {
       display: flex;
       align-items: center;
@@ -168,60 +171,10 @@
       cursor: pointer;
       transition: all 0.3s ease;
 
-      @include responsive.respond(bigDesktop) {
-        padding: 12px 24px;
-        font-size: 1.1rem;
-      }
-
-      @include responsive.respond(desktop) {
-        padding: 10px 20px;
-        font-size: 1rem;
-      }
-
-      @include responsive.respond(tablets) {
-        padding: 8px 16px;
-        font-size: 0.9rem;
-      }
-
-      @include responsive.respond(phone) {
-        padding: 7px 14px;
-        font-size: 0.85rem;
-      }
-
-      @include responsive.respond(smallPhone) {
-        padding: 6px 12px;
-        font-size: 0.8rem;
-      }
-
       .phone-icon {
         margin-right: 8px;
-        width: 16px;
-        height: 16px;
-        transition: all 0.3s ease;
-
-        @include responsive.respond(bigDesktop) {
-          width: 23px;
-          height: 23px;
-          margin-right: 10px;
-        }
-
-        @include responsive.respond(desktop) {
-          width: 23px;
-          height: 23px;
-          margin-right: 8px;
-        }
-
-        @include responsive.respond(phone) {
-          width: 24px;
-          height: 24px;
-          margin-right: 6px;
-        }
-
-        @include responsive.respond(smallPhone) {
-          width: 12px;
-          height: 12px;
-          margin-right: 5px;
-        }
+        width: auto;
+        height: auto;
       }
 
       &:hover {
@@ -231,187 +184,300 @@
     }
   }
 
-  &__hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    z-index: 9999;
-    position: relative;
-    transition: all 0.3s ease;
-
-    @include responsive.respond(tablets) {
-      display: flex;
-    }
-
-    span {
-      height: 3px;
-      width: 100%;
-      background: #d4af37;
-      margin: 5px 0;
-      border-radius: 2px;
-      transition: all 0.3s ease;
-      display: block;
-      box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
-    }
-
-    &.open span:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
-    }
-    &.open span:nth-child(2) {
-      opacity: 0;
-    }
-    &.open span:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  }
-
-  // @include responsive.respond(tablets) {
-  //   padding: 0.8rem 1rem;
-  //   width: 95%;
-  //   margin: 1% auto;
-
-  //   &__links {
-  //     position: fixed;
-  //     top: 0;
-  //     left: 0;
-  //     right: 0;
-  //     bottom: 0;
-  //     background: rgba(0, 0, 0, 0.98);
-  //     backdrop-filter: blur(20px);
-  //     -webkit-backdrop-filter: blur(20px);
-  //     flex-direction: column;
-  //     align-items: center;
-  //     justify-content: center;
-  //     width: 100vw;
-  //     height: 100vh;
-  //     height: 100dvh;
-  //     padding: 2rem;
-  //     gap: 3rem;
-  //     transition: all 0.3s ease;
-  //     z-index: 9998;
-  //     transform: translateY(-100%);
-  //     opacity: 0;
-  //     visibility: hidden;
-
-  //     &.open {
-  //       transform: translateY(0);
-  //       opacity: 1;
-  //       visibility: visible;
-  //     }
-
-  //     li {
-  //       width: 100%;
-  //       text-align: center;
-
-  //       a,
-  //       button.navbar__link-button {
-  //         font-size: 2.5rem;
-  //         font-weight: 300;
-  //         padding: 1.5rem 0;
-  //         display: block;
-  //         width: 100%;
-  //         color: #fff;
-  //         text-decoration: none;
-  //         background: none;
-  //         border: none;
-  //         cursor: pointer;
-  //         transition: all 0.3s ease;
-  //         letter-spacing: 2px;
-  //         text-transform: uppercase;
-
-  //         &:hover {
-  //           color: #d4af37;
-  //           transform: scale(1.02);
-  //         }
-
-  //         &.active {
-  //           // color: #d4af37;
-  //           // border-bottom: 3px solid #d4af37;
-  //           // padding-bottom: 1rem;
-  //         }
-
-  //         &::before,
-  //         &::after {
-  //           display: none;
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //   &__cta {
-  //     position: fixed;
-  //     bottom: 4rem;
-  //     left: 50%;
-  //     transform: translateX(-50%);
-  //     z-index: 9999;
-  //     opacity: 0;
-  //     visibility: hidden;
-  //     transition: all 0.3s ease;
-
-  //     .enquire-button {
-  //       background: linear-gradient(90deg, #f4d300, #ab7e0d);
-  //       padding: 1.2rem 2.5rem;
-  //       font-size: 1.2rem;
-  //       border-radius: 50px;
-  //       box-shadow: 0 6px 30px rgba(244, 211, 0, 0.4);
-  //       font-weight: 600;
-  //       letter-spacing: 1px;
-  //     }
-  //   }
-
-  //   // Show CTA when menu is open
-  //   &__links.open ~ &__cta {
-  //     opacity: 1;
-  //     visibility: visible;
-  //   }
-  // }
-
-  @include responsive.respond(phone) {
-    padding: 0.6rem 1rem;
-    margin: 1% auto;
-
+  @include respond(tablets) {
     &__links {
-      height: 55px;
+      position: fixed;
+      top: 0;
+      left: -18px;
+      background: black;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 92vw;
+      height: 90vh;
+      padding: 2rem;
+      gap: 2rem;
+      display: none;
+      z-index: 9998;
 
-      li a,
-      li button.navbar__link-button {
-        font-size: 0.75rem;
-        padding: 0.25rem 0;
+      &.open {
+        display: flex;
+      }
+
+      li {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
+
+        .enquire-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          border: none;
+          border-radius: 50px;
+          padding: 15px 30px;
+          color: #000;
+          font-weight: 600;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(244, 211, 0, 0.3);
+          width: fit-content;
+
+          .phone-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, #e6c200, #9e710b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 211, 0, 0.4);
+          }
+        }
       }
     }
-
-    .enquire-button {
-      .phone-icon {
-        width: 24px;
-        height: 24px;
-      }
-    }
-  }
-
-  @include responsive.respond(smallPhone) {
-    padding: 0.5rem 0.8rem;
-    margin: 0.5% auto;
 
     &__hamburger {
-      width: 26px;
-      height: 26px;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      width: 32px;
+      height: 24px;
+      z-index: 9999;
+      position: relative;
+      transition: all 0.3s ease;
+      padding: 0;
+
+      @include respond(tablets) {
+        display: flex;
+      }
 
       span {
         height: 2px;
-        margin: 3px 0;
+        width: 100%;
+        background: #d4af37;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        display: block;
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        transform-origin: center;
+      }
+
+      &.open {
+        span {
+          &:first-child {
+            transform: translateY(11px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          &:last-child {
+            transform: translateY(-11px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(phone) {
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    width: 100%;
+    margin: 0.5% auto;
+    border-radius: 0;
+
+    &__links {
+      width: 100vw;
+      height: 100vh;
+      right: 0px;
+      padding: 0rem;
+      border-radius: 0;
+      top: 100px;
+
+      li {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
+
+        .enquire-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          border: none;
+          border-radius: 50px;
+          padding: 12px 25px;
+          color: #000;
+          font-weight: 600;
+          font-size: 1.1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(244, 211, 0, 0.3);
+          width: fit-content;
+
+          .phone-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 6px;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, #e6c200, #9e710b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 211, 0, 0.4);
+          }
+        }
       }
     }
 
-    &__links {
-      height: 50px;
+    &__hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 28px;
+      height: 20px;
+      padding: 0;
+      margin: 5px;
+      z-index: 9999;
 
-      li a,
-      li button.navbar__link-button {
-        font-size: 0.7rem;
-        padding: 0.2rem 0;
+      span {
+        height: 2px;
+        width: 100%;
+        background: #d4af37;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        display: block;
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        transform-origin: center;
+      }
+
+      &.open {
+        span {
+          &:first-child {
+            transform: translateY(9px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          &:last-child {
+            transform: translateY(-9px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  @include respond(smallPhone) {
+    position: sticky;
+    top: 0;
+    padding: 8px;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+
+    &__links {
+      width: 100vw;
+      height: 100vh;
+      right: 0;
+      padding: 0;
+      border-radius: 0;
+      top: 75px;
+
+      li {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
+
+        .enquire-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          border: none;
+          border-radius: 50px;
+          padding: 10px 20px;
+          color: #000;
+          font-weight: 600;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(244, 211, 0, 0.3);
+          width: fit-content;
+
+          .phone-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, #e6c200, #9e710b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 211, 0, 0.4);
+          }
+        }
+      }
+    }
+
+    &__hamburger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 24px;
+      height: 18px;
+      padding: 0;
+      margin: 5px;
+      z-index: 9999;
+
+      span {
+        height: 2px;
+        width: 100%;
+        background: #d4af37;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        display: block;
+        box-shadow: 0 0 5px rgba(212, 175, 55, 0.5);
+        transform-origin: center;
+      }
+
+      &.open {
+        span {
+          &:first-child {
+            transform: translateY(8px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          &:last-child {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+        }
       }
     }
   }
@@ -423,7 +489,7 @@
     background: black;
     width: 95%;
     margin: 1% auto;
-    position: fixed;
+    // position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -605,7 +671,7 @@
     background: black;
     width: 95%;
     margin: 1% auto;
-    position: fixed;
+    // position: fixed;
     top: 0;
     z-index: 9999;
 
@@ -632,6 +698,12 @@
       li {
         text-align: center;
         width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
 
         a,
         button.navbar__link-button {
@@ -654,6 +726,35 @@
 
           &::after {
             display: none;
+          }
+        }
+
+        .enquire-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          border: none;
+          border-radius: 50px;
+          padding: 15px 30px;
+          color: #000;
+          font-weight: 600;
+          font-size: 1.2rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(244, 211, 0, 0.3);
+          width: fit-content;
+
+          .phone-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, #e6c200, #9e710b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 211, 0, 0.4);
           }
         }
       }
@@ -719,10 +820,42 @@
       z-index: 9998;
 
       li {
-        a,
-        button.navbar__link-button {
-          font-size: 2rem;
-          padding: 1.5rem 0;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
+
+        .enquire-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          border: none;
+          border-radius: 50px;
+          padding: 12px 25px;
+          color: #000;
+          font-weight: 600;
+          font-size: 1.1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(244, 211, 0, 0.3);
+          width: fit-content;
+
+          .phone-icon {
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, #e6c200, #9e710b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 211, 0, 0.4);
+          }
         }
       }
     }
@@ -767,10 +900,42 @@
       z-index: 9998;
 
       li {
-        a,
-        button.navbar__link-button {
-          font-size: 1.5rem;
-          padding: 1.2rem 0;
+        text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        &:last-child {
+          margin-top: 2rem;
+        }
+
+        .enquire-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: linear-gradient(90deg, #f4d300, #ab7e0d);
+          border: none;
+          border-radius: 50px;
+          padding: 10px 20px;
+          color: #000;
+          font-weight: 600;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(244, 211, 0, 0.3);
+          width: fit-content;
+
+          .phone-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 8px;
+          }
+
+          &:hover {
+            background: linear-gradient(90deg, #e6c200, #9e710b);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(244, 211, 0, 0.4);
+          }
         }
       }
     }

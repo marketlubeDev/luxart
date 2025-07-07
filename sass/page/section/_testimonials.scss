@@ -4,7 +4,7 @@
   background-color: black;
   padding: 2rem 1rem;
   color: #fff;
-  text-align: center;
+  text-align: left;
   overflow: hidden;
 
   .testimonial-title {
@@ -64,7 +64,7 @@
       display: none;
 
       @include respond(smallPhone) {
-        width: 300px;
+        width: 280px;
       }
       @include respond(phone) {
         width: 300px;
@@ -99,21 +99,42 @@
           display: flex;
           align-items: center;
           gap: 0.8rem;
-
           .avatar {
             width: 50px;
             height: 50px;
             border-radius: 50%;
             object-fit: cover;
+
+            @include respond(smallPhone) {
+              width: 40px;
+              height: 40px;
+            }
+            @include respond(phone) {
+              width: 40px;
+              height: 40px;
+            }
           }
 
           .name {
             font-weight: 600;
+
+            @include respond(smallPhone) {
+              font-size: 0.85rem;
+            }
+            @include respond(phone) {
+              font-size: 0.85rem;
+            }
           }
 
           .role {
             font-size: 0.85rem;
             color: #aaa;
+            @include respond(smallPhone) {
+              font-size: 0.75rem;
+            }
+            @include respond(phone) {
+              font-size: 0.75rem;
+            }
           }
         }
 
@@ -133,6 +154,12 @@
         font-style: italic;
         line-height: 1.6;
         color: #e0e0e0;
+        @include respond(smallPhone) {
+          font-size: 0.85rem;
+        }
+        @include respond(phone) {
+          font-size: 0.85rem;
+        }
       }
     }
   }
@@ -170,7 +197,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  // height: 20rem;
 
   .arrow {
     display: flex;
@@ -179,37 +205,48 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.08);
     border: none;
     color: #f7c32e;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     cursor: pointer;
     z-index: 10;
     padding: 0.5rem;
-    border-radius: 50%;
-    transition: background 0.3s;
+    background: transparent;
+    transition: all 0.3s ease;
 
     &:hover {
-      background: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
     }
 
     &.left-arrow {
-      left: 0;
-      @include respond(smallPhone) {
-        display: none;
-      }
+      left: 10px;
+
       @include respond(phone) {
-        display: none;
+        display: flex;
+        left: 5px;
+        font-size: 1.5rem;
+      }
+
+      @include respond(smallPhone) {
+        display: flex;
+        left: 2px;
+        font-size: 1.3rem;
       }
     }
 
     &.right-arrow {
-      right: 0;
-      @include respond(smallPhone) {
-        display: none;
-      }
+      right: 10px;
+
       @include respond(phone) {
-        display: none;
+        display: flex;
+        right: 5px;
+        font-size: 1.5rem;
+      }
+
+      @include respond(smallPhone) {
+        display: flex;
+        right: 2px;
+        font-size: 1.3rem;
       }
     }
   }

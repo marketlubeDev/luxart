@@ -126,41 +126,40 @@
   }
 }
 
-// Phone
-@media (max-width: 600px) {
+// Phone (576px - 767.98px)
+@media only screen and (min-width: 576px) and (max-width: 767.98px) {
   .services__card {
-    width: 140px;
-    height: 200px;
+    width: 320px;
+    height: 420px;
   }
   .services__title {
-    font-size: 1rem;
-    margin-bottom: -0.8rem;
+    font-size: 1.2rem;
   }
   .services__desc {
-    font-size: 0.75rem;
-    transform: translateY(0rem);
+    font-size: 0.9rem;
   }
   .services__content {
-    padding: 0.7rem;
+    padding: 1.2rem;
   }
 }
 
-// Small Phone
-@media (max-width: 400px) {
+// Small Phone (max-width: 575.98px)
+@media only screen and (max-width: 575.98px) {
   .services__card {
-    width: 110px;
-    height: 150px;
+    width: 200px;
+    height: 280px;
   }
   .services__title {
-    font-size: 0.85rem;
-    margin-bottom: -0.5rem;
+    font-size: 1.1rem;
   }
   .services__desc {
-    font-size: 0.65rem;
-    transform: translateY(0rem);
+    font-size: 0.85rem;
   }
   .services__content {
-    padding: 0.4rem;
+    padding: 1rem;
+  }
+  .services {
+    gap: 0.5rem;
   }
 }
 

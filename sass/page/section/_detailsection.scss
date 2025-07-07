@@ -1,3 +1,4 @@
+@use "../../base/responsive" as *;
 @import url("https://fonts.googleapis.com/css2?family=David+Libre&display=swap");
 
 .detail-section {
@@ -54,6 +55,15 @@
 
       .phone-icon {
         margin-right: 8px;
+
+        @include respond(smallPhone) {
+          width: 20px;
+          height: 20px;
+        }
+        @include respond(phone) {
+          width: 20px;
+          height: 20px;
+        }
       }
 
       &:hover {
@@ -74,6 +84,18 @@
   opacity: 0.1;
   z-index: 1;
   pointer-events: none;
+
+  @include respond(phone) {
+    width: 100px;
+    height: 70px;
+    border-radius: 6px;
+  }
+
+  @include respond(smallPhone) {
+    width: 80px;
+    height: 60px;
+    border-radius: 4px;
+  }
 }
 
 .pos-1 {
@@ -143,7 +165,7 @@
 }
 
 // Tablet
-@media (max-width: 900px) {
+@include respond(tablets) {
   .detail-section {
     padding: 4rem 0.5rem;
     height: 40vh;
@@ -167,10 +189,10 @@
 }
 
 // Phone
-@media (max-width: 600px) {
+@include respond(phone) {
   .detail-section {
     padding: 2rem 0.25rem;
-    height: 20vh;
+    height: 30vh;
     &__content {
       h2 {
         font-size: 1.1rem;
@@ -191,25 +213,26 @@
 }
 
 // Small Phone
-@media (max-width: 400px) {
+@include respond(smallPhone) {
   .detail-section {
     padding: 1rem 0.1rem;
-    height: 20vh;
+    height: 30vh;
     &__content {
       h2 {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
       }
       p {
-        font-size: 0.7rem;
+        font-size: 14px;
+        line-height: 1.2;
       }
       .enquire-btn {
-        font-size: 0.7rem;
-        padding: 4px 6px;
+        font-size: 0.8rem;
+        padding: 8px 10px;
       }
     }
   }
   .floating-image {
-    width: 32px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
   }
 }
