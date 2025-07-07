@@ -101,6 +101,17 @@
       cursor: pointer;
       padding: 0;
 
+      &.loading {
+        cursor: wait;
+        opacity: 0.7;
+        pointer-events: none;
+      }
+
+      &:disabled {
+        cursor: wait;
+        opacity: 0.7;
+      }
+
       @include respond(bigDesktop) {
         font-size: 17px;
       }

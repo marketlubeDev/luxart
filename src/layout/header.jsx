@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isNavigating, setIsNavigating] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -25,15 +26,20 @@ const Header = () => {
 
   React.useEffect(() => {
     setMenuOpen(false);
+    setIsNavigating(false);
   }, [location.pathname]);
 
   React.useEffect(() => {
     if (location.state?.scrollTo === "testimonials") {
-      const testimonialsSection = document.getElementById("testimonials");
-      if (testimonialsSection) {
-        testimonialsSection.scrollIntoView({ behavior: "smooth" });
-        window.history.replaceState({}, document.title);
-      }
+      setIsNavigating(true);
+      setTimeout(() => {
+        const testimonialsSection = document.getElementById("testimonials");
+        if (testimonialsSection) {
+          testimonialsSection.scrollIntoView({ behavior: "smooth" });
+          window.history.replaceState({}, document.title);
+        }
+        setIsNavigating(false);
+      }, 100);
     }
   }, [location.state]);
 
@@ -51,13 +57,17 @@ const Header = () => {
   };
 
   const scrollToTestimonials = () => {
+    setIsNavigating(true);
     if (location.pathname !== "/") {
       navigate("/", { state: { scrollTo: "testimonials" } });
     } else {
-      const testimonialsSection = document.getElementById("testimonials");
-      if (testimonialsSection) {
-        testimonialsSection.scrollIntoView({ behavior: "smooth" });
-      }
+      setTimeout(() => {
+        const testimonialsSection = document.getElementById("testimonials");
+        if (testimonialsSection) {
+          testimonialsSection.scrollIntoView({ behavior: "smooth" });
+        }
+        setIsNavigating(false);
+      }, 100);
     }
     setMenuOpen(false);
   };
@@ -97,9 +107,10 @@ const Header = () => {
         <li>
           <button
             onClick={scrollToTestimonials}
-            className="navbar__link-button"
+            className={`navbar__link-button${isNavigating ? " loading" : ""}`}
+            disabled={isNavigating}
           >
-            Testimonials
+            {isNavigating ? "Loading..." : "Testimonials"}
           </button>
         </li>
         <li>
