@@ -415,7 +415,7 @@
       gap: 0.75rem;
     }
     &__card--azure {
-      height: 320px; // reverted back to original
+      height: 260px; // reverted back to original
       .projects__image {
         max-height: 260px; // reverted back to original
       }
@@ -473,7 +473,7 @@
     &__card--emerald,
     &__card--crystal-left,
     &__card--crystal-right {
-      height: 320px; // increased height
+      height: 260px; // increased height
       .projects__image {
         max-height: 260px; // increased height
       }
