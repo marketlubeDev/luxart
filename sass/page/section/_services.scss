@@ -100,6 +100,8 @@
   width: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  pointer-events: none; // Prevent manual scrolling
+  user-select: none; // Prevent text selection during scroll
 
   &::-webkit-scrollbar {
     display: none;

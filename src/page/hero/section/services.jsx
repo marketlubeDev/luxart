@@ -69,10 +69,11 @@ const Services = () => {
   useEffect(() => {
     const scrollContainer = scrollRef.current;
     let scrollAmount = 0;
+    let animationFrameId;
 
-    const scrollInterval = setInterval(() => {
+    const scroll = () => {
       if (scrollContainer) {
-        scrollAmount += 1;
+        scrollAmount += 0.5; // Reduced speed for smoother scrolling
         scrollContainer.scrollLeft = scrollAmount;
 
         // Reset scroll when reached end
@@ -82,10 +83,20 @@ const Services = () => {
         ) {
           scrollAmount = 0;
         }
-      }
-    }, 30); // controls speed
 
-    return () => clearInterval(scrollInterval);
+        animationFrameId = requestAnimationFrame(scroll);
+      }
+    };
+
+    // Start the animation
+    animationFrameId = requestAnimationFrame(scroll);
+
+    // Cleanup
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, []);
 
   return (
