@@ -109,6 +109,21 @@
         min-width: 250px !important;
       }
     }
+
+    &--schneider {
+      height: 45px !important;
+      width: 180px !important;
+
+      @media (max-width: 900px) {
+        height: 35px !important;
+        width: 150px !important;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        height: 30px !important;
+        width: 120px !important;
+      }
+    }
   }
 }
 
