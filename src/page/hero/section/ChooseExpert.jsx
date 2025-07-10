@@ -5,7 +5,7 @@ const engineers = [
   {
     id: 1,
     name: "Shabeer A.M, Saleel Kumar R",
-    title: "Founder of Shabeer Saleel Associates",
+    title: "Founders of Shabeer Saleel Associates",
     image:
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1751708084/DSC03534_1_ylb1eb.jpg",
     projectBy: "shabeer",
