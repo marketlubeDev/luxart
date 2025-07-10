@@ -40,6 +40,16 @@ const Header = () => {
         }
         setIsNavigating(false);
       }, 100);
+    } else if (location.state?.scrollTo === "experts") {
+      setIsNavigating(true);
+      setTimeout(() => {
+        const expertsSection = document.querySelector(".choose-expert");
+        if (expertsSection) {
+          expertsSection.scrollIntoView({ behavior: "smooth" });
+          window.history.replaceState({}, document.title);
+        }
+        setIsNavigating(false);
+      }, 100);
     }
   }, [location.state]);
 
@@ -65,6 +75,22 @@ const Header = () => {
         const testimonialsSection = document.getElementById("testimonials");
         if (testimonialsSection) {
           testimonialsSection.scrollIntoView({ behavior: "smooth" });
+        }
+        setIsNavigating(false);
+      }, 100);
+    }
+    setMenuOpen(false);
+  };
+
+  const scrollToExperts = () => {
+    setIsNavigating(true);
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: "experts" } });
+    } else {
+      setTimeout(() => {
+        const expertsSection = document.querySelector(".choose-expert");
+        if (expertsSection) {
+          expertsSection.scrollIntoView({ behavior: "smooth" });
         }
         setIsNavigating(false);
       }, 100);
@@ -114,13 +140,13 @@ const Header = () => {
           </button>
         </li>
         <li>
-          <Link
-            to="/projects"
-            className={isActive("/projects") ? "active" : ""}
-            onClick={handleLinkClick}
+          <button
+            onClick={scrollToExperts}
+            className={`navbar__link-button${isNavigating ? " loading" : ""}`}
+            disabled={isNavigating}
           >
-            Projects
-          </Link>
+            {isNavigating ? "Loading..." : "Projects"}
+          </button>
         </li>
         <li>
           <Link
