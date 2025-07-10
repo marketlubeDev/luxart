@@ -84,6 +84,7 @@ const VideoGallery = () => {
     const videoElement = videoRefs.current[videoId];
 
     if (playingVideo === videoId) {
+      // If this video is currently playing, pause it
       if (videoElement) {
         videoElement.pause();
         if (swiperRef.current && swiperRef.current.autoplay) {
@@ -92,21 +93,39 @@ const VideoGallery = () => {
       }
       setPlayingVideo(null);
     } else {
+      // If a different video is playing, pause it first
       if (playingVideo && videoRefs.current[playingVideo]) {
         videoRefs.current[playingVideo].pause();
       }
 
+      // Set the new video as playing
       setPlayingVideo(videoId);
 
       if (videoElement) {
-        const dataSrc = videoElement.getAttribute("data-src");
-        if (dataSrc && !videoElement.src) {
-          videoElement.src = dataSrc;
+        // Set the video source if it hasn't been set yet
+        if (!videoElement.src) {
+          videoElement.src = video.src;
         }
+
+        // Stop swiper autoplay
         if (swiperRef.current && swiperRef.current.autoplay) {
           swiperRef.current.autoplay.stop();
         }
-        videoElement.play().catch(console.error);
+
+        // Play the video
+        videoElement
+          .play()
+          .then(() => {
+            console.log("Video started playing successfully");
+          })
+          .catch((error) => {
+            console.error("Error playing video:", error);
+            // Reset state if video fails to play
+            setPlayingVideo(null);
+            if (swiperRef.current && swiperRef.current.autoplay) {
+              swiperRef.current.autoplay.start();
+            }
+          });
       }
     }
   };
@@ -215,35 +234,50 @@ const VideoGallery = () => {
                     <video
                       ref={(el) => (videoRefs.current[video.id] = el)}
                       className="video-card__video swiper-lazy"
-                      src={playingVideo === video.id ? video.src : undefined}
-                      data-src={video.src}
+                      src={video.src}
                       poster={video.thumbnail}
-                      controls={playingVideo === video.id}
-                      preload="auto"
+                      controls={false}
+                      preload="metadata"
+                      playsInline
                       onEnded={handleVideoEnded}
                       onPlay={handleVideoPlay}
                       onPause={handleVideoPause}
                       style={{ width: "100%", height: "100%" }}
                     />
-                    {playingVideo !== video.id && (
-                      <>
-                        <div className="instagram-overlay">
-                          <div className="instagram-gradient"></div>
-                        </div>
-                        <button
-                          className="play-button"
-                          onClick={() => handlePlayClick(video.id)}
+                    <div className="instagram-overlay">
+                      <div className="instagram-gradient"></div>
+                    </div>
+                    {playingVideo !== video.id ? (
+                      <button
+                        className="play-button"
+                        onClick={() => handlePlayClick(video.id)}
+                        aria-label="Play video"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="white"
                         >
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="white"
-                          >
-                            <polygon points="5,3 19,12 5,21" />
-                          </svg>
-                        </button>
-                      </>
+                          <polygon points="5,3 19,12 5,21" />
+                        </svg>
+                      </button>
+                    ) : (
+                      <button
+                        className="pause-button"
+                        onClick={() => handlePlayClick(video.id)}
+                        aria-label="Pause video"
+                      >
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="white"
+                        >
+                          <rect x="6" y="4" width="4" height="16" />
+                          <rect x="14" y="4" width="4" height="16" />
+                        </svg>
+                      </button>
                     )}
                   </div>
                 </div>
