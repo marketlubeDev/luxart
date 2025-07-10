@@ -22,12 +22,23 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include responsive.respond(smallPhone) {
+      height: 35vh;
+    }
+    @include responsive.respond(phone) {
+      height: 50vh;
+    }
+    @include responsive.respond(tablets) {
+      height: 50vh;
+    }
     h1 {
       color: #fff;
       font-size: 7rem;
       font-weight: 400;
       line-height: 1.2;
       letter-spacing: -3.36px;
+      text-align: center;
 
       span {
         background: linear-gradient(90deg, #f4d300, #ab7e0d);
@@ -38,7 +49,7 @@
       }
 
       @include responsive.respond(smallPhone) {
-        font-size: 2.8rem;
+        font-size: 2rem;
         letter-spacing: 0.1rem;
       }
       @include responsive.respond(phone) {
@@ -122,12 +133,12 @@
           color: transparent;
         }
         @include responsive.respond(smallPhone) {
-          font-size: 4rem;
+          font-size: 2rem;
           text-align: center;
           margin-top: 1rem;
         }
         @include responsive.respond(phone) {
-          font-size: 4rem;
+          font-size: 2rem;
           text-align: center;
           margin-top: 1rem;
         }
@@ -169,12 +180,12 @@
           margin-top: -2rem;
         }
         @include responsive.respond(tablets) {
-          font-size: 1.05rem;
+          font-size: 1.0625rem;
           width: 100%;
           margin-top: -2rem;
         }
         @include responsive.respond(bigTablets) {
-          font-size: 1.05rem;
+          font-size: 1.0625rem;
           margin-top: -2rem;
         }
         @include responsive.respond(desktop) {
@@ -198,7 +209,7 @@
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
-      gap: 2rem;
+      // gap: 2rem;
       @include responsive.respond(smallPhone) {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -330,7 +341,7 @@
                 font-size: 2.1875rem;
               }
               p {
-                font-size: 1.05rem;
+                font-size: 1.0625rem;
               }
             }
             @include responsive.respond(bigTablets) {
@@ -338,7 +349,7 @@
                 font-size: 2.1875rem;
               }
               p {
-                font-size: 1.05rem;
+                font-size: 1.0625rem;
               }
             }
             @include responsive.respond(desktop) {
@@ -417,27 +428,27 @@
               margin-left: -2rem;
             }
             @include responsive.respond(tablets) {
-              font-size: 2.1875rem;
+              font-size: 3rem;
               text-align: center;
               margin-left: -2rem;
             }
             @include responsive.respond(bigTablets) {
-              font-size: 2.1875rem;
+              font-size: 3rem;
               margin-left: -2rem;
             }
             @include responsive.respond(desktop) {
-              font-size: 2.1875rem;
+              font-size: 3rem;
               margin-left: -2rem;
             }
             @include responsive.respond(bigDesktop) {
-              font-size: 2.1875rem;
+              font-size: 3rem;
               margin-left: -2rem;
             }
           }
           p {
             margin-top: 0.2rem;
             color: #fff;
-            font-size: 1.05rem;
+            font-size: 1.0625rem;
             font-style: normal;
             font-weight: 500;
             line-height: 22px;
@@ -447,7 +458,6 @@
               font-size: 0.8rem;
               margin-left: -1rem;
               margin-top: 1rem;
-              width: 100%;
             }
             @include responsive.respond(phone) {
               font-size: 1rem;
@@ -455,12 +465,12 @@
               margin-top: 1rem;
             }
             @include responsive.respond(tablets) {
-              font-size: 1.05rem;
+              font-size: 1.0625rem;
               margin-left: -2rem;
               margin-top: 1rem;
             }
             @include responsive.respond(bigTablets) {
-              font-size: 1.05rem;
+              font-size: 1.0625rem;
               margin-left: -2rem;
               margin-top: 1rem;
             }
@@ -488,19 +498,19 @@
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 3rem 10rem;
+          padding: 3rem 0rem;
         }
         @include responsive.respond(phone) {
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 0 10rem;
+          padding: 0 0rem;
         }
         @include responsive.respond(tablets) {
           text-align: center;
           justify-content: center;
           align-items: center;
-          padding: 0 10rem;
+          padding: 0 0rem;
         }
         @include responsive.respond(desktop) {
           padding: 0 3rem;
@@ -550,13 +560,13 @@
           // margin-bottom: 0.5rem;
 
           @include responsive.respond(smallPhone) {
-            font-size: 1rem;
+            font-size: 1.3rem;
             text-align: center;
             margin-left: -2rem;
             margin-top: -0.5rem;
           }
           @include responsive.respond(phone) {
-            font-size: 1rem;
+            font-size: 1.3rem;
             text-align: center;
           }
           @include responsive.respond(tablets) {
@@ -583,7 +593,7 @@
           margin: 0.5rem 0 !important;
 
           @include responsive.respond(smallPhone) {
-            font-size: 1.125rem;
+            font-size: 1rem;
             text-align: center;
             margin-left: -2rem;
             margin-top: -0.5rem;
@@ -601,7 +611,7 @@
     }
   }
   &__Mission {
-    width: 100%;
+    // width: 100%;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -662,7 +672,7 @@
         color: #fff;
         font-size: 2rem;
         font-weight: 400;
-        line-height: 1.2;
+        line-height: 0;
         span {
           background: linear-gradient(90deg, #f4d300, #ab7e0d);
           -webkit-background-clip: text;
@@ -671,22 +681,22 @@
           color: transparent;
         }
         @include responsive.respond(smallPhone) {
-          font-size: 0.7rem;
+          font-size: 1rem;
         }
         @include responsive.respond(phone) {
-          font-size: 0.7rem;
+          font-size: 1rem;
         }
         @include responsive.respond(tablets) {
-          font-size: 1.5rem;
+          font-size: 2rem;
         }
         @include responsive.respond(bigTablets) {
-          font-size: 1.25rem;
+          font-size: 2rem;
         }
         @include responsive.respond(desktop) {
-          font-size: 1.25rem;
+          font-size: 2rem;
         }
         @include responsive.respond(bigDesktop) {
-          font-size: 1.25rem;
+          font-size: 2rem;
         }
       }
       p {
@@ -717,10 +727,10 @@
           font-size: 1.5rem;
         }
         @include responsive.respond(desktop) {
-          font-size: 2.1875rem;
+          font-size: 3rem;
         }
         @include responsive.respond(bigDesktop) {
-          font-size: 2.1875rem;
+          font-size: 3rem;
         }
       }
     }
@@ -822,15 +832,15 @@
             }
 
             @include responsive.respond(smallPhone) {
-              font-size: 1.5rem;
+              font-size: 2rem;
               margin-top: 1rem;
             }
             @include responsive.respond(phone) {
-              font-size: 1.5rem;
+              font-size: 2rem;
             }
 
             @include responsive.respond(tablets) {
-              font-size: 2.1875rem;
+              font-size: 3rem;
             }
           }
           p {
@@ -889,13 +899,13 @@
             }
 
             @include responsive.respond(smallPhone) {
-              font-size: 1.5rem;
+              font-size: 2rem;
             }
             @include responsive.respond(phone) {
-              font-size: 1.5rem;
+              font-size: 2rem;
             }
             @include responsive.respond(tablets) {
-              font-size: 2.1875rem;
+              font-size: 3rem;
             }
           }
           p {
@@ -941,6 +951,7 @@
           @include responsive.respond(smallPhone) {
             width: 90%;
             height: 90%;
+            margin-top: 0rem;
           }
           @include responsive.respond(phone) {
             width: 100%;
@@ -990,10 +1001,10 @@
 
     padding-left: 40%;
     @include responsive.respond(smallPhone) {
-      padding: 2rem;
+      padding: 0rem 2rem 2rem 2rem;
     }
     @include responsive.respond(phone) {
-      padding: 2rem;
+      padding: 0rem 2rem 2rem 2rem;
     }
     @include responsive.respond(tablets) {
       padding: 4rem;
@@ -1015,24 +1026,24 @@
         color: transparent;
       }
       @include responsive.respond(smallPhone) {
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-align: center;
       }
       @include responsive.respond(phone) {
         font-size: 2rem;
       }
       @include responsive.respond(tablets) {
-        font-size: 2.1875rem;
+        font-size: 3rem;
         text-align: center;
       }
       @include responsive.respond(bigTablets) {
-        font-size: 2.1875rem;
+        font-size: 3rem;
       }
       @include responsive.respond(desktop) {
-        font-size: 2.1875rem;
+        font-size: 3rem;
       }
       @include responsive.respond(bigDesktop) {
-        font-size: 2.1875rem;
+        font-size: 3rem;
       }
     }
     p {
@@ -1074,166 +1085,166 @@
 }
 
 // Tablet (max-width: 900px)
-@media (max-width: 900px) {
-  .aboutPage-container {
-    &__Banner h1 {
-      font-size: 5rem;
-    }
-    &__Content {
-      padding: 4rem;
-    }
-    &__Content__top h1 {
-      font-size: 3rem;
-    }
-    &__Content__bottom {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    &__Content__bottom__left__top {
-      // max-width: 90%;
-    }
-    &__Content__bottom__right {
-      padding: 2rem 0;
-      align-items: center;
-      text-align: center;
-    }
-    &__Content__bottom__right img {
-      width: 220px;
-      height: auto;
-    }
-    &__Mission {
-      padding: 4rem 0;
-    }
-    &__Mission__top p {
-      font-size: 1.5rem;
-    }
-    &__VisionGoal {
-      padding: 4rem 2rem 0 2rem;
-    }
-    &__VisionGoal__Container {
-      flex-direction: column;
-    }
-    &__VisionGoal__Container__Left {
-      width: 100%;
-    }
-    &__VisionGoal__Container__Right img {
-      width: 260px;
-      height: 200px;
-    }
-    &__Story {
-      padding: 4rem 2rem;
-      padding-left: 0;
-    }
-    &__Story h2 {
-      font-size: 1.5rem;
-    }
-  }
-  .aboutPage-container__Content__bottom__left__bottom p {
-    font-size: 1rem;
-    margin-left: 0;
-    margin-top: 1rem;
-    width: 100%;
-  }
-}
+// @media (max-width: 900px) {
+//   .aboutPage-container {
+//     &__Banner h1 {
+//       font-size: 5rem;
+//     }
+//     &__Content {
+//       padding: 4rem;
+//     }
+//     &__Content__top h1 {
+//       font-size: 3rem;
+//     }
+//     &__Content__bottom {
+//       flex-direction: column;
+//       gap: 2rem;
+//     }
+//     &__Content__bottom__left__top {
+//       // max-width: 90%;
+//     }
+//     &__Content__bottom__right {
+//       padding: 2rem 0;
+//       align-items: center;
+//       text-align: center;
+//     }
+//     &__Content__bottom__right img {
+//       width: 220px;
+//       height: auto;
+//     }
+//     &__Mission {
+//       padding: 4rem 0;
+//     }
+//     &__Mission__top p {
+//       font-size: 1.5rem;
+//     }
+//     &__VisionGoal {
+//       padding: 4rem 2rem 0 2rem;
+//     }
+//     &__VisionGoal__Container {
+//       flex-direction: column;
+//     }
+//     &__VisionGoal__Container__Left {
+//       width: 100%;
+//     }
+//     &__VisionGoal__Container__Right img {
+//       width: 260px;
+//       height: 200px;
+//     }
+//     &__Story {
+//       padding: 4rem 2rem;
+//       padding-left: 0;
+//     }
+//     &__Story h2 {
+//       font-size: 3rem;
+//     }
+//   }
+//   .aboutPage-container__Content__bottom__left__bottom p {
+//     font-size: 1rem;
+//     margin-left: 0;
+//     margin-top: 1rem;
+//     width: 100%;
+//   }
+// }
 
 // Phone (max-width: 600px)
-@media (max-width: 600px) {
-  .aboutPage-container {
-    &__Banner h1 {
-      font-size: 2.8rem;
-    }
-    &__Content {
-      padding: 2rem;
-      gap: 2rem;
-    }
-    &__Content__top h1 {
-      font-size: 2rem;
-      text-align: center;
-    }
-    &__Content__top p {
-      // font-size: 0.9rem;
-      width: 95%;
-    }
-    &__Content__bottom {
-      gap: 1.5rem;
-    }
-    &__Content__bottom__left__top__countup h2 {
-      font-size: 1.2rem;
-    }
-    &__Content__bottom__left__top__countup p {
-      font-size: 0.8rem;
-    }
-    &__Content__bottom__right img {
-      width: 140px;
-      height: auto;
-    }
-    &__Mission {
-      padding: 2rem 0;
-    }
-    &__Mission__top h2 {
-      font-size: 1rem;
-    }
-    &__Mission__top p {
-      font-size: 1rem;
-    }
-    &__VisionGoal {
-      padding: 2rem 1rem 0 1rem;
-    }
-    &__VisionGoal__Container__Right img {
-      width: 100%;
-      height: 100%;
-      margin-top: 1rem;
-    }
-    &__Story {
-      padding: 2rem;
-    }
-    &__Story h2 {
-      font-size: 1.5rem;
-    }
-    &__Story p {
-      font-size: 0.8rem;
-    }
-  }
-}
+// @media (max-width: 600px) {
+//   .aboutPage-container {
+//     &__Banner h1 {
+//       font-size: 2.8rem;
+//     }
+//     &__Content {
+//       padding: 2rem;
+//       gap: 2rem;
+//     }
+//     &__Content__top h1 {
+//       font-size: 2rem;
+//       text-align: center;
+//     }
+//     &__Content__top p {
+//       // font-size: 0.9rem;
+//       width: 95%;
+//     }
+//     &__Content__bottom {
+//       gap: 1.5rem;
+//     }
+//     &__Content__bottom__left__top__countup h2 {
+//       font-size: 1.2rem;
+//     }
+//     &__Content__bottom__left__top__countup p {
+//       font-size: 0.8rem;
+//     }
+//     &__Content__bottom__right img {
+//       width: 140px;
+//       height: auto;
+//     }
+//     &__Mission {
+//       padding: 2rem 0;
+//     }
+//     &__Mission__top h2 {
+//       font-size: 1rem;
+//     }
+//     &__Mission__top p {
+//       font-size: 1rem;
+//     }
+//     &__VisionGoal {
+//       padding: 2rem 1rem 0 1rem;
+//     }
+//     &__VisionGoal__Container__Right img {
+//       width: 100%;
+//       height: 100%;
+//       margin-top: 1rem;
+//     }
+//     &__Story {
+//       padding: 2rem;
+//     }
+//     &__Story h2 {
+//       font-size: 1.5rem;
+//     }
+//     &__Story p {
+//       font-size: 0.8rem;
+//     }
+//   }
+// }
 
 // Small phone (max-width: 400px)
-@media (max-width: 400px) {
-  .aboutPage-container {
-    &__Banner h1 {
-      font-size: 2rem;
-    }
-    &__Content {
-      padding: 1rem;
-    }
-    &__Content__top h1 {
-      font-size: 2.2rem;
-    }
-    &__Content__bottom__right img {
-      width: 100%;
-      height: auto;
-      // margin-right: 40px;
-    }
-    &__Mission__top p {
-      font-size: 0.8rem;
-      padding: 5px;
-      margin-top: -1rem;
-    }
-    &__Story h2 {
-      font-size: 1.5rem;
-    }
-    &__Story p {
-      font-size: 0.813rem;
-      margin-left: -1rem;
-      width: 120%;
-    }
-  }
-}
+// @media (max-width: 400px) {
+//   .aboutPage-container {
+//     &__Banner h1 {
+//       font-size: 2rem;
+//     }
+//     &__Content {
+//       padding: 1rem;
+//     }
+//     &__Content__top h1 {
+//       font-size: 2.2rem;
+//     }
+//     &__Content__bottom__right img {
+//       width: 100%;
+//       height: auto;
+//       // margin-right: 40px;
+//     }
+//     &__Mission__top p {
+//       font-size: 0.8rem;
+//       padding: 5px;
+//       margin-top: -1rem;
+//     }
+//     &__Story h2 {
+//       font-size: 1.5rem;
+//     }
+//     &__Story p {
+//       font-size: 0.813rem;
+//       margin-left: -1rem;
+//       width: 120%;
+//     }
+//   }
+// }
 
-@media (max-width: 1200px) {
-  .aboutPage-container__Content__bottom__left__bottom p {
-    font-size: 1.0625rem;
-    margin-left: -1rem;
-    margin-top: 1rem;
-    width: 100%;
-  }
-}
+// @media (max-width: 1200px) {
+//   .aboutPage-container__Content__bottom__left__bottom p {
+//     font-size: 1.0625rem;
+//     margin-left: -1rem;
+//     margin-top: 1rem;
+//     width: 100%;
+//   }
+// }
