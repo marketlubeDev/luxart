@@ -11,6 +11,15 @@ const Projects = () => {
 
   const { noProjects, architectName } = location.state || {};
 
+  // List of project IDs to show on the projects page
+  const mainProjectIds = [
+    "cheekkilode",
+    "pattambi",
+    "kondotty",
+    "pavangad",
+    "kalamassery",
+  ];
+
   // State for filtered projects
   const [filteredProjects, setFilteredProjects] = useState(projectData);
   const [selectedArchitect, setSelectedArchitect] = useState(null);
@@ -29,17 +38,26 @@ const Projects = () => {
         setSelectedArchitect(architectFromStorage);
         setFilteredProjects(filtered);
       } else {
-        // If no projects found for the architect, show all projects but clear the selection
+        // If no projects found for the architect, show main projects
         setSelectedArchitect(null);
-        setFilteredProjects(projectData);
+        const mainProjects = projectData.filter((project) =>
+          mainProjectIds.includes(project.id)
+        );
+        setFilteredProjects(mainProjects);
         localStorage.removeItem("selectedArchitect");
       }
+    } else if (isProjectsPage) {
+      // When on projects page without architect filter, show only main projects
+      const mainProjects = projectData.filter((project) =>
+        mainProjectIds.includes(project.id)
+      );
+      setFilteredProjects(mainProjects);
+      setSelectedArchitect(null);
     } else {
-      // Clear the filter when not on projects page or no architect selected
+      // On homepage, show all projects
       setSelectedArchitect(null);
       setFilteredProjects(projectData);
       if (!isProjectsPage) {
-        // Only clear localStorage when leaving projects page
         localStorage.removeItem("selectedArchitect");
       }
     }
@@ -49,7 +67,15 @@ const Projects = () => {
   const clearFilter = () => {
     localStorage.removeItem("selectedArchitect");
     setSelectedArchitect(null);
-    setFilteredProjects(projectData);
+    // Show only main projects when clearing filter on projects page
+    if (isProjectsPage) {
+      const mainProjects = projectData.filter((project) =>
+        mainProjectIds.includes(project.id)
+      );
+      setFilteredProjects(mainProjects);
+    } else {
+      setFilteredProjects(projectData);
+    }
   };
 
   const handleShowAll = () => {
@@ -129,12 +155,12 @@ const Projects = () => {
         </div>
         {selectedArchitect && isProjectsPage && (
           <button className="projects__button" onClick={clearFilter}>
-            Show All Projects
+            Show Main Projects
           </button>
         )}
         {!isProjectsPage && (
           <button className="projects__button" onClick={handleShowAll}>
-            Show all
+            View Projects
           </button>
         )}
       </div>

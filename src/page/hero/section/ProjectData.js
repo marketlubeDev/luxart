@@ -57,34 +57,32 @@ The property is well-connected to major roads and public transportation, making 
     consultant: null,
   },
   {
-    id: "thangal-residence",
-    projectBy: "shiju",
-    title: "Thangal Residence",
+    id: "pavangad",
+    projectBy: "luxart",
+    title: "Pavangad",
+    location: "Pavangad, Kozhikode",
     experience: "12 years experience",
-    location: "Koduvally, Kozhikode",
-    area: "7320 sq.ft",
+    area: "3500 sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446602/1-11-10_gmixql.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446602/1-31-1_ajqegt.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1751446606/1-19-1_yuyvre.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.32_y5tt0h.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.33_nyvw1i.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418159/WhatsApp_Image_2025-06-20_at_09.55.32_1_m08ed8.jpg",
+      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.31_ha9d3b.jpg",
     ],
     pdfLink: null,
     summary:
-      "Interior and exterior spaces are intertwined in this lovely multi-generational home. Spaces encompass existing trees on site and openings frame magnificent views across the evergreen landscape. A modest white exterior protects the interior saturated with traditional patterns, motifs, and textures, created by artisans and manufactured with modern techniques. This is an outstanding example of combining vernacular spaces with modern home technologies and sustainable building methods.",
-    description: `The Thangal Residence in Koduvally, Kozhikode stands as a remarkable example of contemporary multi-generational living that seamlessly blends traditional Kerala architecture with modern design sensibilities. This exceptional home creates a harmonious relationship between interior and exterior spaces, allowing the natural beauty of the site to become an integral part of the living experience.
+      "A contemporary residential project in Pavangad, Kozhikode, featuring modern design elements and spacious living areas. Perfect for families seeking comfort and style in a prime location.",
+    description: `Located in the vibrant neighborhood of Pavangad, Kozhikode, this residential property showcases contemporary architectural design with a focus on modern living standards. The project features thoughtfully planned spaces that maximize comfort and functionality for families.
 
-The design philosophy embraces the existing landscape, carefully incorporating mature trees and natural features into the architectural composition. Large openings and strategically placed windows frame breathtaking views of the surrounding evergreen landscape, bringing the outdoors inside and creating a constant connection with nature.
+The property includes essential amenities such as secure parking facilities, 24/7 security systems, and well-maintained common areas. The spacious layout offers flexible living arrangements suitable for different family sizes and lifestyles.
 
-The exterior presents a modest white facade that serves as a canvas for the rich interior experiences within. Inside, the spaces are enriched with traditional patterns, motifs, and textures that celebrate Kerala's architectural heritage. These elements are crafted by skilled artisans using both time-honored techniques and modern manufacturing methods, creating a unique fusion of old and new.
-
-The residence demonstrates how vernacular architectural principles can be successfully integrated with contemporary home technologies and sustainable building practices. The result is a living space that honors traditional design while meeting the comfort and functionality requirements of modern family life. This project serves as an outstanding model for how heritage architecture can evolve to meet contemporary needs without losing its essential character and connection to place.`,
-    client: "Thangal",
+The location provides excellent connectivity to Kozhikode's major attractions, educational institutions, healthcare facilities, and shopping centers. The area is well-connected through major roads and public transportation, making daily commuting convenient. The neighborhood offers a perfect balance of tranquility and accessibility, making it an ideal choice for families seeking a comfortable and connected lifestyle in Kozhikode.`,
+    client: "Pavangad",
     architect: null,
     projectType: "Residential Project",
     designTeam: null,
     contractor: null,
     consultant: null,
-    completed: "2018",
   },
   {
     id: "kondotty",
@@ -143,34 +141,6 @@ Residents can enjoy the benefits of a peaceful neighborhood while having easy ac
 
 The location provides excellent connectivity to schools, hospitals, shopping centers, and public transportation. Its proximity to major roads and highways makes commuting to different parts of Kochi convenient. The property is ideal for families looking for a comfortable living space in a well-established neighborhood.`,
     client: "Kerala State WAKF Board",
-    architect: null,
-    projectType: "Residential Project",
-    designTeam: null,
-    contractor: null,
-    consultant: null,
-  },
-  {
-    id: "pavangad",
-    projectBy: "luxart",
-    title: "Pavangad",
-    location: "Pavangad, Kozhikode",
-    experience: "12 years experience",
-    area: "3500 sq.ft",
-    images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.32_y5tt0h.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.33_nyvw1i.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418159/WhatsApp_Image_2025-06-20_at_09.55.32_1_m08ed8.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.31_ha9d3b.jpg",
-    ],
-    pdfLink: null,
-    summary:
-      "A contemporary residential project in Pavangad, Kozhikode, featuring modern design elements and spacious living areas. Perfect for families seeking comfort and style in a prime location.",
-    description: `Located in the vibrant neighborhood of Pavangad, Kozhikode, this residential property showcases contemporary architectural design with a focus on modern living standards. The project features thoughtfully planned spaces that maximize comfort and functionality for families.
-
-The property includes essential amenities such as secure parking facilities, 24/7 security systems, and well-maintained common areas. The spacious layout offers flexible living arrangements suitable for different family sizes and lifestyles.
-
-The location provides excellent connectivity to Kozhikode's major attractions, educational institutions, healthcare facilities, and shopping centers. The area is well-connected through major roads and public transportation, making daily commuting convenient. The neighborhood offers a perfect balance of tranquility and accessibility, making it an ideal choice for families seeking a comfortable and connected lifestyle in Kozhikode.`,
-    client: "Pavangad",
     architect: null,
     projectType: "Residential Project",
     designTeam: null,
