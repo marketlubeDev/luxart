@@ -1,7 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import starPng from "../../../assets/star.png";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import UserIcon from "../../../assets/user.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import {
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+  Autoplay,
+} from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const testimonialsData = [
   {
@@ -63,28 +75,6 @@ const testimonialsData = [
 ];
 
 function Testimonials() {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prevIndex) =>
-        prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 4000);
-    return () => clearInterval(interval);
-  }, []);
-  const handlePrev = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === 0 ? testimonialsData.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleNext = () => {
-    setActiveIndex((prevIndex) =>
-      prevIndex === testimonialsData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
   return (
     <section id="testimonials" className="testimonial-section">
       <h2 className="testimonial-title">
@@ -92,25 +82,45 @@ function Testimonials() {
       </h2>
 
       <div className="testimonial-carousel-wrapper">
-        <button className="arrow left-arrow" onClick={handlePrev}>
-          <FaArrowLeft />
-        </button>
-
-        <div className="testimonial-carousel">
-          {testimonialsData.map((item, index) => {
-            let className = "hidden";
-            if (index === activeIndex) className = "active";
-            else if (
-              index ===
-              (activeIndex - 1 + testimonialsData.length) %
-                testimonialsData.length
-            )
-              className = "adjacent-left";
-            else if (index === (activeIndex + 1) % testimonialsData.length)
-              className = "adjacent-right";
-
-            return (
-              <div key={index} className={`testimonial-card ${className}`}>
+        <Swiper
+          effect={"coverflow"}
+          grabCursor={true}
+          centeredSlides={true}
+          loop={true}
+          slidesPerView={3}
+          initialSlide={1}
+          spaceBetween={30}
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1.5,
+            slideShadows: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          autoplay={{
+            delay: 4000,
+            disableOnInteraction: false,
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+          className="testimonial-swiper"
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          }}
+        >
+          {testimonialsData.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="testimonial-card">
                 <div className="testimonial-header">
                   <div className="testimonial-user">
                     <img src={item.avatar} alt={item.name} className="avatar" />
@@ -127,23 +137,9 @@ function Testimonials() {
                 </div>
                 <p className="testimonial-text">" {item.text} "</p>
               </div>
-            );
-          })}
-        </div>
-
-        <button className="arrow right-arrow" onClick={handleNext}>
-          <FaArrowRight />
-        </button>
-      </div>
-
-      <div className="testimonial-dots">
-        {testimonialsData.map((_, index) => (
-          <span
-            key={index}
-            className={`dot ${index === activeIndex ? "active" : ""}`}
-            onClick={() => setActiveIndex(index)}
-          />
-        ))}
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

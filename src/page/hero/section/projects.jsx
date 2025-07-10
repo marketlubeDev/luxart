@@ -9,6 +9,8 @@ const Projects = () => {
   const isProjectsPage = location.pathname.replace(/\/$/, "") === "/projects";
   const isHomePage = location.pathname === "/";
 
+  const { noProjects, architectName } = location.state || {};
+
   // State for filtered projects
   const [filteredProjects, setFilteredProjects] = useState(projectData);
   const [selectedArchitect, setSelectedArchitect] = useState(null);
@@ -81,6 +83,24 @@ const Projects = () => {
   const groupedProjects = [];
   for (let i = 0; i < displayProjects.length; i += 2) {
     groupedProjects.push(displayProjects.slice(i, i + 2));
+  }
+
+  if (noProjects) {
+    return (
+      <div className="projects">
+        <div className="projects__header">
+          <div>
+            {/* <h2 className="projects__title">
+              <span>{architectName}'s</span> Projects
+            </h2> */}
+          </div>
+        </div>
+        <div className="projects__no-content">
+          <h3>Projects Coming Soon!</h3>
+          <p>New projects from {architectName} will be available shortly.</p>
+        </div>
+      </div>
+    );
   }
 
   return (

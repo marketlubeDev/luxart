@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const engineers = [
@@ -9,6 +9,7 @@ const engineers = [
     image:
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1751708084/DSC03534_1_ylb1eb.jpg",
     projectBy: "shabeer",
+    hasProjects: false,
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const engineers = [
     image:
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1751447351/S24_0602_1_jiiq4h.jpg",
     projectBy: "shiju",
+    hasProjects: true,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const engineers = [
     image:
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750836806/32456_aytsev.jpg",
     projectBy: "rasheed",
+    hasProjects: true,
   },
   {
     id: 4,
@@ -33,16 +36,32 @@ const engineers = [
     image:
       "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750835956/IMG_8524_3_gsktvp.jpg",
     projectBy: "imthiyas",
+    hasProjects: true,
   },
 ];
 
 const ChooseExpert = () => {
   const navigate = useNavigate();
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [hovered, setHovered] = useState(null);
 
-  const handleCardClick = (projectBy) => {
-    localStorage.setItem("selectedArchitect", projectBy);
+  const handleCardClick = (engineer) => {
+    localStorage.setItem("selectedArchitect", engineer.projectBy);
     window.scrollTo({ top: 0, behavior: "smooth" });
-    navigate(`/projects`);
+    navigate(`/projects`, {
+      state: {
+        noProjects: !engineer.hasProjects,
+        architectName: engineer.name,
+      },
+    });
+  };
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    setPosition({
+      x: e.clientX - rect.left,
+      y: e.clientY - rect.top,
+    });
   };
 
   return (
@@ -60,14 +79,24 @@ const ChooseExpert = () => {
           <div
             key={engineer.id}
             className="expert-card"
-            onClick={() => handleCardClick(engineer.projectBy)}
-            style={{ cursor: "pointer" }}
+            onClick={() => handleCardClick(engineer)}
+            onMouseMove={handleMouseMove}
+            onMouseEnter={() => setHovered(engineer.id)}
+            onMouseLeave={() => setHovered(null)}
           >
             <img
               src={engineer.image}
               alt={engineer.name}
               className="expert-card__image"
             />
+            {hovered === engineer.id && (
+              <div
+                className="expert-card__hover-overlay"
+                style={{ left: position.x, top: position.y }}
+              >
+                <span>View</span>
+              </div>
+            )}
             <div className="expert-card__info">
               <div className="expert-card__meta"></div>
               <h3 className="expert-card__name">{engineer.name}</h3>

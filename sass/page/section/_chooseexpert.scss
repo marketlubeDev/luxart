@@ -5,6 +5,7 @@
   padding: 3rem 1rem;
   max-height: 100vh;
   min-height: fit-content;
+  position: relative;
 
   &__title {
     font-size: 3rem;
@@ -28,6 +29,43 @@
     color: #fff9d3;
     opacity: 0.8;
     margin: 1rem 0 2rem;
+  }
+
+  &__no-projects {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: #f4d300;
+    padding: 1.5rem 3rem;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(244, 211, 0, 0.3);
+    animation: fadeInOut 3s ease-in-out;
+    box-shadow: 0 4px 30px rgba(244, 211, 0, 0.1);
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+    15% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    85% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+    }
   }
 
   &__cards {
@@ -54,6 +92,30 @@
 
   &:hover {
     transform: translateY(-5px);
+    cursor: none;
+
+    .expert-card__hover-overlay {
+      opacity: 1;
+    }
+  }
+
+  &__hover-overlay {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    z-index: 2;
   }
 
   &__image {
@@ -93,232 +155,15 @@
     font-size: 0.85rem;
     color: #ccc;
   }
-
-  &__detail {
-    font-size: 0.75rem;
-    color: #ddd;
-    line-height: 1.3;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.4s ease, max-height 0.4s ease;
-  }
-
-  // Show detail on hover (desktop only)
-  &:hover &__detail {
-    opacity: 1;
-    max-height: 80px;
-  }
 }
 
-.experience-icon,
-.expert-card__icon {
-  width: 14px;
-  height: 14px;
-  margin-right: 4px;
-  vertical-align: middle;
-  flex-shrink: 0;
-}
-
-// Large Desktop - 4 cards per row
-@media (min-width: 1200px) {
-  .expert-card {
-    width: calc(25% - 0.75rem);
-    max-width: 280px;
-  }
-}
-
-// Medium Desktop/Tablet - 3 cards per row
-@media (max-width: 1199px) and (min-width: 900px) {
-  .choose-expert__cards {
-    gap: 1.2rem;
-  }
-
-  .expert-card {
-    width: calc(33.333% - 0.8rem);
-    min-width: 260px;
-    max-width: 300px;
-    height: 580px;
-  }
-}
-
-// Small Tablet - 2 cards per row
-@media (max-width: 899px) and (min-width: 600px) {
-  .choose-expert {
-    padding: 2rem 1rem;
-
-    &__title {
-      font-size: 1.8rem;
-    }
-
-    &__subtitle {
-      font-size: 16px;
-      margin: 0.8rem 0 1.5rem;
-    }
-
-    &__cards {
-      gap: 1.5rem;
-    }
-  }
-
-  .expert-card {
-    width: calc(50% - 0.75rem);
-    min-width: 280px;
-    max-width: 320px;
-    height: 520px;
-
-    &__image {
-      height: 68%;
-    }
-
-    &__info {
-      padding: 0.8rem;
-    }
-
-    &__name {
-      font-size: 1rem;
-    }
-
-    &__role {
-      font-size: 0.9rem;
-    }
-
-    &__detail {
-      font-size: 0.8rem;
-      max-height: 60px;
-    }
-  }
-}
-
-// Mobile - 1 card per row with touch optimizations
-@media (max-width: 599px) {
-  .choose-expert {
-    padding: 1.5rem 0.5rem;
-
-    &__title {
-      font-size: 1.5rem;
-      line-height: 1.3;
-    }
-
-    &__subtitle {
-      font-size: 14px;
-      margin: 0.8rem 0 1.2rem;
-      line-height: 1.2;
-    }
-
-    &__cards {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-  }
-
-  .expert-card {
-    width: calc(100vw - 2rem);
-    max-width: 360px;
-    min-width: unset;
-    height: 450px; // Increased height for mobile
-    // Better touch interaction
-    touch-action: manipulation;
-
-    // Mobile hover replacement - always show details
-    &__detail {
-      opacity: 1;
-      max-height: 50px;
-    }
-
-    &__image {
-      height: 75%; // Increased from 65% to 75% to show more of the image
-    }
-
-    &__info {
-      padding: 0.8rem;
-    }
-
-    &__meta {
-      font-size: 0.7rem;
-      flex-wrap: wrap;
-      gap: 0.2rem;
-    }
-
-    &__name {
-      font-size: 0.95rem;
-      line-height: 1.2;
-    }
-
-    &__role {
-      font-size: 0.85rem;
-      line-height: 1.2;
-    }
-
-    &__detail {
-      font-size: 0.7rem;
-      line-height: 1.2;
-    }
-
-    // Remove hover effects on mobile
-    &:hover {
-      transform: none;
-    }
-  }
-
-  .experience-icon,
-  .expert-card__icon {
-    width: 12px;
-    height: 12px;
-    margin-right: 3px;
-  }
-}
-
-// Very Small Mobile - compact layout
-@media (max-width: 360px) {
-  .choose-expert {
-    padding: 1rem 0.3rem;
-
-    &__title {
-      font-size: 1.3rem;
-    }
-
-    &__subtitle {
-      font-size: 13px;
-      margin: 0.6rem 0 1rem;
-    }
-
-    &__cards {
-      gap: 0.8rem;
-    }
-  }
-
-  .expert-card {
-    width: calc(100vw - 1.5rem);
-    max-width: 340px;
-    height: 420px; // Increased height for very small screens too
-    border-radius: 8px;
-
-    &__image {
-      height: 72%; // Increased from 62% to 72%
-    }
-
-    &__info {
-      padding: 0.6rem;
-    }
-
-    &__name {
-      font-size: 0.9rem;
-    }
-
-    &__role {
-      font-size: 0.8rem;
-    }
-
-    &__detail {
-      font-size: 0.65rem;
-      max-height: 40px;
-    }
-
-    &__meta {
-      font-size: 0.65rem;
-    }
+// Always show hover overlay/details on touch devices
+@media (hover: none) and (pointer: coarse) {
+  .expert-card .expert-card__hover-overlay {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transition: none !important;
+    display: flex !important;
   }
 }
 
@@ -331,7 +176,7 @@
       transform: none;
     }
 
-    &__detail {
+    &__hover-overlay {
       transition: none;
     }
   }
