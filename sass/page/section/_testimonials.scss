@@ -2,7 +2,7 @@
 
 .testimonial-section {
   background-color: black;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 0rem 1.5rem 1rem;
   color: #fff;
   text-align: left;
   overflow: hidden;
@@ -33,13 +33,17 @@
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2rem 4rem;
     position: relative;
+
+    @include respond(smallPhone) {
+      padding: 2rem 2rem;
+    }
 
     .testimonial-swiper {
       width: 100%;
-      padding: 0rem 1rem 3rem 1rem;
-      overflow: hidden;
+      padding: 0rem 0rem 3rem 0rem;
+      overflow: visible;
     }
 
     .swiper-wrapper {
@@ -168,6 +172,9 @@
     height: 40px;
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 
     &::after {
       font-size: 20px;
@@ -176,6 +183,28 @@
     &:hover {
       color: #ffffff;
       background: rgba(244, 211, 0, 0.2);
+    }
+
+    @include respond(smallPhone) {
+      width: 30px;
+      height: 30px;
+      &::after {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .swiper-button-next {
+    right: -20px;
+    @media (min-width: 768px) {
+      right: -50px;
+    }
+  }
+
+  .swiper-button-prev {
+    left: -20px;
+    @media (min-width: 768px) {
+      left: -50px;
     }
   }
 

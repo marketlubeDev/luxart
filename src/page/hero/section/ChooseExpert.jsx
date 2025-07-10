@@ -46,8 +46,8 @@ const ChooseExpert = () => {
   const [hovered, setHovered] = useState(null);
 
   const handleCardClick = (engineer) => {
+    window.scrollTo(0, 0); // Changed to immediate scroll without smooth behavior
     localStorage.setItem("selectedArchitect", engineer.projectBy);
-    window.scrollTo({ top: 0, behavior: "smooth" });
     navigate(`/projects`, {
       state: {
         noProjects: !engineer.hasProjects,

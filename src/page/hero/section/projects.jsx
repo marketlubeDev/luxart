@@ -14,7 +14,7 @@ const Projects = () => {
   // List of project IDs to show on the projects page
   const mainProjectIds = [
     "cheekkilode",
-    "pattambi",
+    "pattambi-heights",
     "kondotty",
     "pavangad",
     "kalamassery",
@@ -23,6 +23,11 @@ const Projects = () => {
   // State for filtered projects
   const [filteredProjects, setFilteredProjects] = useState(projectData);
   const [selectedArchitect, setSelectedArchitect] = useState(null);
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Effect to handle filtering based on localStorage and route changes
   useEffect(() => {
@@ -84,11 +89,10 @@ const Projects = () => {
   };
 
   // Use filtered projects instead of original projectData
-  const projectsToShow = isHomePage ? 4 : filteredProjects.length;
-  const displayProjects = (isHomePage ? projectData : filteredProjects).slice(
-    0,
-    projectsToShow
-  );
+  const projectsToShow = isHomePage ? 4 : filteredProjects.length; // Show all filtered projects on projects page
+  const displayProjects = isHomePage
+    ? projectData.slice(0, 4)
+    : filteredProjects; // Show first 4 on homepage, all filtered on projects page
 
   // Helper function to get card class based on index
   const getCardClass = (index) => {
