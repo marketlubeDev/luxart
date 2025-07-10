@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const engineers = [
   {
     id: 1,
-    name: "Shabeer A.M, Saleel Kumar R",
+    name: "Shabeer A.M., Saleel Kumar R.",
     title: "Founders of Shabeer Saleel Associates",
     image:
       "https://res.cloudinary.com/ds07e7rod/image/upload/v1751708084/DSC03534_1_ylb1eb.jpg",
