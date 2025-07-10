@@ -4,7 +4,7 @@
   flex-wrap: nowrap;
   width: max-content; // only take as much space as needed
   margin: 0 auto; // center if space is available
-  padding: 0;
+  padding: 1rem;
   pointer-events: auto; // Enable interactions for service cards
 
   &__card {
