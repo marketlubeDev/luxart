@@ -1,7 +1,7 @@
 @use "../../base/responsive" as *;
 
 .projects {
-  padding: 80px 104px;
+  padding: 0px 104px 80px 104px;
   background-color: #000;
   color: #fff;
 
@@ -40,7 +40,7 @@
       font-size: 1rem;
       max-width: 700px;
       margin-top: 0.5rem;
-      color: #fff9d3;
+      color: #fff;
     }
 
     .projects__button {
@@ -408,6 +408,8 @@
       .projects__button {
         padding: 6px 10px;
         font-size: 0.85rem;
+        margin: 0 auto;
+        display: block;
       }
     }
     &__grid {

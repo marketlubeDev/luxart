@@ -7,6 +7,10 @@
 
   text-align: center;
 
+  @media (min-width: 400px) {
+    padding: 1rem 1rem;
+  }
+
   &__text {
     font-size: 1.5rem;
     font-weight: 400;
@@ -15,6 +19,7 @@
     position: relative;
     animation: fadeSlideUp 1s ease-in-out;
     margin-top: 0;
+    width: 70%;
 
     span {
       background: linear-gradient(90deg, #f4d300, #ab7e0d);
@@ -28,6 +33,10 @@
     strong {
       color: #fff;
       font-weight: 700;
+    }
+
+    @media (min-width: 400px) {
+      width: 100%;
     }
 
     @media (min-width: 768px) {

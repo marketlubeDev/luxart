@@ -217,7 +217,7 @@
 @include respond(smallPhone) {
   .detail-section {
     padding: 5rem 0.1rem 0rem 0.1rem;
-    height: 33vh;
+    height: 25vh;
     &__content {
       h2 {
         font-size: 1.5rem;
