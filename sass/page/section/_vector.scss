@@ -93,6 +93,22 @@
         filter: grayscale(0%) brightness(1);
       }
     }
+
+    &--larger {
+      max-height: 120px !important;
+      min-width: 350px !important;
+      width: auto;
+
+      @media (max-width: 900px) {
+        max-height: 100px !important;
+        min-width: 300px !important;
+      }
+
+      @media only screen and (max-width: 575.98px) {
+        max-height: 90px !important;
+        min-width: 250px !important;
+      }
+    }
   }
 }
 

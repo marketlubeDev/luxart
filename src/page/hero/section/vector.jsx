@@ -28,6 +28,14 @@ const vector = () => {
   // Create two sets of logos for seamless animation
   const repeatedLogos = [...logos, ...logos];
 
+  const getLogoClassName = (index) => {
+    // The 18th logo (index 17) needs the larger class
+    const isLargerLogo = index % logos.length === 17;
+    return `vector__logo vector__logo--grayscale ${
+      isLargerLogo ? "vector__logo--larger" : ""
+    }`;
+  };
+
   return (
     <section className="vector">
       <h2 className="vector__title">
@@ -42,7 +50,7 @@ const vector = () => {
               <img
                 src={logo}
                 alt={`Logo ${index + 1}`}
-                className="vector__logo vector__logo--grayscale"
+                className={getLogoClassName(index)}
               />
             </div>
           ))}
@@ -55,7 +63,7 @@ const vector = () => {
               <img
                 src={logo}
                 alt={`Logo ${index + 1}`}
-                className="vector__logo vector__logo--grayscale"
+                className={getLogoClassName(index)}
               />
             </div>
           ))}
