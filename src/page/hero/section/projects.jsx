@@ -20,6 +20,14 @@ const Projects = () => {
     "kalamassery",
   ];
 
+  // Ordered list for homepage display
+  const homePageOrder = [
+    "pavangad",
+    "cheekkilode",
+    "pattambi-heights",
+    "kondotty",
+  ];
+
   // State for filtered projects
   const [filteredProjects, setFilteredProjects] = useState(projectData);
   const [selectedArchitect, setSelectedArchitect] = useState(null);
@@ -88,11 +96,18 @@ const Projects = () => {
     navigate("/projects");
   };
 
-  // Use filtered projects instead of original projectData
-  const projectsToShow = isHomePage ? 4 : filteredProjects.length; // Show all filtered projects on projects page
-  const displayProjects = isHomePage
-    ? projectData.slice(0, 4)
-    : filteredProjects; // Show first 4 on homepage, all filtered on projects page
+  // Get projects in the correct order for display
+  const getOrderedProjects = () => {
+    if (isHomePage) {
+      // For homepage, use the specific order
+      return homePageOrder.map((id) =>
+        projectData.find((project) => project.id === id)
+      );
+    }
+    return filteredProjects;
+  };
+
+  const displayProjects = getOrderedProjects();
 
   // Helper function to get card class based on index
   const getCardClass = (index) => {
