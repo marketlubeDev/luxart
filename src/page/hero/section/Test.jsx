@@ -94,7 +94,7 @@ function Testimonials() {
             rotate: 0,
             stretch: 0,
             depth: 100,
-            modifier: 1.5,
+            modifier: 2,
             slideShadows: false,
           }}
           pagination={{
@@ -104,6 +104,7 @@ function Testimonials() {
           autoplay={{
             delay: 4000,
             disableOnInteraction: false,
+            pauseOnMouseEnter: true,
           }}
           modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
           className="testimonial-swiper"
@@ -111,10 +112,36 @@ function Testimonials() {
             320: {
               slidesPerView: 1,
               spaceBetween: 20,
+              effect: "slide",
+              coverflowEffect: {
+                depth: 0,
+                modifier: 1,
+              },
+            },
+            576: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+              effect: "slide",
+              coverflowEffect: {
+                depth: 0,
+                modifier: 1,
+              },
             },
             768: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+              coverflowEffect: {
+                depth: 50,
+                modifier: 1.5,
+              },
+            },
+            1024: {
               slidesPerView: 3,
               spaceBetween: 30,
+              coverflowEffect: {
+                depth: 100,
+                modifier: 2,
+              },
             },
           }}
         >

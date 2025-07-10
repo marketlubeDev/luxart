@@ -10,14 +10,19 @@
   .testimonial-title {
     font-size: 3rem;
     font-weight: 400;
-    line-height: 0;
+    line-height: 1.2;
     text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
 
     @include respond(smallPhone) {
-      font-size: 1.5rem;
+      font-size: 2rem;
+      line-height: 1;
+      padding-top: 1rem;
     }
     @include respond(phone) {
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+      line-height: 1;
     }
 
     .highlight {
@@ -37,13 +42,20 @@
     position: relative;
 
     @include respond(smallPhone) {
-      padding: 2rem 2rem;
+      padding: 1rem 1rem 1rem 0rem;
+    }
+    @include respond(phone) {
+      padding: 1.5rem;
     }
 
     .testimonial-swiper {
       width: 100%;
       padding: 0rem 0rem 3rem 0rem;
       overflow: visible;
+
+      @include respond(smallPhone) {
+        padding: 0rem 0rem 2rem 0rem;
+      }
     }
 
     .swiper-wrapper {
@@ -72,6 +84,11 @@
         opacity: 0.4;
         transform: scale(0.85);
         z-index: 1;
+
+        @include respond(smallPhone) {
+          opacity: 0;
+          visibility: hidden;
+        }
       }
     }
   }
@@ -86,8 +103,13 @@
     max-width: 400px;
     margin: 0 auto;
 
-    @media (max-width: 768px) {
-      max-width: 300px;
+    @include respond(smallPhone) {
+      padding: 1rem;
+      max-width: 100%;
+    }
+    @include respond(phone) {
+      padding: 1.2rem;
+      max-width: 320px;
     }
 
     .testimonial-header {
@@ -95,6 +117,12 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 1rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+
+      @include respond(smallPhone) {
+        margin-bottom: 0.8rem;
+      }
 
       .testimonial-user {
         display: flex;
@@ -109,8 +137,8 @@
           border: 2px solid #f4d300;
 
           @include respond(smallPhone) {
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
           }
           @include respond(phone) {
             width: 40px;
@@ -121,7 +149,7 @@
         .name {
           font-weight: 600;
           @include respond(smallPhone) {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
           }
           @include respond(phone) {
             font-size: 0.85rem;
@@ -132,7 +160,7 @@
           font-size: 0.85rem;
           color: #aaa;
           @include respond(smallPhone) {
-            font-size: 0.75rem;
+            font-size: 0.7rem;
           }
           @include respond(phone) {
             font-size: 0.75rem;
@@ -146,6 +174,15 @@
         .star {
           width: 16px;
           height: 16px;
+
+          @include respond(smallPhone) {
+            width: 12px;
+            height: 12px;
+          }
+          @include respond(phone) {
+            width: 14px;
+            height: 14px;
+          }
         }
       }
     }
@@ -155,11 +192,14 @@
       font-style: italic;
       line-height: 1.6;
       color: #e0e0e0;
+
       @include respond(smallPhone) {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
+        line-height: 1.4;
       }
       @include respond(phone) {
         font-size: 0.85rem;
+        line-height: 1.5;
       }
     }
   }
@@ -186,10 +226,17 @@
     }
 
     @include respond(smallPhone) {
+      width: 25px;
+      height: 25px;
+      &::after {
+        font-size: 12px;
+      }
+    }
+    @include respond(phone) {
       width: 30px;
       height: 30px;
       &::after {
-        font-size: 16px;
+        font-size: 14px;
       }
     }
   }
@@ -199,12 +246,24 @@
     @media (min-width: 768px) {
       right: -50px;
     }
+    @include respond(smallPhone) {
+      right: -10px;
+    }
+    @include respond(phone) {
+      right: -15px;
+    }
   }
 
   .swiper-button-prev {
     left: -20px;
     @media (min-width: 768px) {
       left: -50px;
+    }
+    @include respond(smallPhone) {
+      left: -10px;
+    }
+    @include respond(phone) {
+      left: -15px;
     }
   }
 
@@ -215,9 +274,18 @@
     border-radius: 1px;
     opacity: 1;
 
+    @include respond(smallPhone) {
+      width: 20px;
+      height: 1px;
+    }
+
     &-active {
       background: #f4d300;
       width: 40px;
+
+      @include respond(smallPhone) {
+        width: 25px;
+      }
     }
   }
 }
