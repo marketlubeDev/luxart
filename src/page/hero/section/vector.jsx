@@ -31,10 +31,9 @@ const vector = () => {
   const getLogoClassName = (index) => {
     // The 18th logo (index 17) needs the larger class
     const isLargerLogo = index % logos.length === 17;
-    const isSchneiderLogo = index % logos.length === 16; // Schneider logo index
     return `vector__logo vector__logo--grayscale ${
       isLargerLogo ? "vector__logo--larger" : ""
-    } ${isSchneiderLogo ? "vector__logo--schneider" : ""}`;
+    }`;
   };
 
   return (
