@@ -11,9 +11,9 @@ const projectData = [
     area: "3060 sq.ft",
     image: img1,
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek1_yizqrn.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek2_aubvsf.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/cheek3_egidpo.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/CheekilodA+(1).jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/CheekilodA+(2).jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/CheekilodA.jpeg",
     ],
     pdfLink: null,
     summary:
@@ -39,7 +39,7 @@ Residents can enjoy the convenience of nearby schools, hospitals, and shopping c
     location: "Pattambi, Malappuram",
     area: "2500 sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/pattambi1_pvnsek.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pattambi.jpg",
     ],
     pdfLink: null,
     summary:
@@ -64,10 +64,10 @@ The property is well-connected to major roads and public transportation, making 
     experience: "12 years experience",
     area: "3500 sq.ft",
     images: [
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.32_y5tt0h.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.33_nyvw1i.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418159/WhatsApp_Image_2025-06-20_at_09.55.32_1_m08ed8.jpg",
-      "https://res.cloudinary.com/dzuqczvb7/image/upload/v1750418156/WhatsApp_Image_2025-06-20_at_09.55.31_ha9d3b.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadb.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadc.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangad.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Pavangadd.jpg",
     ],
     pdfLink: null,
     summary:
@@ -92,7 +92,7 @@ The location provides excellent connectivity to Kozhikode's major attractions, e
     location: "Kondotty, Malappuram",
     area: "2500  sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248399/kondotty1_edylsw.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kondoty+(2).jpg",
     ],
     pdfLink: null,
     summary:
@@ -117,20 +117,16 @@ The location provides excellent connectivity to nearby towns and cities, making 
     location: "Kalamassery, Ernakulam",
     area: "4500 sq.ft",
     images: [
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery15_nwtbmi.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery2_icwwzj.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery3_oshtbw.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery4_twdt0z.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery10_pqgf7o.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery11_vcjhhm.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery12_vby2lj.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248400/kalamassery13_sor7ru.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248402/kalamassery18_ysmsse.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery16_gsbz0t.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery17_uvdhgl.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248401/kalamassery14_onysop.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery19_aaq3nb.jpg",
-      "https://res.cloudinary.com/ds07e7rod/image/upload/v1750248398/kalamassery20_qzzkfm.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery.jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery+(1).jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery+(2).jpeg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery1.jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery2+(1).jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery3+(1).jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery4+(1).jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery5+(1).jpg",
+      "https://marketlube-website-assets.s3.ap-south-1.amazonaws.com/luxart/Kalamassery6+(1).jpg",
+     
     ],
     pdfLink: kalamassery,
     summary:
